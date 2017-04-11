@@ -1,6 +1,8 @@
 # WebPages for sensenet ECM
 UI layer for the [sensenet ECM](https://github.com/SenseNet/sensenet) platform built using ASP.NET WebForms **pages**, **portlets** (webparts) and **controls**.
 
+[![Join the chat at https://gitter.im/SenseNet/sn-webpages](https://badges.gitter.im/SenseNet/sn-webpages.svg)](https://gitter.im/SenseNet/sn-webpages?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Install this component on top of the main **sensenet ECM Services** layer to get an administrative GUI (called the **Content Explorer**) for managing content items stored in the Content Repository.
 
 > Note that this layer does not contain user-facing interfaces like workspace dashboards and intranet library pages.
