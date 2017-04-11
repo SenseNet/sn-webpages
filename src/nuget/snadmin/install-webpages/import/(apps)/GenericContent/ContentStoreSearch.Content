@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentMetaData>
+  <ContentType>GenericODataApplication</ContentType>
+  <ContentName>ContentStoreSearch</ContentName>
+  <Fields>
+    <ClassName><![CDATA[SenseNet.Portal.ContentStore.ContentStoreApi]]></ClassName>
+    <MethodName><![CDATA[Search]]></MethodName>
+    <Parameters><![CDATA[string searchStr, string searchRoot, string contentTypes, string rnd, bool simpleContent]]></Parameters>
+    <DisplayName><![CDATA[ContentStoreSearch]]></DisplayName>
+    <Description><![CDATA[]]></Description>
+    <Scenario><![CDATA[]]></Scenario>
+    <ActionTypeName><![CDATA[GenericODataOperation]]></ActionTypeName>
+  </Fields>
+  <Permissions>
+    <Clear />
+  </Permissions>
+</ContentMetaData>

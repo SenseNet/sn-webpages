@@ -1,0 +1,2 @@
+<%@ Language="C#" AutoEventWireup="true" Inherits="SenseNet.Portal.UI.SingleContentView" EnableViewState="false" %>
+<sn:ShortText ID="HTMLFragment" runat="server" FieldName="HTMLFragment" EnableViewState="false"/>

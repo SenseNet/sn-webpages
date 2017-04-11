@@ -1,0 +1,53 @@
+﻿<% string snLang = SenseNet.Portal.Virtualization.PortalContext.Current?.Site?.Language ?? "en-us"; %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="<%=snLang%>" xml:lang="<%=snLang%>">
+<head>
+    <title><%=HttpContext.GetGlobalResourceObject("Portal", "SenseNetDemoSiteTitle")%></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <sn:BaseTag ID="BaseTagControl1" runat="server" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+</head>
+
+<body class="sn-body sn-layout3 sn-layout-inter sn-inter-<%=snLang%>">
+    <% string snLang = SenseNet.Portal.Virtualization.PortalContext.Current?.Site?.Language ?? "en-us"; %>
+
+    <sn:CssRequest CSSPath="$skin/styles/jqueryui/jquery-ui.css" ID="pageTemplateUIStyleReq" runat="server" />
+    <sn:CssRequest CSSPath="$skin/styles/jqueryui/jquery-ui-sntheme.css" ID="pageTemplateUIStyleReq2" runat="server" />
+    <sn:CssRequest CSSPath="$skin/styles/sn-layout.css" ID="snLayoutCss" runat="server" />
+    <sn:CssRequest CSSPath="$skin/styles/skin.css" ID="pageTemplateCssRequest" runat="server" />
+    <sn:CssRequest CSSPath="$skin/styles/kendoui/kendo.common.min.css" ID="kendoCommonCssRequest" runat="server" />
+    <sn:CssRequest CSSPath="$skin/styles/kendoui/kendo.metro.min.css" ID="kendoFlatCssRequest" runat="server"/>
+    <sn:CssRequest CSSPath="https://fonts.googleapis.com/css?family=Open+Sans" ID="fontRequest" runat="server" /> 
+
+    <div class="sn-layout-container ui-helper-clearfix">
+        <snpe:ClientContextPortlet runat="server" id="ClientContext" />
+        <div class="sn-layout-head">
+            <div class="sn-layout-head-left">
+                <h1 class="sn-logo"><span class="bold">sensenet</span> permission overview</h1>
+            </div>
+            <div class="sn-layout-head-right">
+                <div class="sn-login">
+                    <snpe:advancedloginportlet title="&lt;%$ Resources: PortletTitle, Login %&gt;" id="login" runat="server" loginviewpath="/Root/System/SystemPlugins/Portlets/AdvancedLogin/AdvancedLoginView.ascx"
+                                               cssclass="sn-advancedLogin" />
+                </div>
+            </div>
+        </div>
+
+
+        <div class="sn-layout-full">
+            <!--SPLITTER CONTAINER-->
+            <div class="sn-splitter">
+                <snpe-zone name="SplitterLeft" HeaderText="Splitter Left" PartChromeType="None"></snpe-zone>
+            </div>
+
+        </div>
+
+    </div>
+    <sn:ScriptRequest runat="server" Path="$skin/scripts/init.js" ID="initRequest" />
+    <sn:ScriptRequest runat="server" Path="$skin/scripts/kendoui/kendo.web.min.js" id="kendoJs" />
+
+
+</body>
+</html>

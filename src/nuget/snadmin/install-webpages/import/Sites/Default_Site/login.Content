@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentMetaData>
+  <ContentType>Page</ContentType>
+  <ContentName>login</ContentName>
+  <Fields>
+    <DisplayName>login</DisplayName>
+    <PageTemplateNode>
+      <Path>/Root/Global/pagetemplates/sn-layout-login.html</Path>
+    </PageTemplateNode>
+    <Hidden>true</Hidden>
+    <Binary attachment="login.aspx" />
+    <PersonalizationSettings attachment="login.PersonalizationSettings" />
+  </Fields>
+  <Permissions>
+    <Clear />
+    <Break />
+    <Identity path="/Root/IMS/BuiltIn/Portal/Everyone">
+      <See>Allow</See>
+      <Preview>Allow</Preview>
+      <PreviewWithoutWatermark>Allow</PreviewWithoutWatermark>
+      <PreviewWithoutRedaction>Allow</PreviewWithoutRedaction>
+      <Open>Allow</Open>
+      <RunApplication>Allow</RunApplication>
+    </Identity>
+    <Identity path="/Root/IMS/BuiltIn/Portal/Visitor">
+      <See>Allow</See>
+      <Preview>Allow</Preview>
+      <PreviewWithoutWatermark>Allow</PreviewWithoutWatermark>
+      <PreviewWithoutRedaction>Allow</PreviewWithoutRedaction>
+      <Open>Allow</Open>
+      <RunApplication>Allow</RunApplication>
+    </Identity>
+    <Identity path="/Root/IMS/BuiltIn/Portal/Administrators">
+      <See>Allow</See>
+      <Preview>Allow</Preview>
+      <PreviewWithoutWatermark>Allow</PreviewWithoutWatermark>
+      <PreviewWithoutRedaction>Allow</PreviewWithoutRedaction>
+      <Open>Allow</Open>
+      <OpenMinor>Allow</OpenMinor>
+      <Save>Allow</Save>
+      <Publish>Allow</Publish>
+      <ForceCheckin>Allow</ForceCheckin>
+      <AddNew>Allow</AddNew>
+      <Approve>Allow</Approve>
+      <Delete>Allow</Delete>
+      <RecallOldVersion>Allow</RecallOldVersion>
+      <DeleteOldVersion>Allow</DeleteOldVersion>
+      <SeePermissions>Allow</SeePermissions>
+      <SetPermissions>Allow</SetPermissions>
+      <RunApplication>Allow</RunApplication>
+      <ManageListsAndWorkspaces>Allow</ManageListsAndWorkspaces>
+      <TakeOwnership>Allow</TakeOwnership>
+    </Identity>
+  </Permissions>
+</ContentMetaData>

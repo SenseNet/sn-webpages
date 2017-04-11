@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentMetaData>
+  <ContentType>Page</ContentType>
+  <ContentName>Browse</ContentName>
+  <Fields>
+    <PageTemplateNode>
+      <Path>/Root/Global/pagetemplates/sn-layout-dialog.html</Path>
+    </PageTemplateNode>
+    <Hidden>false</Hidden>
+    <Index>0</Index>
+    <SmartUrl><![CDATA[]]></SmartUrl>
+    <IsExternal>false</IsExternal>
+    <OuterUrl><![CDATA[]]></OuterUrl>
+    <MetaTitle><![CDATA[]]></MetaTitle>
+    <Keywords><![CDATA[]]></Keywords>
+    <MetaDescription><![CDATA[]]></MetaDescription>
+    <MetaAuthors><![CDATA[]]></MetaAuthors>
+    <CustomMeta><![CDATA[]]></CustomMeta>
+    <Binary attachment="Browse.aspx" />
+    <PersonalizationSettings attachment="Browse.PersonalizationSettings" />
+    <DisplayName><![CDATA[$Action,Browse]]></DisplayName>
+    <Description><![CDATA[]]></Description>
+    <Scenario><![CDATA[ListItem]]></Scenario>
+    <ActionTypeName><![CDATA[]]></ActionTypeName>
+    <IsModal>false</IsModal>
+    <Disabled>false</Disabled>
+    <Clear>false</Clear>
+    <Icon><![CDATA[browse]]></Icon>
+    <StyleHint><![CDATA[]]></StyleHint>
+    <RequiredPermissions>Open</RequiredPermissions>
+    <DeepPermissionCheck>false</DeepPermissionCheck>
+    <IncludeBackUrl>1</IncludeBackUrl>
+    <CacheControl>Nondefined</CacheControl>
+    <MaxAge><![CDATA[]]></MaxAge>
+    <CustomUrlParameters><![CDATA[]]></CustomUrlParameters>
+    <EnableLifespan>false</EnableLifespan>
+    <ValidFrom>0001-01-01T00:00:00</ValidFrom>
+    <ValidTill>0001-01-01T00:00:00</ValidTill>
+    <VersioningMode>1</VersioningMode>
+    <InheritableVersioningMode>1</InheritableVersioningMode>
+    <CreatedBy>
+      <Path>/Root/IMS/BuiltIn/Portal/Admin</Path>
+    </CreatedBy>
+    <CreationDate>2012-07-19T14:14:18.78</CreationDate>
+    <ModifiedBy>
+      <Path>/Root/IMS/BuiltIn/Portal/Admin</Path>
+    </ModifiedBy>
+    <ModificationDate>2012-10-25T11:49:45.613</ModificationDate>
+    <ApprovingMode>1</ApprovingMode>
+    <InheritableApprovingMode>1</InheritableApprovingMode>
+    <TrashDisabled>false</TrashDisabled>
+    <IsTaggable>false</IsTaggable>
+    <IsRateable>false</IsRateable>
+    <RateAvg>0.0000</RateAvg>
+    <RateCount>0</RateCount>
+  </Fields>
+  <Permissions>
+    <Clear />
+    <Break />
+    <Identity path="/Root/IMS/BuiltIn/Portal/Administrators">
+      <See>Allow</See>
+      <Preview>Allow</Preview>
+      <PreviewWithoutWatermark>Allow</PreviewWithoutWatermark>
+      <PreviewWithoutRedaction>Allow</PreviewWithoutRedaction>
+      <Open>Allow</Open>
+      <OpenMinor>Allow</OpenMinor>
+      <Save>Allow</Save>
+      <Publish>Allow</Publish>
+      <ForceCheckin>Allow</ForceCheckin>
+      <AddNew>Allow</AddNew>
+      <Approve>Allow</Approve>
+      <Delete>Allow</Delete>
+      <RecallOldVersion>Allow</RecallOldVersion>
+      <DeleteOldVersion>Allow</DeleteOldVersion>
+      <SeePermissions>Allow</SeePermissions>
+      <SetPermissions>Allow</SetPermissions>
+      <RunApplication>Allow</RunApplication>
+      <ManageListsAndWorkspaces>Allow</ManageListsAndWorkspaces>
+      <TakeOwnership>Allow</TakeOwnership>
+    </Identity>
+    <Identity path="/Root/IMS/BuiltIn/Portal/IdentifiedUsers">
+      <RunApplication>Allow</RunApplication>
+    </Identity>
+  </Permissions>
+</ContentMetaData>

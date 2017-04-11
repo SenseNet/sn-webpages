@@ -1,0 +1,53 @@
+﻿<% string snLang = SenseNet.Portal.Virtualization.PortalContext.Current?.Site?.Language ?? "en-us"; %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="<%=snLang%>" xml:lang="<%=snLang%>">
+<head>
+    <title><% = (SenseNet.Portal.Virtualization.PortalContext.Current.Workspace != null) ? SenseNet.ContentRepository.Content.Create(SenseNet.Portal.Virtualization.PortalContext.Current.Workspace).DisplayName : "Sense/Net" %></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="imagetoolbar" content="no" />
+  <sn:BaseTag ID="BaseTagControl1" runat="server" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+</head>
+
+<body class="sn-body sn-layout1 sn-layout-dialog sn-intra-<%=snLang%>">
+    <% string snLang = SenseNet.Portal.Virtualization.PortalContext.Current?.Site?.Language ?? "en-us"; %>
+  
+  <sn:CssRequest CSSPath="$skin/styles/jqueryui/jquery-ui.css" ID="pageTemplateUIStyleReq" runat="server" />
+  <sn:CssRequest CSSPath="$skin/styles/jqueryui/jquery-ui-sntheme.css" ID="pageTemplateUIStyleReq2" runat="server" />
+  <sn:CssRequest CSSPath="$skin/styles/sn-layout.css" ID="snLayoutCss" runat="server" />
+  <sn:CssRequest CSSPath="$skin/styles/skin.css" ID="pageTemplateCssRequest1" runat="server" />
+    
+  <div class="sn-layout-container ui-helper-clearfix">
+    <div class="sn-columns ui-helper-clearfix">
+      <div class="sn-column sn-column1">
+        <div class="sn-pt-body-border ui-widget-content">
+          <div class="sn-pt-body">
+            <div class="sn-breadcrumb">
+              <snpe:BreadCrumbPortlet BindTarget="CurrentSite" ID="BreadCrumb" runat="server" Separator=" / " ShowSite="True" SiteDisplayName="<%$ Resources: Portal, Home %>" />
+            </div>
+          </div>
+        </div>
+
+        <snpe-zone name="WideCol" HeaderText="Wide Column" PartChromeType="TitleAndBorder"/>
+        <div class="sn-columns ui-helper-clearfix">
+            <div class="sn-column sn-column1"><snpe-zone name="LeftCol" HeaderText="Left Column" PartChromeType="TitleAndBorder"/></div>
+            <div class="sn-column sn-column2"><snpe-zone name="RightCol" HeaderText="Right Column" PartChromeType="TitleAndBorder"/></div>
+        </div>
+        <snpe-zone name="WideColBottom" HeaderText="Wide Column (Bottom)" PartChromeType="TitleAndBorder"/>
+
+        <div class="sn-pt-body-border ui-widget-content">
+          <div class="sn-pt-body">
+            <%=HttpContext.GetGlobalResourceObject("Portal", "AfterCompleting")%> <a href="<% = SenseNet.Portal.Virtualization.PortalContext.Current.BackUrl %>"><% = SenseNet.Portal.Virtualization.PortalContext.Current.BackUrlTitle %></a>
+          </div>
+        </div>
+        <snpe:UserControlPortlet ID="SensenetVersionInfo" ControlPath="/Root/Global/renderers/SensenetVersion.ascx" ChromeType="None" runat="server" />
+      </div>
+    </div>
+  </div>
+          
+<!-- prc -->
+<snpe:PortalRemoteControl ID="RemoteControl" runat="server" />
+<sn:ScriptRequest runat="server" Path="$skin/scripts/init.js" />
+</body>
+</html>

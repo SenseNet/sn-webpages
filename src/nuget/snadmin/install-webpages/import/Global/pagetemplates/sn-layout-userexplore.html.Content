@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentMetaData>
+  <ContentType>PageTemplate</ContentType>
+  <ContentName>sn-layout-userexplore.html</ContentName>
+  <Fields>
+    <Binary attachment="sn-layout-userexplore.html" />
+    <DisplayName><![CDATA[sn-layout-userexplore.html]]></DisplayName>
+    <ModifiedBy>
+      <Path>/Root/IMS/BuiltIn/Portal/Admin</Path>
+    </ModifiedBy>
+    <ModificationDate>2016-05-23T09:51:18.66</ModificationDate>
+    <PageCount>-4</PageCount>
+    <Description><![CDATA[]]></Description>
+    <Owner>
+      <Path>/Root/IMS/BuiltIn/Portal/Admin</Path>
+    </Owner>
+    <Hidden>false</Hidden>
+    <Index>0</Index>
+    <EnableLifespan>false</EnableLifespan>
+    <ValidFrom>0001-01-01T00:00:00</ValidFrom>
+    <ValidTill>0001-01-01T00:00:00</ValidTill>
+    <CreatedBy>
+      <Path>/Root/IMS/BuiltIn/Portal/Admin</Path>
+    </CreatedBy>
+    <CreationDate>2016-05-23T09:51:18.66</CreationDate>
+    <TrashDisabled>false</TrashDisabled>
+    <IsTaggable>false</IsTaggable>
+    <Tags><![CDATA[]]></Tags>
+    <IsRateable>false</IsRateable>
+    <RateAvg>0.0000</RateAvg>
+    <RateCount>0</RateCount>
+  </Fields>
+  <Permissions>
+    <Clear />
+  </Permissions>
+</ContentMetaData>

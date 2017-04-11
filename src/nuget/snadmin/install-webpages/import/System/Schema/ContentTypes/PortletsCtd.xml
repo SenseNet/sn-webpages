@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentType name="Portlets" parentType="SystemFolder" handler="SenseNet.ContentRepository.SystemFolder" xmlns="http://schemas.sensenet.com/SenseNet/ContentRepository/ContentTypeDefinition">
+  <DisplayName>$Ctd-Portlets,DisplayName</DisplayName>
+  <Description>$Ctd-Portlets,Description</Description>
+  <Icon>Folder</Icon>
+  <AllowedChildTypes>
+    PortletCategory
+  </AllowedChildTypes>
+  <Fields></Fields>
+</ContentType>

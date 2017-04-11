@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentMetaData>
+  <ContentType>SystemFolder</ContentType>
+  <ContentName>images</ContentName>
+  <Fields>
+    <Hidden>true</Hidden>
+  </Fields>
+  <Permissions>
+    <Clear />
+    <Identity path="/Root/IMS/BuiltIn/Portal/Everyone">
+      <Open>Allow</Open>
+    </Identity>
+    <Identity path="/Root/IMS/BuiltIn/Portal/Visitor">
+      <Open>Allow</Open>
+    </Identity>
+  </Permissions>
+</ContentMetaData>

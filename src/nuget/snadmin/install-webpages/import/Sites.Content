@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentMetaData>
+  <ContentType>Sites</ContentType>
+  <ContentName>Sites</ContentName>
+  <Permissions>
+    <Clear />
+    <Identity path="/Root/IMS/BuiltIn/Portal/IdentifiedUsers" propagation="LocalOnly">
+      <Open>Allow</Open>
+    </Identity>
+  </Permissions>
+</ContentMetaData>

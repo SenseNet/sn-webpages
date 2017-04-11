@@ -1,0 +1,31 @@
+﻿.sn-gallery-table {padding: 10px 0px 0px;}
+.galleryContainer .sn-listgrid-container {margin-bottom: 0;}
+.sn-gallery-cell {width: 120px;text-align: left;padding: 10px 20px 10px 21px;border: 1px solid #eee;color: #999;font-size: 11px;}
+.sn-gallery-cell .sn-image {text-align: center;}
+.sn-gallery-cell img {display: block; border: solid 2px #eee;cursor:pointer;max-width: 120px; max-height: 120px;margin: auto;}
+a.sn-gallery-img {  display: table-cell;  position: relative;  width: 120px;  height: 120px; vertical-align: middle;}
+.sn-gallery-cell img.svgimage {width: 120px;height: 120px}
+.sn-gallery-cell .sn-title {font-weight: bold;text-align: center;color: #333;}
+.sn-modifiedby {text-align: left;margin-top: 5px;font-size: 11px;}
+.sn-modifiedby span {display: block;margin-top: 5px;}
+.sn-modifiedby .sn-actionlinkbutton {padding: 2px 0px;color: #999;}
+.sn-modifiedby .sn-actionlinkbutton:hover {color: #007DC2;}
+.sn-gallery-toolbar {border: none}
+.sn-gallery-toolbar .sn-toolbar-inner {background: none;border: none;}
+.sn-gallery-toolbar .sn-toolbar-btngroup {border: solid 1px #ccc;border-radius:3px;}
+.sn-gallery-toolbar .sn-toolbar-btngroup div {float:left;padding: 5px;}
+.sn-gallery-hover {background: #eee;}
+.sn-gallery-toolbar .sn-disabled {color: #333 !important;cursor: default !important;text-shadow: 1px 1px #FFFFFF !important;}
+.div.pp_pic_holder {min-width: 300px;}
+.sn-gallery-toolbar .sn-disabled img {opacity: 1;}
+.sn-listgrid-container {overflow-x:hidden;}
+.sn-galleries-list {width: 100%; height: 120px;}
+.sn-galleries-list a {display: table; width: 100%; height: 100%;}
+.imgHolder {display: table-cell; vertical-align: middle; width: 120px;}
+.sn-galleries-list img.galleryThumb {max-height: 120px; max-width: 120px;}
+.sn-galleries-list .textHolder {display: table-cell; vertical-align: middle; padding-left: 20px; width: 700px; max-height: 100%;}
+.textHolder h1.sn-content-title {font-size: 16px; margin-bottom: 5px;}
+@media only screen and (max-width: 1050px) 
+{
+.sn-gallery-cell img, .sn-gallery-cell img.svgimage {width: 88px;height: 88px}
+}

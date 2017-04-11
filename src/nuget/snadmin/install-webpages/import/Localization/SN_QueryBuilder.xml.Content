@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentMetaData>
+  <ContentType>Resource</ContentType>
+  <ContentName>SN_QueryBuilder.xml</ContentName>
+  <Fields>
+    <Binary attachment="SN_QueryBuilder.xml" />
+    <DisplayName><![CDATA[SN_QueryBuilder.xml]]></DisplayName>
+    <ModifiedBy>
+      <Path>/Root/IMS/BuiltIn/Portal/Admin</Path>
+    </ModifiedBy>
+    <ModificationDate>2013-04-23T16:26:55.58</ModificationDate>
+    <Description><![CDATA[]]></Description>
+    <Shapes><![CDATA[]]></Shapes>
+    <Hidden>false</Hidden>
+    <Index>0</Index>
+    <EnableLifespan>false</EnableLifespan>
+    <ValidFrom>0001-01-01T00:00:00</ValidFrom>
+    <ValidTill>0001-01-01T00:00:00</ValidTill>
+    <CreatedBy>
+      <Path>/Root/IMS/BuiltIn/Portal/Admin</Path>
+    </CreatedBy>
+    <CreationDate>2013-04-23T16:26:28.893</CreationDate>
+    <TrashDisabled>false</TrashDisabled>
+    <IsTaggable>false</IsTaggable>
+    <IsRateable>false</IsRateable>
+    <RateAvg>0.0000</RateAvg>
+    <RateCount>0</RateCount>
+  </Fields>
+  <Permissions>
+    <Clear />
+  </Permissions>
+</ContentMetaData>

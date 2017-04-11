@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources>
+  <ResourceClass name="ImageEditor">
+    <Languages>
+      <Language cultureName="en">
+        <data name="crop" xml:space="preserve">
+          <value>Crop</value>
+        </data>
+        <data name="rotate-left" xml:space="preserve">
+          <value>Rotate left</value>
+        </data>
+        <data name="rotate-right" xml:space="preserve">
+          <value>Rotate right</value>
+        </data>
+        <data name="flip-horizontal" xml:space="preserve">
+          <value>Flip horizontal</value>
+        </data>
+        <data name="flip-vertical" xml:space="preserve">
+          <value>Flip vertical</value>
+        </data>
+        <data name="text" xml:space="preserve">
+          <value>Text</value>
+        </data>
+        <data name="crop" xml:space="preserve">
+          <value>Crop</value>
+        </data>
+        <data name="download" xml:space="preserve">
+          <value>Download</value>
+        </data>
+        <data name="upload" xml:space="preserve">
+          <value>Continue uploading</value>
+        </data>
+        <data name="undo" xml:space="preserve">
+          <value>Undo</value>
+        </data>
+        <data name="redo" xml:space="preserve">
+          <value>Redo</value>
+        </data>
+        <data name="successTitle" xml:space="preserve">
+          <value>Success!</value>
+        </data>
+        <data name="successMessage" xml:space="preserve">
+          <value>Image saved successfully!</value>
+        </data>
+        <data name="filter" xml:space="preserve">
+          <value>Filter</value>
+        </data>
+        <data name="boxBlur" xml:space="preserve">
+          <value>Blur</value>
+        </data>
+        <data name="gaussianBlur" xml:space="preserve">
+          <value>Gaussian blur</value>
+        </data>
+        <data name="sharp" xml:space="preserve">
+          <value>Sharpen</value>
+        </data>
+        <data name="desaturate" xml:space="preserve">
+          <value>Desaturate</value>
+        </data>
+        <data name="invert" xml:space="preserve">
+          <value>Invert</value>
+        </data>
+        <data name="detectEdges" xml:space="preserve">
+          <value>Detect edges</value>
+        </data>
+        <data name="emboss" xml:space="preserve">
+          <value>Emboss</value>
+        </data>
+        <data name="grayscale" xml:space="preserve">
+          <value>Greyscale</value>
+        </data>
+        <data name="sepia" xml:space="preserve">
+          <value>Sepia</value>
+        </data>
+        <data name="brighten" xml:space="preserve">
+          <value>Brightness and contrast</value>
+        </data>
+        <data name="sharpen" xml:space="preserve">
+          <value>Sharpen</value>
+        </data>
+        <data name="threshold" xml:space="preserve">
+          <value>Threshold</value>
+        </data>
+        <data name="sobel" xml:space="preserve">
+          <value>Sobel</value>
+        </data>
+        <data name="color" xml:space="preserve">
+          <value>Color</value>
+        </data>
+        <data name="red" xml:space="preserve">
+          <value>Red</value>
+        </data>
+        <data name="green" xml:space="preserve">
+          <value>Green</value>
+        </data>
+        <data name="blue" xml:space="preserve">
+          <value>Blue</value>
+        </data>
+        <data name="onlyImage" xml:space="preserve">
+          <value>Only images can be uploaded and edited with the image editor.</value>
+        </data>
+        <data name="bold" xml:space="preserve">
+          <value>Bold</value>
+        </data>
+        <data name="italic" xml:space="preserve">
+          <value>Italic</value>
+        </data>
+        <data name="subscript" xml:space="preserve">
+          <value>Subscript</value>
+        </data>
+        <data name="superscript" xml:space="preserve">
+          <value>Superscript</value>
+        </data>
+        <data name="underline" xml:space="preserve">
+          <value>Underline</value>
+        </data>
+        <data name="striketrough" xml:space="preserve">
+          <value>Striketrough</value>
+        </data>
+        <data name="color-picker" xml:space="preserve">
+          <value>Color picker</value>
+        </data>
+        <data name="Save" xml:space="preserve">
+          <value>Save</value>
+        </data>
+        <data name="Cancel" xml:space="preserve">
+          <value>Cancel</value>
+        </data>
+        <data name="brightness" xml:space="preserve">
+          <value>brightness</value>
+        </data>
+        <data name="contrast" xml:space="preserve">
+          <value>contrast</value>
+        </data>
+        <data name="pleaseCropMessage" xml:space="preserve">
+          <value>Crop the image?</value>
+        </data>
+        <data name="DontCrop" xml:space="preserve">
+          <value>Don't Crop</value>
+        </data>
+        <data name="resize" xml:space="preserve">
+          <value>Resize</value>
+        </data>
+        <data name="constrainProportions" xml:space="preserve">
+          <value>Constrain Proportions</value>
+        </data>
+        <data name="LogInMessage" xml:space="preserve">
+          <value>Please login to use the upload functionality!</value>
+        </data>
+        <data name="close" xml:space="preserve">
+          <value>Close</value>
+        </data>
+        <data name="backtoUpload" xml:space="preserve">
+          <value>Back to Upload</value>
+        </data>
+        <data name="backtoLibrary" xml:space="preserve">
+          <value>Back to Library</value>
+        </data>
+      </Language>
+      <Language cultureName="hu">
+        <data name="crop" xml:space="preserve">
+          <value>Kivágás</value>
+        </data>
+        <data name="rotate-left" xml:space="preserve">
+          <value>Forgatás balra</value>
+        </data>
+        <data name="rotate-right" xml:space="preserve">
+          <value>Forgatás jobbra</value>
+        </data>
+        <data name="download" xml:space="preserve">
+          <value>Letöltés</value>
+        </data>
+        <data name="upload" xml:space="preserve">
+          <value>Feltöltés folytatása</value>
+        </data>
+        <data name="undo" xml:space="preserve">
+          <value>Visszalépés</value>
+        </data>
+        <data name="redo" xml:space="preserve">
+          <value>Előre lépés</value>
+        </data>
+        <data name="successTitle" xml:space="preserve">
+          <value></value>
+        </data>
+        <data name="successMessage" xml:space="preserve">
+          <value>A mentés sikeres volt!</value>
+        </data>
+        <data name="flip-horizontal" xml:space="preserve">
+          <value>Vízszintes tükrözés</value>
+        </data>
+        <data name="flip-vertical" xml:space="preserve">
+          <value>Függőleges tükrőzés</value>
+        </data>
+        <data name="filter" xml:space="preserve">
+          <value>Filter</value>
+        </data>
+        <data name="boxBlur" xml:space="preserve">
+          <value>Homályosítás</value>
+        </data>
+        <data name="gaussianBlur" xml:space="preserve">
+          <value>Gaussian blur</value>
+        </data>
+        <data name="sharp" xml:space="preserve">
+          <value>Élesítés</value>
+        </data>
+        <data name="desaturate" xml:space="preserve">
+          <value>Deszaturáció</value>
+        </data>
+        <data name="invert" xml:space="preserve">
+          <value>Invertálás</value>
+        </data>
+        <data name="detectEdges" xml:space="preserve">
+          <value>Detect edges</value>
+        </data>
+        <data name="emboss" xml:space="preserve">
+          <value>Emboss</value>
+        </data>
+        <data name="grayscale" xml:space="preserve">
+          <value>Szürkeárnyalat</value>
+        </data>
+        <data name="brighten" xml:space="preserve">
+          <value>Világosság és kontraszt</value>
+        </data>
+        <data name="sharpen" xml:space="preserve">
+          <value>Élesítés</value>
+        </data>
+        <data name="threshold" xml:space="preserve">
+          <value>Threshold</value>
+        </data>
+        <data name="sobel" xml:space="preserve">
+          <value>Sobel</value>
+        </data>
+        <data name="color" xml:space="preserve">
+          <value>Színcsatornák</value>
+        </data>
+        <data name="red" xml:space="preserve">
+          <value>Vörös</value>
+        </data>
+        <data name="green" xml:space="preserve">
+          <value>Zöld</value>
+        </data>
+        <data name="blue" xml:space="preserve">
+          <value>Kék</value>
+        </data>
+        <data name="onlyImage" xml:space="preserve">
+          <value>Csak képet lehet feltölteni és szerkeszteni!</value>
+        </data>
+        <data name="text" xml:space="preserve">
+          <value>Szöveg</value>
+        </data>
+        <data name="bold" xml:space="preserve">
+          <value>Félkövér</value>
+        </data>
+        <data name="italic" xml:space="preserve">
+          <value>Dőlt</value>
+        </data>
+        <data name="subscript" xml:space="preserve">
+          <value>Alsó index</value>
+        </data>
+        <data name="superscript" xml:space="preserve">
+          <value>Felső index</value>
+        </data>
+        <data name="underline" xml:space="preserve">
+          <value>Aláhúzás</value>
+        </data>
+        <data name="striketrough" xml:space="preserve">
+          <value>Áthúzás</value>
+        </data>
+        <data name="color-picker" xml:space="preserve">
+          <value>Pipetta</value>
+        </data>
+        <data name="Save" xml:space="preserve">
+          <value>Mentés</value>
+        </data>
+        <data name="Cancel" xml:space="preserve">
+          <value>Mégsem</value>
+        </data>
+        <data name="brightness" xml:space="preserve">
+          <value>világosság</value>
+        </data>
+        <data name="contrast" xml:space="preserve">
+          <value>kontraszt</value>
+        </data>
+        <data name="sepia" xml:space="preserve">
+          <value>Szépia</value>
+        </data>
+        <data name="pleaseCropMessage" xml:space="preserve">
+          <value>Biztosan kivágja?</value>
+        </data>
+        <data name="DontCrop" xml:space="preserve">
+          <value>Ne vágjon</value>
+        </data>
+        <data name="resize" xml:space="preserve">
+          <value>Átméretezés</value>
+        </data>
+        <data name="constrainProportions" xml:space="preserve">
+          <value>Arányok megtartása</value>
+        </data>
+        <data name="LogInMessage" xml:space="preserve">
+          <value>A feltöltés funkcióhoz kérjük, jelentkezzen be!</value>
+        </data>
+        <data name="close" xml:space="preserve">
+          <value>Bezárás</value>
+        </data>
+        <data name="backtoUpload" xml:space="preserve">
+          <value>Vissza a feltöltéshez</value>
+        </data>
+        <data name="backtoLibrary" xml:space="preserve">
+          <value>Vissza a galériához</value>
+        </data>
+      </Language>
+    </Languages>
+  </ResourceClass>
+</Resources>

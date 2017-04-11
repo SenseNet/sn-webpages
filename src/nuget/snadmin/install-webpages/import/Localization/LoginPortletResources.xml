@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<Resources>
+  <ResourceClass name="LoginPortlet">
+    <Languages>
+      <Language cultureName="en">
+        <data name="LoginText" xml:space="preserve">
+				  <value>Please enter your username and password</value>
+				</data>
+        <data name="UsernameLabel" xml:space="preserve">
+				  <value>Username</value>
+				</data>
+        <data name="PasswordLabel" xml:space="preserve">
+				  <value>Password</value>
+				</data>
+        <data name="DefaultInputText" xml:space="preserve">
+				  <value>username</value>
+				</data>
+        <data name="RememberMe" xml:space="preserve">
+				  <value>Remember my login</value>
+				</data>
+        <data name="LoginButtonTitle" xml:space="preserve">
+				  <value>Login</value>
+				</data>
+        <data name="ForgotPass" xml:space="preserve">
+				  <value>Forgot your password?</value>
+				</data>
+        <data name="Registration" xml:space="preserve">
+				  <value>Registration</value>
+				</data>
+        <data name="LoggedIn" xml:space="preserve">
+				  <value>Logged in as</value>
+				</data>
+        <data name="Welcome" xml:space="preserve">
+				  <value>Welcome {0}</value>
+				</data>
+        <data name="EditProfile" xml:space="preserve">
+				  <value>Edit profile</value>
+				</data>
+        <data name="ChangePassword" xml:space="preserve">
+				  <value>Change password</value>
+				</data>
+        <data name="Logout" xml:space="preserve">
+				  <value>Logout</value>
+				</data>
+        <data name="FailureText" xml:space="preserve">
+				  <value>Wrong username or password.</value>
+				</data>
+        <data name="LoginAs" xml:space="preserve">
+				  <value>Login as</value>
+				</data>
+        <data name="AlbaMonday" xml:space="preserve">
+				  <value>
+                 <small>She can create and edit workspaces, add and modify documents.</small>
+                 <small class="sn-link">username: <strong>alba</strong> / password: <strong>alba</strong></small>
+          </value>
+				</data>
+        <data name="MikeScroll" xml:space="preserve">
+				  <value>
+                <small>He can create new pagetemplates, views, content types.</small>
+                <small class="sn-link">username: <strong>mike</strong> / password: <strong>mike</strong></small>
+          </value>
+				</data>
+        <data name="Admin" xml:space="preserve">
+				  <value>
+                <small>She has full control in the ECM system, she can also create sites and users.</small>
+                <small class="sn-link">username: <strong>admin</strong> / password: <strong>admin</strong></small>
+          </value>
+				</data>
+        <data name="Manager" xml:space="preserve">
+				  <value>(Manager)</value>
+				</data>
+        <data name="Developer" xml:space="preserve">
+				  <value>(Developer)</value>
+				</data>
+        <data name="Administrator" xml:space="preserve">
+				  <value>(Admin)</value>
+				</data>
+        <data name="MyBooks" xml:space="preserve">
+				  <value>My books</value>
+				</data>
+        <data name="EditProfile" xml:space="preserve">
+				  <value>Edit profile</value>
+				</data>
+        <data name="Welcome" xml:space="preserve">
+				  <value>Welcome</value>
+				</data>
+        <data name="BackToHome" xml:space="preserve">
+				  <value>Back to home</value>
+				</data>
+      </Language>
+      <Language cultureName="hu">
+        <data name="LoginText" xml:space="preserve">
+				  <value>Adja meg felhasználónevét és jelszavát</value>
+				</data>
+        <data name="UsernameLabel" xml:space="preserve">
+				  <value>Felhasználónév</value>
+				</data>
+        <data name="PasswordLabel" xml:space="preserve">
+				  <value>Jelszó</value>
+				</data>
+        <data name="DefaultInputText" xml:space="preserve">
+				  <value>felhasználónév</value>
+				</data>
+        <data name="RememberMe" xml:space="preserve">
+				  <value>Bejelentkezés megjegyzése</value>
+				</data>
+        <data name="LoginButtonTitle" xml:space="preserve">
+				  <value>Bejelentkezés</value>
+				</data>
+        <data name="ForgotPass" xml:space="preserve">
+				  <value>Elfelejtett jelszó?</value>
+				</data>
+        <data name="Registration" xml:space="preserve">
+				  <value>Regisztráció</value>
+				</data>
+        <data name="LoggedIn" xml:space="preserve">
+				  <value>Belépve: </value>
+				</data>
+        <data name="Welcome" xml:space="preserve">
+				  <value>Üdvözöljük! ({0})</value>
+				</data>
+        <data name="EditProfile" xml:space="preserve">
+				  <value>Profil szerkesztése</value>
+				</data>
+        <data name="ChangePassword" xml:space="preserve">
+				  <value>Jelszó módosítása</value>
+				</data>
+        <data name="Logout" xml:space="preserve">
+				  <value>Kijelentkezés</value>
+				</data>
+        <data name="FailureText" xml:space="preserve">
+				  <value>Rossz felhasználónév vagy jelszó.</value>
+				</data>
+        <data name="LoginAs" xml:space="preserve">
+				  <value>Belépés mint</value>
+				</data>
+        <data name="AlbaMonday" xml:space="preserve">
+				  <value>
+                 <small>Létrehozhat és szerkeszthet munkaterületeket, feltölthet és módosíthat dokumentumokat.</small>
+                 <small class="sn-link">felhasználónév: <strong>alba</strong> / jelszó: <strong>alba</strong></small>
+          </value>
+				</data>
+        <data name="MikeScroll" xml:space="preserve">
+				  <value>
+                <small>Létrehozhaz új oldalsablonokat, megjelenítőket és tartalom típusokat.</small>
+                <small class="sn-link">felhasználónév: <strong>mike</strong> / jelszó: <strong>mike</strong></small>
+          </value>
+				</data>
+        <data name="Admin" xml:space="preserve">
+				  <value>
+                <small>Teljeskörű jogai vannak a portálon, site-okat és felhasználókat is létrehozhat.</small>
+                <small class="sn-link">felhasználónév: <strong>admin</strong> / jelszó: <strong>admin</strong></small>
+          </value>
+				</data>
+        <data name="Manager" xml:space="preserve">
+				  <value>(Menedzser)</value>
+				</data>
+        <data name="Developer" xml:space="preserve">
+				  <value>(Fejlesztő)</value>
+				</data>
+        <data name="Administrator" xml:space="preserve">
+				  <value>(Adminisztrátor)</value>
+				</data>
+        <data name="MyBooks" xml:space="preserve">
+				  <value>Könyveim</value>
+				</data>
+        <data name="EditProfile" xml:space="preserve">
+				  <value>Profil szerkesztése</value>
+				</data>
+        <data name="Welcome" xml:space="preserve">
+				  <value>Üdvözöljük</value>
+				</data>
+        <data name="BackToHome" xml:space="preserve">
+				  <value>Vissza a főoldalra</value>
+				</data>
+      </Language>
+    </Languages>
+  </ResourceClass>
+</Resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentType name="ListView" parentType="ViewBase" handler="SenseNet.Portal.UI.ContentListViews.Handlers.ListView" xmlns="http://schemas.sensenet.com/SenseNet/ContentRepository/ContentTypeDefinition">
+  <DisplayName>$Ctd-ListView,DisplayName</DisplayName>
+  <Description>$Ctd-ListView,Description</Description>
+  <Icon>File</Icon>
+  <Fields>
+    <Field name="Name" type="ShortText">
+      <Description>$Ctd-ListView,Name-Description</Description>
+    </Field>
+    <Field name="Template" type="Reference">
+      <DisplayName>$Ctd-ListView,Template-DisplayName</DisplayName>
+      <Description>$Ctd-ListView,Template-Description</Description>
+      <Configuration>
+        <VisibleBrowse>Hide</VisibleBrowse>
+        <VisibleEdit>Advanced</VisibleEdit>
+        <VisibleNew>Advanced</VisibleNew>
+        <AllowMultiple>false</AllowMultiple>
+        <DefaultValue>/Root/System/SystemPlugins/ListView/Templates/ListView.xslt</DefaultValue>
+      </Configuration>
+    </Field>
+    <Field name="Columns" type="LongText">
+      <DisplayName>$Ctd-ListView,Columns-DisplayName</DisplayName>
+      <Description>$Ctd-ListView,Columns-Description</Description>
+      <Indexing>
+        <Mode>No</Mode>
+      </Indexing>
+      <Configuration>
+        <ControlHint>sn:ColumnSelector</ControlHint>
+      </Configuration>
+    </Field>
+    <Field name="SortBy" type="ShortText">
+      <DisplayName>$Ctd-ListView,SortBy-DisplayName</DisplayName>
+      <Description>$Ctd-ListView,SortBy-Description</Description>
+      <Configuration>
+        <ControlHint>sn:SortingEditor</ControlHint>
+      </Configuration>
+    </Field>
+    <Field name="GroupBy" type="ShortText">
+      <DisplayName>$Ctd-ListView,GroupBy-DisplayName</DisplayName>
+      <Description>$Ctd-ListView,GroupBy-Description</Description>
+      <Configuration>
+        <ControlHint>sn:GroupingEditor</ControlHint>
+      </Configuration>
+    </Field>
+    <Field name="Flat" type="Boolean">
+      <DisplayName>$Ctd-ListView,Flat-DisplayName</DisplayName>
+      <Description>$Ctd-ListView,Flat-Description</Description>
+    </Field>
+    <Field name="Binary" type="Binary">
+      <Description>$Ctd-ListView,Binary-Description</Description>
+      <Configuration>
+        <VisibleBrowse>Advanced</VisibleBrowse>
+        <VisibleEdit>Advanced</VisibleEdit>
+        <VisibleNew>Advanced</VisibleNew>
+      </Configuration>
+    </Field>
+    <Field name="MainScenario" type="ShortText">
+      <DisplayName>$Ctd-ListView,MainScenario-DisplayName</DisplayName>
+      <Description>$Ctd-ListView,MainScenario-Description</Description>
+      <Configuration>
+        <VisibleBrowse>Hide</VisibleBrowse>
+        <VisibleEdit>Advanced</VisibleEdit>
+        <VisibleNew>Advanced</VisibleNew>
+      </Configuration>
+    </Field>
+  </Fields>
+</ContentType>

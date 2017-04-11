@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources>
+  <ResourceClass name="PermissionOverview">
+    <Languages>
+      <Language cultureName="en">
+        <data name="OwnPermission" xml:space="preserve">
+          <value>Current level permission</value>
+        </data>
+        <data name="SubtreePermission" xml:space="preserve">
+          <value>Permission in subtree</value>
+        </data>
+        <data name="infoLegend" xml:space="preserve">
+          <value>
+           <ul class="infoLegend">
+             <li class="explicit-allow">explicitly allowed</li>
+             <li class="implicit-allow">implicitly allowed</li>
+             <li class="from-subtree">in subtree</li>
+             <li class="break">break</li>
+             <li class="local-only">local only</li>
+             <li class="explicit-deny">explicitly denied</li>
+             <li class="implicit-deny">implicitly denied</li>
+           </ul>
+          </value>
+        </data>
+        <data name="infoTitle" xml:space="preserve">
+          <value>Legend</value>
+        </data>
+        <data name="userSelector" xml:space="preserve">
+          <value>Choose another user</value>
+        </data>
+        <data name="rootSelector" xml:space="preserve">
+          <value>Select Root</value>
+        </data>
+        <data name="NoPermissionToSeeCurrentContentPermissions" xml:space="preserve">
+          <value>You are not allowed to see current level permission</value>
+        </data>
+        <data name="NoPermissionToSeeSubPermissions" xml:space="preserve">
+          <value>You are not allowed to see permission in this subtree</value>
+        </data>
+        <data name="LocalOnly" xml:space="preserve">
+          <value>Local only</value>
+        </data>
+        <data name="Break" xml:space="preserve">
+          <value>Break</value>
+        </data>
+      </Language>
+      <Language cultureName="hu">
+        <data name="OwnPermission" xml:space="preserve">
+          <value>Saját szintű jogosultságok</value>
+        </data>
+        <data name="SubtreePermission" xml:space="preserve">
+          <value>Részfa jogosultságok</value>
+        </data>
+        <data name="infoLegend" xml:space="preserve">
+          <value>
+           <ul class="infoLegend">
+             <li class="explicit-allow">effektív jogosultság</li>
+             <li class="implicit-allow">jogosultság</li>
+             <li class="from-subtree">részfa jogosultlságok</li>
+             <li class="break">öröklés megtörés</li>
+             <li class="local-only">nem öröklődő jogosultság</li>
+             <li class="explicit-deny">effektív tiltás</li>
+             <li class="implicit-deny">örökölt tiltás</li>
+           </ul>
+          </value>
+        </data>
+        <data name="infoTitle" xml:space="preserve">
+          <value>Jelmagyarázat</value>
+        </data>
+        <data name="userSelector" xml:space="preserve">
+          <value>Válasszon felhasználót</value>
+        </data>
+        <data name="rootSelector" xml:space="preserve">
+          <value>Válasszon részfát</value>
+        </data>
+        <data name="NoPermissionToSeeCurrentContentPermissions" xml:space="preserve">
+          <value>Önnek nincs joga látni az aktuális tartalom jogosultságait</value>
+        </data>
+        <data name="NoPermissionToSeeSubPermissions" xml:space="preserve">
+          <value>Önnek nincs joga látni a jogosultságokat ebben a részfában</value>
+        </data>
+        <data name="LocalOnly" xml:space="preserve">
+          <value>Nem öröklődő</value>
+        </data>
+        <data name="Break" xml:space="preserve">
+          <value>Megtörés</value>
+        </data>
+      </Language>
+    </Languages>
+  </ResourceClass>
+</Resources>

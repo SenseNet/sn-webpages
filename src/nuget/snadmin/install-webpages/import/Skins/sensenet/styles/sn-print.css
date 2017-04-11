@@ -1,0 +1,27 @@
+﻿body {
+    background: white !important;
+}
+.sn-body {
+    min-width: 500px;
+    margin: 10px;
+    width: calc(100% - 20px);
+    width: 95%;
+}
+.sn-layout-container.ui-helper-clearfix {
+    width: 100%;
+    background-color: white;
+}
+.sn-article-content .sn-article-info {
+    background-color: white;
+    border: none !important;
+    padding-left: 0;
+}
+.sn-content-title {color:black;}
+.sn-content-actions {display: none;}
+.addthis_native_toolbox, .addthis_sharing_toolbox {display: none;}
+
+@media print {
+    input.sn-button {
+    display: none !important;
+  }
+}

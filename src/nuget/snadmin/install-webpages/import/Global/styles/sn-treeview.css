@@ -1,0 +1,7 @@
+﻿   .k-in .k-state-hover, .k-state-hover:hover {
+        background-color: #67a5cc;
+    }
+    .k-state-selected, .k-state-focused, .k-state-active, .k-state-selected.k-state-focused {
+        background-color: #007dc6;
+        color: #fff !important;
+    }

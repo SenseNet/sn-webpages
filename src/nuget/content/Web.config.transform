@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <sensenet>
+    <webApplication>
+      <add key="AllowCssBundling" value="false" />
+      <add key="AllowJsBundling" value="false" />
+    </webApplication>
+  </sensenet>
+  <system.web>
+    <pages validateRequest="false" enableEventValidation="false" viewStateEncryptionMode="Never" pageBaseType="SenseNet.Portal.PageBase" controlRenderingCompatibilityVersion="3.5" clientIDMode="AutoID">
+      <controls>
+        <add tagPrefix="asp" namespace="System.Web.UI" assembly="System.Web.Ajax" />
+        <add tagPrefix="snpe" namespace="SenseNet.Portal.UI.Controls" assembly="SenseNet.WebPages" />
+        <add tagPrefix="snpe" namespace="SenseNet.Portal.Portlets" assembly="SenseNet.WebPages" />
+        <add tagPrefix="snpe" namespace="SenseNet.Portal.Portlets.Controls" assembly="SenseNet.WebPages" />
+        <add tagPrefix="sn" namespace="SenseNet.Portal.UI.Controls" assembly="SenseNet.WebPages" />
+        <add tagPrefix="sn" namespace="SenseNet.Portal.UI.PortletFramework" assembly="SenseNet.WebPages" />
+        <add tagPrefix="sn" namespace="SenseNet.Portal.UI.ContentListViews" assembly="SenseNet.WebPages" />
+        <add tagPrefix="sn" namespace="SenseNet.Portal.UI.ContentListViews.FieldControls" assembly="SenseNet.WebPages" />
+      </controls>
+      <tagMapping>
+        <add tagType="System.Web.UI.WebControls.WebParts.WebPartManager" mappedTagType="SenseNet.Portal.UI.PortletFramework.SNWebPartManager" />
+        <add tagType="System.Web.UI.WebControls.WebParts.WebPartZone" mappedTagType="SenseNet.Portal.UI.PortletFramework.SNWebPartZone" />
+      </tagMapping>
+    </pages>
+    <webParts>
+      <personalization defaultProvider="PortalPersonalizationProvider">
+        <providers>
+          <clear />
+          <add name="PortalPersonalizationProvider" type="SenseNet.Portal.Personalization.SenseNetPersonalizationProvider" />
+        </providers>
+        <authorization>
+          <deny verbs="enterSharedScope, modifyState" users="?" />
+          <allow verbs="enterSharedScope, modifyState" users="*" />
+        </authorization>
+      </personalization>
+    </webParts>
+    <httpRuntime maxRequestLength="102400" requestLengthDiskThreshold="102400" requestValidationMode="2.0"/>
+  </system.web>
+</configuration>

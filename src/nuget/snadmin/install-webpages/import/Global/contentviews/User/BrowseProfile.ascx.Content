@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentMetaData>
+	<ContentName>BrowseProfile.ascx</ContentName>
+	<ContentType>ContentView</ContentType>
+	<Fields>
+		<Binary attachment="BrowseProfile.ascx" />
+	</Fields>
+  <Permissions>
+    <Clear />
+    <Identity path="/Root/IMS/BuiltIn/Portal/Everyone">
+      <RunApplication>Allow</RunApplication>
+    </Identity>
+  </Permissions>
+</ContentMetaData>
