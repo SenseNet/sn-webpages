@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentType name="Skin" parentType="SystemFolder" handler="SenseNet.ContentRepository.SystemFolder" xmlns="http://schemas.sensenet.com/SenseNet/ContentRepository/ContentTypeDefinition">
+  <DisplayName>$Ctd-Skin,DisplayName</DisplayName>
+  <Description>$Ctd-Skin,Description</Description>
+  <Icon>Folder</Icon>
+  <AllowedChildTypes>
+    SystemFolder
+  </AllowedChildTypes>
+  <Fields>
+    <Field name="DisplayName" type="ShortText">
+      <DisplayName>$Ctd-Skin,DisplayName-DisplayName</DisplayName>
+    </Field>
+    <Field name="NewSkin" type="Boolean">
+      <DisplayName>$Ctd-Skin,NewSkin-DisplayName</DisplayName>
+      <Configuration>
+        <DefaultValue>false</DefaultValue>
+      </Configuration>
+    </Field>
+  </Fields>
+</ContentType>

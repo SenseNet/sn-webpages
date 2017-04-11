@@ -1,0 +1,102 @@
+﻿.k-pager-wrap > .k-link,
+.k-pager-numbers .k-state-selected {
+    border-radius: 0;
+}
+
+span.k-state-selected {
+    line-height: 2em;
+}
+
+.k-grid span.actionmenu-open, .k-grid span.actionmenu-close {
+    float: right;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.sn-usergrid-actionmenu {
+    position: absolute;
+    z-index: 100;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    border-color: #dbdbdb;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.2);
+    color: #787878;
+}
+
+    .sn-usergrid-actionmenu li, .sn-addnew-dropdown li {
+        list-style-type: none;
+        padding: .4em .6em;
+    }
+
+        .sn-usergrid-actionmenu li img, .sn-addnew-dropdown li img {
+            vertical-align: middle;
+            margin-right: 5px;
+            float: left;
+        }
+
+        .sn-usergrid-actionmenu li a, .sn-addnew-dropdown li a {
+            list-style-type: none;
+            color: #787878;
+            display: block;
+        }
+
+        .sn-usergrid-actionmenu li:hover, .sn-addnew-dropdown li:hover {
+            background: #e6e6e6;
+        }
+
+#toolbar {
+    padding: 5px 0;
+    border-color: #dbdbdb;
+    border-style: solid;
+    border-width: 1px;
+    margin-bottom: 5px;
+}
+
+.sn-addnew-dropdown {
+    position: absolute;
+    z-index: 100;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    border-color: #dbdbdb;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.2);
+    color: #787878;
+}
+
+.sn-actionlinkbutton {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+    .sn-actionlinkbutton img {
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+
+    #toolbar .sn-actionlinkbutton, .sn-actionlinkbutton a {
+        color: #333;
+        cursor: pointer;
+    }
+
+    #toolbar .sn-actionlinkbutton[disabled], .sn-actionlinkbutton[disabled] a {
+        opacity: .8;
+        cursor: text;
+    }
+
+.addnew-open, .addnew-close {
+    margin-left: 3px;
+}
+
+.title a {
+    color: #787878;
+}
+
+
+.title a:hover {
+    text-decoration: underline;
+}

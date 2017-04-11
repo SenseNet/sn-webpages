@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentType name="Webform" parentType="Application" handler="SenseNet.ApplicationModel.Application" xmlns="http://schemas.sensenet.com/SenseNet/ContentRepository/ContentTypeDefinition">
+  <DisplayName>$Ctd-Webform,DisplayName</DisplayName>
+  <Description>$Ctd-Webform,Description</Description>
+  <Icon>Page</Icon>
+  <Fields>
+    <Field name="Binary" type="Binary">
+      <DisplayName>$Ctd-Webform,Binary-DisplayName</DisplayName>
+      <Description>$Ctd-Webform,Binary-Description</Description>
+      <Configuration>
+        <VisibleBrowse>Hide</VisibleBrowse>
+        <VisibleEdit>Hide</VisibleEdit>
+        <VisibleNew>Hide</VisibleNew>
+      </Configuration>
+    </Field>
+  </Fields>
+</ContentType>

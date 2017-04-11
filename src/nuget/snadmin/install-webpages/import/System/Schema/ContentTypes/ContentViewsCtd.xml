@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentType name="ContentViews" parentType="Folder" handler="SenseNet.ContentRepository.Folder" xmlns="http://schemas.sensenet.com/SenseNet/ContentRepository/ContentTypeDefinition">
+  <DisplayName>$Ctd-ContentViews,DisplayName</DisplayName>
+  <Description>$Ctd-ContentViews,Description</Description>
+  <Icon>Folder</Icon>
+  <AllowedChildTypes>
+    ContentView ContentViews
+  </AllowedChildTypes>
+  <Fields>
+  </Fields>
+</ContentType>

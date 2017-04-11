@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources>
+  <ResourceClass name="Scenario">
+    <Languages>
+      <Language cultureName="en">
+        <data name="New" xml:space="preserve">
+				  <value>New</value>
+				</data>
+        <data name="ActionsMenuDisplayName" xml:space="preserve">
+				  <value>Actions</value>
+				</data>
+        <data name="SettingsMenuDisplayName" xml:space="preserve">
+				  <value>Settings</value>
+				</data>
+        <data name="ViewsMenuDisplayName" xml:space="preserve">
+				  <value>View:</value>
+				</data>
+      </Language>
+      <Language cultureName="hu">
+        <data name="New" xml:space="preserve">
+				  <value>Új</value>
+				</data>
+        <data name="ActionsMenuDisplayName" xml:space="preserve">
+				  <value>Műveletek</value>
+				</data>
+        <data name="SettingsMenuDisplayName" xml:space="preserve">
+				  <value>Beállítások</value>
+				</data>
+        <data name="ViewsMenuDisplayName" xml:space="preserve">
+				  <value>Nézet:</value>
+				</data>
+      </Language>
+    </Languages>
+  </ResourceClass>
+</Resources>

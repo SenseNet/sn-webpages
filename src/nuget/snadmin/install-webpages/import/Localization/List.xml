@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources>
+  <ResourceClass name="List">
+    <Languages>
+      <Language cultureName="en">
+        <data name="EmptyList" xml:space="preserve">
+          <value>The list is empty…</value>
+        </data>
+        <data name="Name" xml:space="preserve">
+          <value>Name</value>
+        </data>
+        <data name="Default" xml:space="preserve">
+          <value>Default</value>
+        </data>
+        <data name="ModifiedBy" xml:space="preserve">
+          <value>Modified by</value>
+        </data>
+        <data name="LastModified" xml:space="preserve">
+          <value>Last modified</value>
+        </data>
+        <data name="Locked" xml:space="preserve">
+          <value>Locked</value>
+        </data>
+        <data name="Flat" xml:space="preserve">
+          <value>Flat</value>
+        </data>
+        <data name="Recent" xml:space="preserve">
+          <value>Recent</value>
+        </data>
+        <data name="Upcoming" xml:space="preserve">
+          <value>Upcoming</value>
+        </data>
+        <data name="Deadlines" xml:space="preserve">
+          <value>Deadlines</value>
+        </data>
+        <data name="MyTasks" xml:space="preserve">
+          <value>My tasks</value>
+        </data>
+        <data name="List" xml:space="preserve">
+          <value>List</value>
+        </data>
+        <data name="Slider" xml:space="preserve">
+          <value>Slider</value>
+        </data>
+        <data name="Thumbnails" xml:space="preserve">
+          <value>Thumbnails</value>
+        </data>
+        <data name="Approved" xml:space="preserve">
+          <value>Approved</value>
+        </data>
+        <data name="Drafts" xml:space="preserve">
+          <value>Drafts</value>
+        </data>
+        <data name="ExpenseClaimItemView" xml:space="preserve">
+          <value>Expense Claim Item View</value>
+        </data>
+        <data name="Pending" xml:space="preserve">
+          <value>Pending</value>
+        </data>
+        <data name="Approvable" xml:space="preserve">
+          <value>Approvable</value>
+        </data>
+        <data name="Completed" xml:space="preserve">
+          <value>Completed</value>
+        </data>
+        <data name="ExploreView" xml:space="preserve">
+          <value>Explore view</value>
+        </data>
+        <data name="OpenInOfficeChromePluginText" xml:space="preserve">
+          <value>Please choose „Always run on this site” to allow the Microsoft Office plug-in to run. To edit Microsoft Office files from Google Chrome, we need your permission.</value>
+        </data>
+      </Language>
+      <Language cultureName="hu">
+        <data name="EmptyList" xml:space="preserve">
+          <value>A lista üres…</value>
+        </data>
+        <data name="Name" xml:space="preserve">
+          <value>Név</value>
+        </data>
+        <data name="Default" xml:space="preserve">
+          <value>Alapértelmezett</value>
+        </data>
+        <data name="ModifiedBy" xml:space="preserve">
+          <value>Módosította</value>
+        </data>
+        <data name="LastModified" xml:space="preserve">
+          <value>Utolsó módosítás</value>
+        </data>
+        <data name="Locked" xml:space="preserve">
+          <value>Zárolva</value>
+        </data>
+        <data name="Flat" xml:space="preserve">
+          <value>Kiterített</value>
+        </data>
+        <data name="Recent" xml:space="preserve">
+          <value>Friss</value>
+        </data>
+        <data name="Upcoming" xml:space="preserve">
+          <value>Következő események</value>
+        </data>
+        <data name="Deadlines" xml:space="preserve">
+          <value>Határidők</value>
+        </data>
+        <data name="MyTasks" xml:space="preserve">
+          <value>Feladataim</value>
+        </data>
+        <data name="List" xml:space="preserve">
+          <value>Lista</value>
+        </data>
+        <data name="Slider" xml:space="preserve">
+          <value>Lapozó</value>
+        </data>
+        <data name="Thumbnails" xml:space="preserve">
+          <value>Nézőképes</value>
+        </data>
+        <data name="Approved" xml:space="preserve">
+          <value>Jóváhagyott</value>
+        </data>
+        <data name="Drafts" xml:space="preserve">
+          <value>Piszkozat</value>
+        </data>
+        <data name="ExpenseClaimItemView" xml:space="preserve">
+          <value>Költségelszámolás nézet</value>
+        </data>
+        <data name="Pending" xml:space="preserve">
+          <value>Fűggőben</value>
+        </data>
+        <data name="Approvable" xml:space="preserve">
+          <value>Jóváhagyandó</value>
+        </data>
+        <data name="Completed" xml:space="preserve">
+          <value>Kész</value>
+        </data>
+        <data name="ExploreView" xml:space="preserve">
+          <value>Intéző nézet</value>
+        </data>
+        <data name="OpenInOfficeChromePluginText" xml:space="preserve">
+          <value>Kérjük válassza az „Ezen a webhelyen mindig fut” opciót a Microsoft Office plug-in engedélyezésekor. Ahhoz, hogy Office fájlokat meg tudjon nyitni szerkesztésre Google Chrome böngészőből, az engedélyezés mindenképpen szükséges.</value>
+        </data>
+      </Language>
+    </Languages>
+  </ResourceClass>
+</Resources>

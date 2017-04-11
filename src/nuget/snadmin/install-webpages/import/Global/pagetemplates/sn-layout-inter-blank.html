@@ -1,0 +1,78 @@
+﻿<% string snLang = SenseNet.Portal.Virtualization.PortalContext.Current?.Site?.Language ?? "en-us"; %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="<%=snLang%>" xml:lang="<%=snLang%>">
+<head>
+    <title><%=HttpContext.GetGlobalResourceObject("Portal", "SenseNetDemoSiteTitle")%></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <sn:BaseTag ID="BaseTagControl1" runat="server" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+</head>
+
+<body class="sn-body sn-layout3 sn-layout-inter sn-inter-<%=snLang%>">
+    <% string snLang = SenseNet.Portal.Virtualization.PortalContext.Current?.Site?.Language ?? "en-us"; %>
+    
+  <sn:CssRequest CSSPath="$skin/styles/jqueryui/jquery-ui.css" ID="pageTemplateUIStyleReq" runat="server" />
+  <sn:CssRequest CSSPath="$skin/styles/jqueryui/jquery-ui-sntheme.css" ID="pageTemplateUIStyleReq2" runat="server" />
+  <sn:CssRequest CSSPath="$skin/styles/sn-layout.css" ID="snLayoutCss" runat="server" />
+  <sn:CssRequest CSSPath="$skin/styles/skin.css" ID="pageTemplateCssRequest1" runat="server" />
+    
+  <div class="sn-layout-container ui-helper-clearfix">
+    <div class="sn-layout-head">
+      <div class="sn-layout-head-left">
+      <div class="sn-logo">
+        <a href="/" title='<%=HttpContext.GetGlobalResourceObject("Portal", "SenseNetDemoSiteTitle")%>' class="snPortalengine"></a>
+      </div>      
+      </div>
+      <div class="sn-layout-head-right">
+      <div class="sn-searchandlogin">
+          <snpe:advancedloginportlet title="&lt;%$ Resources: PortletTitle, Login %&gt;" id="login" runat="server" loginviewpath="/Root/System/SystemPlugins/Portlets/AdvancedLogin/AdvancedLoginView.ascx"
+             cssclass="sn-advancedLogin" />
+          <snpe:ContextSearch Renderer="/Root/System/SystemPlugins/Portlets/ContextSearch/QuickView.ascx" ID="QuickSearch1" runat="server" QuickSearchMode="True"
+                              ContextInfoID="workspaceContext" />
+      </div>
+      </div>
+      
+      
+    </div>
+  
+    <div class="sn-layout-full">
+      <snpe-zone name="FullCol" HeaderText="Full Column" PartChromeType="None">
+                      <snpe:BreadCrumbPortlet BindTarget="CurrentSite" ID="BreadCrumb" runat="server" Separator=" / " ShowSite="True" SiteDisplayName='&lt;%$ Resources: Portal, Home %&gt;' ChromeType="BorderOnly" />
+      </snpe-zone>
+      <div class="sn-columns ui-helper-clearfix">
+      <div class="sn-column sn-column1">
+        <snpe-zone name="LeftCol" HeaderText="Left Column" PartChromeType="TitleAndBorder"></snpe-zone>
+      </div>
+      <div class="sn-column sn-column2">
+        <div class="sn-columns ui-helper-clearfix">
+            <snpe-zone name="WideCol" HeaderText="Wide Column" PartChromeType="TitleAndBorder"></snpe-zone>
+          <div class="sn-column sn-column1">
+              <snpe-zone name="CenterCol" HeaderText="Center Column" PartChromeType="TitleAndBorder"></snpe-zone>
+            <div class="sn-columns ui-helper-clearfix">
+              <div class="sn-column sn-column1">
+                <snpe-zone name="CenterLeftCol" HeaderText="Center / Left Column" PartChromeType="TitleAndBorder"></snpe-zone>
+              </div>
+              <div class="sn-column sn-column2">
+                <snpe-zone name="CenterRightCol"  HeaderText="Center / Right Column" PartChromeType="TitleAndBorder"></snpe-zone>
+              </div>
+            </div>
+          </div>
+          <div class="sn-column sn-column2">
+            <snpe-zone name="RightCol" HeaderText="Right Column" PartChromeType="TitleAndBorder"></snpe-zone>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    
+   <snpe:UserControlPortlet ID="SensenetVersionInfo" ControlPath="/Root/Global/renderers/SensenetVersion.ascx" ChromeType="None" runat="server" />
+
+  </div>
+    
+<!-- prc -->
+<snpe:PortalRemoteControl ID="RemoteControl" runat="server" />
+<sn:ScriptRequest runat="server" Path="$skin/scripts/init.js" />
+</body>
+</html>

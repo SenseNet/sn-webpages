@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="view.xslt"?>
+<Resources>
+  <ResourceClass name="Field">
+    <Languages>
+      <Language cultureName="en">
+        <data name="Number_ValidFormatIs" xml:space="preserve">
+          <value>Valid format is: </value>
+        </data>
+        <data name="HyperLink_TextLabel" xml:space="preserve">
+          <value>Link text</value>
+        </data>
+        <data name="HyperLink_HrefLabel" xml:space="preserve">
+          <value>URL</value>
+        </data>
+        <data name="HyperLink_HrefImageLabel" xml:space="preserve">
+          <value>Image source</value>
+        </data>
+        <data name="HyperLink_TargetLabel" xml:space="preserve">
+          <value>Target window</value>
+        </data>
+        <data name="HyperLink_TitleLabel" xml:space="preserve">
+          <value>Link title (tooltip)</value>
+        </data>
+
+        <data name="TagList_AddTag" xml:space="preserve">
+          <value>Add tag</value>
+        </data>
+        <data name="TagList_BlacklistedTag" xml:space="preserve">
+          <value> is a blacklisted tag.</value>
+        </data>
+        <data name="TagList_BlacklistedTags" xml:space="preserve">
+          <value> are blacklisted tags.</value>
+        </data>
+      </Language>
+      <Language cultureName="hu">
+        <data name="Number_ValidFormatIs" xml:space="preserve">
+          <value>A helyes formátum: </value>
+        </data>
+        <data name="HyperLink_TextLabel" xml:space="preserve">
+          <value>Link szöveg</value>
+        </data>
+        <data name="HyperLink_HrefLabel" xml:space="preserve">
+          <value>URL</value>
+        </data>
+        <data name="HyperLink_HrefImageLabel" xml:space="preserve">
+          <value>Kép forrás</value>
+        </data>
+        <data name="HyperLink_TargetLabel" xml:space="preserve">
+          <value>Cél ablak</value>
+        </data>
+        <data name="HyperLink_TitleLabel" xml:space="preserve">
+          <value>Link címe (tooltip)</value>
+        </data>
+
+        <data name="TagList_AddTag" xml:space="preserve">
+          <value>Címke hozzáadás</value>
+        </data>
+        <data name="TagList_BlacklistedTag" xml:space="preserve">
+          <value> tiltott címke.</value>
+        </data>
+        <data name="TagList_BlacklistedTags" xml:space="preserve">
+          <value> tiltott címkék.</value>
+        </data>
+      </Language>
+    </Languages>
+  </ResourceClass>
+</Resources>

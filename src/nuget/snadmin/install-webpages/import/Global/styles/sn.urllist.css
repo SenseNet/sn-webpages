@@ -1,0 +1,238 @@
+﻿@import url('/Root/Global/styles/fontawesome/font-awesome.min.css');
+
+.url-view {
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.sn-url-list .btn.btn-primary {
+    margin-top: 5px;
+}
+
+.url-view:nth-child(even) {
+    border-left-width: 0;
+}
+
+.url-view:last-of-type {
+    margin-bottom: 5px;
+}
+
+.url-view dl {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 70%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.url-view .edit-buttons {
+    text-align: right;
+    width: 25%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.url-view dt, dd {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    height: 26px;
+    line-height: 24px;
+}
+
+.url-view dt {
+    font-weight: bold;
+    float: left;
+    clear: left;
+}
+
+.url-view dd {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-left: 0 !important;
+}
+
+    .url-view dd .k-widget,
+    .url-view dd .k-textbox {
+        font-size: 14px;
+    }
+
+.urlListView select {
+    height: 22px;
+    padding: 2px .3em;
+    width: 190px;
+}
+
+.urlListView input {
+    width: 186px;
+    height: 16px;
+}
+
+.k-listview {
+    border-width: 0;
+    padding: 0;
+    overflow: hidden;
+    background: transparent;
+}
+
+.k-pager-wrap {
+    border-top: 0;
+}
+
+span.k-invalid-msg {
+    position: absolute;
+    margin-left: 6px;
+}
+
+.k-add-button {
+    margin-bottom: 2em;
+}
+
+.sn-url-list .sn-button.sn-submit {
+    padding: 0px 8px 5px;
+    margin: 0;
+}
+
+    .sn-url-list .sn-button.sn-submit .k-icon.k-add {
+        display: inline-block;
+    }
+
+.k-icon.k-add::before {
+    font-family: FontAwesome;
+    content: '\f067';
+    display: block;
+    margin: 8px 5px 0 0;
+    font-size: .5rem;
+}
+
+.k-widget.k-tooltip-validation {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    padding: 4px 8px;
+    height: 14px;
+    line-height: 14px;
+    margin-left: 13px;
+}
+
+    .k-widget.k-tooltip-validation .k-icon.k-warning {
+        display: inline-block;
+        height: 0;
+    }
+
+        .k-widget.k-tooltip-validation .k-icon.k-warning::before {
+            font-family: FontAwesome;
+            content: '\f06a';
+            color: #a94442;
+            display: block;
+            margin: 0;
+            font-size: 1rem;
+        }
+
+@media only screen and (max-width : 620px) {
+
+    .url-view {
+        width: 100%;
+    }
+
+        .url-view:nth-child(even) {
+            border-left-width: 1px;
+        }
+}
+
+.sn-url-list-UrlList .button.btn.btn-primary {
+    color: #fff;
+    font-weight: bold;
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #007dc2;
+    border: solid 1px #007dc2;
+    padding: 0px 10px 5px;
+    overflow: visible;
+    display: block;
+    max-width: 140px;
+    float: right;
+    text-align: center;
+    margin-right: 24px;
+}
+
+    .sn-url-list-UrlList .button.btn.btn-primary span.k-icon.k-add {
+        display: inline-block;
+    }
+
+.k-button {
+    background-color: #fff;
+    color: #363940;
+    border: 1px solid #ccc;
+    width: 60px;
+    display: inline-block;
+    height: 14px;
+    text-align: center;
+    padding: 5px 0;
+}
+
+    .k-button.k-edit-button:hover {
+        background: #3498db;
+        border-color: #2980b9;
+        color: #fff;
+    }
+
+    .k-button.k-delete-button:hover {
+        background: #e74c3c;
+        border-color: #c0392b;
+        color: #fff;
+    }
+
+    .k-button.k-update-button:hover {
+        border-color: #27ae60;
+        background: #2ecc71;
+        color: #fff;
+    }
+
+    .k-button.k-cancel-button:hover {
+        background: #e74c3c;
+        border-color: #c0392b;
+        color: #fff;
+    }
+
+.fa::before {
+    font-family: FontAwesome;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.fa.fa-check::before {
+    content: "\f00c";
+}
+
+.fa.fa-ban::before {
+    content: "\f05e";
+}
+
+.fa.fa-reply::before {
+    content: "\f05e";
+}
+
+.fa.fa-pencil::before {
+    content: "\f040";
+}
+
+.fa.fa-remove::before {
+    content: "\f00d";
+}
+
+.url-warning {
+    background-color: #f08a24;
+    border-color: #de770f;
+    color: #FFFFFF;
+    padding: 10px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}

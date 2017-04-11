@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentType name="ViewBase" parentType="UserControl" handler="SenseNet.Portal.UI.ContentListViews.Handlers.ViewBase" xmlns="http://schemas.sensenet.com/SenseNet/ContentRepository/ContentTypeDefinition">
+  <DisplayName>$Ctd-ViewBase,DisplayName</DisplayName>
+  <Description>$Ctd-ViewBase,Description</Description>
+  <Icon>File</Icon>
+  <Fields>
+    <Field name="DisplayName" type="ShortText">
+      <Configuration>
+        <VisibleBrowse>Show</VisibleBrowse>
+        <VisibleEdit>Show</VisibleEdit>
+        <VisibleNew>Show</VisibleNew>
+      </Configuration>
+    </Field>
+    <Field name="IsDefault" type="Boolean">
+      <DisplayName>$Ctd-ViewBase,IsDefault-DisplayName</DisplayName>
+      <Description>$Ctd-ViewBase,IsDefault-Description</Description>
+      <Configuration>
+        <ReadOnly>true</ReadOnly>
+        <VisibleBrowse>Hide</VisibleBrowse>
+        <VisibleEdit>Advanced</VisibleEdit>
+        <VisibleNew>Hide</VisibleNew>
+      </Configuration>
+    </Field>
+    <Field name="Template" type="Reference">
+      <DisplayName>$Ctd-ViewBase,Template-DisplayName</DisplayName>
+      <Description>$Ctd-ViewBase,Template-Description</Description>
+      <Configuration>
+        <Compulsory>false</Compulsory>
+        <AllowMultiple>false</AllowMultiple>
+        <DefaultValue>/Root/System/SystemPlugins/Templates/ListView.xslt</DefaultValue>
+      </Configuration>
+    </Field>
+    <Field name="FilterXml" type="LongText">
+      <DisplayName>$Ctd-ViewBase,FilterXml-DisplayName</DisplayName>
+      <Description>$Ctd-ViewBase,FilterXml-Description</Description>
+      <Indexing>
+        <Mode>No</Mode>
+      </Indexing>
+      <!--<Configuration>
+        <ControlHint>sn:QueryFilter</ControlHint>
+      </Configuration>-->
+    </Field>
+    <Field name="EnableAutofilters" type="Choice">
+      <DisplayName>$Ctd-ViewBase,EnableAutofilters-DisplayName</DisplayName>
+      <Description>$Ctd-ViewBase,EnableAutofilters-Description</Description>
+      <Configuration>
+        <AllowMultiple>false</AllowMultiple>
+        <AllowExtraValue>false</AllowExtraValue>
+        <Options>
+          <Enum type="SenseNet.Search.FilterStatus" />
+        </Options>
+        <VisibleBrowse>Show</VisibleBrowse>
+        <VisibleEdit>Show</VisibleEdit>
+        <VisibleNew>Show</VisibleNew>
+      </Configuration>
+    </Field>
+    <Field name="EnableLifespanFilter" type="Choice">
+      <DisplayName>$Ctd-ViewBase,EnableLifespanFilter-DisplayName</DisplayName>
+      <Description>$Ctd-ViewBase,EnableLifespanFilter-Description</Description>
+      <Configuration>
+        <AllowMultiple>false</AllowMultiple>
+        <AllowExtraValue>false</AllowExtraValue>
+        <Options>
+          <Enum type="SenseNet.Search.FilterStatus" />
+        </Options>
+        <VisibleBrowse>Show</VisibleBrowse>
+        <VisibleEdit>Show</VisibleEdit>
+        <VisibleNew>Show</VisibleNew>
+      </Configuration>
+    </Field>
+    <Field name="Hidden" type="Boolean">
+      <Description>$Ctd-ViewBase,Hidden-Description</Description>
+      <Configuration>
+        <VisibleBrowse>Show</VisibleBrowse>
+        <VisibleEdit>Show</VisibleEdit>
+        <VisibleNew>Show</VisibleNew>
+      </Configuration>
+    </Field>
+    <Field name="QueryTop" type="Integer">
+      <DisplayName>$Ctd-ViewBase,QueryTop-DisplayName</DisplayName>
+      <Description>$Ctd-ViewBase,QueryTop-Description</Description>
+      <Configuration>
+        <VisibleBrowse>Hide</VisibleBrowse>
+        <VisibleEdit>Show</VisibleEdit>
+        <VisibleNew>Show</VisibleNew>
+      </Configuration>
+    </Field>
+    <Field name="QuerySkip" type="Integer">
+      <DisplayName>$Ctd-ViewBase,QuerySkip-DisplayName</DisplayName>
+      <Description>$Ctd-ViewBase,QuerySkip-Description</Description>
+      <Configuration>
+        <VisibleBrowse>Hide</VisibleBrowse>
+        <VisibleEdit>Show</VisibleEdit>
+        <VisibleNew>Show</VisibleNew>
+      </Configuration>
+    </Field>
+    <Field name="Icon" type="ShortText">
+      <DisplayName>$Ctd-ViewBase,Icon-DisplayName</DisplayName>
+      <Description>$Ctd-ViewBase,Icon-Description</Description>
+      <Configuration>
+        <DefaultValue>views</DefaultValue>
+        <VisibleBrowse>Advanced</VisibleBrowse>
+        <VisibleEdit>Show</VisibleEdit>
+        <VisibleNew>Show</VisibleNew>
+      </Configuration>
+    </Field>
+  </Fields>
+</ContentType>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentMetaData>
+  <ContentType>Page</ContentType>
+  <ContentName>Add</ContentName>
+  <Fields>
+    <PageTemplateNode>
+      <Path>/Root/Global/pagetemplates/sn-layout-dialog.html</Path>
+    </PageTemplateNode>
+    <Binary attachment="Add.aspx" />
+    <PersonalizationSettings attachment="Add.PersonalizationSettings" />
+    <DisplayName><![CDATA[$Action,Add]]></DisplayName>
+    <Scenario><![CDATA[GridToolbar]]></Scenario>
+    <Icon><![CDATA[add]]></Icon>
+    <RequiredPermissions>OpenMinor;AddNew</RequiredPermissions>
+  </Fields>
+  <Permissions>
+    <Clear />
+    <Identity path="/Root/IMS/BuiltIn/Portal/Visitor">
+      <RunApplication>Allow</RunApplication>
+    </Identity>
+    <Identity path="/Root/IMS/BuiltIn/Portal/IdentifiedUsers">
+      <RunApplication>Allow</RunApplication>
+    </Identity>
+  </Permissions>
+</ContentMetaData>

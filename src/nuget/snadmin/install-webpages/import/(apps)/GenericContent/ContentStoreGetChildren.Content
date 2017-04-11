@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentMetaData>
+  <ContentType>GenericODataApplication</ContentType>
+  <ContentName>ContentStoreGetChildren</ContentName>
+  <Fields>
+    <ClassName><![CDATA[SenseNet.Portal.ContentStore.ContentStoreApi]]></ClassName>
+    <MethodName><![CDATA[GetChildren]]></MethodName>
+    <Parameters><![CDATA[string rnd, string contentTypes, bool simpleContent]]></Parameters>
+    <DisplayName><![CDATA[ContentStoreGetChildren]]></DisplayName>
+    <Description><![CDATA[]]></Description>
+    <Scenario><![CDATA[]]></Scenario>
+    <ActionTypeName><![CDATA[GenericODataOperation]]></ActionTypeName>
+  </Fields>
+  <Permissions>
+    <Clear />
+  </Permissions>
+</ContentMetaData>

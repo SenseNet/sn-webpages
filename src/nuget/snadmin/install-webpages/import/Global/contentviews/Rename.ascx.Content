@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentMetaData>
+	<ContentName>Rename.ascx</ContentName>
+	<ContentType>ContentView</ContentType>
+	<Fields>
+		<Binary attachment="Rename.ascx" />
+	</Fields>
+  <Permissions>
+    <Clear />
+    <Identity path="/Root/IMS/BuiltIn/Portal/IdentifiedUsers">
+      <RunApplication>Allow</RunApplication>
+    </Identity>
+  </Permissions>
+</ContentMetaData>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentMetaData>
+  <ContentType>GenericODataApplication</ContentType>
+  <ContentName>ContentStoreGetTreeNodeAllChildren</ContentName>
+  <Fields>
+    <ClassName><![CDATA[SenseNet.Portal.ContentStore.ContentStoreApi]]></ClassName>
+    <MethodName><![CDATA[GetTreeNodeAllChildren]]></MethodName>
+    <Parameters><![CDATA[string path, string rootonly, string rnd, bool simpleContent]]></Parameters>
+    <DisplayName><![CDATA[ContentStoreGetTreeNodeAllChildren]]></DisplayName>
+    <Description><![CDATA[]]></Description>
+    <Scenario><![CDATA[]]></Scenario>
+    <ActionTypeName><![CDATA[GenericODataOperation]]></ActionTypeName>
+  </Fields>
+  <Permissions>
+    <Clear />
+  </Permissions>
+</ContentMetaData>
