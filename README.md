@@ -11,7 +11,7 @@ Install this component on top of the main **sensenet ECM Services** layer to get
 
 You can also build **custom pages** for your solution using our built-in building blocks called [portlets](http://wiki.sensenet.com/Portlet).
 
-![WebPages component](https://raw.githubusercontent.com/SenseNet/sn-resources/master/images/sn-components/sn-components_webforms_gui.png)
+![WebPages component](https://raw.githubusercontent.com/SenseNet/sn-resources/master/images/sn-components/sn-components_webforms.png)
 
 ## Getting started
 ### Prerequisites
