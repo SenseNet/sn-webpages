@@ -166,91 +166,91 @@
           <value>Security</value>
         </data>
         <data name="SecurityOption" xml:space="preserve">
-          <value>Security options of the system, where you can manage IMS system.</value>
+          <value>Manage group membership, users and organizational units.</value>
         </data>
         <data name="Global" xml:space="preserve">
           <value>Global</value>
         </data>
         <data name="GlobalResources" xml:space="preserve">
-          <value>The global resources of the system.</value>
+          <value>Global resources of the system.</value>
         </data>
         <data name="System" xml:space="preserve">
           <value>System</value>
         </data>
         <data name="SystemFiles" xml:space="preserve">
-          <value>The system files of the system.</value>
+          <value>Settings, system views, monitors and other administrative components.</value>
         </data>
         <data name="ContentTypes" xml:space="preserve">
           <value>Content Types (Schema)</value>
         </data>
         <data name="AllContentTypes" xml:space="preserve">
-          <value>The list of all Content Types in the system.</value>
+          <value>List of all Content Types in the system.</value>
         </data>
         <data name="ContentTemplates" xml:space="preserve">
           <value>Content templates</value>
         </data>
         <data name="BasicTemplates" xml:space="preserve">
-          <value>The basic Templates for all content.</value>
+          <value>Prefilled individual content or whole content structures for certain content types.</value>
         </data>
         <data name="Portlets" xml:space="preserve">
           <value>Portlets</value>
         </data>
         <data name="AllPortlets" xml:space="preserve">
-          <value>The list of all Portlets in the system.</value>
+          <value>List of all available Portlets in the system.</value>
         </data>
         <data name="Skins" xml:space="preserve">
           <value>Skins</value>
         </data>
         <data name="SkinList" xml:space="preserve">
-          <value>The list of Skins whose are responsible for the design of the site.</value>
+          <value>Available Skins that are responsible for the look and feel of the site.</value>
         </data>
         <data name="Sites" xml:space="preserve">
           <value>Sites</value>
         </data>
         <data name="SiteList" xml:space="preserve">
-          <value>The list of all Sites of the system.</value>
+          <value>List of all Sites if the system.</value>
         </data>
         <data name="Trash" xml:space="preserve">
           <value>Trash</value>
         </data>
         <data name="DeletedItems" xml:space="preserve">
-          <value>Trash system where you can manage the deleted items.</value>
+          <value>Manage deleted items here: restore content or purge them permanently.</value>
         </data>
         <data name="Apps" xml:space="preserve">
           <value>Apps</value>
         </data>
         <data name="AppList" xml:space="preserve">
-          <value>The list of all Smart Applications of the system.</value>
+          <value>List of global Smart Applications in the system.</value>
         </data>
         <data name="Wiki" xml:space="preserve">
           <value>Wiki</value>
         </data>
         <data name="WikiPage" xml:space="preserve">
-          <value>The Sense/Net's Wiki page.</value>
+          <value>The sensenet ECM Wiki page.</value>
         </data>
         <data name="Forum" xml:space="preserve">
-          <value>Forum</value>
+          <value>Community support</value>
         </data>
         <data name="ForumTopics" xml:space="preserve">
-          <value>The Forum where you can discuss many topics.</value>
+          <value>Questions and answers hosted on Stack Overflow.</value>
         </data>
         <data name="SalesInformation" xml:space="preserve">
           <value>Sales information</value>
         </data>
         <data name="Information" xml:space="preserve">
-          <value>Information about how to buy Sense/Net full version with full support.</value>
+          <value>How to get sensenet ECM Enterprise Edition with enterprise support.</value>
         </data>
         <data name="Workflows" xml:space="preserve">
           <value>Workflows</value>
         </data>
         <data name="WorkflowList" xml:space="preserve">
-          <value>The list of all workflow definitions in the system.</value>
+          <value>List of all available workflow definitions in the system.</value>
         </data>
         <data name="VersionInfo" xml:space="preserve">
           <value>Version info</value>
         </data>
         <data name="VersionInfoDesc" xml:space="preserve">
-          <value>Available information about Sense/Net version.</value>
+          <value>Information about the currently installed sensenet ECM and 3rd party components.</value>
         </data>
         <data name="Sorting-Asc" xml:space="preserve">
           <value>Ascending</value>
@@ -477,7 +477,7 @@
           <value>Biztonság</value>
         </data>
         <data name="SecurityOption" xml:space="preserve">
-          <value>A rendszer biztonsági beállításai, amiket az IMS mappa alatt tud adminisztrálni.</value>
+          <value>Felhasználók beállításai és csoport tagság szerkesztése.</value>
         </data>
         <data name="Global" xml:space="preserve">
           <value>Global</value>
@@ -525,43 +525,43 @@
           <value>Kuka</value>
         </data>
         <data name="DeletedItems" xml:space="preserve">
-          <value>Kuka, ahol adminisztrálni tuja a törölt elemeket.</value>
+          <value>Kuka, ahol adminisztrálni tudja a törölt elemeket.</value>
         </data>
         <data name="Apps" xml:space="preserve">
           <value>App-ok</value>
         </data>
         <data name="AppList" xml:space="preserve">
-          <value>A rendszerben található alkalmazásokk listája.</value>
+          <value>A rendszerben található globális alkalmazások listája.</value>
         </data>
         <data name="Wiki" xml:space="preserve">
           <value>Wiki</value>
         </data>
         <data name="WikiPage" xml:space="preserve">
-          <value>A Sense/Net Wiki oldala.</value>
+          <value>A sensenet ECM Wiki oldala.</value>
         </data>
         <data name="Forum" xml:space="preserve">
-          <value>Fórum</value>
+          <value>Közösségi támogatás</value>
         </data>
         <data name="ForumTopics" xml:space="preserve">
-          <value></value>
+          <value>Kérdések és válaszok sensenet ECM témákkal kapcsolatban a Stack Overflow-n.</value>
         </data>
         <data name="SalesInformation" xml:space="preserve">
           <value>Sales információk</value>
         </data>
         <data name="Information" xml:space="preserve">
-          <value>Információk arról, hogyan vehet teljes Sense/Net verziót teljes körű támogatással.</value>
+          <value>Információk arról, hogyan vehet teljes sensenet ECM verziót nagyvállalati támogatással.</value>
         </data>
         <data name="Workflows" xml:space="preserve">
           <value>Munkafolyamatok</value>
         </data>
         <data name="WorkflowList" xml:space="preserve">
-          <value>A renszerben található munkafolyamatok listája</value>
+          <value>A renszerben található munkafolyamat definíciók listája</value>
         </data>
         <data name="VersionInfo" xml:space="preserve">
           <value>Verzió információk</value>
         </data>
         <data name="VersionInfoDesc" xml:space="preserve">
-          <value>Elérhető adatok a SenseNet verziókról.</value>
+          <value>Az aktuális sensenet ECM és a telepített külső komponensek verzió információja.</value>
         </data>
         <data name="Sorting-Asc" xml:space="preserve">
           <value>Növekvő</value>
