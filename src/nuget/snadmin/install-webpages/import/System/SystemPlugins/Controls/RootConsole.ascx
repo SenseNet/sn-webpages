@@ -210,14 +210,14 @@
         </div>
         <div class="sn-content">
             <div class="sn-pic-left">
-                <a href="http://forum.sensenet.com/" target="_blank">
+                <a href="http://stackoverflow.com/questions/tagged/sensenet" target="_blank">
                     <sn:SNIcon Icon="rc-forum" ID="ImgForum" Size="64" runat="server" />
                 </a>
             </div>
             <div class="sn-rootc-text">
                 <div class="sn-rootc-header">
                     <h1 class="sn-content-title">
-                        <a href="http://forum.sensenet.com/" target="_blank"><%=GetGlobalResourceObject("Controls", "Forum")%></a>
+                        <a href="http://stackoverflow.com/questions/tagged/sensenet" target="_blank"><%=GetGlobalResourceObject("Controls", "Forum")%></a>
                     </h1>
                 </div>
                 <div class="sn-rootc-desc">
