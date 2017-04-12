@@ -27,6 +27,7 @@ If you have **multiple projects** in Visual Studio, you have to install the pack
 
 [![NuGet](https://img.shields.io/nuget/v/SenseNet.WebPages.svg)](https://www.nuget.org/packages/SenseNet.WebPages)
 
+<a name="LogIn"></a>
 ## Log in
 After installing this component you will be able to log in to the portal on the **default site's main page**, at this point only accessible through an absolute url (see below the way of removing this limitation):
 
