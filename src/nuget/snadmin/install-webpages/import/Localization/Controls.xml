@@ -222,6 +222,12 @@
         <data name="AppList" xml:space="preserve">
           <value>List of global Smart Applications in the system.</value>
         </data>
+        <data name="SenseNetOnGitHub" xml:space="preserve">
+          <value>GitHub repository</value>
+        </data>
+        <data name="GitHubInfo" xml:space="preserve">
+          <value>sensenet ECM source code is available on GitHub.</value>
+        </data>
         <data name="Wiki" xml:space="preserve">
           <value>Wiki</value>
         </data>
@@ -532,6 +538,12 @@
         </data>
         <data name="AppList" xml:space="preserve">
           <value>A rendszerben található globális alkalmazások listája.</value>
+        </data>
+        <data name="SenseNetOnGitHub" xml:space="preserve">
+          <value>GitHub repository</value>
+        </data>
+        <data name="GitHubInfo" xml:space="preserve">
+          <value>A sensenet ECM forráskód elérhető a GitHubon.</value>
         </data>
         <data name="Wiki" xml:space="preserve">
           <value>Wiki</value>

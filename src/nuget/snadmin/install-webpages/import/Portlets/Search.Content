@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentMetaData>
+  <ContentType>PortletCategory</ContentType>
+  <ContentName>Search</ContentName>
+  <Fields>
+    <DisplayName><![CDATA[$PortletFramework:Category_Search]]></DisplayName>
+    <Description><![CDATA[$PortletFramework:Category_Search_Description]]></Description>
+  </Fields>
+  <Permissions>
+    <Clear />
+  </Permissions>
+</ContentMetaData>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentMetaData>
+  <ContentType>Portlet</ContentType>
+  <ContentName>ClientContextPortlet</ContentName>
+  <Fields>
+    <Description><![CDATA[$ClientContextPortlet:PortletDescription]]></Description>
+    <TypeName><![CDATA[SenseNet.Portal.Portlets.ClientContextPortlet, SenseNet.WebPages]]></TypeName>
+    <ImageRef />
+    <ImageData attachment="ClientContextPortlet.ImageData" />
+    <DisplayName><![CDATA[$ClientContextPortlet:PortletDisplayName]]></DisplayName>
+  </Fields>
+  <Permissions>
+    <Clear />
+  </Permissions>
+</ContentMetaData>

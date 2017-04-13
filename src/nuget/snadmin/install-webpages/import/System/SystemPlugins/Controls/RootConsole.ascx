@@ -1,4 +1,6 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" %>
+<%@ Import namespace="SenseNet.ContentRepository.Storage" %>
+
 <sn:CssRequest ID="ref1" CSSPath="/Root/Global/styles/widgets.css" Rel="stylesheet" Media="all" Order="20" runat="server" />
 <div class="sn-rootc">
     <div class="sn-floatleft">
@@ -72,14 +74,28 @@
         </div>
         <div class="sn-content">
             <div class="sn-pic-left">
+                <% if (Node.Exists("/Root/ContentTemplates"))
+                   { %>
                 <a href="/Root/ContentTemplates?action=Explore">
                     <sn:SNIcon Icon="rc-contenttemplates" ID="ImgContentTemplates" Size="64" runat="server" />
                 </a>
+                <% }
+                   else
+                   { %>
+                <sn:SNIcon Icon="rc-contenttemplates-inactive" ID="ImgContentTemplates2" Size="64" runat="server" />
+                <% } %>
             </div>
             <div class="sn-rootc-text">
                 <div class="sn-rootc-header">
                     <h1 class="sn-content-title">
-                        <a href="/Root/ContentTemplates?action=Explore"><%=GetGlobalResourceObject("Controls", "ContentTemplates")%></a>
+                        <% if (Node.Exists("/Root/ContentTemplates"))
+                           { %>
+                        <a href="/Root/ContentTemplates?action=Explore"><%= GetGlobalResourceObject("Controls", "ContentTemplates") %></a>
+                        <% }
+                           else
+                           { %>
+                        <%= GetGlobalResourceObject("Controls", "ContentTemplates") %>
+                        <% } %>
                     </h1>
                 </div>
                 <div class="sn-rootc-desc">
@@ -123,18 +139,49 @@
         </div>
         <div class="sn-content">
             <div class="sn-pic-left">
+                <% if (Node.Exists("/Root/System/TaskMonitor"))
+                   { %>
                 <a href="/Root/System/TaskMonitor">
-                    <sn:SNIcon Icon="rc-taskmonitor" ID="SNIcon10" Size="64" runat="server" />
+                    <sn:SNIcon Icon="rc-taskmonitor" ID="SNIconTaskMonitor" Size="64" runat="server" />
+                </a>
+                <% }
+                   else
+                   { %>
+                    <sn:SNIcon Icon="rc-taskmonitor-inactive" ID="SNIconTaskMonitor2" Size="64" runat="server" />
+                <% } %>
+            </div>
+            <div class="sn-rootc-text">
+                <div class="sn-rootc-header">
+                    <h1 class="sn-content-title">
+                        <% if (Node.Exists("/Root/System/TaskMonitor"))
+                           { %>
+                        <a href="/Root/System/TaskMonitor"><%= GetGlobalResourceObject("Controls", "TaskMonitor") %></a>
+                        <% }
+                           else
+                           { %>
+                        <%= GetGlobalResourceObject("Controls", "TaskMonitor") %>
+                        <% } %>
+                    </h1>
+                </div>
+                <div class="sn-rootc-desc">
+                    <p><%=GetGlobalResourceObject("Controls", "TaskMonitorDesc")%></p>
+                </div>
+            </div>
+        </div>
+        <div class="sn-content">
+            <div class="sn-pic-left">
+                <a href="/Root/System/PermissionOverview" target="_blank">
+                    <sn:SNIcon Icon="rc-permissionoverview" ID="ImgPermissionoverview" Size="64" runat="server" />
                 </a>
             </div>
             <div class="sn-rootc-text">
                 <div class="sn-rootc-header">
                     <h1 class="sn-content-title">
-                        <a href="/Root/System/TaskMonitor"><%=GetGlobalResourceObject("Controls", "TaskMonitor")%></a>
+                        <a href="/Root/System/PermissionOverview" target="_blank"><%=GetGlobalResourceObject("Controls", "PermissionOverview")%></a>
                     </h1>
                 </div>
                 <div class="sn-rootc-desc">
-                    <p><%=GetGlobalResourceObject("Controls", "TaskMonitorDesc")%></p>
+                    <p><%=GetGlobalResourceObject("Controls", "PermissionOverviewDesc")%></p>
                 </div>
             </div>
         </div>
@@ -193,6 +240,23 @@
         </div>
         <div class="sn-content">
             <div class="sn-pic-left">
+                <a href="https://github.com/SenseNet/sensenet" target="_blank">
+                    <sn:SNIcon Icon="rc-github" ID="SNIconGitHub" Size="64" runat="server" />
+                </a>
+            </div>
+            <div class="sn-rootc-text">
+                <div class="sn-rootc-header">
+                    <h1 class="sn-content-title">
+                        <a href="https://github.com/SenseNet/sensenet" target="_blank"><%=GetGlobalResourceObject("Controls", "SenseNetOnGitHub")%></a>
+                    </h1>
+                </div>
+                <div class="sn-rootc-desc">
+                    <p><%=GetGlobalResourceObject("Controls", "GitHubInfo")%></p>
+                </div>
+            </div>
+        </div>
+        <div class="sn-content">
+            <div class="sn-pic-left">
                 <a href="http://wiki.sensenet.com" target="_blank">
                     <sn:SNIcon Icon="rc-wiki" ID="ImgWiki" Size="64" runat="server" />
                 </a>
@@ -244,14 +308,28 @@
         </div>
         <div class="sn-content">
             <div class="sn-pic-left">
+                <% if (Node.Exists("/Root/System/Workflows"))
+                   { %>
                 <a href="/Root/System/Workflows?action=Explore">
                     <sn:SNIcon Icon="rc-workflows" ID="ImgWorkflow" Size="64" runat="server" />
                 </a>
+                <% }
+                   else
+                   { %>
+                    <sn:SNIcon Icon="rc-workflows-inactive" ID="ImgWorkflow2" Size="64" runat="server" />
+                <% } %>
             </div>
             <div class="sn-rootc-text">
                 <div class="sn-rootc-header">
                     <h1 class="sn-content-title">
-                        <a href="/Root/System/Workflows?action=Explore"><%=GetGlobalResourceObject("Controls", "Workflows")%></a>
+                        <% if (Node.Exists("/Root/System/Workflows"))
+                           { %>
+                        <a href="/Root/System/Workflows?action=Explore"><%= GetGlobalResourceObject("Controls", "Workflows") %></a>
+                        <% }
+                           else
+                           { %>
+                        <%= GetGlobalResourceObject("Controls", "Workflows") %>
+                        <% } %>
                     </h1>
                 </div>
                 <div class="sn-rootc-desc">
@@ -276,24 +354,5 @@
                 </div>
             </div>
         </div>
-
-        <div class="sn-content">
-            <div class="sn-pic-left">
-                <a href="/Root/System/PermissionOverview" target="_blank">
-                    <sn:SNIcon Icon="rc-permissionoverview" ID="ImgPermissionoverview" Size="64" runat="server" />
-                </a>
-            </div>
-            <div class="sn-rootc-text">
-                <div class="sn-rootc-header">
-                    <h1 class="sn-content-title">
-                        <a href="/Root/System/PermissionOverview" target="_blank"><%=GetGlobalResourceObject("Controls", "PermissionOverview")%></a>
-                    </h1>
-                </div>
-                <div class="sn-rootc-desc">
-                    <p><%=GetGlobalResourceObject("Controls", "PermissionOverviewDesc")%></p>
-                </div>
-            </div>
-        </div>
-
     </div>
 </div>

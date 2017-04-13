@@ -155,11 +155,7 @@ namespace SenseNet.Portal.UI.PortletFramework
                 contentTypeNames = DefaultContentTypeName;
 
             var list = contentTypeNames.Split(',');
-            var validCtdNames = new List<string>();
-            foreach (var c in list)
-                if (IsValidContentType(c.Trim()))
-                    validCtdNames.Add(c.Trim());
-
+            var validCtdNames = list.Where(c => IsValidContentType(c.Trim())).Select(c => c.Trim()).ToList();
 
             var expressionList = new ExpressionList(ChainOperator.Or);
             var query = new NodeQuery();
@@ -169,11 +165,16 @@ namespace SenseNet.Portal.UI.PortletFramework
                 expressionList.Add(new StringExpression(StringAttribute.Path, StringOperator.StartsWith, stringExpressionValue));
             }
 
-            if (validCtdNames.Count == 0)
+            if (validCtdNames.Count == 0 && IsValidContentType(DefaultContentTypeName))
             {
                 var stringExpressionValue = RepositoryPath.Combine(Repository.ContentTypesFolderPath, string.Concat(ActiveSchema.NodeTypes[DefaultContentTypeName].NodeTypePath, "/"));
                 expressionList.Add(new StringExpression(StringAttribute.Path, StringOperator.StartsWith, stringExpressionValue));
             }
+
+            // no expressions, nothing to query for
+            if (expressionList.Expressions.Count == 0)
+                return new NodeQueryResult(new int[0]);
+
             query.Add(expressionList);
 
             return query.Execute();

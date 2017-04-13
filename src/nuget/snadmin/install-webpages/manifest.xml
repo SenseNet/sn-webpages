@@ -1,5 +1,5 @@
 <Package type='Install'>
-  <ComponentId>SenseNet.WebPages</ComponentId>
+  <Id>SenseNet.WebPages</Id>
   <Description>Sense/Net ECM WebPages 7.0 (beta)</Description>
   <ReleaseDate>2017-04-05</ReleaseDate>
   <Version>7.0.0</Version>
