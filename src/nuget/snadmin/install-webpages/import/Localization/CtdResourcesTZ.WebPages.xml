@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources>
+  <ResourceClass name="Ctd-UserControl">
+    <Languages>
+      <Language cultureName="en">
+        <data name="DisplayName" xml:space="preserve">
+          <value>User control</value>
+        </data>
+        <data name="Description" xml:space="preserve">
+          <value>A type for storing ASP.NET user controls.</value>
+        </data>
+      </Language>
+      <Language cultureName="hu">
+        <data name="DisplayName" xml:space="preserve">
+          <value>Egyéni vezérlőelem</value>
+        </data>
+        <data name="Description" xml:space="preserve">
+          <value>ASP.NET user control tárolására.</value>
+        </data>
+      </Language>
+    </Languages>
+  </ResourceClass>
+  <ResourceClass name="Ctd-ViewBase">
+    <Languages>
+      <Language cultureName="en">
+        <data name="DisplayName" xml:space="preserve">
+          <value>View base</value>
+        </data>
+        <data name="Description" xml:space="preserve">
+          <value>An abstract type for ContentList views.</value>
+        </data>
+        <data name="IsDefault-DisplayName" xml:space="preserve">
+          <value>Default</value>
+        </data>
+        <data name="IsDefault-Description" xml:space="preserve">
+          <value>Whether this is the default view on the parent ContentList.</value>
+        </data>
+        <data name="Template-DisplayName" xml:space="preserve">
+          <value>Markup template</value>
+        </data>
+        <data name="Template-Description" xml:space="preserve">
+          <value>The Xslt template used to generate the view.</value>
+        </data>
+        <data name="FilterXml-DisplayName" xml:space="preserve">
+          <value>Filtering</value>
+        </data>
+        <data name="FilterXml-Description" xml:space="preserve">
+          <value>Define filtering rules for the view.</value>
+        </data>
+        <data name="EnableAutofilters-DisplayName" xml:space="preserve">
+          <value>Enable autofilters</value>
+        </data>
+        <data name="EnableAutofilters-Description" xml:space="preserve">
+          <value>If autofilters are enabled system content will be filtered from the query.</value>
+        </data>
+        <data name="EnableLifespanFilter-DisplayName" xml:space="preserve">
+          <value>Enable lifespan filter</value>
+        </data>
+        <data name="EnableLifespanFilter-Description" xml:space="preserve">
+          <value>If lifespan filter is enabled only valid content will be in the result.</value>
+        </data>
+        <data name="Hidden-Description" xml:space="preserve">
+          <value>The view won't show in the selector menu if checked. (If unsure, leave unchecked).</value>
+        </data>
+        <data name="QueryTop-DisplayName" xml:space="preserve">
+          <value>Top</value>
+        </data>
+        <data name="QueryTop-Description" xml:space="preserve">
+          <value>If you do not want to display all content please specify here a value greater than 0.</value>
+        </data>
+        <data name="QuerySkip-DisplayName" xml:space="preserve">
+          <value>Skip</value>
+        </data>
+        <data name="QuerySkip-Description" xml:space="preserve">
+          <value>If you do not want to display the first several content please specify here a value greater than 0.</value>
+        </data>
+        <data name="Icon-DisplayName" xml:space="preserve">
+          <value>Icon identifier</value>
+        </data>
+        <data name="Icon-Description" xml:space="preserve">
+          <value>The string identifier of the View's icon.</value>
+        </data>
+      </Language>
+      <Language cultureName="hu">
+        <data name="DisplayName" xml:space="preserve">
+          <value>View base</value>
+        </data>
+        <data name="Description" xml:space="preserve">
+          <value>Minden view (listanézet) őse.</value>
+        </data>
+        <data name="IsDefault-DisplayName" xml:space="preserve">
+          <value>Alapértelmezett</value>
+        </data>
+        <data name="IsDefault-Description" xml:space="preserve">
+          <value>Legyen ez az alapértelmezett listanézet..</value>
+        </data>
+        <data name="Template-DisplayName" xml:space="preserve">
+          <value>Sablon</value>
+        </data>
+        <data name="Template-Description" xml:space="preserve">
+          <value>A listát generáló xslt sablon.</value>
+        </data>
+        <data name="FilterXml-DisplayName" xml:space="preserve">
+          <value>Szűrés</value>
+        </data>
+        <data name="FilterXml-Description" xml:space="preserve">
+          <value>A listanézet szűrési feltételei.</value>
+        </data>
+        <data name="EnableAutofilters-DisplayName" xml:space="preserve">
+          <value>Automata szűrések bekapcsolása</value>
+        </data>
+        <data name="EnableAutofilters-Description" xml:space="preserve">
+          <value>Ha be van kapcsolva, a rendszer fájlok kiszűrésre kerülnek.</value>
+        </data>
+        <data name="EnableLifespanFilter-DisplayName" xml:space="preserve">
+          <value>Élettartam szűrés</value>
+        </data>
+        <data name="EnableLifespanFilter-Description" xml:space="preserve">
+          <value>Ha be van kapcsolva, akkor csak az időben aktuális elemek jelennek meg.</value>
+        </data>
+        <data name="Hidden-Description" xml:space="preserve">
+          <value>Ha be van pipálva, akkor a listanézet nem jelenik meg a választhatók között a felületen.</value>
+        </data>
+        <data name="QueryTop-DisplayName" xml:space="preserve">
+          <value>Elemszám</value>
+        </data>
+        <data name="QueryTop-Description" xml:space="preserve">
+          <value>Ha nem akarja az összes elemet megjeleníteni, írjon be egy nullánál nagyobb számot.</value>
+        </data>
+        <data name="QuerySkip-DisplayName" xml:space="preserve">
+          <value>Kihagyott elemek</value>
+        </data>
+        <data name="QuerySkip-Description" xml:space="preserve">
+          <value>Ha a lista első valahány elemét ki szeretné hagyni a megjelenítésből, írja be az elhagyni kívánt elemek számát.</value>
+        </data>
+        <data name="Icon-DisplayName" xml:space="preserve">
+          <value>Ikon azonosító</value>
+        </data>
+        <data name="Icon-Description" xml:space="preserve">
+          <value>Név amely a listanézet ikonját azonosítja.</value>
+        </data>
+      </Language>
+    </Languages>
+  </ResourceClass>
+  <ResourceClass name="Ctd-Webform">
+    <Languages>
+      <Language cultureName="en">
+        <data name="DisplayName" xml:space="preserve">
+          <value>Webform</value>
+        </data>
+        <data name="Description" xml:space="preserve">
+          <value>Currently a placeholder type.</value>
+        </data>
+        <data name="Binary-DisplayName" xml:space="preserve">
+          <value>Binary</value>
+        </data>
+        <data name="Binary-Description" xml:space="preserve">
+          <value>ASPX markup.</value>
+        </data>
+      </Language>
+      <Language cultureName="hu">
+        <data name="DisplayName" xml:space="preserve">
+          <value>Webform</value>
+        </data>
+        <data name="Description" xml:space="preserve">
+          <value>Csak a rendszer számára. Kérjük ne használja!</value>
+        </data>
+        <data name="Binary-DisplayName" xml:space="preserve">
+          <value>Bináris</value>
+        </data>
+        <data name="Binary-Description" xml:space="preserve">
+          <value>ASPX markup.</value>
+        </data>
+      </Language>
+    </Languages>
+  </ResourceClass>
+</Resources>
