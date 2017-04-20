@@ -193,6 +193,7 @@
     <Compile Include="ContentManager.cs" />
     <Compile Include="ContentStore\ContentStoreApi.cs" />
     <Compile Include="FormActionRewriterControlAdapter.cs" />
+    <Compile Include="Handlers\XsltApplication.cs" />
     <Compile Include="Helpers\Actions.cs" />
     <Compile Include="Helpers\Security.cs" />
     <Compile Include="Helpers\UserProfiles.cs" />
