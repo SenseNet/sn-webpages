@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentMetaData>
+  <ContentType>Application</ContentType>
+  <ContentName>DeleteLocal</ContentName>
+  <Fields>
+    <DisplayName><![CDATA[$Action,DeleteLocal]]></DisplayName>
+    <ActionTypeName><![CDATA[DeleteLocalAppAction]]></ActionTypeName>
+    <Icon><![CDATA[delete]]></Icon>
+    <RequiredPermissions>Delete</RequiredPermissions>
+  </Fields>
+  <Permissions>
+    <Clear />
+  </Permissions>
+</ContentMetaData>

@@ -171,6 +171,8 @@
     <Compile Include="ApplicationModel\ActionTemplateReplacer.cs" />
     <Compile Include="ApplicationModel\AddFieldScenario.cs" />
     <Compile Include="ApplicationModel\BinarySpecialAction.cs" />
+    <Compile Include="ApplicationModel\CopyAppLocalAction.cs" />
+    <Compile Include="ApplicationModel\DeleteLocalAppAction.cs" />
     <Compile Include="ApplicationModel\EditAndUploadAction.cs" />
     <Compile Include="ApplicationModel\ExploreAction.cs" />
     <Compile Include="ApplicationModel\ListActionsScenario.cs" />
