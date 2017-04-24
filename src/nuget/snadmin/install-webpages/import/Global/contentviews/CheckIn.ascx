@@ -1,5 +1,4 @@
 <%@ Control Language="C#" AutoEventWireup="true" Inherits="SenseNet.Portal.UI.SingleContentView" %>
-<%@ Register Assembly="SenseNet.Portal" Namespace="SenseNet.Portal.UI.Controls" TagPrefix="sn" %>
 
 <div class="sn-content-inlineview-header ui-helper-clearfix">
     <%= SenseNet.Portal.UI.IconHelper.RenderIconTag(this.Content.Icon, null, 32)%>

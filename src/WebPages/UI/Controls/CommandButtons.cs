@@ -1,18 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using SenseNet.ContentRepository;
 using SenseNet.ContentRepository.Storage;
 using SenseNet.ContentRepository.Schema;
-using Content = System.Web.UI.WebControls.Content;
 using SenseNet.ContentRepository.Storage.Security;
-using SenseNet.ContentRepository.Storage.Schema;
 using SenseNet.Portal.Virtualization;
-using System.Text.RegularExpressions;
 using SenseNet.Diagnostics;
 
 namespace SenseNet.Portal.UI.Controls
@@ -32,13 +28,8 @@ namespace SenseNet.Portal.UI.Controls
         [PersistenceMode(PersistenceMode.Attribute)]
         public string LayoutControlPath { get; set; }
 
-        private string _checkInControlPath = "/Root/Global/contentviews/CheckInDialog.ascx";
         [PersistenceMode(PersistenceMode.Attribute)]
-        public string CheckInControlPath
-        {
-            get { return _checkInControlPath; }
-            set { _checkInControlPath = value; }
-        }
+        public string CheckInControlPath { get; set; } = "/Root/Global/contentviews/CheckInDialog.ascx";
 
         [PersistenceMode(PersistenceMode.Attribute)]
         public string HideButtons { get; set; }
@@ -80,7 +71,7 @@ namespace SenseNet.Portal.UI.Controls
 
                 // If the property is empty, try to load the control from under the skin. 
                 // If it is not found there, the fallback is the old global path.
-                if (string.IsNullOrEmpty(controlPath) && !SkinManager.TryResolve(SkinControlPath, out controlPath))
+                if (string.IsNullOrEmpty(controlPath) && !SkinManagerBase.TryResolve(SkinControlPath, out controlPath))
                     controlPath = GlobalControlPath;
 
                 if (this._layoutControl == null)
@@ -173,7 +164,7 @@ namespace SenseNet.Portal.UI.Controls
                     var checkinButton1 = this.SaveCheckinButton as Button;
                     var checkinButton2 = this.CheckoutSaveCheckinButton as Button;
 
-                    if (this.ID.CompareTo("CheckInCommandButtons") == 0)
+                    if (string.Compare(this.ID, "CheckInCommandButtons", StringComparison.InvariantCultureIgnoreCase) == 0)
                     {
                         // this is the command buttons control on the checkin dialog
                         if (cicm == CheckInCommentsMode.Compulsory)
@@ -193,12 +184,15 @@ namespace SenseNet.Portal.UI.Controls
                         if (checkinButton2 != null)
                             checkinButton2.CssClass += " sn-notdisabled";
                     }
-                    else if (string.IsNullOrEmpty(PortalContext.Current.ActionName) || PortalContext.Current.ActionName.ToLower().CompareTo("checkin") != 0)
+                    else if (string.IsNullOrEmpty(PortalContext.Current.ActionName) || 
+                        string.Compare(PortalContext.Current.ActionName, "checkin", StringComparison.InvariantCultureIgnoreCase) != 0)
                     {
                         // this is not _that_ command button on the checkin page: clear checkin 
                         // comments for this version and add the checkin dialog
                         this.ContentView.Content["CheckInComments"] = string.Empty;
-                        this.Controls.Add(Page.LoadControl(this.CheckInControlPath));
+
+                        if (!string.IsNullOrEmpty(CheckInControlPath) && Node.Exists(this.CheckInControlPath))
+                            this.Controls.Add(Page.LoadControl(this.CheckInControlPath));
 
                         if (checkinButton1 != null)
                         {
