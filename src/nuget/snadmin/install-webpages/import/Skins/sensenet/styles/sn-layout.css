@@ -134,7 +134,7 @@
 /* sn-layout-login - based on sn-layout3 */
 .sn-layout-login .sn-layout-container { width: 100%; margin: 0; padding:0; }
 .sn-layout-login .sn-layout-head {
-    width: 320px; height: 140px;
+    width: 320px; height: 180px;
     margin:7em auto 0 auto; padding: 0;
     background: none;
     text-align: center;
@@ -142,8 +142,9 @@
 }
 .sn-layout-login .sn-layout-head h1 {
     margin:0 auto !important; padding: 0 !important;
-    width: 300px !important; height: 114px !important;
-    background: url(../images/snlogo.gif) !important;
+    width: 300px !important; height: 170px !important;
+    background: url(../images/snlogo.png) center center no-repeat !important;
+    background-size: 270px 171px !important;
     position: relative !important; top: auto !important; left: auto !important;
 }
 .sn-layout-login .sn-columns { width: 100%; text-align:center; }
