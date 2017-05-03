@@ -8,10 +8,11 @@ To finalize the installation and get started with sensenet ECM WebPages, please 
 1. Please make sure that you have the SenseNet.Services base component installed.
 
 2. Change the Global.asax.cs codebehind: the application class should inherit from SenseNet.Portal.SenseNetGlobal
+   Please note that this is a different base class from the one in the Services layer!
 
-4. Build your solution, make sure that there are no build errors.
+3. Build your solution, make sure that there are no build errors.
 
-5. Install the sensenet ECM WebPages component
+4. Install the sensenet ECM WebPages component
     - open a command line and go to the \Admin\bin folder in your web folder
     - execute the install-webpages command with the SnAdmin tool
 

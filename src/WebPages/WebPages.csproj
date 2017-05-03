@@ -142,6 +142,10 @@
       <HintPath>..\packages\SenseNet.TaskManagement.Core.1.1.0.0\lib\net45\SenseNet.TaskManagement.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="SenseNet.TokenAuthentication, Version=7.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SenseNet.Services.7.0.0-beta1\lib\net451\SenseNet.TokenAuthentication.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="SenseNet.Tools, Version=2.1.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\SenseNet.Tools.2.1.1\lib\net451\SenseNet.Tools.dll</HintPath>
       <Private>True</Private>
@@ -171,6 +175,8 @@
     <Compile Include="ApplicationModel\ActionTemplateReplacer.cs" />
     <Compile Include="ApplicationModel\AddFieldScenario.cs" />
     <Compile Include="ApplicationModel\BinarySpecialAction.cs" />
+    <Compile Include="ApplicationModel\CopyAppLocalAction.cs" />
+    <Compile Include="ApplicationModel\DeleteLocalAppAction.cs" />
     <Compile Include="ApplicationModel\EditAndUploadAction.cs" />
     <Compile Include="ApplicationModel\ExploreAction.cs" />
     <Compile Include="ApplicationModel\ListActionsScenario.cs" />
@@ -182,7 +188,6 @@
     <Compile Include="ApplicationModel\SmartAppHelperApi.cs" />
     <Compile Include="ApplicationModel\UploadResumeAction.cs" />
     <Compile Include="ApplicationModel\ViewsScenario.cs" />
-    <Compile Include="ApplicationModel\WebdavOpenAction.cs" />
     <Compile Include="ApplicationModel\WebPartDisplayModeAction.cs" />
     <Compile Include="CaseInsensitiveEqualityComparer.cs" />
     <Compile Include="ClientContext.cs" />
@@ -191,6 +196,7 @@
     <Compile Include="ContentManager.cs" />
     <Compile Include="ContentStore\ContentStoreApi.cs" />
     <Compile Include="FormActionRewriterControlAdapter.cs" />
+    <Compile Include="Handlers\XsltApplication.cs" />
     <Compile Include="Helpers\Actions.cs" />
     <Compile Include="Helpers\Security.cs" />
     <Compile Include="Helpers\UserProfiles.cs" />
@@ -274,6 +280,7 @@
     <Compile Include="Portlets\ContentOperations\ContentCheckInPortlet.cs" />
     <Compile Include="Portlets\ContentOperations\ContentCheckOutPortlet.cs" />
     <Compile Include="Portlets\ContentOperations\ContentEditorPortlet.cs" />
+    <Compile Include="Portlets\ContentOperations\ContentHistoryPortlet.cs" />
     <Compile Include="Portlets\ContentOperations\ContentListPortlet.cs" />
     <Compile Include="Portlets\ContentOperations\ContentPublishPortlet.cs" />
     <Compile Include="Portlets\ContentOperations\ContentRenamePortlet.cs" />
@@ -298,6 +305,7 @@
     <Compile Include="Portlets\NodeQueryXsltProxy.cs" />
     <Compile Include="Portlets\PageAdminPortlet.cs" />
     <Compile Include="Portlets\PortletState.cs" />
+    <Compile Include="Portlets\ProxyPurgePortlet.cs" />
     <Compile Include="Portlets\PurgePortlet.cs" />
     <Compile Include="Portlets\QuickSearchPortlet.cs" />
     <Compile Include="Portlets\ResourceXsltClient.cs" />
@@ -309,6 +317,7 @@
     <Compile Include="Portlets\SiteMenu\SiteMenuNodeEnumerator.cs" />
     <Compile Include="Portlets\StatusCodePortlet.cs" />
     <Compile Include="Portlets\UserControlPortlet.cs" />
+    <Compile Include="Portlets\UserGroupManagerPortlet.cs" />
     <Compile Include="PortletTemplateReplacer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SafeQueries.cs" />

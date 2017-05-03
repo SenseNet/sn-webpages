@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="view.xslt"?>
+<Resources>
+  <ResourceClass name="Ctd-ContentView">
+    <Languages>
+      <Language cultureName="en">
+        <data name="DisplayName" xml:space="preserve">
+          <value>Content View</value>
+        </data>
+        <data name="Description" xml:space="preserve">
+          <value>A type for Content Views.</value>
+        </data>
+      </Language>
+      <Language cultureName="hu">
+        <data name="DisplayName" xml:space="preserve">
+          <value>Tartalom-megjelenítő.</value>
+        </data>
+        <data name="Description" xml:space="preserve">
+          <value></value>
+        </data>
+      </Language>
+    </Languages>
+  </ResourceClass>
+  <ResourceClass name="Ctd-ContentViews">
+    <Languages>
+      <Language cultureName="en">
+        <data name="DisplayName" xml:space="preserve">
+          <value>Content Views</value>
+        </data>
+        <data name="Description" xml:space="preserve">
+          <value>This is the container type for ContentViews. Instances are only allowed at /Root/Global/contentviews.</value>
+        </data>
+      </Language>
+      <Language cultureName="hu">
+        <data name="DisplayName" xml:space="preserve">
+          <value>Tartalom-megjelenítő mappa</value>
+        </data>
+        <data name="Description" xml:space="preserve">
+          <value>Tároló tartalom-megjelenítők számára. Csak egy lehet belőle típusonként minden skin-hez. Az alapértelmezettek itt vannak: /Root/Global/contentviews.</value>
+        </data>
+      </Language>
+    </Languages>
+  </ResourceClass>
+</Resources>

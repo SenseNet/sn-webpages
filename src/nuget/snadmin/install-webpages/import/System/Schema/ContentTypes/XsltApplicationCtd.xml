@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentType name="XsltApplication" parentType="Application" handler="SenseNet.Portal.Handlers.XsltApplication" xmlns="http://schemas.sensenet.com/SenseNet/ContentRepository/ContentTypeDefinition">
+  <DisplayName>$Ctd-XsltApplication,DisplayName</DisplayName>
+  <Description>$Ctd-XsltApplication,Description</Description>
+  <Icon>File</Icon>
+  <Fields>
+    <Field name="Binary" type="Binary">
+      <DisplayName>$Ctd-XsltApplication,Binary-DisplayName</DisplayName>
+      <Description>$Ctd-XsltApplication,Binary-Description</Description>
+      <Configuration>
+        <IsText>true</IsText>
+      </Configuration>
+    </Field>
+    <Field name="MimeType" type="ShortText">
+      <DisplayName>$Ctd-XsltApplication,MimeType-DisplayName</DisplayName>
+      <Description>$Ctd-XsltApplication,MimeType-Description</Description>
+      <Icon>field.gif</Icon>
+      <Configuration>
+        <Compulsory>false</Compulsory>
+        <MaxLength>60</MaxLength>
+      </Configuration>
+    </Field>
+    <Field name="OmitXmlDeclaration" type="Boolean">
+      <DisplayName>$Ctd-XsltApplication,OmitXmlDeclaration-DisplayName</DisplayName>
+      <Description>$Ctd-XsltApplication,OmitXmlDeclaration-Description</Description>
+      <Icon>field.gif</Icon>
+      <Configuration>
+        <DefaultValue>false</DefaultValue>
+      </Configuration>
+    </Field>
+    <Field name="ResponseEncoding" type="ShortText">
+      <DisplayName>$Ctd-XsltApplication,ResponseEncoding-DisplayName</DisplayName>
+      <Description>$Ctd-XsltApplication,ResponseEncoding-Description</Description>
+      <Icon>field.gif</Icon>
+      <Configuration>
+        <Compulsory>false</Compulsory>
+        <MaxLength>60</MaxLength>
+        <DefaultValue>utf-8</DefaultValue>
+      </Configuration>
+    </Field>
+    <Field name="WithChildren" type="Boolean">
+      <DisplayName>$Ctd-XsltApplication,WithChildren-DisplayName</DisplayName>
+      <Description>$Ctd-XsltApplication,WithChildren-Description</Description>
+      <Icon>field.gif</Icon>
+      <Configuration>
+        <DefaultValue>false</DefaultValue>
+      </Configuration>
+    </Field>
+    <Field name="Cacheable" type="Boolean">
+      <DisplayName>$Ctd-XsltApplication,Cacheable-DisplayName</DisplayName>
+      <Description>$Ctd-XsltApplication,Cacheable-Description</Description>
+      <Configuration>
+        <DefaultValue>true</DefaultValue>
+      </Configuration>
+    </Field>
+    <Field name="CacheableForLoggedInUser" type="Boolean">
+      <DisplayName>$Ctd-XsltApplication,CacheableForLoggedInUser-DisplayName</DisplayName>
+      <Description>$Ctd-XsltApplication,CacheableForLoggedInUser-Description</Description>
+      <Configuration>
+        <DefaultValue>true</DefaultValue>
+      </Configuration>
+    </Field>
+    <Field name="CacheByPath" type="Boolean">
+      <DisplayName>$Ctd-XsltApplication,CacheByPath-DisplayName</DisplayName>
+      <Description>$Ctd-XsltApplication,CacheByPath-Description</Description>
+      <Configuration>
+        <DefaultValue>true</DefaultValue>
+      </Configuration>
+    </Field>
+    <Field name="CacheByParams" type="Boolean">
+      <DisplayName>$Ctd-XsltApplication,CacheByParams-DisplayName</DisplayName>
+      <Description>$Ctd-XsltApplication,CacheByParams-Description</Description>
+      <Configuration>
+        <DefaultValue>false</DefaultValue>
+      </Configuration>
+    </Field>
+    <Field name="CacheByLanguage" type="Boolean">
+      <DisplayName>$Ctd-XsltApplication,CacheByLanguage-DisplayName</DisplayName>
+      <Description>$Ctd-XsltApplication,CacheByLanguage-Description</Description>
+      <Configuration>
+        <DefaultValue>false</DefaultValue>
+      </Configuration>
+    </Field>
+    <Field name="CacheByHost" type="Boolean">
+      <DisplayName>$Ctd-XsltApplication,CacheByHost-DisplayName</DisplayName>
+      <Description>$Ctd-XsltApplication,CacheByHost-Description</Description>
+      <Configuration>
+        <DefaultValue>false</DefaultValue>
+      </Configuration>
+    </Field>
+    <Field name="AbsoluteExpiration" type="Integer">
+      <DisplayName>$Ctd-XsltApplication,AbsoluteExpiration-DisplayName</DisplayName>
+      <Description>$Ctd-XsltApplication,AbsoluteExpiration-Description</Description>
+      <Configuration>
+        <DefaultValue>-1</DefaultValue>
+      </Configuration>
+    </Field>
+    <Field name="SlidingExpirationMinutes" type="Integer">
+      <DisplayName>$Ctd-XsltApplication,SlidingExpirationMinutes-DisplayName</DisplayName>
+      <Description>$Ctd-XsltApplication,SlidingExpirationMinutes-Description</Description>
+      <Configuration>
+        <DefaultValue>-1</DefaultValue>
+      </Configuration>
+    </Field>
+    <Field name="CustomCacheKey" type="ShortText">
+      <DisplayName>$Ctd-XsltApplication,CustomCacheKey-DisplayName</DisplayName>
+      <Description>$Ctd-XsltApplication,CustomCacheKey-Description</Description>
+    </Field>
+  </Fields>
+</ContentType>

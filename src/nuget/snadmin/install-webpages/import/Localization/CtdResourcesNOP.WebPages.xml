@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources>
+  <ResourceClass name="Ctd-Page">
+    <Languages>
+      <Language cultureName="en">
+        <data name="DisplayName" xml:space="preserve">
+          <value>Portlet Page</value>
+        </data>
+        <data name="Description" xml:space="preserve">
+          <value>A web page for presenting content through Portlets.</value>
+        </data>
+        <data name="Name-Description" xml:space="preserve">
+          <value>The name by which the Page can be accessed.</value>
+        </data>
+        <data name="PageTemplateNode-DisplayName" xml:space="preserve">
+          <value>Page Template</value>
+        </data>
+        <data name="PageTemplateNode-Description" xml:space="preserve">
+          <value>The page template defines the layout and design of your page.</value>
+        </data>
+        <data name="PageSkin-DisplayName" xml:space="preserve">
+          <value>Skin</value>
+        </data>
+        <data name="SmartUrl-DisplayName" xml:space="preserve">
+          <value>Smart URL</value>
+        </data>
+        <data name="SmartUrl-Description" xml:space="preserve">
+          <value>A URL shortcut to this page under the site root URL.</value>
+        </data>
+        <data name="SiteRelativeUrl-DisplayName" xml:space="preserve">
+          <value>Page urls</value>
+        </data>
+        <data name="SiteRelativeUrl-Description" xml:space="preserve">
+          <value>The page can be accessed on these urls.</value>
+        </data>
+        <data name="IsExternal-DisplayName" xml:space="preserve">
+          <value>Redirect page</value>
+        </data>
+        <data name="IsExternal-Description" xml:space="preserve">
+          <value>Select this to redirect requests to another URL.</value>
+        </data>
+        <data name="OuterUrl-DisplayName" xml:space="preserve">
+          <value>Redirect URL</value>
+        </data>
+        <data name="OuterUrl-Description" xml:space="preserve">
+          <value>The URL to redirect requests to.</value>
+        </data>
+        <data name="MetaTitle-DisplayName" xml:space="preserve">
+          <value>Meta Title</value>
+        </data>
+        <data name="MetaTitle-Description" xml:space="preserve">
+          <value>Title to be used in the HTML head of the page.</value>
+        </data>
+        <data name="Keywords-DisplayName" xml:space="preserve">
+          <value>Keywords</value>
+        </data>
+        <data name="Keywords-Description" xml:space="preserve">
+          <value>Enter keywords to help in search engine optimization.</value>
+        </data>
+        <data name="MetaDescription-DisplayName" xml:space="preserve">
+          <value>Meta Description</value>
+        </data>
+        <data name="MetaDescription-Description" xml:space="preserve">
+          <value>Description to be included in the HTML head of the page.</value>
+        </data>
+        <data name="MetaAuthors-DisplayName" xml:space="preserve">
+          <value>Meta Authors</value>
+        </data>
+        <data name="MetaAuthors-Description" xml:space="preserve">
+          <value>Author and copyright info to be included in the HTML head of the page.</value>
+        </data>
+        <data name="CustomMeta-DisplayName" xml:space="preserve">
+          <value>CustomMeta</value>
+        </data>
+        <data name="CustomMeta-Description" xml:space="preserve">
+          <value>Additional metadata to be included in the HTML head of the page (use well-formed XHTML).</value>
+        </data>
+        <data name="PageId-DisplayName" xml:space="preserve">
+          <value>[PageId]</value>
+        </data>
+        <data name="PageId-Description" xml:space="preserve">
+          <value>[PageId].</value>
+        </data>
+        <data name="NodeName-DisplayName" xml:space="preserve">
+          <value>[NodeName]</value>
+        </data>
+        <data name="NodeName-Description" xml:space="preserve">
+          <value>[NodeName].</value>
+        </data>
+        <data name="TemporaryPortletInfo-DisplayName" xml:space="preserve">
+          <value>Temporary Portlet Info</value>
+        </data>
+        <data name="TextExtract-DisplayName" xml:space="preserve">
+          <value>TextExtract</value>
+        </data>
+        <data name="TextExtract-Description" xml:space="preserve">
+          <value>TextExtract.</value>
+        </data>
+        <data name="Binary-Description" xml:space="preserve">
+          <value>ASPX markup (auto-generated).</value>
+        </data>
+        <data name="PersonalizationSettings-DisplayName" xml:space="preserve">
+          <value>Portlet settings</value>
+        </data>
+        <data name="PersonalizationSettings-Description" xml:space="preserve">
+          <value>The binary settings used by the Portlet framework.</value>
+        </data>
+      </Language>
+      <Language cultureName="hu">
+        <data name="DisplayName" xml:space="preserve">
+          <value>Portlet oldal</value>
+        </data>
+        <data name="Description" xml:space="preserve">
+          <value>Weboldal, amely a tartalommegjelenítést portleteken keresztül támogatja.</value>
+        </data>
+        <data name="Name-Description" xml:space="preserve">
+          <value>Név, amelyen keresztül az oldal elérhető (URL-ben látható név).</value>
+        </data>
+        <data name="PageTemplateNode-DisplayName" xml:space="preserve">
+          <value>Oldalsablon</value>
+        </data>
+        <data name="PageTemplateNode-Description" xml:space="preserve">
+          <value>Meghatározza az oldal kinézetét és az oldalelemek elhelyezkedését.</value>
+        </data>
+        <data name="PageSkin-DisplayName" xml:space="preserve">
+          <value>Téma</value>
+        </data>
+        <data name="SmartUrl-DisplayName" xml:space="preserve">
+          <value>Smart URL</value>
+        </data>
+        <data name="SmartUrl-Description" xml:space="preserve">
+          <value>URL egyszerűsítés, az oldal a megadott névvel lesz elérhető a szájt alatt.</value>
+        </data>
+        <data name="SiteRelativeUrl-DisplayName" xml:space="preserve">
+          <value>URL lista</value>
+        </data>
+        <data name="SiteRelativeUrl-Description" xml:space="preserve">
+          <value>Az oldal URL-jei.</value>
+        </data>
+        <data name="IsExternal-DisplayName" xml:space="preserve">
+          <value>Átirányítás</value>
+        </data>
+        <data name="IsExternal-Description" xml:space="preserve">
+          <value>Jelölje be, ha az URL-nek át kell irányítania máshova.</value>
+        </data>
+        <data name="OuterUrl-DisplayName" xml:space="preserve">
+          <value>Átirányítási URL</value>
+        </data>
+        <data name="OuterUrl-Description" xml:space="preserve">
+          <value>Az URL, ahova az oldal átirányít.</value>
+        </data>
+        <data name="MetaTitle-DisplayName" xml:space="preserve">
+          <value>Meta cím</value>
+        </data>
+        <data name="MetaTitle-Description" xml:space="preserve">
+          <value>A Title elem tartalma a HTML head elemen belül.</value>
+        </data>
+        <data name="Keywords-DisplayName" xml:space="preserve">
+          <value>Kulcsszavak</value>
+        </data>
+        <data name="Keywords-Description" xml:space="preserve">
+          <value>Kulcsszavak, melyek segítik a keresőmotorokat (SEO).</value>
+        </data>
+        <data name="MetaDescription-DisplayName" xml:space="preserve">
+          <value>Meta leírás</value>
+        </data>
+        <data name="MetaDescription-Description" xml:space="preserve">
+          <value>A Description elem tartalma a HTML head elemen belül.</value>
+        </data>
+        <data name="MetaAuthors-DisplayName" xml:space="preserve">
+          <value>Meta szerzők</value>
+        </data>
+        <data name="MetaAuthors-Description" xml:space="preserve">
+          <value>Az Author elem tartalma a HTML head elemen belül.</value>
+        </data>
+        <data name="CustomMeta-DisplayName" xml:space="preserve">
+          <value>Egyéb Meta</value>
+        </data>
+        <data name="CustomMeta-Description" xml:space="preserve">
+          <value>További metaadatok, amelyek a HTML head elembe kerülnek. Jól formázott (well-formed) XHTML-nek kell lennie.</value>
+        </data>
+        <data name="PageId-DisplayName" xml:space="preserve">
+          <value>Page Id</value>
+        </data>
+        <data name="PageId-Description" xml:space="preserve">
+          <value>Csak belső használatra.</value>
+        </data>
+        <data name="NodeName-DisplayName" xml:space="preserve">
+          <value>Tartalom név</value>
+        </data>
+        <data name="NodeName-Description" xml:space="preserve">
+          <value>Csak belső használatra.</value>
+        </data>
+        <data name="TemporaryPortletInfo-DisplayName" xml:space="preserve">
+          <value>Portlet adatok</value>
+        </data>
+        <data name="TemporaryPortletInfo-Description" xml:space="preserve">
+          <value>Csak belső használatra.</value>
+        </data>
+        <data name="TextExtract-DisplayName" xml:space="preserve">
+          <value>Szövegkivonat</value>
+        </data>
+        <data name="TextExtract-Description" xml:space="preserve">
+          <value></value>
+        </data>
+        <data name="Binary-Description" xml:space="preserve">
+          <value>ASPX kód (automatikusan generált).</value>
+        </data>
+        <data name="PersonalizationSettings-DisplayName" xml:space="preserve">
+          <value>Portlet adatok</value>
+        </data>
+        <data name="PersonalizationSettings-Description" xml:space="preserve">
+          <value>Bináris portlet adatok a portlet keretrendszer számára.</value>
+        </data>
+      </Language>
+    </Languages>
+  </ResourceClass>
+  <ResourceClass name="Ctd-PageTemplate">
+    <Languages>
+      <Language cultureName="en">
+        <data name="DisplayName" xml:space="preserve">
+          <value>Page Template</value>
+        </data>
+        <data name="Description" xml:space="preserve">
+          <value>Page Templates define the design and layout of Portlet pages.</value>
+        </data>
+        <data name="MasterPageNode-DisplayName" xml:space="preserve">
+          <value>MasterPage node</value>
+        </data>
+        <data name="MasterPageNode-Description" xml:space="preserve">
+          <value>Master page reference. Only for internal use.</value>
+        </data>
+      </Language>
+      <Language cultureName="hu">
+        <data name="DisplayName" xml:space="preserve">
+          <value>Oldalsablon</value>
+        </data>
+        <data name="Description" xml:space="preserve">
+          <value>Az oldalsablon írja le egy oldal designját és layoutját.</value>
+        </data>
+        <data name="MasterPageNode-DisplayName" xml:space="preserve">
+          <value>Mester oldal</value>
+        </data>
+        <data name="MasterPageNode-Description" xml:space="preserve">
+          <value>Mester oldal referencia. Csak belső használatra.</value>
+        </data>
+      </Language>
+    </Languages>
+  </ResourceClass>
+  <ResourceClass name="Ctd-PortletCategory">
+    <Languages>
+      <Language cultureName="en">
+        <data name="DisplayName" xml:space="preserve">
+          <value>PortletCategory</value>
+        </data>
+        <data name="Description" xml:space="preserve">
+          <value>Organize portlets under categories.</value>
+        </data>
+        <data name="DisplayName-DisplayName" xml:space="preserve">
+          <value>Display Name</value>
+        </data>
+        <data name="Description-DisplayName" xml:space="preserve">
+          <value>Description of category</value>
+        </data>
+        <data name="Hidden-DisplayName" xml:space="preserve">
+          <value>Hidden</value>
+        </data>
+        <data name="Hidden-Description" xml:space="preserve">
+          <value>Doesn't show up in Add portlet dialog if checked.</value>
+        </data>
+      </Language>
+      <Language cultureName="hu">
+        <data name="DisplayName" xml:space="preserve">
+          <value>Portlet kategória</value>
+        </data>
+        <data name="Description" xml:space="preserve">
+          <value>Kategóriákba rendezi a portleteket.</value>
+        </data>
+        <data name="DisplayName-DisplayName" xml:space="preserve">
+          <value>Olvasható név</value>
+        </data>
+        <data name="Description-DisplayName" xml:space="preserve">
+          <value>Kategória leírása</value>
+        </data>
+        <data name="Hidden-DisplayName" xml:space="preserve">
+          <value>Rejtett</value>
+        </data>
+        <data name="Hidden-Description" xml:space="preserve">
+          <value>Ha be van pipálva, az adott kategória nem jelenik meg a portlet hozzáadás ablakban.</value>
+        </data>
+      </Language>
+    </Languages>
+  </ResourceClass>
+  <ResourceClass name="Ctd-Portlet">
+    <Languages>
+      <Language cultureName="en">
+        <data name="DisplayName" xml:space="preserve">
+          <value>Portlet</value>
+        </data>
+        <data name="Description" xml:space="preserve">
+          <value>Portlet that can be selected in the 'Add new portlet' dialog.</value>
+        </data>
+        <data name="TypeName-DisplayName" xml:space="preserve">
+          <value>Fully qualified type name</value>
+        </data>
+        <data name="ImageRef-DisplayName" xml:space="preserve">
+          <value>Thumbnail image of portlet (reference)</value>
+        </data>
+        <data name="ImageData-DisplayName" xml:space="preserve">
+          <value>Thumbnail image of portlet (binarydata)</value>
+        </data>
+        <data name="PortletImage-DisplayName" xml:space="preserve">
+          <value>Thumbnail image of portlet</value>
+        </data>
+        <data name="Hidden-DisplayName" xml:space="preserve">
+          <value>Hidden</value>
+        </data>
+        <data name="Hidden-Description" xml:space="preserve">
+          <value>Doesn't show up in Add portlet dialog if checked.</value>
+        </data>
+      </Language>
+      <Language cultureName="hu">
+        <data name="DisplayName" xml:space="preserve">
+          <value>Portlet</value>
+        </data>
+        <data name="Description" xml:space="preserve">
+          <value>Portlet, ami kiválasztható a portlet hozzáadása ablakban.</value>
+        </data>
+        <data name="TypeName-DisplayName" xml:space="preserve">
+          <value>Teljes típusnév</value>
+        </data>
+        <data name="ImageRef-DisplayName" xml:space="preserve">
+          <value>Előnézeti kép (referencia)</value>
+        </data>
+        <data name="ImageData-DisplayName" xml:space="preserve">
+          <value>Előnézeti kép (bináris)</value>
+        </data>
+        <data name="PortletImage-DisplayName" xml:space="preserve">
+          <value>A portlet előnézeti képe</value>
+        </data>
+        <data name="Hidden-DisplayName" xml:space="preserve">
+          <value>Rejtett</value>
+        </data>
+        <data name="Hidden-Description" xml:space="preserve">
+          <value>Ha be van pipálva, nem jelenik meg a portlet hozzáadása ablakban.</value>
+        </data>
+      </Language>
+    </Languages>
+  </ResourceClass>
+  <ResourceClass name="Ctd-Portlets">
+    <Languages>
+      <Language cultureName="en">
+        <data name="DisplayName" xml:space="preserve">
+          <value>Portlets</value>
+        </data>
+        <data name="Description" xml:space="preserve">
+          <value>This is the container type for portlets. Only a single instance is allowed at /Root/Portlets.</value>
+        </data>
+      </Language>
+      <Language cultureName="hu">
+        <data name="DisplayName" xml:space="preserve">
+          <value>Portletek</value>
+        </data>
+        <data name="Description" xml:space="preserve">
+          <value>Portleteket tartalmazó gyűjtőmappa. Csak egy létezhet belőle, a /Root/Portlets címen.</value>
+        </data>
+      </Language>
+    </Languages>
+  </ResourceClass>
+</Resources>

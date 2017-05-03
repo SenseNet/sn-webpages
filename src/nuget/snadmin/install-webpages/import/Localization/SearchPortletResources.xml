@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources>
+	<ResourceClass name="SearchPortlet">
+		<Languages>
+			<Language cultureName="en">
+				<data name="SearchCriteria3Char" xml:space="preserve">
+				  <value>Searched value should be at least 3 characters long.</value>
+				</data>
+				<data name="NoSearchResultText" xml:space="preserve">
+				  <value>No search result found.</value>
+				</data>
+				<data name="Search" xml:space="preserve">
+				  <value>Search</value>
+				</data>
+        <data name="ExtraQueryXMLDisplayName" xml:space="preserve">
+				  <value>Extra query XML</value>
+				</data>
+        <data name="ExtraQueryXMLDescription" xml:space="preserve">
+				  <value></value>
+				</data>
+        <data name="FullQueryXMLDisplayName" xml:space="preserve">
+				  <value>Full query XML</value>
+				</data>
+        <data name="FullQueryXMLDescription" xml:space="preserve">
+				  <value></value>
+				</data>
+        <data name="SearchPortletCategoryTitle" xml:space="preserve">
+				  <value>Search portlet</value>
+				</data>
+        <data name="PageSizeDisplayName" xml:space="preserve">
+				  <value>Page size</value>
+				</data>
+        <data name="SearchPaneModeDisplayName" xml:space="preserve">
+				  <value>Search pane mode</value>
+				</data>
+        <data name="CvFolderPathDisplayName" xml:space="preserve">
+				  <value>CV folder path</value>
+				</data>
+        <data name="AllowEmptySearchDisplayName" xml:space="preserve">
+				  <value>Allow empty search</value>
+				</data>
+        <data name="IsSystemAccountDisplayName" xml:space="preserve">
+				  <value>Is system account</value>
+				</data>
+        <data name="ResultCount" xml:space="preserve">
+				  <value>Result count</value>
+				</data>
+        <data name="Back" xml:space="preserve">
+				  <value>Back</value>
+				</data>
+			</Language>
+			<Language cultureName="hu">
+				<data name="SearchCriteria3Char" xml:space="preserve">
+				  <value>Kérjük, adjon meg legalább 3 karaktert.</value>
+				</data>
+				<data name="NoSearchResultText" xml:space="preserve">
+				  <value>Nincs találat.</value>
+				</data>
+				<data name="Search" xml:space="preserve">
+				  <value>Keresés</value>
+				</data>
+        <data name="ExtraQueryXMLDisplayName" xml:space="preserve">
+				  <value>Extra query XML</value>
+				</data>
+        <data name="ExtraQueryXMLDescription" xml:space="preserve">
+				  <value></value>
+				</data>
+        <data name="FullQueryXMLDisplayName" xml:space="preserve">
+				  <value>Full query XML</value>
+				</data>
+        <data name="FullQueryXMLDescription" xml:space="preserve">
+				  <value></value>
+				</data>
+        <data name="SearchPortletCategoryTitle" xml:space="preserve">
+				  <value>Search portlet</value>
+				</data>
+        <data name="PageSizeDisplayName" xml:space="preserve">
+				  <value>Page size</value>
+				</data>
+        <data name="SearchPaneModeDisplayName" xml:space="preserve">
+				  <value>Search pane mode</value>
+				</data>
+        <data name="CvFolderPathDisplayName" xml:space="preserve">
+				  <value>CV folder path</value>
+				</data>
+        <data name="AllowEmptySearchDisplayName" xml:space="preserve">
+				  <value>Allow empty search</value>
+				</data>
+        <data name="IsSystemAccountDisplayName" xml:space="preserve">
+				  <value>Is system account</value>
+				</data>
+        <data name="ResultCount" xml:space="preserve">
+				  <value>Találatok száma</value>
+				</data>
+        <data name="Back" xml:space="preserve">
+				  <value>Vissza</value>
+				</data>
+			</Language>
+		</Languages>
+	</ResourceClass>
+  <ResourceClass name="ParametricSearchPortlet">
+    <Languages>
+      <Language  cultureName="en">
+        <data name="Name" xml:space="preserve">
+				  <value>Name</value>
+				</data>
+        <data name="UserName" xml:space="preserve">
+				  <value>User name</value>
+				</data>
+        <data name="Email" xml:space="preserve">
+				  <value>E-mail</value>
+				</data>
+        <data name="PhoneNumber" xml:space="preserve">
+				  <value>Phone number</value>
+				</data>
+        <data name="LanguagesSpoken" xml:space="preserve">
+				  <value>Spoken languages</value>
+				</data>
+        <data name="Manager" xml:space="preserve">
+				  <value>Manager</value>
+				</data>
+        <data name="Department" xml:space="preserve">
+				  <value>Department</value>
+				</data>
+        <data name="Search" xml:space="preserve">
+				  <value>Search</value>
+				</data>
+        <data name="ColleagueSearch" xml:space="preserve">
+				  <value>Colleague Search</value>
+				</data>
+        <data name="Type" xml:space="preserve">
+				  <value>Type</value>
+				</data>
+	      <data name="Text" xml:space="preserve">
+				  <value>Text</value>
+				</data>
+	      <data name="Path" xml:space="preserve">
+				  <value>Path</value>
+				</data>
+	      <data name="CreationDate" xml:space="preserve">
+				  <value>Creation Date</value>
+				</data>
+	      <data name="Author" xml:space="preserve">
+				  <value>Author</value>
+				</data>
+        <data name="EmptyQuerysNotAllowed" xml:space="preserve">
+				  <value>Empty queries are not allowed.</value>
+				</data>
+      </Language>
+      <Language  cultureName="hu">
+        <data name="Name" xml:space="preserve">
+				  <value>Név</value>
+				</data>
+        <data name="UserName" xml:space="preserve">
+				  <value>Felhasználónév</value>
+				</data>
+        <data name="Email" xml:space="preserve">
+				  <value>E-mail cím</value>
+				</data>
+        <data name="PhoneNumber" xml:space="preserve">
+				  <value>Telefonszám</value>
+				</data>
+        <data name="LanguagesSpoken" xml:space="preserve">
+				  <value>Beszélt nyelvek</value>
+				</data>
+        <data name="Manager" xml:space="preserve">
+				  <value>Felettes</value>
+				</data>
+        <data name="Department" xml:space="preserve">
+				  <value>Iroda</value>
+				</data>
+        <data name="Search" xml:space="preserve">
+				  <value>Keresés</value>
+				</data>
+        <data name="ColleagueSearch" xml:space="preserve">
+				  <value>Kolléga kereső</value>
+				</data>
+        <data name="Type" xml:space="preserve">
+				  <value>Típus</value>
+				</data>
+	      <data name="Text" xml:space="preserve">
+				  <value>Szöveg</value>
+				</data>
+	      <data name="Path" xml:space="preserve">
+				  <value>Elérési út</value>
+				</data>
+	      <data name="CreationDate" xml:space="preserve">
+				  <value>Létrehozás dátuma</value>
+				</data>
+	      <data name="Author" xml:space="preserve">
+				  <value>Szerző</value>
+				</data>
+        <data name="EmptyQuerysNotAllowed" xml:space="preserve">
+				  <value>Üres keresési feltételt nem adhat meg.</value>
+				</data>
+      </Language>
+    </Languages>
+  </ResourceClass>
+</Resources>

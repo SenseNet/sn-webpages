@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentMetaData>
+  <ContentType>Portlet</ContentType>
+  <ContentName>UserGourpManagerPortlet</ContentName>
+  <Fields>
+    <Description><![CDATA[$UserGourpManagerPortlet:PortletDescription]]></Description>
+    <TypeName><![CDATA[SenseNet.Portal.Portlets.UserGourpManagerPortlet, SenseNet.CorePortlets]]></TypeName>
+    <ImageData attachment="UserGourpManagerPortlet.ImageData" />
+  </Fields>
+  <Permissions>
+    <Clear />
+  </Permissions>
+</ContentMetaData>

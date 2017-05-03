@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentMetaData>
+  <ContentType>Portlet</ContentType>
+  <ContentName>ProxyPurgePortlet</ContentName>
+  <Fields>
+    <Description><![CDATA[$ProxyPurgePortlet:PortletDescription]]></Description>
+    <TypeName><![CDATA[SenseNet.Portal.Portlets.ProxyPurgePortlet, SenseNet.CorePortlets]]></TypeName>
+    <ImageData attachment="ProxyPurgePortlet.ImageData" />
+  </Fields>
+  <Permissions>
+    <Clear />
+  </Permissions>
+</ContentMetaData>
