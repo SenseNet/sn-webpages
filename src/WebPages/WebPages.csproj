@@ -188,7 +188,6 @@
     <Compile Include="ApplicationModel\SmartAppHelperApi.cs" />
     <Compile Include="ApplicationModel\UploadResumeAction.cs" />
     <Compile Include="ApplicationModel\ViewsScenario.cs" />
-    <Compile Include="ApplicationModel\WebdavOpenAction.cs" />
     <Compile Include="ApplicationModel\WebPartDisplayModeAction.cs" />
     <Compile Include="CaseInsensitiveEqualityComparer.cs" />
     <Compile Include="ClientContext.cs" />
