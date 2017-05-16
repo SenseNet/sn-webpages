@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using SenseNet.ApplicationModel;
 using SenseNet.ContentRepository.Schema;
 using SenseNet.ContentRepository;
 using SenseNet.ContentRepository.Security;
@@ -11,6 +12,7 @@ using SenseNet.Diagnostics;
 using SenseNet.Search;
 using SenseNet.Configuration;
 using SenseNet.ContentRepository.i18n;
+using SenseNet.Preview;
 
 namespace SenseNet.Portal.UI.ContentListViews
 {
@@ -272,7 +274,11 @@ namespace SenseNet.Portal.UI.ContentListViews
 
             if (content.ContentHandler.NodeType.IsInstaceOfOrDerivedFrom("ViewBase"))
                 return "Edit";
-            if (content.ContentHandler.NodeType.Name == "File")
+
+            // Check whether the Preview feature is present and the preview 
+            // provider supports preview generation for this content.
+            if (ApplicationStorage.Instance.Exists("Preview") &&
+                DocumentPreviewProvider.Current.IsContentSupported(content.ContentHandler))
                 return "Preview";
 
             return "Browse";
