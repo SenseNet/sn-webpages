@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentType name="FieldControlTemplates" parentType="Folder" handler="SenseNet.ContentRepository.Folder" xmlns="http://schemas.sensenet.com/SenseNet/ContentRepository/ContentTypeDefinition">
+  <DisplayName>$Ctd-FieldControlTemplates,DisplayName</DisplayName>
+  <Description>$Ctd-FieldControlTemplates,Description</Description>
+  <Icon>Folder</Icon>
+  <AllowedChildTypes>
+    FieldControlTemplates FieldControlTemplate
+  </AllowedChildTypes>
+  <Fields></Fields>
+</ContentType>

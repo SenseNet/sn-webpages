@@ -1,0 +1,671 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources>
+  <ResourceClass name="ApplicationList">
+    <Languages>
+      <Language cultureName="en">
+        <data name="HideApplicationList" xml:space="preserve">
+          <value>Hide application list</value>
+        </data>
+        <data name="ShowApplicationList" xml:space="preserve">
+          <value>Show application list</value>
+        </data>
+        <data name="ApplicationName" xml:space="preserve">
+          <value>Application name</value>
+        </data>
+        <data name="Location" xml:space="preserve">
+          <value>Location</value>
+        </data>
+        <data name="Scenarios" xml:space="preserve">
+          <value>Scenario(s)</value>
+        </data>
+        <data name="CopyLocal" xml:space="preserve">
+          <value>Copy local</value>
+        </data>
+        <data name="DeleteLocal" xml:space="preserve">
+          <value>Delete local</value>
+        </data>
+      </Language>
+      <Language cultureName="hu">
+        <data name="HideApplicationList" xml:space="preserve">
+          <value>Alkalmazás lista elrejtése</value>
+        </data>
+        <data name="ShowApplicationList" xml:space="preserve">
+          <value>Alkalmazás lista megmutatása</value>
+        </data>
+        <data name="ApplicationName" xml:space="preserve">
+          <value>Alkalmazás neve</value>
+        </data>
+        <data name="Location" xml:space="preserve">
+          <value>Hely</value>
+        </data>
+        <data name="Scenarios" xml:space="preserve">
+          <value>Szcenárió(k)</value>
+        </data>
+        <data name="CopyLocal" xml:space="preserve">
+          <value>Helyi másolás</value>
+        </data>
+        <data name="DeleteLocal" xml:space="preserve">
+          <value>Helyi törlés</value>
+        </data>
+      </Language>
+    </Languages>
+  </ResourceClass>
+  <ResourceClass name="ContentAddNew">
+    <Languages>
+      <Language cultureName="en">
+        <data name="Cancel" xml:space="preserve">
+          <value>Cancel</value>
+        </data>
+        <data name="AddNew" xml:space="preserve">
+          <value>AddNew</value>
+        </data>
+        <data name="Select" xml:space="preserve">
+          <value>AddNew</value>
+        </data>
+      </Language>
+      <Language cultureName="hu">
+        <data name="Cancel" xml:space="preserve">
+          <value>Mégsem</value>
+        </data>
+        <data name="AddNew" xml:space="preserve">
+          <value>Hozzáadás</value>
+        </data>
+        <data name="Select" xml:space="preserve">
+          <value>Kiválaszt</value>
+        </data>
+      </Language>
+    </Languages>
+  </ResourceClass>
+  <ResourceClass name="ContentApproval">
+    <Languages>
+      <Language cultureName="en">
+        <data name="AboutToReject" xml:space="preserve">
+          <value>You are about to approve or reject </value>
+        </data>
+        <data name="Approve" xml:space="preserve">
+          <value>Approve</value>
+        </data>
+        <data name="Reject" xml:space="preserve">
+          <value>Reject</value>
+        </data>
+        <data name="Cancel" xml:space="preserve">
+          <value>Cancel</value>
+        </data>
+        <data name="ApproveSubscription" xml:space="preserve">
+          <value>You are about to approve or reject the following subscription:</value>
+        </data>
+        <data name="Subscriber" xml:space="preserve">
+          <value>Subscriber</value>
+        </data>
+        <data name="SubscriptionDate" xml:space="preserve">
+          <value>Subscription date</value>
+        </data>
+      </Language>
+      <Language cultureName="hu">
+        <data name="AboutToReject" xml:space="preserve">
+          <value>Jóváhagyja vagy visszautasítja </value>
+        </data>
+        <data name="Approve" xml:space="preserve">
+          <value>Jóváhagy</value>
+        </data>
+        <data name="Reject" xml:space="preserve">
+          <value>Visszautasít</value>
+        </data>
+        <data name="Cancel" xml:space="preserve">
+          <value>Mégsem</value>
+        </data>
+        <data name="ApproveSubscription" xml:space="preserve">
+          <value>Jóváhagyja vagy elutasítja a következő feliratkozást:</value>
+        </data>
+        <data name="Subscriber" xml:space="preserve">
+          <value>Feliratkozó</value>
+        </data>
+        <data name="SubscriptionDate" xml:space="preserve">
+          <value>Feliratkozás dátuma</value>
+        </data>
+      </Language>
+    </Languages>
+  </ResourceClass>
+  <ResourceClass name="ContentCopy">
+    <Languages>
+      <Language cultureName="en">
+        <data name="AboutToCopy" xml:space="preserve">
+          <value>You are going to copy </value>
+        </data>
+        <data name="ChooseFolder" xml:space="preserve">
+          <value>Please choose a folder or content list to copy to: </value>
+        </data>
+        <data name="Select" xml:space="preserve">
+          <value>Select...</value>
+        </data>
+        <data name="SuccesfullyCopied" xml:space="preserve">
+          <value>You successfully copied the specified content.</value>
+        </data>
+        <data name="Copy" xml:space="preserve">
+          <value>Copy</value>
+        </data>
+        <data name="Done" xml:space="preserve">
+          <value>Done</value>
+        </data>
+        <data name="Cancel" xml:space="preserve">
+          <value>Cancel</value>
+        </data>
+        <data name="CopyTo" xml:space="preserve">
+          <value>You are going to copy these content to </value>
+        </data>
+        <data name="AreYouSure" xml:space="preserve">
+          <value>Are You sure?</value>
+        </data>
+      </Language>
+      <Language cultureName="hu">
+        <data name="AboutToCopy" xml:space="preserve">
+          <value>A következő tartalmakat fogja másolni </value>
+        </data>
+        <data name="ChooseFolder" xml:space="preserve">
+          <value>Válasszon célmappát vagy listát: </value>
+        </data>
+        <data name="Select" xml:space="preserve">
+          <value>Válasszon...</value>
+        </data>
+        <data name="SuccesfullyCopied" xml:space="preserve">
+          <value>A kiválasztott tartalmakat sikeresen átmásolta.</value>
+        </data>
+        <data name="Copy" xml:space="preserve">
+          <value>Másol</value>
+        </data>
+        <data name="Done" xml:space="preserve">
+          <value>Kész</value>
+        </data>
+        <data name="Cancel" xml:space="preserve">
+          <value>Mégsem</value>
+        </data>
+        <data name="CopyTo" xml:space="preserve">
+          <value>A fenti tartalmakat fogja másolni, ide </value>
+        </data>
+        <data name="AreYouSure" xml:space="preserve">
+          <value>Biztos benne?</value>
+        </data>
+      </Language>
+    </Languages>
+  </ResourceClass>
+  <ResourceClass name="ContentDelete">
+    <Languages>
+      <Language cultureName="en">
+        <data name="AboutToDelete" xml:space="preserve">
+          <value>You are about to delete <strong>{0}</strong>.</value>
+        </data>
+        <data name="AboutToDeleteMore" xml:space="preserve">
+          <value>You are about to delete <strong>{0}</strong> content.</value>
+        </data>
+        <data name="AboutToDeleteFolder" xml:space="preserve">
+          <value>You are about to delete <strong>{0}</strong> and all of its content and subfolders.</value>
+        </data>
+        <data name="TrashBinNotFound" xml:space="preserve">
+          <value>Trash Bin functionality is turned off.</value>
+        </data>
+        <data name="TrashBinDisabled" xml:space="preserve">
+          <value>Trash Bin functionality is turned off.</value>
+        </data>
+        <data name="TrashBinNotConfigured" xml:space="preserve">
+          <value>Trash Bin is not configured for the content you are about to delete.</value>
+        </data>
+        <data name="TooMuch" xml:space="preserve">
+          <value>The number of content to be deleted is too much to be moved to the trash at once. You can choose to delete permanently or you can go back and try to delete a smaller number of content.</value>
+        </data>
+        <data name="MoveToTrash" xml:space="preserve">
+          <value>Delete</value>
+        </data>
+        <data name="DeletePermanently" xml:space="preserve">
+          <value>Delete permanently</value>
+        </data>
+        <data name="Cancel" xml:space="preserve">
+          <value>Cancel</value>
+        </data>
+        <data name="AreYouSure" xml:space="preserve">
+          <value><span class='sn-icon-big sn-icon-button snIconBig_warning'></span> Are You sure?</value>
+        </data>
+        <data name="DeleteStatusDialogContent" xml:space="preserve">
+          <value>Content deleted successfully.</value>
+        </data>
+        <data name="DeleteStatusDialogTitle" xml:space="preserve">
+          <value>Delete</value>
+        </data>
+      </Language>
+      <Language cultureName="hu">
+        <data name="AboutToDelete" xml:space="preserve">
+          <value>Törölni készül <strong>{0}</strong> -t.</value>
+        </data>
+        <data name="AboutToDeleteMore" xml:space="preserve">
+          <value>Törölni készül <strong>{0}</strong> tartalmat.</value>
+        </data>
+        <data name="AboutToDeleteFolder" xml:space="preserve">
+          <value>Törölni készül <strong>{0}</strong> -t és az összes alatta lévő tartalmat és almappát.</value>
+        </data>
+        <data name="TrashBinNotFound" xml:space="preserve">
+          <value>A kuka funkció ki van kapcsolva.</value>
+        </data>
+        <data name="TrashBinDisabled" xml:space="preserve">
+          <value>A kuka funkció ki van kapcsolva.</value>
+        </data>
+        <data name="TrashBinNotConfigured" xml:space="preserve">
+          <value>A kuka nincsen konfigurálva ott, ahonnan törölni szeretne.</value>
+        </data>
+        <data name="TooMuch" xml:space="preserve">
+          <value>A törlendő elemek száma túl nagy ahhoz, hogy egyszerre a kukába kerüljenek. Végleg törölheti őket, vagy próbáljon kevesebb elemet törölni.</value>
+        </data>
+        <data name="MoveToTrash" xml:space="preserve">
+          <value>Törlés</value>
+        </data>
+        <data name="DeletePermanently" xml:space="preserve">
+          <value>Végleges törlés</value>
+        </data>
+        <data name="Cancel" xml:space="preserve">
+          <value>Mégsem</value>
+        </data>
+        <data name="AreYouSure" xml:space="preserve">
+          <value><span class='sn-icon-big sn-icon-button snIconBig_warning'></span> Biztos benne?</value>
+        </data>
+        <data name="DeleteStatusDialogContent" xml:space="preserve">
+          <value>A törlés sikeres.</value>
+        </data>
+        <data name="DeleteStatusDialogTitle" xml:space="preserve">
+          <value>Törlés</value>
+        </data>
+      </Language>
+    </Languages>
+  </ResourceClass>
+  <ResourceClass name="ContentHistory">
+    <Languages>
+      <Language cultureName="en">
+        <data name="Version" xml:space="preserve">
+          <value>Version</value>
+        </data>
+        <data name="Path" xml:space="preserve">
+          <value>Path</value>
+        </data>
+        <data name="Modified" xml:space="preserve">
+          <value>Modified</value>
+        </data>
+        <data name="Comments" xml:space="preserve">
+          <value>Comments</value>
+        </data>
+        <data name="RejectReason" xml:space="preserve">
+          <value>Reject reason</value>
+        </data>
+        <data name="Restore" xml:space="preserve">
+          <value>Restore</value>
+        </data>
+        <data name="Done" xml:space="preserve">
+          <value>Done</value>
+        </data>
+      </Language>
+      <Language cultureName="hu">
+        <data name="Version" xml:space="preserve">
+          <value>Verzió</value>
+        </data>
+        <data name="Path" xml:space="preserve">
+          <value>Útvonal</value>
+        </data>
+        <data name="Modified" xml:space="preserve">
+          <value>Módosítva</value>
+        </data>
+        <data name="Comments" xml:space="preserve">
+          <value>Kommentek</value>
+        </data>
+        <data name="RejectReason" xml:space="preserve">
+          <value>Visszautasítás oka</value>
+        </data>
+        <data name="Restore" xml:space="preserve">
+          <value>Visszaállítás</value>
+        </data>
+        <data name="Done" xml:space="preserve">
+          <value>Kész</value>
+        </data>
+      </Language>
+    </Languages>
+  </ResourceClass>
+  <ResourceClass name="ContentLinker">
+    <Languages>
+      <Language cultureName="en">
+        <data name="AboutToLink" xml:space="preserve">
+          <value>You are going to link the content above under </value>
+        </data>
+        <data name="LinkContent" xml:space="preserve">
+          <value>Link content</value>
+        </data>
+        <data name="Cancel" xml:space="preserve">
+          <value>Cancel</value>
+        </data>
+      </Language>
+      <Language cultureName="hu">
+        <data name="AboutToLink" xml:space="preserve">
+          <value>Az alábbi tartalmakat fogja behivatkozni </value>
+        </data>
+        <data name="LinkContent" xml:space="preserve">
+          <value>Tartalom hivatkozása</value>
+        </data>
+        <data name="Cancel" xml:space="preserve">
+          <value>Mégsem</value>
+        </data>
+      </Language>
+    </Languages>
+  </ResourceClass>
+  <ResourceClass name="ContentMove">
+    <Languages>
+      <Language cultureName="en">
+        <data name="AboutToMove" xml:space="preserve">
+          <value>You are going to move </value>
+        </data>
+        <data name="ChooseFolder" xml:space="preserve">
+          <value>Please choose a folder or content list to move to: </value>
+        </data>
+        <data name="Select" xml:space="preserve">
+          <value>Select...</value>
+        </data>
+        <data name="SuccesfullyMoved" xml:space="preserve">
+          <value>You successfully moved the specified content.</value>
+        </data>
+        <data name="Move" xml:space="preserve">
+          <value>Move</value>
+        </data>
+        <data name="Done" xml:space="preserve">
+          <value>Done</value>
+        </data>
+        <data name="Cancel" xml:space="preserve">
+          <value>Cancel</value>
+        </data>
+        <data name="AboutToMoveTo" xml:space="preserve">
+          <value>You are going to move these content to </value>
+        </data>
+        <data name="AreYouSure" xml:space="preserve">
+          <value>Are you sure?</value>
+        </data>
+      </Language>
+      <Language cultureName="hu">
+        <data name="AboutToMove" xml:space="preserve">
+          <value>Mozgatni fogja </value>
+        </data>
+        <data name="ChooseFolder" xml:space="preserve">
+          <value>Válasszon célmappát vagy listát a mozgatáshoz: </value>
+        </data>
+        <data name="Select" xml:space="preserve">
+          <value>Válasszon...</value>
+        </data>
+        <data name="SuccesfullyMoved" xml:space="preserve">
+          <value>A tartalmat sikeresen átmozgatta.</value>
+        </data>
+        <data name="Move" xml:space="preserve">
+          <value>Mozgat</value>
+        </data>
+        <data name="Done" xml:space="preserve">
+          <value>Kész</value>
+        </data>
+        <data name="Cancel" xml:space="preserve">
+          <value>Mégsem</value>
+        </data>
+        <data name="AboutToMoveTo" xml:space="preserve">
+          <value>Az fenti tartamakat fogja mozgatni ide </value>
+        </data>
+        <data name="AreYouSure" xml:space="preserve">
+          <value>Biztos benne?</value>
+        </data>
+      </Language>
+    </Languages>
+  </ResourceClass>
+  <ResourceClass name="ContentPublish">
+    <Languages>
+      <Language cultureName="en">
+        <data name="ErrorMessage" xml:space="preserve">
+          <value>Current content is not valid. Please edit content and fix the errors.</value>
+        </data>
+        <data name="Done" xml:space="preserve">
+          <value>Done</value>
+        </data>
+      </Language>
+      <Language cultureName="hu">
+        <data name="ErrorMessage" xml:space="preserve">
+          <value>A tartalom nem megfelelő. Szerkessze a tartalmat és javítsa a hibákat.</value>
+        </data>
+        <data name="Done" xml:space="preserve">
+          <value>Kész</value>
+        </data>
+      </Language>
+    </Languages>
+  </ResourceClass>
+  <ResourceClass name="ContentRename">
+    <Languages>
+      <Language cultureName="en">
+        <data name="AboutToRename" xml:space="preserve">
+          <value>You are going to rename </value>
+        </data>
+        <data name="NewName" xml:space="preserve">
+          <value>Please choose a new name: </value>
+        </data>
+        <data name="Rename" xml:space="preserve">
+          <value>Rename</value>
+        </data>
+        <data name="Cancel" xml:space="preserve">
+          <value>Cancel</value>
+        </data>
+      </Language>
+      <Language cultureName="hu">
+        <data name="AboutToRename" xml:space="preserve">
+          <value>Az alábbi tartalmat fogja átnevezni </value>
+        </data>
+        <data name="NewName" xml:space="preserve">
+          <value>Írjon be új nevet: </value>
+        </data>
+        <data name="Rename" xml:space="preserve">
+          <value>Átnevez</value>
+        </data>
+        <data name="Cancel" xml:space="preserve">
+          <value>Mégsem</value>
+        </data>
+      </Language>
+    </Languages>
+  </ResourceClass>
+  <ResourceClass name="ContentRestore">
+    <Languages>
+      <Language cultureName="en">
+        <data name="AboutToRestore" xml:space="preserve">
+          <value>You are about to restore </value>
+        </data>
+        <data name="FollowingDestination" xml:space="preserve">
+          <value> from the Trash to the following destination</value>
+        </data>
+        <data name="Restore" xml:space="preserve">
+          <value>Restore</value>
+        </data>
+        <data name="Cancel" xml:space="preserve">
+          <value>Cancel</value>
+        </data>
+        <data name="Error" xml:space="preserve">
+          <value>Error restoring </value>
+        </data>
+        <data name="TryAgain" xml:space="preserve">
+          <value>Try again</value>
+        </data>
+        <data name="RestoreWithNewName" xml:space="preserve">
+          <value>Restore with new name</value>
+        </data>
+        <data name="Ok" xml:space="preserve">
+          <value>Ok</value>
+        </data>
+      </Language>
+      <Language cultureName="hu">
+        <data name="AboutToRestore" xml:space="preserve">
+          <value>Visszaállítja a </value>
+        </data>
+        <data name="FollowingDestination" xml:space="preserve">
+          <value> tartalmat a kukából a következő helyre</value>
+        </data>
+        <data name="Restore" xml:space="preserve">
+          <value>Visszaállít</value>
+        </data>
+        <data name="Cancel" xml:space="preserve">
+          <value>Mégsem</value>
+        </data>
+        <data name="Error" xml:space="preserve">
+          <value>Hiba keletkezett a visszaállításakor </value>
+        </data>
+        <data name="TryAgain" xml:space="preserve">
+          <value>Újra próbál</value>
+        </data>
+        <data name="RestoreWithNewName" xml:space="preserve">
+          <value>Visszaállít új néven</value>
+        </data>
+        <data name="Ok" xml:space="preserve">
+          <value>Ok</value>
+        </data>
+      </Language>
+    </Languages>
+  </ResourceClass>
+  <ResourceClass name="ContentRestoreVersion">
+    <Languages>
+      <Language cultureName="en">
+        <data name="AboutToRestore" xml:space="preserve">
+          <value>You are about to restore version </value>
+        </data>
+        <data name="Of" xml:space="preserve">
+          <value>of</value>
+        </data>
+        <data name="Restore" xml:space="preserve">
+          <value>Restore</value>
+        </data>
+        <data name="Cancel" xml:space="preserve">
+          <value>Cancel</value>
+        </data>
+      </Language>
+      <Language cultureName="hu">
+        <data name="AboutToRestore" xml:space="preserve">
+          <value>Az alábbi verziót állítja vissza </value>
+        </data>
+        <data name="Of" xml:space="preserve">
+          <value>mely ehhez a tartalomhoz tartozik</value>
+        </data>
+        <data name="Restore" xml:space="preserve">
+          <value>Visszaállít</value>
+        </data>
+        <data name="Cancel" xml:space="preserve">
+          <value>Mégsem</value>
+        </data>
+      </Language>
+    </Languages>
+  </ResourceClass>
+  <ResourceClass name="ProxyPurge">
+    <Languages>
+      <Language cultureName="en">
+        <data name="Result" xml:space="preserve">
+          <value>Result</value>
+        </data>
+        <data name="Done" xml:space="preserve">
+          <value>Done</value>
+        </data>
+      </Language>
+      <Language cultureName="hu">
+        <data name="Result" xml:space="preserve">
+          <value>Eredmény</value>
+        </data>
+        <data name="Done" xml:space="preserve">
+          <value>Kész</value>
+        </data>
+      </Language>
+    </Languages>
+  </ResourceClass>
+  <ResourceClass name="Purge">
+    <Languages>
+      <Language cultureName="en">
+        <data name="AboutToPurge" xml:space="preserve">
+          <value><span>You are about to purge the content of the <strong>Trash Bin</strong></span></value>
+        </data>
+        <data name="PurgeProperties" xml:space="preserve">
+          <value>
+            <li>
+                                <span>
+                        All items in the Trash Bin that are purgeable, will be deleted permanently. An item is purgeable if
+                        the date till the item should be kept is passed. 
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                        Items that are not purgeable or you don't have permission to see, will remain in the Trash Bin.
+                                </span>
+                            </li>
+          </value>
+        </data>
+        <data name="Ok" xml:space="preserve">
+          <value>Ok</value>
+        </data>
+        <data name="Yes" xml:space="preserve">
+          <value>Yes</value>
+        </data>
+        <data name="No" xml:space="preserve">
+          <value>No</value>
+        </data>
+      </Language>
+      <Language cultureName="hu">
+        <data name="AboutToPurge" xml:space="preserve">
+          <value><span>Véglegesen törölni fogja az alábbi tartalmakat a <strong>kukából</strong></span></value>
+        </data>
+        <data name="PurgeProperties" xml:space="preserve">
+          <value>
+            <li>
+                                <span>
+                        Azok az elemek a kukában, amelyek véglegesen törölhetők, azonnal törlődni fognak. Minden tartalom véglegesen törölhető, ha
+                        letelt az az idő, amíg kötelező megőrizni.
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                        Azok a tartalmak, amiket nem lehet törölni vagy nincs joga őket látni, megmaradnak a kukában.
+                                </span>
+                            </li>
+          </value>
+        </data>
+        <data name="Ok" xml:space="preserve">
+          <value>Ok</value>
+        </data>
+        <data name="Yes" xml:space="preserve">
+          <value>Igen</value>
+        </data>
+        <data name="No" xml:space="preserve">
+          <value>Nem</value>
+        </data>
+      </Language>
+    </Languages>
+  </ResourceClass>
+  <ResourceClass name="GroupManager">
+    <Languages>
+      <Language cultureName="en">
+        <data name="UpdateMemberships" xml:space="preserve">
+          <value>Update memberships</value>
+        </data>
+      </Language>
+      <Language cultureName="hu">
+        <data name="UpdateMemberships" xml:space="preserve">
+          <value>Csoport frissítése</value>
+        </data>
+      </Language>
+    </Languages>
+  </ResourceClass>
+  <ResourceClass name="ContentCollectionPortlet">
+    <Languages>
+      <Language cultureName="en">
+        <data name="ErrorContentView" xml:space="preserve">
+          <value>Error during rendering, please check the content view.</value>
+        </data>
+        <data name="InvalidContentQuery" xml:space="preserve">
+          <value>Content query is invalid.</value>
+        </data>
+      </Language>
+      <Language cultureName="hu">
+        <data name="ErrorContentView" xml:space="preserve">
+          <value>Hiba történt a megjelenítő betöltésekor.</value>
+        </data>
+        <data name="InvalidContentQuery" xml:space="preserve">
+          <value>A lekérdezés hibás.</value>
+        </data>
+      </Language>
+    </Languages>
+  </ResourceClass>
+</Resources>

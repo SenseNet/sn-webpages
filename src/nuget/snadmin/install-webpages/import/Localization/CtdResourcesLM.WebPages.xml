@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources>
+  <ResourceClass name="Ctd-ListView">
+    <Languages>
+      <Language cultureName="en">
+        <data name="DisplayName" xml:space="preserve">
+          <value>List view</value>
+        </data>
+        <data name="Description" xml:space="preserve">
+          <value>A generic view for Lists.</value>
+        </data>
+        <data name="Name-Description" xml:space="preserve">
+          <value>Specify a name that will appear in the address bar of the browser. The name of the list view should end with an '.ascx' extension.</value>
+        </data>
+        <data name="Template-DisplayName" xml:space="preserve">
+          <value>Markup template</value>
+        </data>
+        <data name="Template-Description" xml:space="preserve">
+          <value>The Xslt template used to generate the view.</value>
+        </data>
+        <data name="Columns-DisplayName" xml:space="preserve">
+          <value>View composition</value>
+        </data>
+        <data name="Columns-Description" xml:space="preserve">
+          <value>Select the fields of the Content List to be displayed.</value>
+        </data>
+        <data name="SortBy-DisplayName" xml:space="preserve">
+          <value>Sort by</value>
+        </data>
+        <data name="SortBy-Description" xml:space="preserve">
+          <value>Select the column to sort by.</value>
+        </data>
+        <data name="GroupBy-DisplayName" xml:space="preserve">
+          <value>Group by</value>
+        </data>
+        <data name="GroupBy-Description" xml:space="preserve">
+          <value>Select the column to group by. This setting only works if the view template is capable of rendering grouped items.</value>
+        </data>
+        <data name="Flat-DisplayName" xml:space="preserve">
+          <value>Flat</value>
+        </data>
+        <data name="Flat-Description" xml:space="preserve">
+          <value>Flatten contained content structure to a single list (display content from all depths).</value>
+        </data>
+        <data name="Binary-Description" xml:space="preserve">
+          <value>The binary content of the view. Please note that when a custom Markup template is specified this field is automatically filled - modify binary content by modifying given template.</value>
+        </data>
+        <data name="MainScenario-DisplayName" xml:space="preserve">
+          <value>Main scenario</value>
+        </data>
+        <data name="MainScenario-Description" xml:space="preserve">
+          <value>Name of the scenario that is used for the list item menus. If you leave this empty, this will be the default 'ListItem' scenario.</value>
+        </data>
+      </Language>
+      <Language cultureName="hu">
+        <data name="DisplayName" xml:space="preserve">
+          <value>Lista nézet</value>
+        </data>
+        <data name="Description" xml:space="preserve">
+          <value>Alap nézet listákhoz.</value>
+        </data>
+        <data name="Name-Description" xml:space="preserve">
+          <value>Ez a név fog látszani a böngésző címsorában. A listanézet neve '.ascx'-re kell hogy végződjön.</value>
+        </data>
+        <data name="Template-DisplayName" xml:space="preserve">
+          <value>Sablon</value>
+        </data>
+        <data name="Template-Description" xml:space="preserve">
+          <value>Xslt sablon, ami az ascx lista nézet fájlt generálja.</value>
+        </data>
+        <data name="Columns-DisplayName" xml:space="preserve">
+          <value>Nézetben látható mezők</value>
+        </data>
+        <data name="Columns-Description" xml:space="preserve">
+          <value>Válassza ki, mely mezők látszódjanak a listában.</value>
+        </data>
+        <data name="SortBy-DisplayName" xml:space="preserve">
+          <value>Rendezési elv</value>
+        </data>
+        <data name="SortBy-Description" xml:space="preserve">
+          <value>Válassza ki, mely oszlopban található értékek alapján sorrendeződjenek az elemek.</value>
+        </data>
+        <data name="GroupBy-DisplayName" xml:space="preserve">
+          <value>Csoportosítás</value>
+        </data>
+        <data name="GroupBy-Description" xml:space="preserve">
+          <value>Válassza ki, mely mező értéke alapján csoportosítsa a lista elemeit. Ez a beállítás csak megfelelő listamegjelenítőkkel működik.</value>
+        </data>
+        <data name="Flat-DisplayName" xml:space="preserve">
+          <value>Kiterített</value>
+        </data>
+        <data name="Flat-Description" xml:space="preserve">
+          <value>Egy listában jeleníti meg egy mappa elemeit bármilyen mélységben.</value>
+        </data>
+        <data name="Binary-Description" xml:space="preserve">
+          <value>The binary content of the view. Please note that when a custom Markup template is specified this field is automatically filled - modify binary content by modifying given template.</value>
+        </data>
+        <data name="MainScenario-DisplayName" xml:space="preserve">
+          <value>Main scenario</value>
+        </data>
+        <data name="MainScenario-Description" xml:space="preserve">
+          <value>E scenariohoz tartozó elemek jelennek meg a listaelemek menüjében. Ha üresen marad, akkor az alapértelmezett, 'ListItem' scenariohoz tartozók lesznek láthatóak.</value>
+        </data>
+      </Language>
+    </Languages>
+  </ResourceClass>
+  <ResourceClass name="Ctd-MasterPage">
+    <Languages>
+      <Language cultureName="en">
+        <data name="DisplayName" xml:space="preserve">
+          <value>Master Page</value>
+        </data>
+        <data name="Description" xml:space="preserve">
+          <value>This type is for internal use only.</value>
+        </data>
+      </Language>
+      <Language cultureName="hu">
+        <data name="DisplayName" xml:space="preserve">
+          <value>Mester oldal</value>
+        </data>
+        <data name="Description" xml:space="preserve">
+          <value>Oldalak szerkezetének tárolására szolgáló típus. Csak belső használatra.</value>
+        </data>
+      </Language>
+    </Languages>
+  </ResourceClass> 
+</Resources>

@@ -1,0 +1,661 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources>
+  <ResourceClass name="Controls">
+    <Languages>
+      <Language cultureName="en">
+        <data name="Action" xml:space="preserve">
+          <value>Action</value>
+        </data>
+        <data name="Actions" xml:space="preserve">
+          <value>Actions</value>
+        </data>
+        <data name="ApplicationPath" xml:space="preserve">
+          <value>Application path</value>
+        </data>
+        <data name="Scenarios" xml:space="preserve">
+          <value>Scenario(s)</value>
+        </data>
+        <data name="CopyLocal" xml:space="preserve">
+          <value>Copy local</value>
+        </data>
+        <data name="DeleteLocal" xml:space="preserve">
+          <value>Delete local</value>
+        </data>
+        <data name="NoActions" xml:space="preserve">
+          <value>No actions available</value>
+        </data>
+        <data name="DisplayName" xml:space="preserve">
+          <value>DisplayName</value>
+        </data>
+        <data name="Author" xml:space="preserve">
+          <value>Author</value>
+        </data>
+        <data name="ISBN" xml:space="preserve">
+          <value>ISBN</value>
+        </data>
+        <data name="Genre" xml:space="preserve">
+          <value>Genre</value>
+        </data>
+        <data name="Checkin" xml:space="preserve">
+          <value>Checkin</value>
+        </data>
+        <data name="Cancel" xml:space="preserve">
+          <value>Cancel</value>
+        </data>
+        <data name="SaveDraft" xml:space="preserve">
+          <value>Checkout and Save</value>
+        </data>
+        <data name="CheckoutAndSave" xml:space="preserve">
+          <value>Checkout and Save</value>
+        </data>
+        <data name="DoneEditing" xml:space="preserve">
+          <value>Save and Checkin</value>
+        </data>
+        <data name="CheckoutAndSaveAndCheckin" xml:space="preserve">
+          <value>Checkout and Save and Checkin</value>
+        </data>
+        <data name="Publish" xml:space="preserve">
+          <value>Publish</value>
+        </data>
+        <data name="SaveAndPublish" xml:space="preserve">
+          <value>Save and Publish</value>
+        </data>
+        <data name="Save" xml:space="preserve">
+          <value>Save</value>
+        </data>
+        <data name="Ok" xml:space="preserve">
+          <value>Ok</value>
+        </data>
+        <data name="CTDInstall" xml:space="preserve">
+          <value>You are going to install the CTD definition above.</value>
+        </data>
+        <data name="CTDInstalled" xml:space="preserve">
+          <value>The CTD has been successfully installed.</value>
+        </data>
+        <data name="Done" xml:space="preserve">
+          <value>Done</value>
+        </data>
+        <data name="Install" xml:space="preserve">
+          <value>Install</value>
+        </data>
+        <data name="RemoveUploadedFile" xml:space="preserve">
+          <value>Remove uploaded file</value>
+        </data>
+        <data name="Upload" xml:space="preserve">
+          <value>Upload</value>
+        </data>
+        <data name="UploadAuto" xml:space="preserve">
+          <value>Auto</value>
+        </data>
+        <data name="LoadingLinks" xml:space="preserve">
+          <value>Loading links...</value>
+        </data>
+        <data name="Close" xml:space="preserve">
+          <value>Close</value>
+        </data>
+        <data name="Topics" xml:space="preserve">
+          <value>Topics</value>
+        </data>
+        <data name="Posts" xml:space="preserve">
+          <value>Posts</value>
+        </data>
+        <data name="LastEntry" xml:space="preserve">
+          <value>Last entry</value>
+        </data>
+        <data name="NewTopic" xml:space="preserve">
+          <value>New topic</value>
+        </data>
+        <data name="AddComment" xml:space="preserve">
+          <value>AddComment</value>
+        </data>
+        <data name="Reply" xml:space="preserve">
+          <value>Reply</value>
+        </data>
+        <data name="Path" xml:space="preserve">
+          <value>Path:</value>
+        </data>
+        <data name="User" xml:space="preserve">
+          <value>User</value>
+        </data>
+        <data name="Group" xml:space="preserve">
+          <value>Group</value>
+        </data>
+        <data name="OrganizationalUnit" xml:space="preserve">
+          <value>Organizational unit</value>
+        </data>
+        <data name="ShowHide" xml:space="preserve">
+          <value>Show/Hide</value>
+        </data>
+        <data name="Inherited" xml:space="preserve">
+          <value>inherited</value>
+        </data>
+        <data name="LocalOnlyPermission" xml:space="preserve">
+          <value>local only</value>
+        </data>
+        <data name="Allow" xml:space="preserve">
+          <value>Allow</value>
+        </data>
+        <data name="Deny" xml:space="preserve">
+          <value>Deny</value>
+        </data>
+        <data name="Name" xml:space="preserve">
+          <value>Name</value>
+        </data>
+        <data name="Description" xml:space="preserve">
+          <value>Description</value>
+        </data>
+        <data name="Category" xml:space="preserve">
+          <value>Category</value>
+        </data>
+        <data name="NoPortlets" xml:space="preserve">
+          <value>No portlets to install.</value>
+        </data>
+        <data name="PortletInstalled" xml:space="preserve">
+          <value>Portlets successfully installed.</value>
+        </data>
+        <data name="InstallPortlets" xml:space="preserve">
+          <value>Install portlets</value>
+        </data>
+        <data name="Provide" xml:space="preserve">
+          <value>Please provide a reason for rejecting the content</value>
+        </data>
+        <data name="Reject" xml:space="preserve">
+          <value>Reject</value>
+        </data>
+        <data name="Security" xml:space="preserve">
+          <value>Security</value>
+        </data>
+        <data name="SecurityOption" xml:space="preserve">
+          <value>Manage group membership, users and organizational units.</value>
+        </data>
+        <data name="Global" xml:space="preserve">
+          <value>Global</value>
+        </data>
+        <data name="GlobalResources" xml:space="preserve">
+          <value>Global resources of the system.</value>
+        </data>
+        <data name="System" xml:space="preserve">
+          <value>System</value>
+        </data>
+        <data name="SystemFiles" xml:space="preserve">
+          <value>Settings, system views, monitors and other administrative components.</value>
+        </data>
+        <data name="ContentTypes" xml:space="preserve">
+          <value>Content Types (Schema)</value>
+        </data>
+        <data name="AllContentTypes" xml:space="preserve">
+          <value>List of all Content Types in the system.</value>
+        </data>
+        <data name="ContentTemplates" xml:space="preserve">
+          <value>Content templates</value>
+        </data>
+        <data name="BasicTemplates" xml:space="preserve">
+          <value>Prefilled individual content or whole content structures for certain content types.</value>
+        </data>
+        <data name="Portlets" xml:space="preserve">
+          <value>Portlets</value>
+        </data>
+        <data name="AllPortlets" xml:space="preserve">
+          <value>List of all available Portlets in the system.</value>
+        </data>
+        <data name="Skins" xml:space="preserve">
+          <value>Skins</value>
+        </data>
+        <data name="SkinList" xml:space="preserve">
+          <value>Available Skins that are responsible for the look and feel of the site.</value>
+        </data>
+        <data name="Sites" xml:space="preserve">
+          <value>Sites</value>
+        </data>
+        <data name="SiteList" xml:space="preserve">
+          <value>List of all Sites if the system.</value>
+        </data>
+        <data name="Trash" xml:space="preserve">
+          <value>Trash</value>
+        </data>
+        <data name="DeletedItems" xml:space="preserve">
+          <value>Manage deleted items here: restore content or purge them permanently.</value>
+        </data>
+        <data name="Apps" xml:space="preserve">
+          <value>Apps</value>
+        </data>
+        <data name="AppList" xml:space="preserve">
+          <value>List of global Smart Applications in the system.</value>
+        </data>
+        <data name="SenseNetOnGitHub" xml:space="preserve">
+          <value>GitHub repository</value>
+        </data>
+        <data name="GitHubInfo" xml:space="preserve">
+          <value>sensenet ECM source code is available on GitHub.</value>
+        </data>
+        <data name="Wiki" xml:space="preserve">
+          <value>Wiki</value>
+        </data>
+        <data name="WikiPage" xml:space="preserve">
+          <value>The sensenet ECM Wiki page.</value>
+        </data>
+        <data name="Forum" xml:space="preserve">
+          <value>Community support</value>
+        </data>
+        <data name="ForumTopics" xml:space="preserve">
+          <value>Questions and answers hosted on Stack Overflow.</value>
+        </data>
+        <data name="SalesInformation" xml:space="preserve">
+          <value>Sales information</value>
+        </data>
+        <data name="Information" xml:space="preserve">
+          <value>How to get sensenet ECM Enterprise Edition with enterprise support.</value>
+        </data>
+        <data name="Workflows" xml:space="preserve">
+          <value>Workflows</value>
+        </data>
+        <data name="WorkflowList" xml:space="preserve">
+          <value>List of all available workflow definitions in the system.</value>
+        </data>
+        <data name="VersionInfo" xml:space="preserve">
+          <value>Version info</value>
+        </data>
+        <data name="VersionInfoDesc" xml:space="preserve">
+          <value>Information about the currently installed sensenet ECM and 3rd party components.</value>
+        </data>
+        <data name="Sorting-Asc" xml:space="preserve">
+          <value>Ascending</value>
+        </data>
+        <data name="Sorting-Desc" xml:space="preserve">
+          <value>Descending</value>
+        </data>
+        <data name="Settings-ChoosePage" xml:space="preserve">
+          <value>Choose from the following configuration pages</value>
+        </data>
+        <data name="Settings-Title" xml:space="preserve">
+          <value>Settings</value>
+        </data>
+        <data name="Settings-Description" xml:space="preserve">
+          <value>Use these dialogs to edit the advanced settings of the Document library</value>
+        </data>
+        <data name="Settings-General" xml:space="preserve">
+          <value>General settings (Name, Versioning, etc.)</value>
+        </data>
+        <data name="Settings-ManageFields" xml:space="preserve">
+          <value>Manage Fields (Add, edit, delete)</value>
+        </data>
+        <data name="Settings-ManageViews" xml:space="preserve">
+          <value>Manage Views</value>
+        </data>
+        <data name="Settings-ManageWorkflows" xml:space="preserve">
+          <value>Manage Workflows</value>
+        </data>
+        <data name="Settings-Email" xml:space="preserve">
+          <value>Incoming email settings</value>
+        </data>
+        <data name="Bool-True" xml:space="preserve">
+          <value>True</value>
+        </data>
+        <data name="Bool-False" xml:space="preserve">
+          <value>False</value>
+        </data>
+        <data name="FieldControl-EditValue" xml:space="preserve">
+          <value>Edit value</value>
+        </data>
+        <data name="FieldControl-EditValue-Title" xml:space="preserve">
+          <value>Edit {0}</value>
+        </data>
+        <data name="TaskMonitor" xml:space="preserve">
+          <value>Task Monitor</value>
+        </data>
+        <data name="TaskMonitorDesc" xml:space="preserve">
+          <value>You can monitor the status of connected task executor agents here.</value>
+        </data>
+        <data name="AboortUpload" xml:space="preserve">
+          <value>File upload is in progress!</value>
+        </data>
+        <data name="AboortUploadFull" xml:space="preserve">
+          <value>File upload is in progress! Are you sure you want to abort the process? <div class="buttonRow"><span class="sn-button sn-submit sn-abortbutton">Abort</span><span class="sn-submit sn-cancel sn-submit-disabled">Cancel</span></div></value>
+        </data>
+        <data name="PermissionOverview" xml:space="preserve">
+          <value>Permission overview</value>
+        </data>
+        <data name="PermissionOverviewDesc" xml:space="preserve">
+          <value>Provides an overview on permission settings.</value>
+        </data>
+      </Language>
+      <Language cultureName="hu">
+        <data name="Action" xml:space="preserve">
+          <value>Művelet</value>
+        </data>
+        <data name="Actions" xml:space="preserve">
+          <value>Műveletek</value>
+        </data>
+        <data name="ApplicationPath" xml:space="preserve">
+          <value>Alkalmazás elérési útvonala</value>
+        </data>
+        <data name="Scenarios" xml:space="preserve">
+          <value>Szcenárió(k)</value>
+        </data>
+        <data name="CopyLocal" xml:space="preserve">
+          <value>Helyi másolás</value>
+        </data>
+        <data name="DeleteLocal" xml:space="preserve">
+          <value>Helyi törlés</value>
+        </data>
+        <data name="NoActions" xml:space="preserve">
+          <value>Nincsen elérhető művelet</value>
+        </data>
+        <data name="DisplayName" xml:space="preserve">
+          <value>Cím</value>
+        </data>
+        <data name="Author" xml:space="preserve">
+          <value>Szerző</value>
+        </data>
+        <data name="ISBN" xml:space="preserve">
+          <value>ISBN</value>
+        </data>
+        <data name="Genre" xml:space="preserve">
+          <value>Típus</value>
+        </data>
+        <data name="Checkin" xml:space="preserve">
+          <value>Visszatesz</value>
+        </data>
+        <data name="Cancel" xml:space="preserve">
+          <value>Mégsem</value>
+        </data>
+        <data name="SaveDraft" xml:space="preserve">
+          <value>Kivesz és ment</value>
+        </data>
+        <data name="CheckoutAndSave" xml:space="preserve">
+          <value>Kivesz és ment</value>
+        </data>
+        <data name="DoneEditing" xml:space="preserve">
+          <value>Ment és visszarak</value>
+        </data>
+        <data name="CheckoutAndSaveAndCheckin" xml:space="preserve">
+          <value>Kivesz, ment és visszatesz</value>
+        </data>
+        <data name="Publish" xml:space="preserve">
+          <value>Publikálás</value>
+        </data>
+        <data name="SaveAndPublish" xml:space="preserve">
+          <value>Mentés és publikálás</value>
+        </data>
+        <data name="Save" xml:space="preserve">
+          <value>Mentés</value>
+        </data>
+        <data name="Ok" xml:space="preserve">
+          <value>Ok</value>
+        </data>
+        <data name="CTDInstall" xml:space="preserve">
+          <value>A fenti CTD-t fogja installálni.</value>
+        </data>
+        <data name="CTDInstalled" xml:space="preserve">
+          <value>A CTD-t sikeresen installálta.</value>
+        </data>
+        <data name="Done" xml:space="preserve">
+          <value>Kész</value>
+        </data>
+        <data name="Install" xml:space="preserve">
+          <value>Telepítés</value>
+        </data>
+        <data name="RemoveUploadedFile" xml:space="preserve">
+          <value>Feltöltött fájlok törlése</value>
+        </data>
+        <data name="Upload" xml:space="preserve">
+          <value>Feltöltés</value>
+        </data>
+        <data name="UploadAuto" xml:space="preserve">
+          <value>Automatikus</value>
+        </data>
+        <data name="LoadingLinks" xml:space="preserve">
+          <value>Hivatkozások betöltése...</value>
+        </data>
+        <data name="Close" xml:space="preserve">
+          <value>Bezárás</value>
+        </data>
+        <data name="Topics" xml:space="preserve">
+          <value>Topikok</value>
+        </data>
+        <data name="Posts" xml:space="preserve">
+          <value>Hozzászólások</value>
+        </data>
+        <data name="LastEntry" xml:space="preserve">
+          <value>Utolsó hozzászólás</value>
+        </data>
+        <data name="NewTopic" xml:space="preserve">
+          <value>Új topik</value>
+        </data>
+        <data name="AddComment" xml:space="preserve">
+          <value>Új hozzászólás</value>
+        </data>
+        <data name="Reply" xml:space="preserve">
+          <value>Válasz erre</value>
+        </data>
+        <data name="Path" xml:space="preserve">
+          <value>Útvonal:</value>
+        </data>
+        <data name="User" xml:space="preserve">
+          <value>Felhasználó</value>
+        </data>
+        <data name="Group" xml:space="preserve">
+          <value>Csoport</value>
+        </data>
+        <data name="OrganizationalUnit" xml:space="preserve">
+          <value>Szervezeti egység</value>
+        </data>
+        <data name="ShowHide" xml:space="preserve">
+          <value>Mutat/Elrejt</value>
+        </data>
+        <data name="Inherited" xml:space="preserve">
+          <value>örökölt</value>
+        </data>
+        <data name="LocalOnlyPermission" xml:space="preserve">
+          <value>nem öröklődő</value>
+        </data>
+        <data name="Allow" xml:space="preserve">
+          <value>Engedélyez</value>
+        </data>
+        <data name="Deny" xml:space="preserve">
+          <value>Tilt</value>
+        </data>
+        <data name="Name" xml:space="preserve">
+          <value>Név</value>
+        </data>
+        <data name="Description" xml:space="preserve">
+          <value>Leírás</value>
+        </data>
+        <data name="Category" xml:space="preserve">
+          <value>Kategória</value>
+        </data>
+        <data name="NoPortlets" xml:space="preserve">
+          <value>Nincsen telepíthető portlet.</value>
+        </data>
+        <data name="PortletInstalled" xml:space="preserve">
+          <value>A portletek sikeresen települtek.</value>
+        </data>
+        <data name="InstallPortlets" xml:space="preserve">
+          <value>Portletek telepítése</value>
+        </data>
+        <data name="Provide" xml:space="preserve">
+          <value>Kérjük adja meg a visszautasítás okát</value>
+        </data>
+        <data name="Reject" xml:space="preserve">
+          <value>Visszautasít</value>
+        </data>
+        <data name="Security" xml:space="preserve">
+          <value>Biztonság</value>
+        </data>
+        <data name="SecurityOption" xml:space="preserve">
+          <value>Felhasználók beállításai és csoport tagság szerkesztése.</value>
+        </data>
+        <data name="Global" xml:space="preserve">
+          <value>Global</value>
+        </data>
+        <data name="GlobalResources" xml:space="preserve">
+          <value>A rendszer globális erőforrásai.</value>
+        </data>
+        <data name="System" xml:space="preserve">
+          <value>Rendszer</value>
+        </data>
+        <data name="SystemFiles" xml:space="preserve">
+          <value>Rendszerfájlok</value>
+        </data>
+        <data name="ContentTypes" xml:space="preserve">
+          <value>Tartalomtípusok (sémák)</value>
+        </data>
+        <data name="AllContentTypes" xml:space="preserve">
+          <value>A rendszer tartalomtípusainak listája.</value>
+        </data>
+        <data name="ContentTemplates" xml:space="preserve">
+          <value>Tartalomsablonok</value>
+        </data>
+        <data name="BasicTemplates" xml:space="preserve">
+          <value>Alap tartalomsablonok.</value>
+        </data>
+        <data name="Portlets" xml:space="preserve">
+          <value>Portletek</value>
+        </data>
+        <data name="AllPortlets" xml:space="preserve">
+          <value>A rendszerben található portletek listája</value>
+        </data>
+        <data name="Skins" xml:space="preserve">
+          <value>Témák</value>
+        </data>
+        <data name="SkinList" xml:space="preserve">
+          <value>A témák listája, melyek a site designjáért felelősök.</value>
+        </data>
+        <data name="Sites" xml:space="preserve">
+          <value>Site-ok</value>
+        </data>
+        <data name="SiteList" xml:space="preserve">
+          <value>A rendszerben található site-ok listája.</value>
+        </data>
+        <data name="Trash" xml:space="preserve">
+          <value>Kuka</value>
+        </data>
+        <data name="DeletedItems" xml:space="preserve">
+          <value>Kuka, ahol adminisztrálni tudja a törölt elemeket.</value>
+        </data>
+        <data name="Apps" xml:space="preserve">
+          <value>App-ok</value>
+        </data>
+        <data name="AppList" xml:space="preserve">
+          <value>A rendszerben található globális alkalmazások listája.</value>
+        </data>
+        <data name="SenseNetOnGitHub" xml:space="preserve">
+          <value>GitHub repository</value>
+        </data>
+        <data name="GitHubInfo" xml:space="preserve">
+          <value>A sensenet ECM forráskód elérhető a GitHubon.</value>
+        </data>
+        <data name="Wiki" xml:space="preserve">
+          <value>Wiki</value>
+        </data>
+        <data name="WikiPage" xml:space="preserve">
+          <value>A sensenet ECM Wiki oldala.</value>
+        </data>
+        <data name="Forum" xml:space="preserve">
+          <value>Közösségi támogatás</value>
+        </data>
+        <data name="ForumTopics" xml:space="preserve">
+          <value>Kérdések és válaszok sensenet ECM témákkal kapcsolatban a Stack Overflow-n.</value>
+        </data>
+        <data name="SalesInformation" xml:space="preserve">
+          <value>Sales információk</value>
+        </data>
+        <data name="Information" xml:space="preserve">
+          <value>Információk arról, hogyan vehet teljes sensenet ECM verziót nagyvállalati támogatással.</value>
+        </data>
+        <data name="Workflows" xml:space="preserve">
+          <value>Munkafolyamatok</value>
+        </data>
+        <data name="WorkflowList" xml:space="preserve">
+          <value>A renszerben található munkafolyamat definíciók listája</value>
+        </data>
+        <data name="VersionInfo" xml:space="preserve">
+          <value>Verzió információk</value>
+        </data>
+        <data name="VersionInfoDesc" xml:space="preserve">
+          <value>Az aktuális sensenet ECM és a telepített külső komponensek verzió információja.</value>
+        </data>
+        <data name="Sorting-Asc" xml:space="preserve">
+          <value>Növekvő</value>
+        </data>
+        <data name="Sorting-Desc" xml:space="preserve">
+          <value>Csökkenő</value>
+        </data>
+        <data name="Settings-ChoosePage" xml:space="preserve">
+          <value>Válasszon az alábbi beállítások közül</value>
+        </data>
+        <data name="Settings-Title" xml:space="preserve">
+          <value>Beállítások</value>
+        </data>
+        <data name="Settings-Description" xml:space="preserve">
+          <value>Ezeken az oldalakon tudja testre szabni a lista beállításait.</value>
+        </data>
+        <data name="Settings-General" xml:space="preserve">
+          <value>Általános beállítások (név, verziózás, stb.)</value>
+        </data>
+        <data name="Settings-ManageFields" xml:space="preserve">
+          <value>Mezők szerkesztése (hozzádás, módosítás, törlés)</value>
+        </data>
+        <data name="Settings-ManageViews" xml:space="preserve">
+          <value>Nézetek szerkesztése</value>
+        </data>
+        <data name="Settings-ManageWorkflows" xml:space="preserve">
+          <value>Munkafolyamatok szerkesztése</value>
+        </data>
+        <data name="Settings-Email" xml:space="preserve">
+          <value>Beérkező levél beállítások</value>
+        </data>
+        <data name="Bool-True" xml:space="preserve">
+          <value>Igen</value>
+        </data>
+        <data name="Bool-False" xml:space="preserve">
+          <value>Nem</value>
+        </data>
+        <data name="FieldControl-EditValue" xml:space="preserve">
+          <value>Érték szerkesztése</value>
+        </data>
+        <data name="FieldControl-EditValue-Title" xml:space="preserve">
+          <value>{0} szerkesztése</value>
+        </data>
+        <data name="TaskMonitor" xml:space="preserve">
+          <value>Feladat figyelő</value>
+        </data>
+        <data name="TaskMonitorDesc" xml:space="preserve">
+          <value>Itt követheti nyomon a rendszerhez kapcsolódott feladat-végrehajtó folyamatokat.</value>
+        </data>
+        <data name="AboortUpload" xml:space="preserve">
+          <value>Fájl feltöltés folyamatban!</value>
+        </data>
+        <data name="AboortUploadFull" xml:space="preserve">
+          <value>Fájl feltöltés folyamatban! Biztos benne, hogy megszakítja a feltöltést? <div class="buttonRow"><span class="sn-button sn-submit sn-abortbutton">Megszakítás</span><span class="sn-submit sn-cancel sn-submit-disabled">Mégsem</span></div></value>
+        </data>
+        <data name="PermissionOverview" xml:space="preserve">
+          <value>Jogosultság áttekintő</value>
+        </data>
+        <data name="PermissionOverviewDesc" xml:space="preserve">
+          <value>Áttekintő nézet a jogosultságbeállításokról.</value>
+        </data>
+      </Language>
+    </Languages>
+  </ResourceClass>
+  <ResourceClass name="Captcha">
+    <Languages>
+      <Language cultureName="en">
+        <data name="CaptchaText" xml:space="preserve">
+          <value>Type this text:</value>
+        </data>
+        <data name="WrongAnswer" xml:space="preserve">
+          <value>Wrong code. Please try again!</value>
+        </data>
+      </Language>
+      <Language cultureName="hu">
+        <data name="CaptchaText" xml:space="preserve">
+          <value>Írja ide a képen látható szöveget:</value>
+        </data>
+        <data name="WrongAnswer" xml:space="preserve">
+          <value>A beírt szöveg nem helyes. Próbálja újra!</value>
+        </data>
+      </Language>
+    </Languages>
+  </ResourceClass>
+</Resources>

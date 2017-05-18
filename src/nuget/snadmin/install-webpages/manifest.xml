@@ -1,0 +1,35 @@
+<Package type='Install'>
+  <Id>SenseNet.WebPages</Id>
+  <Description>sensenet ECM WebPages 7.0 (beta)</Description>
+  <ReleaseDate>2017-04-05</ReleaseDate>
+  <Version>7.0.0</Version>
+  <Dependencies>
+    <Dependency id='SenseNet.Services' minVersion='7.0.0' />
+  </Dependencies>
+  <Parameters>
+    <Parameter name="@source" description="Package-relative path for the import structure. The target is always the Root.">import</Parameter>
+  </Parameters>
+  <Steps>
+    <Phase>
+      <StartRepository startWorkflowEngine="false" />
+
+      <!-- Delete apps that have a different type (Page) in this layer. -->
+      <Delete>/Root/(apps)/ContentList/DeleteField</Delete>
+      <Delete>/Root/(apps)/ContentList/EditField</Delete>
+      <Delete>/Root/(apps)/Folder/Upload</Delete>
+      <Delete>/Root/(apps)/GenericContent/Approve</Delete>
+      <Delete>/Root/(apps)/GenericContent/CheckIn</Delete>
+      <Delete>/Root/(apps)/GenericContent/CheckOut</Delete>
+      <Delete>/Root/(apps)/GenericContent/ForceUndoCheckOut</Delete>
+      <Delete>/Root/(apps)/GenericContent/Publish</Delete>
+      <Delete>/Root/(apps)/GenericContent/RestoreVersion</Delete>
+      <Delete>/Root/(apps)/GenericContent/SetPermissions</Delete>
+      <Delete>/Root/(apps)/GenericContent/UndoCheckOut</Delete>
+      <Delete>/Root/Trash/(apps)/TrashBag/Restore</Delete>
+
+      <EditAllowedChildTypes contentType="PortalRoot" add="DocumentLibrary,Portlets,Skins" />
+
+      <Import target="/Root" LogLevel="Verbose" source="@source" />
+    </Phase>
+  </Steps>
+</Package>

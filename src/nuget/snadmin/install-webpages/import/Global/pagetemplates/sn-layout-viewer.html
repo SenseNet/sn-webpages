@@ -1,0 +1,85 @@
+﻿<% string snLang = SenseNet.Portal.Virtualization.PortalContext.Current?.Site?.Language ?? "en-us"; %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="<%=snLang%>" xml:lang="<%=snLang%>">
+<head>
+    <title><%=HttpContext.GetGlobalResourceObject("Portal", "SenseNetDemoSiteTitle")%></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <meta name="viewport" content="user-scalable=0;" />
+    <sn:basetag id="BaseTagControl1" runat="server" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <!--[if IE 8]>     <html class="ie8"> <![endif]-->  
+    <!--[if IE 9]>     <html class="ie9"> <![endif]--> 
+    
+</head>
+<body class="sn-body sn-layout3 sn-layout-inter sn-layout-inter-index sn-inter-<%=snLang%> <%= SenseNet.Portal.UI.UITools.GetPageModeClass() %>">
+    <% string snLang = SenseNet.Portal.Virtualization.PortalContext.Current?.Site?.Language ?? "en-us"; %>
+    <sn:cssrequest csspath="$skin/styles/jqueryui/jquery-ui.css" id="pageTemplateUIStyleReq"
+        runat="server" />
+        <sn:CssRequest CSSPath="$skin/styles/jqueryui/jquery-ui-sntheme.css" ID="pageTemplateUIStyleReq2" runat="server" />
+    <sn:cssrequest csspath="$skin/styles/sn-layout.css" id="snLayoutCss" runat="server" />
+    <sn:cssrequest csspath="$skin/styles/skin.css" id="pageTemplateCssRequest1" runat="server" />
+
+    <div class="sn-layout-container sn-layout-index ui-helper-clearfix">
+        <div class="sn-layout-head">
+            <div class="sn-layout-head-inner">
+            <div class="headerZone">
+                <snpe-zone name="HeaderZone" headertext="HeaderZone" partchrometype="None"></snpe-zone>
+            </div>
+                <a class="sn-slogen" href="/">The open source<br />
+                    ECMS for .Net </a>
+                <snpe:advancedloginportlet title="Login" id="login" runat="server" loginviewpath="/Root/System/SystemPlugins/Portlets/AdvancedLogin/AdvancedLoginView.ascx"
+                    cssclass="sn-advancedLogin" />
+                <snpe:contextsearch renderer="/Root/System/SystemPlugins/Portlets/ContextSearch/QuickView.ascx"
+                                    id="QuickSearch1" runat="server" quicksearchmode="True" searchresultpagepath="/Root/Sites/Default_Site/features/Search" />
+            </div>
+        </div>
+        <div class="sn-layout-really-full">
+            <snpe-zone name="Full" headertext="Full" partchrometype="None"></snpe-zone>
+        </div>
+        <div class="sn-layout-full">
+            <snpe-zone name="FullCol" headertext="Full Column" partchrometype="None"></snpe-zone>
+        </div>
+        <div class="sn-columns ui-helper-clearfix">
+            <div class="sn-column sn-column1">
+                <snpe-zone name="LeftCol" headertext="Left Column" partchrometype="TitleAndBorder"></snpe-zone>
+            </div>
+            <div class="sn-column sn-column2">
+                <div class="sn-columns ui-helper-clearfix">
+                    <div class="sn-layout-full">
+                        <snpe-zone name="WideCol" headertext="Wide Column" partchrometype="TitleAndBorder"></snpe-zone>
+                    </div>
+                    <div class="sn-column sn-column1">
+                        <div class="sn-layout-full">
+                            <snpe-zone name="CenterCol" headertext="Center Column" partchrometype="TitleAndBorder"></snpe-zone>
+                        </div>
+                        <div class="sn-columns ui-helper-clearfix">
+                            <div class="sn-column sn-column1">
+                                <snpe-zone name="CenterLeftCol" headertext="Center / Left Column" partchrometype="TitleAndBorder"></snpe-zone>
+                            </div>
+                            <div class="sn-column sn-column2">
+                                <snpe-zone name="CenterRightCol" headertext="Center / Right Column" partchrometype="TitleAndBorder"></snpe-zone>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sn-column sn-column2">
+                        <snpe-zone name="RightCol" headertext="Right Column" partchrometype="TitleAndBorder"></snpe-zone>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    
+        
+    </div>
+    <!-- prc -->
+
+    <snpe:portalremotecontrol id="RemoteControl" runat="server" />
+    
+    <sn:scriptrequest runat="server" path="$skin/scripts/init.js" />
+        <div class="versiondiv">
+            <snpe-zone name="Version" headertext="Version" partchrometype="None" />
+        </div>
+</body>
+</html>

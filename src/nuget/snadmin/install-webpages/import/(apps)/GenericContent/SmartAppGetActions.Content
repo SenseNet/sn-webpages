@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentMetaData>
+  <ContentType>GenericODataApplication</ContentType>
+  <ContentName>SmartAppGetActions</ContentName>
+  <Fields>
+    <ClassName><![CDATA[SenseNet.Portal.ApplicationModel.SmartAppHelperApi]]></ClassName>
+    <MethodName><![CDATA[GetActions]]></MethodName>
+    <Parameters><![CDATA[string scenario, string back, string parameters]]></Parameters>
+    <DisplayName><![CDATA[SmartAppGetActions]]></DisplayName>
+    <Description><![CDATA[]]></Description>
+    <Scenario><![CDATA[]]></Scenario>
+    <ActionTypeName><![CDATA[GenericODataOperation]]></ActionTypeName>
+  </Fields>
+  <Permissions>
+    <Clear />
+    <Identity path="/Root/IMS/BuiltIn/Portal/Everyone">
+      <RunApplication>Allow</RunApplication>
+    </Identity>
+  </Permissions>
+</ContentMetaData>

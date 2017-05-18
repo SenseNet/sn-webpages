@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentMetaData>
+  <ContentType>GenericODataApplication</ContentType>
+  <ContentName>DialogUploadGetUserUploads</ContentName>
+  <Fields>
+    <ClassName><![CDATA[SenseNet.Portal.UI.Controls.DialogUploadApi]]></ClassName>
+    <MethodName><![CDATA[GetUserUploads]]></MethodName>
+    <Parameters><![CDATA[string startUploadDate, string path, string rnd]]></Parameters>
+    <DisplayName><![CDATA[DialogUploadGetUserUploads]]></DisplayName>
+    <Description><![CDATA[]]></Description>
+    <Scenario><![CDATA[]]></Scenario>
+    <ActionTypeName><![CDATA[GenericODataOperation]]></ActionTypeName>
+  </Fields>
+  <Permissions>
+    <Clear />
+  </Permissions>
+</ContentMetaData>

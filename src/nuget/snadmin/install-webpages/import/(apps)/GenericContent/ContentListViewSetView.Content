@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentMetaData>
+  <ContentType>GenericODataApplication</ContentType>
+  <ContentName>ContentListViewSetView</ContentName>
+  <Fields>
+    <ClassName><![CDATA[SenseNet.Portal.UI.ContentListViews.ContentListViewHelperApi]]></ClassName>
+    <MethodName><![CDATA[SetView]]></MethodName>
+    <Parameters><![CDATA[string uiContextId, string view, string back]]></Parameters>
+    <DisplayName><![CDATA[ContentListViewSetView]]></DisplayName>
+    <Description><![CDATA[]]></Description>
+    <Scenario><![CDATA[]]></Scenario>
+    <ActionTypeName><![CDATA[GenericODataOperation]]></ActionTypeName>
+  </Fields>
+  <Permissions>
+    <Clear />
+  </Permissions>
+</ContentMetaData>

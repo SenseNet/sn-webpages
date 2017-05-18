@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentMetaData>
+  <ContentType>Application</ContentType>
+  <ContentName>WebPartDisplayMode</ContentName>
+  <Fields>
+    <DisplayName><![CDATA[$Action,WebPartDisplayMode]]></DisplayName>
+    <DisplayName><![CDATA[$Action,WebPartDisplayModeDescription]]></DisplayName>
+    <ActionTypeName><![CDATA[WebPartDisplayModeAction]]></ActionTypeName>
+    <Icon><![CDATA[application]]></Icon>
+    <StyleHint><![CDATA[]]></StyleHint>
+    <RequiredPermissions>4</RequiredPermissions>
+    <Index>3800</Index>
+  </Fields>
+  <Permissions>
+    <Clear />
+    <Identity path="/Root/IMS/BuiltIn/Portal/IdentifiedUsers">
+      <RunApplication>Allow</RunApplication>
+    </Identity>
+    <Identity path="/Root/IMS/BuiltIn/Portal/PageEditors">
+      <RunApplication>Allow</RunApplication>
+    </Identity>
+  </Permissions>
+</ContentMetaData>

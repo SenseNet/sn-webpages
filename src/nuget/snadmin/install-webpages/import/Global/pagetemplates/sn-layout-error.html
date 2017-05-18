@@ -1,0 +1,47 @@
+﻿<% string snLang = SenseNet.Portal.Virtualization.PortalContext.Current?.Site?.Language ?? "en-us"; %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="<%=snLang%>" xml:lang="<%=snLang%>">
+<head>
+  <title><%=HttpContext.GetGlobalResourceObject("Portal", "SenseNetDemoSiteTitle")%></title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="imagetoolbar" content="no" />
+  <sn:BaseTag ID="BaseTagControl1" runat="server" />
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+</head>
+
+<body class="sn-body sn-layout1 sn-error-<%=snLang%>">
+    <% string snLang = SenseNet.Portal.Virtualization.PortalContext.Current?.Site?.Language ?? "en-us"; %>
+    
+  <sn:CssRequest CSSPath="$skin/styles/jqueryui/jquery-ui.css" ID="pageTemplateUIStyleReq" runat="server" />
+  <sn:CssRequest CSSPath="$skin/styles/jqueryui/jquery-ui-sntheme.css" ID="pageTemplateUIStyleReq2" runat="server" />
+  <sn:CssRequest CSSPath="$skin/styles/sn-layout.css" ID="snLayoutCss" runat="server" />
+  <sn:CssRequest CSSPath="$skin/styles/skin.css" ID="pageTemplateCssRequest1" runat="server" />
+        
+  <div class="sn-layout-container ui-helper-clearfix">
+    <div class="sn-layout-head">
+      <div class="sn-layout-head-left">
+      <div class="sn-logo">
+        <a href="/" title='<%=HttpContext.GetGlobalResourceObject("Portal", "SenseNetDemoSiteTitle")%>'><img src="/Root/Global/images/sensenetlogo.png" /></a>
+      </div>      
+      </div>
+      
+      
+      
+    </div>
+    <div class="sn-columns ui-helper-clearfix">
+      <div class="sn-column sn-column1 ui-helper-clearfix">
+        <snpe-zone name="WideCol" HeaderText="Wide Column" PartChromeType="TitleAndBorder">
+          <snpe:StatusCodePortlet Title="Status Code" ID="statusCode" runat="server" ChromeType="None"/>
+        </snpe-zone>
+      </div>
+    </div>
+    <snpe:UserControlPortlet ID="SensenetVersionInfo" ControlPath="/Root/Global/renderers/SensenetVersion.ascx" ChromeType="None" runat="server" />
+  </div>
+    
+<!-- prc -->
+<snpe:PortalRemoteControl ID="RemoteControl" runat="server" />
+<sn:ScriptRequest runat="server" Path="$skin/scripts/init.js" />
+
+</body>
+</html>

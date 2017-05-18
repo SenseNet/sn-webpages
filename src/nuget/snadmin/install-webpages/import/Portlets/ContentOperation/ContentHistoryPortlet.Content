@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentMetaData>
+  <ContentType>Portlet</ContentType>
+  <ContentName>ContentHistoryPortlet</ContentName>
+  <Fields>
+    <Description><![CDATA[$ContentHistoryPortlet:PortletDescription]]></Description>
+    <TypeName><![CDATA[SenseNet.Portal.Portlets.ContentHistoryPortlet, SenseNet.CorePortlets]]></TypeName>
+    <ImageData attachment="ContentHistoryPortlet.ImageData" />
+  </Fields>
+  <Permissions>
+    <Clear />
+  </Permissions>
+</ContentMetaData>

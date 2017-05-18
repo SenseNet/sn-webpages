@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="view.xslt"?>
+<Resources>
+  <ResourceClass name="ContentView">
+    <Languages>
+      <Language cultureName="en">
+        <data name="InvalidFormat" xml:space="preserve">
+          <value>Invalid format</value>
+        </data>
+        <data name="InvalidData" xml:space="preserve">
+          <value>Invalid data</value>
+        </data>
+        <data name="FieldControlErrors" xml:space="preserve">
+          <value>Field control errors</value>
+        </data>
+        <data name="ArrowPrev" xml:space="preserve">
+          <value>Arrow prev</value>
+        </data>
+        <data name="ArrowNext" xml:space="preserve">
+          <value>Arrow next</value>
+        </data>
+        <data name="Info" xml:space="preserve">
+          <value>Info</value>
+        </data>
+        <data name="UserImage" xml:space="preserve">
+          <value>User image</value>
+        </data>
+        <data name="MissingUserImage" xml:space="preserve">
+          <value>Missing user image</value>
+        </data>
+      </Language>
+      <Language cultureName="hu">
+        <data name="InvalidFormat" xml:space="preserve">
+          <value>Rossz formátum</value>
+        </data>
+        <data name="InvalidData" xml:space="preserve">
+          <value>Hibás adat</value>
+        </data>
+        <data name="FieldControlErrors" xml:space="preserve">
+          <value>Mező hibák</value>
+        </data>
+        <data name="ArrowPrev" xml:space="preserve">
+          <value>Előző</value>
+        </data>
+        <data name="ArrowNext" xml:space="preserve">
+          <value>Következő</value>
+        </data>
+        <data name="Info" xml:space="preserve">
+          <value>Info</value>
+        </data>
+        <data name="UserImage" xml:space="preserve">
+          <value>Felhasználó képe</value>
+        </data>
+        <data name="MissingUserImage" xml:space="preserve">
+          <value>Hiányzó avatar</value>
+        </data>
+      </Language>
+    </Languages>
+  </ResourceClass>
+</Resources>

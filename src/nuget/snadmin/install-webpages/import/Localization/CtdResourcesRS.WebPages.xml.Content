@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentMetaData>
+  <ContentType>Resource</ContentType>
+  <ContentName>CtdResourcesRS.WebPages.xml</ContentName>
+  <Fields>
+    <Binary attachment="CtdResourcesRS.WebPages.xml" />
+    <DisplayName><![CDATA[CtdResourcesRS.WebPages.xml]]></DisplayName>
+  </Fields>
+  <Permissions>
+    <Clear />
+  </Permissions>
+</ContentMetaData>

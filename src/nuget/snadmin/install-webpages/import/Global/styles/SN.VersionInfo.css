@@ -1,0 +1,30 @@
+﻿#versionInfoWrapper {
+    padding: 0 20px;
+}
+
+#versionInfoWrapper #infoBox {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    font-size: 120%;
+}
+
+#infoBox div {
+    font-size: 1.1em;
+    padding: 5px 0;
+}
+
+#versionInfoWrapper .k-grid {
+    margin: 20px 0;
+}
+
+#versionInfoWrapper .k-grid th,
+#versionInfoWrapper .k-grid th a {
+    background: #ccc;
+    font-weight: bold;
+}
+
+#versionInfoWrapper .k-grid span.k-dropdown-wrap.k-state-default {
+    background-color: #ccc !important;
+}

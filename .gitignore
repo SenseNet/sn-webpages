@@ -250,3 +250,4 @@ paket-files/
 # JetBrains Rider
 .idea/
 *.sln.iml
+src/nuget/content/Admin/tools/install-webpages.zip

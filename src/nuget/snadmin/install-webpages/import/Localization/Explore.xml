@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources>
+  <ResourceClass name="Explore">
+    <Languages>
+      <Language cultureName="en">
+        <data name="Close" xml:space="preserve">
+          <value>Close</value>
+        </data>
+        <data name="Explore" xml:space="preserve">
+          <value>Explore</value>
+        </data>
+        <data name="Browse" xml:space="preserve">
+          <value>Browse</value>
+        </data>
+        <data name="Edit" xml:space="preserve">
+          <value>Edit</value>
+        </data>
+        <data name="Content" xml:space="preserve">
+          <value>Content:</value>
+        </data>
+        <data name="Action" xml:space="preserve">
+          <value>Action:</value>
+        </data>
+        <data name="TreeRoot" xml:space="preserve">
+          <value>Tree root:</value>
+        </data>
+        <data name="ShowSystemFiles" xml:space="preserve">
+          <value>Show system files</value>
+        </data>
+        <data name="Search" xml:space="preserve">
+          <value>Search</value>
+        </data>
+        <data name="ShowAdvancedFields" xml:space="preserve">
+          <value> Show advanced fields</value>
+        </data>
+        <data name="HideAdvancedFields" xml:space="preserve">
+          <value> Hide advanced fields</value>
+        </data>
+      </Language>
+      <Language cultureName="hu">
+        <data name="Close" xml:space="preserve">
+          <value>Bezárás</value>
+        </data>
+        <data name="Explore" xml:space="preserve">
+          <value>Intéző</value>
+        </data>
+        <data name="Browse" xml:space="preserve">
+          <value>Megtekintés</value>
+        </data>
+        <data name="Edit" xml:space="preserve">
+          <value>Szerkesztés</value>
+        </data>
+        <data name="Content" xml:space="preserve">
+          <value>Tartalom:</value>
+        </data>
+        <data name="Action" xml:space="preserve">
+          <value>Művelet:</value>
+        </data>
+        <data name="TreeRoot" xml:space="preserve">
+          <value>Részfa kezdőeleme:</value>
+        </data>
+        <data name="ShowSystemFiles" xml:space="preserve">
+          <value>Rendszer fájlok látszanak</value>
+        </data>
+        <data name="Search" xml:space="preserve">
+          <value>Keresés</value>
+        </data>
+        <data name="ShowAdvancedFields" xml:space="preserve">
+          <value> Haladó mezők megjelenítése</value>
+        </data>
+        <data name="HideAdvancedFields" xml:space="preserve">
+          <value> Haladó mezők elrejtése</value>
+        </data>
+      </Language>
+    </Languages>
+  </ResourceClass>
+</Resources>

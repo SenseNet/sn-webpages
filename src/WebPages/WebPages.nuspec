@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>SenseNet.WebPages</id>
+    <version>7.0.0-beta1</version>
+    <title>UI layer for the sensenet ECM platform built using ASP.NET pages, webparts and controls.</title>
+    <authors>kavics,aniko,laci,borsi,lajos,tusmester</authors>
+    <owners>Sense/Net</owners>
+    <licenseUrl>https://github.com/SenseNet/sn-webpages/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/SenseNet/sn-webpages</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/SenseNet/sn-resources/master/images/sn-icon/sensenet-icon-64.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>sensenet ECM WebPages contains the UI layer built on well-known ASP.NET technologies like pages, webparts and ascx views.</description>
+    <releaseNotes>Initial release.</releaseNotes>
+    <copyright>Copyright © Sense/Net Inc.</copyright>
+    <tags>sensenet ecm ecms</tags>
+    <dependencies>
+      <dependency id="SenseNet.Services" version="7.0.0-beta2" />
+      <dependency id="SenseNet.Tools" version="2.1.1" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="bin\Release\AjaxMin.*" target="lib\net451" />
+    <file src="bin\Release\System.Web.Ajax.*" target="lib\net451" />
+    <file src="bin\Release\SenseNet.WebPages.*" target="lib\net451" />
+    <file src="bin\Release\Microsoft.Web.Preview.*" target="lib\net451" />
+  </files>
+</package>

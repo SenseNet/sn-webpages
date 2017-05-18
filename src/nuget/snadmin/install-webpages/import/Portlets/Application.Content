@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentMetaData>
+  <ContentType>PortletCategory</ContentType>
+  <ContentName>Application</ContentName>
+  <Fields>
+    <DisplayName><![CDATA[$PortletFramework:Category_Application]]></DisplayName>
+    <Description><![CDATA[$PortletFramework:Category_Application_Description]]></Description>
+  </Fields>
+  <Permissions>
+    <Clear />
+  </Permissions>
+</ContentMetaData>

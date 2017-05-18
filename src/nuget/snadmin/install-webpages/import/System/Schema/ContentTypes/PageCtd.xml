@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentType name="Page" parentType="Webform" handler="SenseNet.Portal.Page" xmlns="http://schemas.sensenet.com/SenseNet/ContentRepository/ContentTypeDefinition">
+  <DisplayName>$Ctd-Page,DisplayName</DisplayName>
+  <Description>$Ctd-Page,Description</Description>
+  <Icon>Page</Icon>
+  <Fields>
+    <Field name="Name" type="ShortText">
+      <Description>$Ctd-Page,Name-Description</Description>
+    </Field>
+    <Field name="PageTemplateNode" type="Reference">
+      <DisplayName>$Ctd-Page,PageTemplateNode-DisplayName</DisplayName>
+      <Description>$Ctd-Page,PageTemplateNode-Description</Description>
+      <Configuration>
+        <AllowMultiple>false</AllowMultiple>
+        <Compulsory>true</Compulsory>
+        <AllowedTypes>
+          <Type>PageTemplate</Type>
+        </AllowedTypes>
+        <SelectionRoot>
+          <Path>/Root/Global/pagetemplates</Path>
+          <Path>/Root/Skins</Path>
+        </SelectionRoot>
+      </Configuration>
+    </Field>
+    <Field name="PageSkin" type="Reference">
+      <DisplayName>$Ctd-Page,PageSkin-DisplayName</DisplayName>
+      <Configuration>
+        <AllowMultiple>false</AllowMultiple>
+        <AllowedTypes>
+          <Type>Skin</Type>
+        </AllowedTypes>
+        <SelectionRoot>
+          <Path>/Root/Skins</Path>
+        </SelectionRoot>
+      </Configuration>
+    </Field>
+    <Field name="Hidden" type="Boolean">
+      <Configuration>
+        <VisibleBrowse>Advanced</VisibleBrowse>
+        <VisibleEdit>Advanced</VisibleEdit>
+        <VisibleNew>Advanced</VisibleNew>
+      </Configuration>
+    </Field>
+    <Field name="Index" type="Integer">
+      <Configuration>
+        <VisibleBrowse>Advanced</VisibleBrowse>
+        <VisibleEdit>Advanced</VisibleEdit>
+        <VisibleNew>Advanced</VisibleNew>
+      </Configuration>
+    </Field>
+    <Field name="SmartUrl" type="ShortText">
+      <DisplayName>$Ctd-Page,SmartUrl-DisplayName</DisplayName>
+      <Description>$Ctd-Page,SmartUrl-Description</Description>
+    </Field>
+    <Field name="SiteRelativeUrl" type="SiteRelativeUrl">
+      <DisplayName>$Ctd-Page,SiteRelativeUrl-DisplayName</DisplayName>
+      <Description>$Ctd-Page,SiteRelativeUrl-Description</Description>
+      <Configuration>
+        <ReadOnly>true</ReadOnly>
+        <ControlHint>sn:SiteRelativeUrl</ControlHint>
+        <VisibleBrowse>Advanced</VisibleBrowse>
+        <VisibleEdit>Advanced</VisibleEdit>
+        <VisibleNew>Advanced</VisibleNew>
+      </Configuration>
+    </Field>
+    <Field name="IsExternal" type="Boolean">
+      <DisplayName>$Ctd-Page,IsExternal-DisplayName</DisplayName>
+      <Description>$Ctd-Page,IsExternal-Description</Description>
+      <Configuration>
+        <VisibleBrowse>Advanced</VisibleBrowse>
+        <VisibleEdit>Advanced</VisibleEdit>
+        <VisibleNew>Advanced</VisibleNew>
+      </Configuration>
+    </Field>
+    <Field name="OuterUrl" type="ShortText">
+      <DisplayName>$Ctd-Page,OuterUrl-DisplayName</DisplayName>
+      <Description>$Ctd-Page,OuterUrl-Description</Description>
+      <Configuration>
+        <VisibleBrowse>Advanced</VisibleBrowse>
+        <VisibleEdit>Advanced</VisibleEdit>
+        <VisibleNew>Advanced</VisibleNew>
+      </Configuration>
+    </Field>
+    <Field name="MetaTitle" type="ShortText">
+      <DisplayName>$Ctd-Page,MetaTitle-DisplayName</DisplayName>
+      <Description>$Ctd-Page,MetaTitle-Description</Description>
+      <Configuration>
+        <VisibleBrowse>Advanced</VisibleBrowse>
+        <VisibleEdit>Advanced</VisibleEdit>
+        <VisibleNew>Advanced</VisibleNew>
+      </Configuration>
+    </Field>
+    <Field name="Keywords" type="LongText">
+      <DisplayName>$Ctd-Page,Keywords-DisplayName</DisplayName>
+      <Description>$Ctd-Page,Keywords-Description</Description>
+      <Indexing>
+        <Analyzer>Lucene.Net.Analysis.WhitespaceAnalyzer</Analyzer>
+      </Indexing>
+      <Configuration>
+        <VisibleBrowse>Advanced</VisibleBrowse>
+        <VisibleEdit>Advanced</VisibleEdit>
+        <VisibleNew>Advanced</VisibleNew>
+      </Configuration>
+    </Field>
+    <Field name="MetaDescription" type="LongText">
+      <DisplayName>$Ctd-Page,MetaDescription-DisplayName</DisplayName>
+      <Description>$Ctd-Page,MetaDescription-Description</Description>
+      <Indexing>
+        <Analyzer>Lucene.Net.Analysis.Standard.StandardAnalyzer</Analyzer>
+      </Indexing>
+      <Configuration>
+        <VisibleBrowse>Advanced</VisibleBrowse>
+        <VisibleEdit>Advanced</VisibleEdit>
+        <VisibleNew>Advanced</VisibleNew>
+      </Configuration>
+    </Field>
+    <Field name="MetaAuthors" type="ShortText">
+      <DisplayName>$Ctd-Page,MetaAuthors-DisplayName</DisplayName>
+      <Description>$Ctd-Page,MetaAuthors-Description</Description>
+      <Configuration>
+        <VisibleBrowse>Advanced</VisibleBrowse>
+        <VisibleEdit>Advanced</VisibleEdit>
+        <VisibleNew>Advanced</VisibleNew>
+      </Configuration>
+    </Field>
+    <Field name="CustomMeta" type="LongText">
+      <DisplayName>$Ctd-Page,CustomMeta-DisplayName</DisplayName>
+      <Description>$Ctd-Page,CustomMeta-Description</Description>
+      <Indexing>
+        <Analyzer>Lucene.Net.Analysis.Standard.StandardAnalyzer</Analyzer>
+      </Indexing>
+      <Configuration>
+        <VisibleBrowse>Advanced</VisibleBrowse>
+        <VisibleEdit>Advanced</VisibleEdit>
+        <VisibleNew>Advanced</VisibleNew>
+      </Configuration>
+    </Field>
+    <Field name="PageId" type="ShortText">
+      <DisplayName>$Ctd-Page,PageId-DisplayName</DisplayName>
+      <Description>$Ctd-Page,PageId-Description</Description>
+      <Configuration>
+        <VisibleBrowse>Hide</VisibleBrowse>
+        <VisibleEdit>Hide</VisibleEdit>
+        <VisibleNew>Hide</VisibleNew>
+      </Configuration>
+    </Field>
+    <Field name="NodeName" type="ShortText">
+      <DisplayName>$Ctd-Page,NodeName-DisplayName</DisplayName>
+      <Description>$Ctd-Page,NodeName-Description</Description>
+      <Configuration>
+        <VisibleBrowse>Hide</VisibleBrowse>
+        <VisibleEdit>Hide</VisibleEdit>
+        <VisibleNew>Hide</VisibleNew>
+      </Configuration>
+    </Field>
+    <Field name="TemporaryPortletInfo" type="LongText">
+      <DisplayName>$Ctd-Page,TemporaryPortletInfo-DisplayName</DisplayName>
+      <Description>$Ctd-Page,TemporaryPortletInfo-Description</Description>
+      <Indexing>
+        <Mode>No</Mode>
+      </Indexing>
+      <Configuration>
+        <VisibleBrowse>Hide</VisibleBrowse>
+        <VisibleEdit>Hide</VisibleEdit>
+        <VisibleNew>Hide</VisibleNew>
+      </Configuration>
+    </Field>
+    <Field name="TextExtract" type="LongText">
+      <DisplayName>$Ctd-Page,TextExtract-DisplayName</DisplayName>
+      <Description>$Ctd-Page,TextExtract-Description</Description>
+      <Indexing>
+        <Mode>No</Mode>
+      </Indexing>
+      <Configuration>
+        <VisibleBrowse>Hide</VisibleBrowse>
+        <VisibleEdit>Hide</VisibleEdit>
+        <VisibleNew>Hide</VisibleNew>
+      </Configuration>
+    </Field>
+    <Field name="Binary" type="Binary">
+      <Description>$Ctd-Page,Binary-Description</Description>
+    </Field>
+    <Field name="PersonalizationSettings" type="Binary">
+      <DisplayName>$Ctd-Page,PersonalizationSettings-DisplayName</DisplayName>
+      <Description>$Ctd-Page,PersonalizationSettings-Description</Description>
+      <Indexing>
+        <Mode>No</Mode>
+      </Indexing>
+      <Configuration>
+        <VisibleBrowse>Hide</VisibleBrowse>
+        <VisibleEdit>Hide</VisibleEdit>
+        <VisibleNew>Hide</VisibleNew>
+      </Configuration>
+    </Field>
+  </Fields>
+</ContentType>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources>
+  <ResourceClass name="Ctd-Skin">
+    <Languages>
+      <Language cultureName="en">
+        <data name="NewSkin-DisplayName" xml:space="preserve">
+          <value>New skin</value>
+        </data>
+        <data name="DisplayName" xml:space="preserve">
+          <value>Skin</value>
+        </data>
+        <data name="Description" xml:space="preserve">
+          <value>Skin structure base folder.</value>
+        </data>
+        <data name="DisplayName-DisplayName" xml:space="preserve">
+          <value>Display Name</value>
+        </data>
+      </Language>
+      <Language cultureName="hu">
+        <data name="NewSkin-DisplayName" xml:space="preserve">
+          <value>Új skin</value>
+        </data>
+        <data name="DisplayName" xml:space="preserve">
+          <value>Téma</value>
+        </data>
+        <data name="Description" xml:space="preserve">
+          <value>A téma struktúra mappája. Ebben tárolódnak a téma által használt stílusfájlok, szkriptek, képek, megjelenítők.</value>
+        </data>
+        <data name="DisplayName-DisplayName" xml:space="preserve">
+          <value>Olvasható név</value>
+        </data>
+      </Language>
+    </Languages>
+  </ResourceClass>
+  <ResourceClass name="Ctd-Skins">
+    <Languages>
+      <Language cultureName="en">
+        <data name="DisplayName" xml:space="preserve">
+          <value>Skins</value>
+        </data>
+        <data name="Description" xml:space="preserve">
+          <value>This is the container type for skins. Only a single instance is allowed at /Root/Skins.</value>
+        </data>
+      </Language>
+      <Language cultureName="hu">
+        <data name="DisplayName" xml:space="preserve">
+          <value>Témák</value>
+        </data>
+        <data name="Description" xml:space="preserve">
+          <value>Témák gyűjtője. Egy lehet belőle, a /Root/Skins.</value>
+        </data>
+      </Language>
+    </Languages>
+  </ResourceClass>
+</Resources>

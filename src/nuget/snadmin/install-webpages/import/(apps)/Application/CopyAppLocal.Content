@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentMetaData>
+  <ContentType>Application</ContentType>
+  <ContentName>CopyAppLocal</ContentName>
+  <Fields>
+    <DisplayName><![CDATA[$Action,CopyAppLocal]]></DisplayName>
+    <ActionTypeName><![CDATA[CopyAppLocalAction]]></ActionTypeName>
+    <Icon><![CDATA[copy]]></Icon>
+  </Fields>
+  <Permissions>
+    <Clear />
+  </Permissions>
+</ContentMetaData>

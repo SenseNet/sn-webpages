@@ -1,0 +1,524 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources>
+  <ResourceClass name="QueryBuilder">
+    <Languages>
+      <Language cultureName="en">
+        <data name="AddTerm" xml:space="preserve">
+          <value>Add term!</value>
+        </data>
+        <data name="QueryEditor" xml:space="preserve">
+          <value>Query editor</value>
+        </data>
+        <data name="QueryBuilder" xml:space="preserve">
+          <value>Query wizard</value>
+        </data>
+        <data name="MoveRowUp" xml:space="preserve">
+          <value>Move row up</value>
+        </data>
+        <data name="MoveRowDown" xml:space="preserve">
+          <value>Move row down</value>
+        </data>
+        <data name="DeleteRow" xml:space="preserve">
+          <value>Delete row</value>
+        </data>
+        <data name="WarningTitle" xml:space="preserve">
+          <value>Warning</value>
+        </data>
+        <data name="EditorWarningMessage" xml:space="preserve">
+          <value>query editor</value>
+        </data>
+        <data name="BuilderWarningMessage" xml:space="preserve">
+          <value>query builder</value>
+        </data>
+        <data name="SelectType" xml:space="preserve">
+          <value>Select type...</value>
+        </data>
+        <data name="SelectQuery" xml:space="preserve">
+          <value>Select query...</value>
+        </data>
+        <data name="SelectField" xml:space="preserve">
+          <value>Select field...</value>
+        </data>
+        <data name="Insert" xml:space="preserve">
+          <value>Contains</value>
+        </data>
+        <data name="Equal" xml:space="preserve">
+          <value>Equal</value>
+        </data>
+        <data name="GreaterEqual" xml:space="preserve">
+          <value>Greater than or equal</value>
+        </data>
+        <data name="LowerEqual" xml:space="preserve">
+          <value>Lower than or equal</value>
+        </data>
+        <data name="Greater" xml:space="preserve">
+          <value>Greater</value>
+        </data>
+        <data name="Lower" xml:space="preserve">
+          <value>Lower</value>
+        </data>
+        <data name="And" xml:space="preserve">
+          <value>And</value>
+        </data>
+        <data name="Or" xml:space="preserve">
+          <value>Or</value>
+        </data>
+        <data name="Not" xml:space="preserve">
+          <value>Not</value>
+        </data>
+        <data name="Contains" xml:space="preserve">
+          <value>Contains</value>
+        </data>
+        <data name="BeginsWith" xml:space="preserve">
+          <value>Begins with</value>
+        </data>
+        <data name="EndsWith" xml:space="preserve">
+          <value>Ends with</value>
+        </data>
+        <data name="Type" xml:space="preserve">
+          <value>Type</value>
+        </data>
+        <data name="TypeIs" xml:space="preserve">
+          <value>TypeIs</value>
+        </data>
+        <data name="InTree" xml:space="preserve">
+          <value>InTree</value>
+        </data>
+        <data name="InFolder" xml:space="preserve">
+          <value>InFolder</value>
+        </data>
+        <data name="Like" xml:space="preserve">
+          <value>Starts with: lorem*, ends with: *lorem, contains: *lorem*</value>
+        </data>
+        <data name="In" xml:space="preserve">
+          <value>Insert</value>
+        </data>
+        <data name="Open" xml:space="preserve">
+          <value>Open</value>
+        </data>
+        <data name="Close" xml:space="preserve">
+          <value>Close</value>
+        </data>
+        <data name="Sort" xml:space="preserve">
+          <value>Sort</value>
+        </data>
+        <data name="Reversesort" xml:space="preserve">
+          <value>Reversesort</value>
+        </data>
+        <data name="Top" xml:space="preserve">
+          <value>Top</value>
+        </data>
+        <data name="Skip" xml:space="preserve">
+          <value>Skip</value>
+        </data>
+        <data name="InsertNewExpression" xml:space="preserve">
+          <value>Insert new expression</value>
+        </data>
+        <data name="AdvancedSearch" xml:space="preserve">
+          <value>Advanced search</value>
+        </data>
+        <data name="Search" xml:space="preserve">
+          <value>Search</value>
+        </data>
+        <data name="Run" xml:space="preserve">
+          <value>Run</value>
+        </data>
+        <data name="Clear" xml:space="preserve">
+          <value>Clear</value>
+        </data>
+        <data name="SaveQueryTitle" xml:space="preserve">
+          <value>Save query</value>
+        </data>
+        <data name="SaveQueryNameLabel" xml:space="preserve">
+          <value>Title</value>
+        </data>
+        <data name="SaveQueryPlaceholder" xml:space="preserve">
+          <value>Type query title...</value>
+        </data>
+        <data name="SaveQuerySaveButton" xml:space="preserve">
+          <value>Save query</value>
+        </data>
+        <data name="SaveQueryCancelButton" xml:space="preserve">
+          <value>Cancel</value>
+        </data>
+        <data name="SaveQueryShareLabel" xml:space="preserve">
+          <value>Share query</value>
+        </data>
+        <data name="SaveQuerySuccess" xml:space="preserve">
+          <value>Query was saved successfully!</value>
+        </data>
+        <data name="Modify" xml:space="preserve">
+          <value>Modify</value>
+        </data>
+        <data name="SaveAs" xml:space="preserve">
+          <value>Save as</value>
+        </data>
+        <data name="SavedQueryDelete" xml:space="preserve">
+          <value>Are you sure you want to delete this query?</value>
+      </data>
+        <data name="DeleteQuerySuccess" xml:space="preserve">
+          <value>Query was deleted successfully!</value>
+        </data>
+        <data name="QueryBuilder-AreYouSureToClose" xml:space="preserve">
+          <value>Are you sure to close the query builder? You have unsaved changes.</value>
+        </data>
+        <data name="InvalidQuery" xml:space="preserve">
+          <value>Invalid query</value>
+        </data>
+        <data name="No" xml:space="preserve">
+          <value>Invalid query</value>
+        </data>
+        <data name="Save" xml:space="preserve">
+          <value>Save</value>
+        </data>
+        <data name="Delete" xml:space="preserve">
+          <value>Delete query</value>
+        </data>
+        <data name="Yes" xml:space="preserve">
+          <value>Yes</value>
+        </data>
+        <data name="No" xml:space="preserve">
+          <value>No</value>
+        </data>
+        <data name="Private" xml:space="preserve">
+          <value>Private</value>
+        </data>
+        <data name="Public" xml:space="preserve">
+          <value>Public</value>
+        </data>
+        <data name="ChooseAnExactDate" xml:space="preserve">
+          <value>Choose an exact date</value>
+        </data>
+        <data name="ChooseFromTemplates" xml:space="preserve">
+          <value>Choose from templates</value>
+        </data>
+        <data name="ChooseDateType" xml:space="preserve">
+          <value>Choose date type</value>
+        </data>
+        <data name="ChooseQueryTemplate" xml:space="preserve">
+          <value>Choose querytemplate</value>
+        </data>
+        <data name="CurrentUsersName" xml:space="preserve">
+          <value>Current user's name</value>
+        </data>
+        <data name="CurrentUsersFullName" xml:space="preserve">
+          <value>Current user's fullname</value>
+        </data>
+        <data name="CurrentWorkspacesPath" xml:space="preserve">
+          <value>Current workspace's path</value>
+        </data>
+        <data name="CurrentWorkspacesDeadlinePlusSeven" xml:space="preserve">
+          <value>Current workspaces deadline +7 days</value>
+        </data>
+        <data name="CurrentSite" xml:space="preserve">
+          <value>Current site</value>
+        </data>
+        <data name="CurrentList" xml:space="preserve">
+          <value>Current list</value>
+        </data>
+        <data name="CurrentPage" xml:space="preserve">
+          <value>Current page</value>
+        </data>
+        <data name="Today" xml:space="preserve">
+          <value>Today</value>
+        </data>
+        <data name="Yesterday" xml:space="preserve">
+          <value>Yesterday</value>
+        </data>
+        <data name="Tomorrow" xml:space="preserve">
+          <value>Tomorrow</value>
+        </data>
+        <data name="PreviousWeek" xml:space="preserve">
+          <value>Previous week</value>
+        </data>
+        <data name="ThisWeek" xml:space="preserve">
+          <value>This week</value>
+        </data>
+        <data name="NextWeek" xml:space="preserve">
+          <value>Next week</value>
+        </data>
+        <data name="PreviousMonth" xml:space="preserve">
+          <value>Previous month</value>
+        </data>
+        <data name="ThisMonth" xml:space="preserve">
+          <value>This month</value>
+        </data>
+        <data name="NextMonth" xml:space="preserve">
+          <value>Next month</value>
+        </data>
+        <data name="PreviousYear" xml:space="preserve">
+          <value>Previous year</value>
+        </data>
+        <data name="ThisYear" xml:space="preserve">
+          <value>This year</value>
+        </data>
+        <data name="NextYear" xml:space="preserve">
+          <value>Next year</value>
+        </data>
+        <data name="QueryTemplate" xml:space="preserve">
+          <value>Query template</value>
+        </data>
+      </Language>
+      <Language cultureName="hu">
+        <data name="AddTerm" xml:space="preserve">
+          <value>Adjon hozzá kifejezést!</value>
+        </data>
+        <data name="QueryEditor" xml:space="preserve">
+          <value>Lekérdezés szerkesztő</value>
+        </data>
+        <data name="QueryBuilder" xml:space="preserve">
+          <value>Lekérdezés építő</value>
+        </data>
+        <data name="MoveRowUp" xml:space="preserve">
+          <value>Fel</value>
+        </data>
+        <data name="MoveRowDown" xml:space="preserve">
+          <value>Le</value>
+        </data>
+        <data name="DeleteRow" xml:space="preserve">
+          <value>Törlés</value>
+        </data>
+        <data name="WarningTitle" xml:space="preserve">
+          <value>Figyelem</value>
+        </data>
+        <data name="EditorWarningMessage" xml:space="preserve">
+          <value>query editor</value>
+        </data>
+        <data name="BuilderWarningMessage" xml:space="preserve">
+          <value>query wizard</value>
+        </data>
+        <data name="SelectType" xml:space="preserve">
+          <value>Válasszon típust...</value>
+        </data>
+        <data name="SelectQuery" xml:space="preserve">
+          <value>Válasszon...</value>
+        </data>
+        <data name="SelectField" xml:space="preserve">
+          <value>Válasszon mezőt...</value>
+        </data>
+        <data name="Insert" xml:space="preserve">
+          <value>Beszúrás</value>
+        </data>
+        <data name="Equal" xml:space="preserve">
+          <value>Egyenlő</value>
+        </data>
+        <data name="GreaterEqual" xml:space="preserve">
+          <value>Nagyobb vagy egyenlő</value>
+        </data>
+        <data name="LowerEqual" xml:space="preserve">
+          <value>Kisebb vagy egyenlő</value>
+        </data>
+        <data name="Greater" xml:space="preserve">
+          <value>Nagyobb</value>
+        </data>
+        <data name="Lower" xml:space="preserve">
+          <value>Kisebb</value>
+        </data>
+        <data name="And" xml:space="preserve">
+          <value>És</value>
+        </data>
+        <data name="Or" xml:space="preserve">
+          <value>Vagy</value>
+        </data>
+        <data name="Not" xml:space="preserve">
+          <value>Nem</value>
+        </data>
+        <data name="Contains" xml:space="preserve">
+          <value>Tartalmazza</value>
+        </data>
+        <data name="BeginsWith" xml:space="preserve">
+          <value>Kezdődik</value>
+        </data>
+        <data name="EndsWith" xml:space="preserve">
+          <value>Végződik</value>
+        </data>
+        <data name="Type" xml:space="preserve">
+          <value>Type</value>
+        </data>
+        <data name="TypeIs" xml:space="preserve">
+          <value>TypeIs</value>
+        </data>
+        <data name="InTree" xml:space="preserve">
+          <value>Fában</value>
+        </data>
+        <data name="InFolder" xml:space="preserve">
+          <value>Mappában</value>
+        </data>
+        <data name="Like" xml:space="preserve">
+          <value>Kezdődik: lorem*, Végződik: *lorem, tartalmazza: *lorem*</value>
+        </data>
+        <data name="In" xml:space="preserve">
+          <value>Beszúrás</value>
+        </data>
+        <data name="Open" xml:space="preserve">
+          <value>Zárójel nyit</value>
+        </data>
+        <data name="Close" xml:space="preserve">
+          <value>Zárójel zár</value>
+        </data>
+        <data name="Sort" xml:space="preserve">
+          <value>Sorrend</value>
+        </data>
+        <data name="Reversesort" xml:space="preserve">
+          <value>Fordított sorrend</value>
+        </data>
+        <data name="Top" xml:space="preserve">
+          <value>Elemek száma</value>
+        </data>
+        <data name="Skip" xml:space="preserve">
+          <value>Kihagyott elemek száma</value>
+        </data>
+        <data name="InsertNewExpression" xml:space="preserve">
+          <value>Új kifejezés beszúrása</value>
+        </data>
+        <data name="AdvancedSearch" xml:space="preserve">
+          <value>Részletes keresés</value>
+        </data>
+        <data name="Search" xml:space="preserve">
+          <value>Keresés</value>
+        </data>
+        <data name="Run" xml:space="preserve">
+          <value>Futtatás</value>
+        </data>
+        <data name="Clear" xml:space="preserve">
+          <value>Törlés</value>
+        </data>
+        <data name="SaveQueryTitle" xml:space="preserve">
+          <value>Lekérdezés mentése</value>
+        </data>
+        <data name="SaveQueryNameLabel" xml:space="preserve">
+          <value>Cím</value>
+        </data>
+        <data name="SaveQueryPlaceholder" xml:space="preserve">
+          <value>Írja be a lekérdezés címét...</value>
+        </data>
+        <data name="SaveQuerySaveButton" xml:space="preserve">
+          <value>Mentés</value>
+        </data>
+        <data name="SaveQueryCancelButton" xml:space="preserve">
+          <value>Mégsem</value>
+        </data>
+        <data name="SaveQueryShareLabel" xml:space="preserve">
+          <value>Publikus</value>
+        </data>
+        <data name="SaveQuerySuccess" xml:space="preserve">
+          <value>A mentés sikeres!</value>
+        </data>
+        <data name="Modify" xml:space="preserve">
+          <value>Szerkesztés</value>
+        </data>
+        <data name="SaveAs" xml:space="preserve">
+          <value>Mentés másként</value>
+        </data>
+        <data name="SavedQueryDelete" xml:space="preserve">
+          <value>Biztosan törli a lekérdezést?</value>
+      </data>
+        <data name="DeleteQuerySuccess" xml:space="preserve">
+          <value>A törlés sikeres volt!</value>
+        </data>
+        <data name="QueryBuilder-AreYouSureToClose" xml:space="preserve">
+          <value>Vannak nem mentett változtatások az oldalon. Biztosan bezérja a lekérdezés szerkesztőt?</value>
+        </data>
+        <data name="InvalidQuery" xml:space="preserve">
+          <value>Érvénytelen lekérdezés</value>
+        </data>
+        <data name="No" xml:space="preserve">
+          <value>Érvénytelen lekérdezés</value>
+        </data>
+        <data name="Save" xml:space="preserve">
+          <value>Mentés</value>
+        </data>
+        <data name="Clear" xml:space="preserve">
+          <value>Törlés</value>
+        </data>
+        <data name="Delete" xml:space="preserve">
+          <value>Lekérdezés törlése</value>
+        </data>
+        <data name="Yes" xml:space="preserve">
+          <value>Igen</value>
+        </data>
+        <data name="No" xml:space="preserve">
+          <value>Nem</value>
+        </data>
+        <data name="Private" xml:space="preserve">
+          <value>Privát</value>
+        </data>
+        <data name="Public" xml:space="preserve">
+          <value>Publikus</value>
+        </data>
+        <data name="ChooseAnExactDate" xml:space="preserve">
+          <value>Pontos dátum</value>
+        </data>
+        <data name="ChooseFromTemplates" xml:space="preserve">
+          <value>Dinamikus dátum sablon</value>
+        </data>
+        <data name="ChooseDateType" xml:space="preserve">
+          <value>Válasszon dátum típust</value>
+        </data>
+        <data name="ChooseQueryTemplate" xml:space="preserve">
+          <value>Válasszon dátum sablont</value>
+        </data>
+        <data name="CurrentUsersName" xml:space="preserve">
+          <value>Aktuális felhasználó felhasználóneve</value>
+        </data>
+        <data name="CurrentUsersFullName" xml:space="preserve">
+          <value>Aktuális felhasználó teljesneve</value>
+        </data>
+        <data name="CurrentWorkspacesPath" xml:space="preserve">
+          <value>Aktuális munkaterület elérési útvonala</value>
+        </data>
+        <data name="CurrentWorkspacesDeadlinePlusSeven" xml:space="preserve">
+          <value>Aktuális munkaterület határideje plusz hét nap</value>
+        </data>
+        <data name="CurrentSite" xml:space="preserve">
+          <value>Aktuális site</value>
+        </data>
+        <data name="CurrentList" xml:space="preserve">
+          <value>Aktuális lista</value>
+        </data>
+        <data name="CurrentPage" xml:space="preserve">
+          <value>Aktuális oldal</value>
+        </data>
+        <data name="Today" xml:space="preserve">
+          <value>Ma</value>
+        </data>
+        <data name="Yesterday" xml:space="preserve">
+          <value>Tegnap</value>
+        </data>
+        <data name="Tomorrow" xml:space="preserve">
+          <value>Holnap</value>
+        </data>
+        <data name="PreviousWeek" xml:space="preserve">
+          <value>Múlt hét</value>
+        </data>
+        <data name="ThisWeek" xml:space="preserve">
+          <value>E hét</value>
+        </data>
+        <data name="NextWeek" xml:space="preserve">
+          <value>Következő hét</value>
+        </data>
+        <data name="PreviousMonth" xml:space="preserve">
+          <value>Előző hónap</value>
+        </data>
+        <data name="ThisMonth" xml:space="preserve">
+          <value>E hónap</value>
+        </data>
+        <data name="NextMonth" xml:space="preserve">
+          <value>Következő hónap</value>
+        </data>
+        <data name="PreviousYear" xml:space="preserve">
+          <value>Előző év</value>
+        </data>
+        <data name="ThisYear" xml:space="preserve">
+          <value>Ez év</value>
+        </data>
+        <data name="NextYear" xml:space="preserve">
+          <value>Következő év</value>
+        </data>
+        <data name="QueryTemplate" xml:space="preserve">
+          <value>Lekérdezés sablon</value>
+        </data>
+      </Language>
+    </Languages>
+  </ResourceClass>
+</Resources>

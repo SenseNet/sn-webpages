@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentMetaData>
+  <ContentType>GenericODataApplication</ContentType>
+  <ContentName>ContentListViewCopyViewLocal</ContentName>
+  <Fields>
+    <ClassName><![CDATA[SenseNet.Portal.UI.ContentListViews.ContentListViewHelperApi]]></ClassName>
+    <MethodName><![CDATA[CopyViewLocal]]></MethodName>
+    <Parameters><![CDATA[string listPath, string viewPath, string back]]></Parameters>
+    <DisplayName><![CDATA[ContentListViewCopyViewLocal]]></DisplayName>
+    <Description><![CDATA[]]></Description>
+    <Scenario><![CDATA[]]></Scenario>
+    <ActionTypeName><![CDATA[GenericODataOperation]]></ActionTypeName>
+  </Fields>
+  <Permissions>
+    <Clear />
+  </Permissions>
+</ContentMetaData>

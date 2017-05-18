@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentMetaData>
+  <ContentType>ContentView</ContentType>
+  <ContentName>CustomQueryBuilder.ascx</ContentName>
+  <Fields>
+    <Binary attachment="CustomQueryBuilder.ascx" />
+    <DisplayName><![CDATA[CustomQueryBuilder.ascx]]></DisplayName>
+    <ModifiedBy>
+      <Path>/Root/IMS/BuiltIn/Portal/Admin</Path>
+    </ModifiedBy>
+    <ModificationDate>2015-06-30T06:45:42.06</ModificationDate>
+    <PageCount>-4</PageCount>
+    <Owner>
+      <Path>/Root/IMS/BuiltIn/Portal/Admin</Path>
+    </Owner>
+    <Hidden>false</Hidden>
+    <Index>0</Index>
+    <EnableLifespan>false</EnableLifespan>
+    <ValidFrom>0001-01-01T00:00:00</ValidFrom>
+    <ValidTill>0001-01-01T00:00:00</ValidTill>
+    <CreatedBy>
+      <Path>/Root/IMS/BuiltIn/Portal/Admin</Path>
+    </CreatedBy>
+    <CreationDate>2015-06-30T06:45:42.06</CreationDate>
+    <TrashDisabled>false</TrashDisabled>
+    <IsTaggable>false</IsTaggable>
+    <IsRateable>false</IsRateable>
+    <RateAvg>0.0000</RateAvg>
+    <RateCount>0</RateCount>
+  </Fields>
+  <Permissions>
+    <Clear />
+    <Break />
+    <Identity path="/Root/IMS/BuiltIn/Portal/Visitor">
+      <RunApplication>Allowed</RunApplication>
+    </Identity>
+    <Identity path="/Root/IMS/BuiltIn/Portal/Administrators">
+      <See>Allowed</See>
+      <Preview>Allowed</Preview>
+      <PreviewWithoutWatermark>Allowed</PreviewWithoutWatermark>
+      <PreviewWithoutRedaction>Allowed</PreviewWithoutRedaction>
+      <Open>Allowed</Open>
+      <OpenMinor>Allowed</OpenMinor>
+      <Save>Allowed</Save>
+      <Publish>Allowed</Publish>
+      <ForceCheckin>Allowed</ForceCheckin>
+      <AddNew>Allowed</AddNew>
+      <Approve>Allowed</Approve>
+      <Delete>Allowed</Delete>
+      <RecallOldVersion>Allowed</RecallOldVersion>
+      <DeleteOldVersion>Allowed</DeleteOldVersion>
+      <SeePermissions>Allowed</SeePermissions>
+      <SetPermissions>Allowed</SetPermissions>
+      <RunApplication>Allowed</RunApplication>
+      <ManageListsAndWorkspaces>Allowed</ManageListsAndWorkspaces>
+      <TakeOwnership>Allow</TakeOwnership>
+    </Identity>
+    <Identity path="/Root/IMS/BuiltIn/Portal/Everyone">
+      <RunApplication>Allowed</RunApplication>
+    </Identity>
+    <Identity path="/Root/IMS/BuiltIn/Portal/Developers">
+      <See>Allowed</See>
+      <Preview>Allowed</Preview>
+      <PreviewWithoutWatermark>Allowed</PreviewWithoutWatermark>
+      <PreviewWithoutRedaction>Allowed</PreviewWithoutRedaction>
+      <Open>Allowed</Open>
+      <OpenMinor>Allowed</OpenMinor>
+      <Save>Allowed</Save>
+      <Publish>Allowed</Publish>
+      <ForceCheckin>Allowed</ForceCheckin>
+      <AddNew>Allowed</AddNew>
+      <Approve>Allowed</Approve>
+      <Delete>Allowed</Delete>
+      <RecallOldVersion>Allowed</RecallOldVersion>
+      <DeleteOldVersion>Allowed</DeleteOldVersion>
+      <SeePermissions>Allowed</SeePermissions>
+      <SetPermissions>Allowed</SetPermissions>
+      <RunApplication>Allowed</RunApplication>
+      <ManageListsAndWorkspaces>Allowed</ManageListsAndWorkspaces>
+    </Identity>
+    <Identity path="/Root/IMS/BuiltIn/Portal/IdentifiedUsers">
+      <RunApplication>Allowed</RunApplication>
+    </Identity>
+  </Permissions>
+</ContentMetaData>

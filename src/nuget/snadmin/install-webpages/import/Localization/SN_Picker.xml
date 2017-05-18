@@ -1,0 +1,426 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources>
+  <ResourceClass name="Picker">
+    <Languages>
+      <Language cultureName="en">
+        <data name="WindowTitle" xml:space="preserve">
+          <value>Content picker</value>
+        </data>
+        <data name="All" xml:space="preserve">
+          <value>All</value>
+        </data>
+        <data name="TreeRoot" xml:space="preserve">
+          <value>Tree Root</value>
+        </data>
+        <data name="ShowSystemFiles" xml:space="preserve">
+          <value>Show System Files</value>
+        </data>
+        <data name="SwitchToSearchMode" xml:space="preserve">
+          <value>Switch to Search Mode</value>
+        </data>
+        <data name="SwitchToTreeMode" xml:space="preserve">
+          <value>Switch to Tree Mode</value>
+        </data>
+        <data name="Search" xml:space="preserve">
+          <value>Search</value>
+        </data>
+        <data name="FreeText" xml:space="preserve">
+          <value><small id="sn-contentpicker-islucene" style="display: none;">Freetext and lucene query search (ie. <i>John</i> or <i>_Text:John</i>)</small><small id="sn-contentpicker-isnotlucene" style="display: none;">Simple freetext search</small></value>
+        </data>
+        <data name="SearchRoot" xml:space="preserve">
+          <value>Search Root</value>
+        </data>
+        <data name="ContentTypes" xml:space="preserve">
+          <value>Content Types</value>
+        </data>
+        <data name="Change" xml:space="preserve">
+          <value>Change</value>
+        </data>
+        <data name="AddSelected" xml:space="preserve">
+          <value>Add selected</value>
+        </data>
+        <data name="Clear" xml:space="preserve">
+          <value>Clear</value>
+        </data>
+        <data name="Ok" xml:space="preserve">
+          <value>Ok</value>
+        </data>
+        <data name="Cancel" xml:space="preserve">
+          <value>Cancel</value>
+        </data>
+        <data name="SelectAll" xml:space="preserve">
+          <value>Select all</value>
+        </data>
+        <data name="DeSelectAll" xml:space="preserve">
+          <value>Deselect all</value>
+        </data>
+        <data name="ChooseContentType" xml:space="preserve">
+          <value>Choose content types</value>
+        </data>
+        <data name="PeopleWhoLikeThisItem" xml:space="preserve">
+          <value>People who like this item</value>
+        </data>
+        <data name="PostThisToAWall" xml:space="preserve">
+          <value>Post this to a wall</value>
+        </data>
+        <data name="OpenInDialog" xml:space="preserve">
+          <value>Open in dialog</value>
+        </data>
+        <data name="EditText" xml:space="preserve">
+          <value>Edit text</value>
+        </data>
+        <data name="SelectFilesToUpload" xml:space="preserve">
+          <value>Select files to upload</value>
+        </data>
+        <data name="ClickToEmbedInEditor" xml:space="preserve">
+          <value>Click to embed in editor</value>
+        </data>
+        <data name="ExploreFrameAlert" xml:space="preserve">
+          <value>Explore frame has been navigated to an unknown url. Please note that the requested page should be viewed in a separate browser window.</value>
+        </data>
+        <data name="UnexpectedError" xml:space="preserve">
+          <value>Unexpected error!</value>
+        </data>
+        <data name="OnlyNumbersCanBeEntered" xml:space="preserve">
+          <value>From field: Only numbers can be entered in the field!</value>
+        </data>
+        <data name="PleaseEnterAValue" xml:space="preserve">
+          <value>From field: Please enter a value!</value>
+        </data>
+        <data name="ValueMustBeBetween1And5" xml:space="preserve">
+          <value>From field: Value must be between 1 and 5!</value>
+        </data>
+        <data name="OnlyNumbersCanBeEnteredToField" xml:space="preserve">
+          <value>To field: Only numbers can be entered in the field!</value>
+        </data>
+        <data name="PleaseEnterAValueToField" xml:space="preserve">
+          <value>To field: Please enter a value!</value>
+        </data>
+        <data name="ValueMustBeBetween1And5ToField" xml:space="preserve">
+          <value>To field: Value must be between 1 and 5!</value>
+        </data>
+        <data name="ValueMustBeLower" xml:space="preserve">
+          <value>From field's value must be lower than To field's value!</value>
+        </data>
+        <data name="ClassName" xml:space="preserve">
+          <value>Class name</value>
+        </data>
+        <data name="Name" xml:space="preserve">
+          <value>Name</value>
+        </data>
+        <data name="Save" xml:space="preserve">
+          <value>Save</value>
+        </data>
+        <data name="Cancel" xml:space="preserve">
+          <value>Cancel</value>
+        </data>
+        <data name="EditStringResource" xml:space="preserve">
+          <value>Edit string resource</value>
+        </data>
+        <data name="CannotBeOpened" xml:space="preserve">
+          <value>The document could not be opened.</value>
+        </data>
+        <data name="CannotBeOpened" xml:space="preserve">
+          <value>An error occured!</value>
+        </data>
+        <data name="OnlyInIE" xml:space="preserve">
+          <value>This feature only works in Internet Explorer versions prior to 11!</value>
+        </data>
+        <data name="WebfolderNotFound" xml:space="preserve">
+          <value>WebFolder not found</value>
+        </data>
+        <data name="Error" xml:space="preserve">
+          <value>An error occured!</value>
+        </data>
+        <data name="Drag" xml:space="preserve">
+          <value>Drag:</value>
+        </data>
+        <data name="PortletPickerWindowTitle" xml:space="preserve">
+          <value>Portlet picker</value>
+        </data>
+        <data name="FieldValue" xml:space="preserve">
+          <value>Field value</value>
+        </data>
+        <data name="ServerDialogError" xml:space="preserve">
+          <value>An error occurred during loading layout.</value>
+        </data>
+        <data name="SelectFile" xml:space="preserve">
+          <value>Select file</value>
+        </data>
+        <data name="ResumeInfo" xml:space="preserve">
+          <value>If you want to resume the uploading of this file, please select it again or drag-and-drop the file below, then click the Resume button.</value>
+        </data>
+        <data name="ContinueUpload" xml:space="preserve">
+          <value>Resume</value>
+        </data>
+        <data name="DropTheFileHere" xml:space="preserve">
+          <value>Drop the file here!</value>
+        </data>
+        <data name="UploadResume-NotTheSameFile" xml:space="preserve">
+          <value>The broken and the added file are not the same! Please add the appropriate file!</value>
+        </data>
+        <data name="UploadResume-NotTheSameUser" xml:space="preserve">
+          <value>Please login with user who uploaded this file before!</value>
+        </data>
+        <data name="UploadResume-Error" xml:space="preserve">
+          <value>You can not resume this file's upload progress! Please delete the broken file and start to upload it again!</value>
+        </data>
+        <data name="SelectRoot" xml:space="preserve">
+          <value>Select root</value>
+        </data>
+        <data name="AddNew" xml:space="preserve">
+          <value>Add new</value>
+        </data>
+        <data name="Add" xml:space="preserve">
+          <value>Add</value>
+        </data>
+        <data name="DeleteSelected" xml:space="preserve">
+          <value>Delete selected</value>
+        </data>
+        <data name="TypeHere" xml:space="preserve">
+          <value>Type here to search in</value>
+        </data>
+        <data name="Title" xml:space="preserve">
+          <value>Title</value>
+        </data>
+        <data name="LastModified" xml:space="preserve">
+          <value>Last modified</value>
+        </data>
+        <data name="ModifiedBy" xml:space="preserve">
+          <value>Modified by</value>
+        </data>
+        <data name="NoData" xml:space="preserve">
+          <value>Sorry, no data! :(</value>
+        </data>
+        <data name="New" xml:space="preserve">
+          <value>New</value>
+        </data>
+        <data name="AreYouSureDelete" xml:space="preserve">
+          <value>You are about to delete </value>
+        </data>
+        <data name="Delete" xml:space="preserve">
+          <value>Delete</value>
+        </data>
+        <data name="DeletePermanently" xml:space="preserve">
+          <value>Delete permanently</value>
+        </data>
+        <data name="BackToContext" xml:space="preserve">
+          <value>Back to context</value>
+        </data>
+        <data name="BackToSearchResults" xml:space="preserve">
+          <value>Back to search results</value>
+        </data>
+      </Language>
+      <Language cultureName="hu">
+        <data name="WindowTitle" xml:space="preserve">
+          <value>Tartalom választó</value>
+        </data>
+        <data name="All" xml:space="preserve">
+          <value>Mind</value>
+        </data>
+        <data name="TreeRoot" xml:space="preserve">
+          <value>Kiindulási mappa</value>
+        </data>
+        <data name="ShowSystemFiles" xml:space="preserve">
+          <value>Rendszerfájlok is látszanak</value>
+        </data>
+        <data name="SwitchToSearchMode" xml:space="preserve">
+          <value>Váltás keresőmódba</value>
+        </data>
+        <data name="SwitchToTreeMode" xml:space="preserve">
+          <value>Váltás fa nézetbe</value>
+        </data>
+        <data name="Search" xml:space="preserve">
+          <value>Keresés</value>
+        </data>
+        <data name="FreeText" xml:space="preserve">
+          <value><small id="sn-contentpicker-islucene" style="display: none;">Szabadszavas és lucene query keresés (pl. <i>János</i> vagy <i>_Text:János</i>)</small><small id="sn-contentpicker-isnotlucene" style="display: none;">Egyszerű, szabadszavas kereső</small></value>
+        </data>
+        <data name="SearchRoot" xml:space="preserve">
+          <value>Ebben keressen</value>
+        </data>
+        <data name="ContentTypes" xml:space="preserve">
+          <value>Tartalomtípusok</value>
+        </data>
+        <data name="Change" xml:space="preserve">
+          <value>Csere</value>
+        </data>
+        <data name="AddSelected" xml:space="preserve">
+          <value>Választottak hozzáadása</value>
+        </data>
+        <data name="Clear" xml:space="preserve">
+          <value>Törlés</value>
+        </data>
+        <data name="Ok" xml:space="preserve">
+          <value>Ok</value>
+        </data>
+        <data name="Cancel" xml:space="preserve">
+          <value>Mégsem</value>
+        </data>
+        <data name="SelectAll" xml:space="preserve">
+          <value>Mindet kijelöli</value>
+        </data>
+        <data name="DeSelectAll" xml:space="preserve">
+          <value>Egyiket sem jelöli ki</value>
+        </data>
+        <data name="ChooseContentType" xml:space="preserve">
+          <value>Válasszon tartalomtípust</value>
+        </data>
+        <data name="PeopleWhoLikeThisItem" xml:space="preserve">
+          <value>Felhasználók, akik kedvelik</value>
+        </data>
+        <data name="PostThisToAWall" xml:space="preserve">
+          <value>Megosztás</value>
+        </data>
+        <data name="OpenInDialog" xml:space="preserve">
+          <value>Megnyitás dialógusablakban</value>
+        </data>
+        <data name="EditText" xml:space="preserve">
+          <value>Szöveg szerkesztése</value>
+        </data>
+        <data name="SelectFilesToUpload" xml:space="preserve">
+          <value>Válassza ki a feltöltendő fájlokat</value>
+        </data>
+        <data name="ClickToEmbedInEditor" xml:space="preserve">
+          <value>Kattintson ide szerkesztő beszúrásához</value>
+        </data>
+        <data name="ExploreFrameAlert" xml:space="preserve">
+          <value>Az intéző kerete ismeretlen url-re navigált. A kért oldal külön böngésző ablakban kell megnyitni.</value>
+        </data>
+        <data name="UnexpectedError" xml:space="preserve">
+          <value>Váratlan hiba!</value>
+        </data>
+        <data name="OnlyNumbersCanBeEntered" xml:space="preserve">
+          <value>Kezdő mező: Ebbe a mezőbe csak számot lehet gépelni!</value>
+        </data>
+        <data name="PleaseEnterAValue" xml:space="preserve">
+          <value>Kezdő mező: Adjon meg egy értéket!</value>
+        </data>
+        <data name="ValueMustBeBetween1And5" xml:space="preserve">
+          <value>Kezdő mező: Az értéknek 1 és 5 között kell lennie!</value>
+        </data>
+        <data name="OnlyNumbersCanBeEnteredToField" xml:space="preserve">
+          <value>Cél mező: Ebbe a mezőbe csak számot lehet gépelni!</value>
+        </data>
+        <data name="PleaseEnterAValueToField" xml:space="preserve">
+          <value>Cél mező: Adjon meg egy értéket!</value>
+        </data>
+        <data name="ValueMustBeBetween1And5ToField" xml:space="preserve">
+          <value>Cél mező: Az értéknek 1 és 5 között kell lennie!</value>
+        </data>
+        <data name="ValueMustBeLower" xml:space="preserve">
+          <value>A feladó mező értékének kisebbnek kell lennie, mint a cél mezőének!</value>
+        </data>
+        <data name="ClassName" xml:space="preserve">
+          <value>Osztály név</value>
+        </data>
+        <data name="Name" xml:space="preserve">
+          <value>Név</value>
+        </data>
+        <data name="Save" xml:space="preserve">
+          <value>Mentés</value>
+        </data>
+        <data name="Cancel" xml:space="preserve">
+          <value>Mégsem</value>
+        </data>
+        <data name="EditStringResource" xml:space="preserve">
+          <value>Szöveges erőforrás szerkesztése</value>
+        </data>
+        <data name="CannotBeOpened" xml:space="preserve">
+          <value>A dokumentumot nem lehet megnyitni.</value>
+        </data>
+        <data name="CannotBeOpened" xml:space="preserve">
+          <value>Hiba keletkezett!</value>
+        </data>
+        <data name="OnlyInIE" xml:space="preserve">
+          <value>Ez a funkció csak 11-esnél régebbi verziójú Internet Explorer-ben használható!</value>
+        </data>
+        <data name="WebfolderNotFound" xml:space="preserve">
+          <value>WebFolder nem található</value>
+        </data>
+        <data name="Error" xml:space="preserve">
+          <value>Hiba keletkezett!</value>
+        </data>
+        <data name="Drag" xml:space="preserve">
+          <value>Húzd:</value>
+        </data>
+        <data name="PortletPickerWindowTitle" xml:space="preserve">
+          <value>Portlet választó</value>
+        </data>
+        <data name="FieldValue" xml:space="preserve">
+          <value>Mező érték</value>
+        </data>
+        <data name="ServerDialogError" xml:space="preserve">
+          <value>Hiba történt a felület betöltésekor.</value>
+        </data>
+
+        <data name="SelectFile" xml:space="preserve">
+          <value>Fájl újra kiválasztás</value>
+        </data>
+        <data name="ResumeInfo" xml:space="preserve">
+          <value>Ha szeretné folytatni a fájl feltöltését, válassza ki újra, vagy húzza a lenti felületre, majd kattintson a Folytatás gombra.</value>
+        </data>
+        <data name="ContinueUpload" xml:space="preserve">
+          <value>Folytatás</value>
+        </data>
+        <data name="DropTheFileHere" xml:space="preserve">
+          <value>Húzza ide a fájlt!</value>
+        </data>
+        <data name="UploadResume-NotTheSameFile" xml:space="preserve">
+          <value>A részben feltöltött fájl és amit hozzáadott nem egyezik meg! Kérjük a megfelelő fájlt adja hozzá a feltöltéshez!</value>
+        </data>
+        <data name="UploadResume-NotTheSameUser" xml:space="preserve">
+          <value>Kérjük, jelentkezzen be azzal a felhasználóval, aki fájl feltöltését megkezdte!</value>
+        </data>
+        <data name="UploadResume-Error" xml:space="preserve">
+          <value>Sajnos nem lehet folytatni a fájl feltöltését! Kérjük, törölje a részben feltöltött fájlt, és próbálja meg újra feltölteni!</value>
+        </data>
+        <data name="SelectRoot" xml:space="preserve">
+          <value>Válasszon gyökérkönyvtárat</value>
+        </data>
+        <data name="AddNew" xml:space="preserve">
+          <value>Új hozzáadása</value>
+        </data>
+        <data name="Add" xml:space="preserve">
+          <value>Hozzáad</value>
+        </data>
+        <data name="DeleteSelected" xml:space="preserve">
+          <value>Kijelölt törlése</value>
+        </data>
+        <data name="TypeHere" xml:space="preserve">
+          <value>Keressen itt </value>
+        </data>
+        <data name="Title" xml:space="preserve">
+          <value>Név</value>
+        </data>
+        <data name="LastModified" xml:space="preserve">
+          <value>Utoljára módosítva</value>
+        </data>
+        <data name="ModifiedBy" xml:space="preserve">
+          <value>Módosította</value>
+        </data>
+        <data name="NoData" xml:space="preserve">
+          <value>Nincs adat! :(</value>
+        </data>
+        <data name="New" xml:space="preserve">
+          <value>Új</value>
+        </data>
+        <data name="AreYouSureDelete" xml:space="preserve">
+          <value>Ki fogja törölni a következő fájlt </value>
+        </data>
+        <data name="Delete" xml:space="preserve">
+          <value>Törlés</value>
+        </data>
+        <data name="DeletePermanently" xml:space="preserve">
+          <value>Azonnali törlés</value>
+        </data>
+        <data name="BackToContext" xml:space="preserve">
+          <value>Vissza a kontextushoz</value>
+        </data>
+        <data name="BackToSearchResults" xml:space="preserve">
+          <value>Vissza a találati listához</value>
+        </data>
+      </Language>
+    </Languages>
+  </ResourceClass>
+</Resources>
