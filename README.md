@@ -7,7 +7,9 @@ UI layer for the [sensenet ECM](https://github.com/SenseNet/sensenet) platform b
 
 Install this component on top of the main **sensenet ECM Services** layer to get an administrative GUI (called the **Content Explorer**) for managing content items stored in the Content Repository.
 
-> Note that this layer does not contain user-facing interfaces like workspace dashboards and intranet library pages.
+> Note that this layer does not contain user-facing interfaces like workspace dashboards or intranet library pages. To take a look at a list of core components we offer and see what you should install, please check this article:
+>
+> [sensenet ECM components](https://github.com/SenseNet/sensenet/blob/master/docs/sensenet-components.md)
 
 You can also build **custom pages** for your solution using our built-in building blocks called [portlets](http://wiki.sensenet.com/Portlet).
 
@@ -18,14 +20,9 @@ You can also build **custom pages** for your solution using our built-in buildin
 This components requires [sensenet ECM Services 7.0](https://github.com/SenseNet/sensenet) to be installed in your dev environment and database. Please follow the steps in the link above to complete that before proceeding.
 
 ### Installation
-You can install the **sensenet ECM WebPages** component from NuGet. Please follow the steps in the *readme.txt* that appears after installing the package in Visual Studio, it involves a few manual steps so that the database contains all the necessary content.
+You can install the **sensenet ECM WebPages** component in Visual Studio as a *NuGet* package. Please follow the steps in the the following article:
 
-[![NuGet](https://img.shields.io/nuget/v/SenseNet.WebPages.Install.svg)](https://www.nuget.org/packages/SenseNet.WebPages.Install)
-
-#### Dll-only package
-If you have **multiple projects** in Visual Studio, you have to install the package above only once. If you need to reference **sensenet ECM** libraries in multiple projects, please use this dll-only NuGet package instead:
-
-[![NuGet](https://img.shields.io/nuget/v/SenseNet.WebPages.svg)](https://www.nuget.org/packages/SenseNet.WebPages)
+- [Install WebPages from NuGet](/docs/install-webpages-from-nuget.md)
 
 <a name="LogIn"></a>
 ## Log in
@@ -39,7 +36,7 @@ Use the default *admin/admin* credentials and enter the admin UI by clicking on 
 Please follow this link for more details:
 - [Content Explorer](http://wiki.sensenet.com/Content_Explorer)
 
-![Content Explorer](https://raw.githubusercontent.com/SenseNet/sn-resources/add-screenshots/images/sn-screenshots/sn-content-explorer.png)
+![Content Explorer](https://raw.githubusercontent.com/SenseNet/sn-resources/master/images/sn-screenshots/sn-content-explorer.png)
 
 ## Site main page
 After installing this component and entering Content Explorer, you may notice that there is a single default  site under the /Root/Sites collection. To register your custom url (e.g. *localhost:1234*) with this site, please follow these steps:
