@@ -142,6 +142,50 @@
       </Language>
     </Languages>
   </ResourceClass>
+  <ResourceClass name="Ctd-WebContent">
+    <Languages>
+      <Language cultureName="en">
+        <data name="DisplayName" xml:space="preserve">
+          <value>Web Content (structured web content)</value>
+        </data>
+        <data name="Description" xml:space="preserve">
+          <value>Web Content is the base type for structured web content.</value>
+        </data>
+        <data name="ReviewDate-DisplayName" xml:space="preserve">
+          <value>Review date</value>
+        </data>
+        <data name="ReviewDate-Description" xml:space="preserve">
+          <value></value>
+        </data>
+        <data name="ArchiveDate-DisplayName" xml:space="preserve">
+          <value>Archive date</value>
+        </data>
+        <data name="ArchiveDate-Description" xml:space="preserve">
+          <value></value>
+        </data>
+      </Language>
+      <Language cultureName="hu">
+        <data name="DisplayName" xml:space="preserve">
+          <value>Webes tartalom</value>
+        </data>
+        <data name="Description" xml:space="preserve">
+          <value></value>
+        </data>
+        <data name="ReviewDate-DisplayName" xml:space="preserve">
+          <value>Ellenőrzés dátuma</value>
+        </data>
+        <data name="ReviewDate-Description" xml:space="preserve">
+          <value></value>
+        </data>
+        <data name="ArchiveDate-DisplayName" xml:space="preserve">
+          <value>Archiválás dátuma</value>
+        </data>
+        <data name="ArchiveDate-Description" xml:space="preserve">
+          <value></value>
+        </data>
+      </Language>
+    </Languages>
+  </ResourceClass>
   <ResourceClass name="Ctd-Webform">
     <Languages>
       <Language cultureName="en">

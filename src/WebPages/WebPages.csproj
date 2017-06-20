@@ -466,6 +466,7 @@
     <Compile Include="UI\Controls\SkinResolver.cs" />
     <Compile Include="UI\Controls\SNIcon.cs" />
     <Compile Include="UI\Controls\StyleManager.cs" />
+    <Compile Include="UI\Controls\TagList.cs" />
     <Compile Include="UI\Controls\Toolbar.cs" />
     <Compile Include="UI\Controls\VersioningActionEventArgs.cs" />
     <Compile Include="UI\Controls\ViewControlBase.cs" />
@@ -505,6 +506,7 @@
       <SubType>ASPXCodeBehind</SubType>
     </Content>
     <Content Include="Portlets\Controls\LoginView.ascx" />
+    <EmbeddedResource Include="UI\Controls\TagList.js" />
     <EmbeddedResource Include="UI\Controls\ActionMenu.js" />
     <EmbeddedResource Include="UI\Controls\RichTextEditor.js" />
     <EmbeddedResource Include="UI\Controls\WebParts.js" />

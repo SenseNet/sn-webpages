@@ -45,6 +45,10 @@ namespace SenseNet.Portal
             public static string HyperLink_HrefImageLabel = "$Field:HyperLink_HrefImageLabel";
             public static string HyperLink_TargetLabel = "$Field:HyperLink_TargetLabel";
             public static string HyperLink_TitleLabel = "$Field:HyperLink_TitleLabel";
+
+            public static string TagList_AddTag = "$Field:TagList_AddTag";
+            public static string TagList_BlacklistedTag = "$Field:TagList_BlacklistedTag";
+            public static string TagList_BlacklistedTags = "$Field:TagList_BlacklistedTags";
         }
 
         internal class PRC
