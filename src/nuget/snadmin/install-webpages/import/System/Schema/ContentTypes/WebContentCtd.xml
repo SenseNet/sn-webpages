@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentType name="WebContent" parentType="ListItem" handler="SenseNet.ContentRepository.GenericContent" xmlns="http://schemas.sensenet.com/SenseNet/ContentRepository/ContentTypeDefinition">
+  <DisplayName>$Ctd-WebContent,DisplayName</DisplayName>
+  <Description>$Ctd-WebContent,Description</Description>
+  <Icon>WebContent</Icon>
+  <Fields>
+    <Field name="ReviewDate" type="DateTime">
+      <DisplayName>$Ctd-WebContent,ReviewDate-DisplayName</DisplayName>
+      <Description>$Ctd-WebContent,ReviewDate-Description</Description>
+      <Configuration>
+        <VisibleBrowse>Hide</VisibleBrowse>
+        <VisibleEdit>Hide</VisibleEdit>
+        <VisibleNew>Hide</VisibleNew>
+        <DateTimeMode>DateAndTime</DateTimeMode>
+      </Configuration>
+    </Field>
+    <Field name="ArchiveDate" type="DateTime">
+      <DisplayName>$Ctd-WebContent,ArchiveDate-DisplayName</DisplayName>
+      <Description>$Ctd-WebContent,ArchiveDate-Description</Description>
+      <Configuration>
+        <VisibleBrowse>Hide</VisibleBrowse>
+        <VisibleEdit>Hide</VisibleEdit>
+        <VisibleNew>Hide</VisibleNew>
+        <DateTimeMode>DateAndTime</DateTimeMode>
+      </Configuration>
+    </Field>
+    <Field name="EnableLifespan" type="Boolean">
+      <Configuration>
+        <VisibleBrowse>Show</VisibleBrowse>
+        <VisibleEdit>Show</VisibleEdit>
+        <VisibleNew>Show</VisibleNew>
+      </Configuration>
+    </Field>
+    <Field name="ValidFrom" type="DateTime">
+      <Configuration>
+        <VisibleBrowse>Show</VisibleBrowse>
+        <VisibleEdit>Show</VisibleEdit>
+        <VisibleNew>Show</VisibleNew>
+      </Configuration>
+    </Field>
+    <Field name="ValidTill" type="DateTime">
+      <Configuration>
+        <VisibleBrowse>Show</VisibleBrowse>
+        <VisibleEdit>Show</VisibleEdit>
+        <VisibleNew>Show</VisibleNew>
+      </Configuration>
+    </Field>
+    <Field name="IsTaggable" type="Boolean">
+      <DisplayName>$Ctd-GenericContent,IsTaggable-DisplayName</DisplayName>
+      <Description>$Ctd-GenericContent,IsTaggable-Description</Description>
+      <Configuration>
+        <VisibleBrowse>Show</VisibleBrowse>
+        <VisibleEdit>Show</VisibleEdit>
+        <VisibleNew>Show</VisibleNew>
+        <DefaultValue>false</DefaultValue>
+      </Configuration>
+    </Field>
+    <Field name="Tags" type="LongText">
+      <DisplayName>$Ctd-GenericContent,Tags-DisplayName</DisplayName>
+      <Description>$Ctd-GenericContent,Tags-Description</Description>
+      <Indexing>
+        <IndexHandler>SenseNet.Search.Indexing.TagIndexHandler</IndexHandler>
+      </Indexing>
+      <Configuration>
+        <ReadOnly>false</ReadOnly>
+        <VisibleBrowse>Show</VisibleBrowse>
+        <VisibleEdit>Show</VisibleEdit>
+        <VisibleNew>Show</VisibleNew>
+        <ControlHint>sn:TagList</ControlHint>
+      </Configuration>
+    </Field>
+  </Fields>
+</ContentType>

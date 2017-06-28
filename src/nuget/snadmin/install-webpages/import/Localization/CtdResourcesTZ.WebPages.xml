@@ -1,5 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Resources>
+  <ResourceClass name="Ctd-TextFieldSetting">
+    <Languages>
+      <Language cultureName="en">
+        <data name="DisplayName" xml:space="preserve">
+          <value>Text field</value>
+        </data>
+      </Language>
+      <Language cultureName="hu">
+        <data name="DisplayName" xml:space="preserve">
+          <value>Szöveges mező</value>
+        </data>
+      </Language>
+    </Languages>
+  </ResourceClass>
   <ResourceClass name="Ctd-UserControl">
     <Languages>
       <Language cultureName="en">
@@ -142,6 +156,50 @@
       </Language>
     </Languages>
   </ResourceClass>
+  <ResourceClass name="Ctd-WebContent">
+    <Languages>
+      <Language cultureName="en">
+        <data name="DisplayName" xml:space="preserve">
+          <value>Web Content (structured web content)</value>
+        </data>
+        <data name="Description" xml:space="preserve">
+          <value>Web Content is the base type for structured web content.</value>
+        </data>
+        <data name="ReviewDate-DisplayName" xml:space="preserve">
+          <value>Review date</value>
+        </data>
+        <data name="ReviewDate-Description" xml:space="preserve">
+          <value></value>
+        </data>
+        <data name="ArchiveDate-DisplayName" xml:space="preserve">
+          <value>Archive date</value>
+        </data>
+        <data name="ArchiveDate-Description" xml:space="preserve">
+          <value></value>
+        </data>
+      </Language>
+      <Language cultureName="hu">
+        <data name="DisplayName" xml:space="preserve">
+          <value>Webes tartalom</value>
+        </data>
+        <data name="Description" xml:space="preserve">
+          <value></value>
+        </data>
+        <data name="ReviewDate-DisplayName" xml:space="preserve">
+          <value>Ellenőrzés dátuma</value>
+        </data>
+        <data name="ReviewDate-Description" xml:space="preserve">
+          <value></value>
+        </data>
+        <data name="ArchiveDate-DisplayName" xml:space="preserve">
+          <value>Archiválás dátuma</value>
+        </data>
+        <data name="ArchiveDate-Description" xml:space="preserve">
+          <value></value>
+        </data>
+      </Language>
+    </Languages>
+  </ResourceClass>
   <ResourceClass name="Ctd-Webform">
     <Languages>
       <Language cultureName="en">
@@ -170,6 +228,20 @@
         </data>
         <data name="Binary-Description" xml:space="preserve">
           <value>ASPX markup.</value>
+        </data>
+      </Language>
+    </Languages>
+  </ResourceClass>
+  <ResourceClass name="Ctd-XmlFieldSetting">
+    <Languages>
+      <Language cultureName="en">
+        <data name="DisplayName" xml:space="preserve">
+          <value>Xml field</value>
+        </data>
+      </Language>
+      <Language cultureName="hu">
+        <data name="DisplayName" xml:space="preserve">
+          <value>Xml mező</value>
         </data>
       </Language>
     </Languages>
@@ -359,6 +431,20 @@
         </data>
         <data name="CustomCacheKey-Description" xml:space="preserve">
           <value>Megadhat egyedi gyorsítótár kulcsot, függetlenül az aktuális tartalomtól és URL paraméterektől. Akkor érdemes használni, ha ugyanazt a statikus tartalmat szeretné megjeleníteni több különböző oldalon. <div class='ui-helper-clearfix sn-dialog-editportlet-warning'><img class='sn-icon sn-icon16 sn-floatleft' src='/Root/Global/images/icons/16/warning.png' /><i>Csak adminisztrátoroknak. Hagyja üresen, ha nem biztos a dologban.</i></div></value>
+        </data>
+      </Language>
+    </Languages>
+  </ResourceClass>
+  <ResourceClass name="Ctd-YesNoFieldSetting">
+    <Languages>
+      <Language cultureName="en">
+        <data name="DisplayName" xml:space="preserve">
+          <value>Yes/No field</value>
+        </data>
+      </Language>
+      <Language cultureName="hu">
+        <data name="DisplayName" xml:space="preserve">
+          <value>Igen/nem mező</value>
         </data>
       </Language>
     </Languages>

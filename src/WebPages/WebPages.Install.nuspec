@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>SenseNet.WebPages.Install</id>
-    <version>7.0.0-beta1</version>
+    <version>7.0.0-beta1.1</version>
     <title>sensenet ECM WebPages Install package</title>
     <authors>kavics,aniko,laci,borsi,lajos,tusmester</authors>
     <owners>Sense/Net</owners>
@@ -14,9 +14,9 @@
     <copyright>Copyright © Sense/Net Inc.</copyright>
     <tags>sensenet ecm ecms</tags>
     <dependencies>
-      <dependency id="SenseNet.Services.Install" version="7.0.0-beta2" />
-      <dependency id="SenseNet.WebPages" version="7.0.0-beta1" />
-      <dependency id="SenseNet.SnAdmin" version="1.4.1" />
+      <dependency id="SenseNet.Services.Install" version="7.0.0-beta2.1" />
+      <dependency id="SenseNet.WebPages" version="7.0.0-beta1.1" />
+      <dependency id="SenseNet.SnAdmin" version="1.4.2" />
     </dependencies>
   </metadata>
   <files>

@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>SenseNet.WebPages</id>
-    <version>7.0.0-beta1</version>
+    <version>7.0.0-beta1.1</version>
     <title>sensenet ECM WebPages</title>
     <authors>kavics,aniko,laci,borsi,lajos,tusmester</authors>
     <owners>Sense/Net</owners>

@@ -270,7 +270,13 @@ namespace SenseNet.Portal.UI.PortletFramework
             // returns with a fresh instance to aviod a children definition problem
             var bindingRoot = GetBindingRootPrivate();
             if (bindingRoot == null)
-                throw new ContentNotFoundException("Binding root was not found. Bind target: " + BindTarget);
+            {
+                var message = $"Binding root was not found. Bind target: {BindTarget}.";
+                if (BindTarget == BindTarget.CustomRoot)
+                    message += $" Path: {this.CustomRootPath}";
+
+                throw new ContentNotFoundException(message);
+            }
 
             // load the exact version
             return Node.LoadNode(bindingRoot.Id, bindingRoot.Version);

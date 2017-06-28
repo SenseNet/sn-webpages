@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentMetaData>
+  <ContentType>Page</ContentType>
+  <ContentName>MoveField</ContentName>
+  <Fields>
+    <PageTemplateNode>
+      <Path>/Root/Global/pagetemplates/sn-layout-dialog.html</Path>
+    </PageTemplateNode>
+    <PersonalizationSettings attachment="MoveField.PersonalizationSettings" />
+    <DisplayName><![CDATA[$Action,MoveField]]></DisplayName>
+    <Icon><![CDATA[Page]]></Icon>
+    <RequiredPermissions>See;Open;OpenMinor;Save</RequiredPermissions>
+  </Fields>
+  <Permissions>
+    <Clear />
+  </Permissions>
+</ContentMetaData>
