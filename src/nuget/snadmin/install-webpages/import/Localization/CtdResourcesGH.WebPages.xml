@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="view.xslt"?>
+<Resources>
+  <ResourceClass name="Ctd-HTMLContent">
+    <Languages>
+      <Language cultureName="en">
+        <data name="DisplayName" xml:space="preserve">
+          <value>HTML Content (unstructured web content)</value>
+        </data>
+        <data name="Description" xml:space="preserve">
+          <value>This content can store an unstructured single html fragment.</value>
+        </data>
+        <data name="HTMLFragment-DisplayName" xml:space="preserve">
+          <value>HTML fragment</value>
+        </data>
+        <data name="HTMLFragment-Description" xml:space="preserve">
+          <value>Write your HTML code in the text area.</value>
+        </data>
+      </Language>
+      <Language cultureName="hu">
+        <data name="DisplayName" xml:space="preserve">
+          <value>HTML tartalom</value>
+        </data>
+        <data name="Description" xml:space="preserve">
+          <value>Ez a tartalom csak html kódot tartalmaz.</value>
+        </data>
+        <data name="HTMLFragment-DisplayName" xml:space="preserve">
+          <value>HTML kódrészlet</value>
+        </data>
+        <data name="HTMLFragment-Description" xml:space="preserve">
+          <value>HTML kódrészlet helye.</value>
+        </data>
+      </Language>
+    </Languages>
+  </ResourceClass>
+  <ResourceClass name="Ctd-HyperLinkFieldSetting">
+    <Languages>
+      <Language cultureName="en">
+        <data name="DisplayName" xml:space="preserve">
+          <value>Hyperlink field</value>
+        </data>
+      </Language>
+      <Language cultureName="hu">
+        <data name="DisplayName" xml:space="preserve">
+          <value>Hivatkozás mező</value>
+        </data>
+      </Language>
+    </Languages>
+  </ResourceClass>
+</Resources>

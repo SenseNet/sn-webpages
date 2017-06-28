@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentType name="Article" parentType="WebContent" 
+             handler="SenseNet.ContentRepository.GenericContent" 
+             xmlns="http://schemas.sensenet.com/SenseNet/ContentRepository/ContentTypeDefinition">
+  <DisplayName>$Ctd-Article,DisplayName</DisplayName>
+  <Description>$Ctd-Article,Description</Description>
+  <Icon>WebContent</Icon>
+  <Fields>
+    <Field name="DisplayName" type="ShortText">
+      <Description>$Ctd-Article,DisplayName-Description</Description>
+    </Field>
+    <Field name="Subtitle" type="ShortText">
+      <DisplayName>$Ctd-Article,Subtitle-DisplayName</DisplayName>
+      <Description>$Ctd-Article,Subtitle-Description</Description>
+    </Field>
+    <Field name="Lead" type="LongText">
+      <DisplayName>$Ctd-Article,Lead-DisplayName</DisplayName>
+      <Description>$Ctd-Article,Lead-Description</Description>
+      <Indexing>
+        <Analyzer>Lucene.Net.Analysis.Standard.StandardAnalyzer</Analyzer>
+      </Indexing>
+      <Configuration>
+        <ControlHint>sn:RichText</ControlHint>
+      </Configuration>      
+    </Field>
+    <Field name="Body" type="LongText">
+      <DisplayName>$Ctd-Article,Body-DisplayName</DisplayName>
+      <Description>$Ctd-Article,Body-Description</Description>
+      <Indexing>
+        <Analyzer>Lucene.Net.Analysis.Standard.StandardAnalyzer</Analyzer>
+      </Indexing>
+      <Configuration>
+        <ControlHint>sn:RichText</ControlHint>
+      </Configuration>
+    </Field>
+    <Field name="Pinned" type="Boolean">
+      <DisplayName>$Ctd-Article,Pinned-DisplayName</DisplayName>
+      <Description>$Ctd-Article,Pinned-Description</Description>
+    </Field>
+    <Field name="Keywords" type="LongText">
+      <DisplayName>$Ctd-Article,Keywords-DisplayName</DisplayName>
+      <Description>$Ctd-Article,Keywords-DisplayName</Description>
+      <Indexing>
+        <Analyzer>Lucene.Net.Analysis.WhitespaceAnalyzer</Analyzer>
+      </Indexing>
+    </Field>
+    <Field name="Author" type="ShortText">
+      <DisplayName>$Ctd-Article,Author-DisplayName</DisplayName>
+      <Description>$Ctd-Article,Author-DisplayName</Description>
+    </Field>
+    <Field name="ImageRef" type="Reference">
+      <DisplayName>$Ctd-Article,ImageRef-DisplayName</DisplayName>
+      <Configuration>
+        <VisibleBrowse>Hide</VisibleBrowse>
+        <VisibleEdit>Hide</VisibleEdit>
+        <VisibleNew>Hide</VisibleNew>
+        <AllowMultiple>false</AllowMultiple>
+      </Configuration>
+    </Field>
+    <Field name="ImageData" type="Binary">
+      <DisplayName>$Ctd-Article,ImageData-DisplayName</DisplayName>
+      <Configuration>
+        <VisibleBrowse>Hide</VisibleBrowse>
+        <VisibleEdit>Hide</VisibleEdit>
+        <VisibleNew>Hide</VisibleNew>
+      </Configuration>
+    </Field>
+    <Field name="Image" type="Image">
+      <DisplayName>$Ctd-Article,Image-DisplayName</DisplayName>
+      <Bind property='ImageRef' />
+      <Bind property='ImageData' />
+      <Configuration>
+        <VisibleBrowse>Show</VisibleBrowse>
+        <VisibleEdit>Show</VisibleEdit>
+        <VisibleNew>Show</VisibleNew>
+        <ControlHint>sn:Image</ControlHint>
+      </Configuration>
+    </Field>
+  </Fields>
+</ContentType>
