@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentMetaData>
+  <ContentType>Page</ContentType>
+  <ContentName>IFrameUpload</ContentName>
+  <Fields>
+    <PageTemplateNode>
+      <Path>/Root/Global/pagetemplates/sn-iframedialogupload.html</Path>
+    </PageTemplateNode>
+    <PersonalizationSettings attachment="IFrameUpload.PersonalizationSettings" />
+    <DisplayName><![CDATA[$Action,IFrameUpload]]></DisplayName>
+    <Icon><![CDATA[application]]></Icon>
+  </Fields>
+  <Permissions>
+    <Clear />
+  </Permissions>
+</ContentMetaData>
