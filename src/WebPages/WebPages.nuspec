@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>SenseNet.WebPages</id>
-    <version>7.0.0-beta1.1</version>
+    <version>7.0.0-beta2</version>
     <title>sensenet ECM WebPages</title>
     <authors>kavics,aniko,laci,borsi,lajos,tusmester</authors>
     <owners>Sense/Net</owners>
@@ -14,7 +14,7 @@
     <copyright>Copyright © Sense/Net Inc.</copyright>
     <tags>sensenet ecm ecms</tags>
     <dependencies>
-      <dependency id="SenseNet.Services" version="7.0.0-beta2" />
+      <dependency id="SenseNet.Services" version="7.0.0-beta3" />
       <dependency id="SenseNet.Tools" version="2.1.1" />
     </dependencies>
   </metadata>

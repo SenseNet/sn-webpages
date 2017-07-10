@@ -296,6 +296,7 @@
     <Compile Include="Portlets\Controls\LoginView.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Portlets\DialogFileUploadPortlet.cs" />
     <Compile Include="Portlets\FieldDeletePortlet.cs" />
     <Compile Include="Portlets\FieldEditorPortlet.cs" />
     <Compile Include="Portlets\FieldMoverPortlet.cs" />
@@ -387,6 +388,7 @@
     <Compile Include="UI\Controls\DefaultButtons.cs" />
     <Compile Include="UI\Controls\DefaultButtonsFactory.cs" />
     <Compile Include="UI\Controls\DefaultButtonsFactoryBase.cs" />
+    <Compile Include="UI\Controls\DialogFileUpload.cs" />
     <Compile Include="UI\Controls\DialogUpload.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>

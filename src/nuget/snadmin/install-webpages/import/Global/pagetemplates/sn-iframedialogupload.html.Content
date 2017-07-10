@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentMetaData>
+  <ContentType>PageTemplate</ContentType>
+  <ContentName>sn-iframedialogupload.html</ContentName>
+  <Fields>
+    <Binary attachment="sn-iframedialogupload.html" />
+    <DisplayName>sn-iframedialogupload.html</DisplayName>
+  </Fields>
+  <Permissions>
+    <Clear />
+  </Permissions>
+</ContentMetaData>
