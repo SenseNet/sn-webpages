@@ -42,14 +42,14 @@ namespace SenseNet.Portal.Portlets
 
         protected SiteMenuNodeEnumerator(string path, ExecutionHint executionHint,
             string filter, int? depth, string contextPath, bool getContextChildren)
-            : base(path, executionHint, null, depth)
+            : base(path, executionHint, (string)null, depth)
         {
             _contextPath = contextPath;
             _getContextChildren = getContextChildren;
             _childrenFilter = filter;
         }
 
-        protected override NodeQueryResult QueryChildrenFromLucene(int thisId)
+        protected override QueryResult QueryChildrenFromLucene(int thisId)
         {
             if (string.IsNullOrEmpty(_childrenFilter))
             {
@@ -64,7 +64,7 @@ namespace SenseNet.Portal.Portlets
                 if (!string.IsNullOrEmpty(_childrenFilter))
                     query.AddClause(_childrenFilter);
 
-                return new NodeQueryResult(query.ExecuteToIds(ExecutionHint.ForceIndexedEngine));
+                return new QueryResult(query.ExecuteToIds(ExecutionHint.ForceIndexedEngine));
             }
         }
 
