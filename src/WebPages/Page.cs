@@ -55,7 +55,7 @@ namespace SenseNet.Portal
                 {
                     if (StorageContext.Search.ContentQueryIsAllowed)
                     {
-                        var queryText = $"+TypeIs:Page +SmartUrl:{SmartUrl} -Path:'{Path}'";
+                        var queryText = $"+TypeIs:Page +SmartUrl:'{SmartUrl}' -Path:'{Path}'";
                         result = new NodeQueryResult(ContentQuery.Query(queryText, QuerySettings.AdminSettings).Identifiers);
                     }
                     else

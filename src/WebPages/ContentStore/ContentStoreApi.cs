@@ -152,22 +152,14 @@ namespace SenseNet.Portal.ContentStore
 
         private static bool IsLuceneQueryInternal()
         {
-            return StorageContext.Search.SearchEngine.GetType() == typeof(LuceneSearchEngine);
+            return StorageContext.Search.ContentQueryIsAllowed;
         }
 
         [ODataFunction]
         public static object[] Search(Content content, string searchStr, string searchRoot, string contentTypes, string rnd, bool simpleContent = false)
         {
             AssertPermission(PlaceholderPath);
-
-            if (IsLuceneQueryInternal())
-            {
-                return SearchLucene(searchStr, searchRoot, contentTypes, simpleContent);
-            }
-            else
-            {
-                return SearchNodeQuery(searchStr, searchRoot, contentTypes, simpleContent);
-            }
+            return SearchLucene(searchStr, searchRoot, contentTypes, simpleContent);
         }
 
         private static object[] SearchLucene(string searchStr, string searchRoot, string contentTypes, bool simpleContent = false)
@@ -192,22 +184,6 @@ namespace SenseNet.Portal.ContentStore
                              where n != null
                              select new cs.Content(n, true, false, false, false, 0, 0)).ToArray();
             }
-        }
-
-        private static object[] SearchNodeQuery(string searchStr, string searchRoot, string contentTypes, bool simpleContent = false)
-        {
-            var queryText = "";
-            if (!string.IsNullOrEmpty(searchStr))
-                queryText += $"+_Text:'{searchStr}'";
-            if (!string.IsNullOrEmpty(searchRoot))
-                queryText += $" +InTree:'{searchRoot}'";
-            if (!string.IsNullOrEmpty(contentTypes))
-                queryText += $" +Type:{string.Join(" ", contentTypes.Split(',').Select(s => s.Trim()).ToArray())}";
-
-            var nodes = ContentQuery.Query(queryText, QuerySettings.AdminSettings).Nodes;
-            if (simpleContent)
-                return nodes.Select(n => (object)new cs.SimpleServiceContent(n)).ToArray();
-            return nodes.Select(n => (object)new cs.Content(n, true, false, false, false, 0, 0)).ToArray();
         }
 
         private static bool IsLuceneSyntax(string s)

@@ -231,7 +231,7 @@ namespace SenseNet.Portal.UI.Controls
         }
         private static QueryResult GetPageTemplates()
         {
-            return ContentQuery.Query($"+TypeIs:PageTemplate +InTree:{RepositoryStructure.PageTemplateFolderPath} .SORT:Name", QuerySettings.AdminSettings);
+            return ContentQuery.Query($"+TypeIs:PageTemplate +InTree:'{RepositoryStructure.PageTemplateFolderPath}' .SORT:Name", QuerySettings.AdminSettings);
         }
         private static Node GetPageTemplateNode(ListControl listControl)
         {
