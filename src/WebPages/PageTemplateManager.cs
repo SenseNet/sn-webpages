@@ -9,6 +9,7 @@ using SenseNet.Configuration;
 using SenseNet.ContentRepository.Storage.Search;
 using SenseNet.Portal.UI;
 using SenseNet.ContentRepository;
+using SenseNet.Search;
 
 namespace SenseNet.Portal
 {
@@ -307,13 +308,9 @@ namespace SenseNet.Portal
 
         private IEnumerable<Node> LoadPageList()
         {
-            if (RepositoryInstance.ContentQueryIsAllowed)
+            if (StorageContext.Search.ContentQueryIsAllowed)
             {
-                // this NodeQuery will be compiled to LucQuery because the outer engine is enabled
-                NodeQuery query = new NodeQuery();
-                query.Add(new TypeExpression(ActiveSchema.NodeTypes[typeof(Page).Name], false));
-                query.Add(new ReferenceExpression(ActiveSchema.PropertyTypes["PageTemplateNode"], _pageTemplate));
-                return query.Execute().Nodes;
+                return ContentQuery.Query($"+TypeIs:Page +PageTemplateNode:{PageTemplateNode.Id}", QuerySettings.AdminSettings).Nodes;
             }
             // we need to execute a direct database query because the outer engine is disabled
             return NodeQuery.QueryNodesByReferenceAndType("PageTemplateNode", this.PageTemplateNode.Id, ActiveSchema.NodeTypes[typeof(Page).Name], false).Nodes;

@@ -9,6 +9,7 @@ using SenseNet.ContentRepository.Storage.Search;
 using System.Globalization;
 using SenseNet.Configuration;
 using SenseNet.ContentRepository;
+using SenseNet.Search;
 
 namespace SenseNet.Portal.UI.Controls
 {
@@ -228,13 +229,9 @@ namespace SenseNet.Portal.UI.Controls
         {
             return string.Format("this.options[this.selectedIndex].className=='nopreview'?document.getElementById('{2}').src='{0}':document.getElementById('{2}').src='{1}/'+this.value+'.png'", DefaultPreviewIconPath, RepositoryStructure.PageTemplateFolderPath,pictureElementId);
         }
-        private static NodeQueryResult GetPageTemplates()
+        private static QueryResult GetPageTemplates()
         {
-            var query = new NodeQuery();
-            query.Add(new TypeExpression(ActiveSchema.NodeTypes[typeof(PageTemplate).Name], true));
-            query.Add(new StringExpression(StringAttribute.Path, StringOperator.StartsWith, RepositoryStructure.PageTemplateFolderPath));
-            query.Orders.Add(new SearchOrder(StringAttribute.Name, OrderDirection.Asc));
-            return query.Execute();
+            return ContentQuery.Query($"+TypeIs:PageTemplate +InTree:{RepositoryStructure.PageTemplateFolderPath} .SORT:Name", QuerySettings.AdminSettings);
         }
         private static Node GetPageTemplateNode(ListControl listControl)
         {

@@ -15,6 +15,7 @@ using SenseNet.ContentRepository.Storage.Security;
 using SenseNet.Portal.Virtualization;
 using SenseNet.Diagnostics;
 using System.Xml;
+using SenseNet.Search;
 
 namespace SenseNet.Portal
 {
@@ -52,15 +53,10 @@ namespace SenseNet.Portal
                 NodeQueryResult result;
                 using (new SystemAccount())
                 {
-                    if (RepositoryInstance.ContentQueryIsAllowed)
+                    if (StorageContext.Search.ContentQueryIsAllowed)
                     {
-                        // this NodeQuery will be compiled to LucQuery because the outer engine is enabled
-                        var pageQuery = new NodeQuery();
-                        pageQuery.Add(new TypeExpression(ActiveSchema.NodeTypes[typeof(Page).Name]));
-                        pageQuery.Add(new StringExpression(ActiveSchema.PropertyTypes["SmartUrl"], StringOperator.Equal, this.SmartUrl));
-                        pageQuery.Add(new NotExpression(new StringExpression(StringAttribute.Path, StringOperator.Equal, this.Path)));
-
-                        result = pageQuery.Execute();
+                        var queryText = $"+TypeIs:Page +SmartUrl:{SmartUrl} -Path:'{Path}'";
+                        result = new NodeQueryResult(ContentQuery.Query(queryText, QuerySettings.AdminSettings).Identifiers);
                     }
                     else
                     {
@@ -264,11 +260,9 @@ namespace SenseNet.Portal
 
         #region OfflineExecution
 
-        internal static NodeQueryResult GetAllPage()
+        internal static QueryResult GetAllPage()
         {
-            NodeQuery query = new NodeQuery();
-            query.Add(new TypeExpression(ActiveSchema.NodeTypes["Page"], true));
-            return query.Execute();
+            return ContentQuery.Query("TypeIs:Page", QuerySettings.AdminSettings);
         }
 
         public static string[] RunPagesBackground(HttpContext context, out Exception[] exceptions)

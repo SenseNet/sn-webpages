@@ -12,6 +12,8 @@ using SenseNet.ContentRepository.Storage.Search;
 using SenseNet.ContentRepository.Storage.Schema;
 using System.Text.RegularExpressions;
 using SenseNet.Configuration;
+using SenseNet.ContentRepository.Schema;
+using SenseNet.Search;
 using SenseNet.Tools;
 
 namespace SenseNet.Portal.UI.PortletFramework
@@ -78,12 +80,10 @@ namespace SenseNet.Portal.UI.PortletFramework
         }
         public static IEnumerable<Node> GetPortletsFromRepo()
         {
-            var query = new NodeQuery();
-            var expression = new ExpressionList(ChainOperator.And);
-            expression.Add(new StringExpression(StringAttribute.Path, StringOperator.StartsWith, PortletsFolderPath));
-            expression.Add(new TypeExpression(NodeType.GetByName("Portlet")));
-            query.Add(expression);
-            return query.Execute().Nodes;
+            var result = ContentQuery.Query(ContentRepository.SafeQueries.InTreeAndTypeIs, QuerySettings.AdminSettings,
+                PortletsFolderPath,
+               "Portlet");
+            return result.Nodes;
         }
         public static IEnumerable<Node> GetCategoriesFromRepo()
         {

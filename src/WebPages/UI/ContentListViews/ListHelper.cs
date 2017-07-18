@@ -67,7 +67,7 @@ namespace SenseNet.Portal.UI.ContentListViews
 
         public static string GetRunningWorkflowsText(Node relatedContent)
         {
-            if (!RepositoryInstance.ContentQueryIsAllowed)
+            if (!StorageContext.Search.ContentQueryIsAllowed)
                 return string.Empty;
 
             var cl = ContentList.GetContentListForNode(relatedContent);

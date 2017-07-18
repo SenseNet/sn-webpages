@@ -196,73 +196,18 @@ namespace SenseNet.Portal.ContentStore
 
         private static object[] SearchNodeQuery(string searchStr, string searchRoot, string contentTypes, bool simpleContent = false)
         {
+            var queryText = "";
             if (!string.IsNullOrEmpty(searchStr))
-            {
-                // simple nodequery
-                var query = new NodeQuery();
-                query.Add(new SearchExpression(searchStr));
-                var nodes = query.Execute().Nodes;
+                queryText += $"+_Text:'{searchStr}'";
+            if (!string.IsNullOrEmpty(searchRoot))
+                queryText += $" +InTree:'{searchRoot}'";
+            if (!string.IsNullOrEmpty(contentTypes))
+                queryText += $" +Type:{string.Join(" ", contentTypes.Split(',').Select(s => s.Trim()).ToArray())}";
 
-                // filter with path
-                if (!string.IsNullOrEmpty(searchRoot))
-                    nodes = nodes.Where(n => n.Path.StartsWith(searchRoot));
-
-                // filter with contenttypes
-                if (!string.IsNullOrEmpty(contentTypes))
-                {
-                    var contentTypesArr = GetContentTypes(contentTypes);
-                    nodes = nodes.Where(n => contentTypesArr.Contains(n.NodeType.Name));
-                }
-
-                if (simpleContent)
-                {
-                    var contents = nodes.Where(n => n != null).Select(n => new cs.SimpleServiceContent(n));
-                    return contents.ToArray();
-                }
-                else
-                {
-                    var contents = nodes.Where(n => n != null).Select(n => new cs.Content(n, true, false, false, false, 0, 0));
-                    return contents.ToArray();
-                }
-            }
-            else
-            {
-                if (string.IsNullOrEmpty(searchRoot) && string.IsNullOrEmpty(contentTypes))
-                    return null;
-
-                var query = new NodeQuery();
-                var andExpression = new ExpressionList(ChainOperator.And);
-                query.Add(andExpression);
-
-                // filter with path
-                if (!string.IsNullOrEmpty(searchRoot))
-                    andExpression.Add(new StringExpression(StringAttribute.Path, StringOperator.StartsWith, searchRoot));
-
-                // filter with contenttypes
-                if (!string.IsNullOrEmpty(contentTypes))
-                {
-                    var contentTypesArr = GetContentTypes(contentTypes);
-                    var orExpression = new ExpressionList(ChainOperator.Or);
-                    foreach (var contentType in contentTypesArr)
-                    {
-                        orExpression.Add(new TypeExpression(NodeType.GetByName(contentType), true));
-                    }
-                    andExpression.Add(orExpression);
-                }
-
-                var nodes = query.Execute().Nodes;
-
-                if (simpleContent)
-                {
-                    var contents = nodes.Select(n => new cs.SimpleServiceContent(n));
-                    return contents.ToArray();
-                }
-                else
-                {
-                    var contents = nodes.Select(n => new cs.Content(n, true, false, false, false, 0, 0));
-                    return contents.ToArray();
-                }
-            }
+            var nodes = ContentQuery.Query(queryText, QuerySettings.AdminSettings).Nodes;
+            if (simpleContent)
+                return nodes.Select(n => (object)new cs.SimpleServiceContent(n)).ToArray();
+            return nodes.Select(n => (object)new cs.Content(n, true, false, false, false, 0, 0)).ToArray();
         }
 
         private static bool IsLuceneSyntax(string s)
@@ -315,10 +260,6 @@ namespace SenseNet.Portal.ContentStore
             }
 
             return queryStr;
-        }
-        private static IEnumerable<string> GetContentTypes(string contentTypesStr)
-        {
-            return contentTypesStr.Split(',');
         }
 
         private static string GetContentTypesFilter(string contentTypeNames)

@@ -179,8 +179,7 @@ namespace SenseNet.Portal.Portlets
 
             new[]
                     {
-                     new { Namespace = "urn:sn:hu", Value = (object)new NodeQueryXsltProxy() },
-                     new { Namespace = "sn://SenseNet.ContentRepository.i18n.ResourceXsltClient", Value = (object)new ResourceXsltClient() }
+                        new { Namespace = "sn://SenseNet.ContentRepository.i18n.ResourceXsltClient", Value = (object)new ResourceXsltClient() }
                     }.Select(ext =>
                     {
                         arguments.AddExtensionObject(ext.Namespace, ext.Value); return true;

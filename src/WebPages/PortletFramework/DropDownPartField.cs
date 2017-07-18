@@ -82,13 +82,11 @@ namespace SenseNet.Portal.UI.PortletFramework
             if (this.DropdownOptions.CommonType == DropDownCommonType.ContentTypeDropdown)
             {
                 // special use-case, content type list is defined in webconfig
-                NodeQueryResult contentTypeNames = GetWebContentTypeList();
+                var contentTypeNames = GetWebContentTypeList();
                 if (contentTypeNames.Count > 0)
                 {
-                    foreach (var ctContent in contentTypeNames.Nodes.Select(Content.Create))
-                    {
+                    foreach (var ctContent in contentTypeNames.Nodes)
                         this.Items.Add(new ListItem(ctContent.DisplayName, ctContent.Name));
-                    }
                 }
             }
 
@@ -148,36 +146,23 @@ namespace SenseNet.Portal.UI.PortletFramework
         {
             return ActiveSchema.NodeTypes.ToNameArray().Contains(ctdName);
         }
-        public static NodeQueryResult GetWebContentTypeList()
+        public static QueryResult GetWebContentTypeList()
         {
             var contentTypeNames = WebApplication.WebContentNameList;
             if (string.IsNullOrEmpty(contentTypeNames))
                 contentTypeNames = DefaultContentTypeName;
 
             var list = contentTypeNames.Split(',');
-            var validCtdNames = list.Where(c => IsValidContentType(c.Trim())).Select(c => c.Trim()).ToList();
+            var validCtdNames = list.Where(c => IsValidContentType(c.Trim())).Select(c => c.Trim()).ToArray();
 
-            var expressionList = new ExpressionList(ChainOperator.Or);
-            var query = new NodeQuery();
-            foreach (var ctd in validCtdNames)
-            {
-                var stringExpressionValue = RepositoryPath.Combine(Repository.ContentTypesFolderPath, string.Concat(ActiveSchema.NodeTypes[ctd].NodeTypePath, "/"));
-                expressionList.Add(new StringExpression(StringAttribute.Path, StringOperator.StartsWith, stringExpressionValue));
-            }
+            if (validCtdNames.Length == 0 && IsValidContentType(DefaultContentTypeName))
+                validCtdNames = new[] {DefaultContentTypeName};
 
-            if (validCtdNames.Count == 0 && IsValidContentType(DefaultContentTypeName))
-            {
-                var stringExpressionValue = RepositoryPath.Combine(Repository.ContentTypesFolderPath, string.Concat(ActiveSchema.NodeTypes[DefaultContentTypeName].NodeTypePath, "/"));
-                expressionList.Add(new StringExpression(StringAttribute.Path, StringOperator.StartsWith, stringExpressionValue));
-            }
+            if (validCtdNames.Length == 0)
+                return new QueryResult(new int[0]);
 
-            // no expressions, nothing to query for
-            if (expressionList.Expressions.Count == 0)
-                return new NodeQueryResult(new int[0]);
-
-            query.Add(expressionList);
-
-            return query.Execute();
+            var queryText = $"TypeIs:({string.Join(" ", validCtdNames)})";
+            return ContentQuery.Query(queryText, QuerySettings.AdminSettings);
         }
     }
 }

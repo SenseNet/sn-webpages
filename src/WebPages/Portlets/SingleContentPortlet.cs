@@ -19,6 +19,7 @@ using SNC = SenseNet.ContentRepository;
 using System.Linq;
 using SenseNet.Configuration;
 using SenseNet.Diagnostics;
+using SenseNet.Search;
 using Content = SenseNet.ContentRepository.Content;
 
 namespace SenseNet.Portal.Portlets
@@ -681,9 +682,8 @@ namespace SenseNet.Portal.Portlets
             var result = DropDownPartField.GetWebContentTypeList();
             if (result.Count > 0)
             {
-                IEnumerable<Node> nodes = result.Nodes;
-                var gc = PortalContext.Current.ContextNode as GenericContent;
-                foreach (var ctContent in nodes.Select(Content.Create))
+                var gc = (GenericContent)PortalContext.Current.ContextNode;
+                foreach (var ctContent in result.Nodes.Select(Content.Create))
                 {
                     if (!gc.IsAllowedChildType(ctContent.Name))
                         continue;
@@ -754,11 +754,10 @@ namespace SenseNet.Portal.Portlets
             {
                 try
                 {
-                    var query = new NodeQuery();
-                    query.Add(new TypeExpression(ActiveSchema.NodeTypes[this.UsedContentTypeName], true));
-                    query.Add(new IntExpression(IntAttribute.ParentId, ValueOperator.Equal, PortalContext.Current.ContextNodeHead.Id));
-
-                    var queryResult = query.Execute().Nodes.ToList();
+                    var queryResult = ContentQuery.Query(
+                        ContentRepository.SafeQueries.InFolderAndTypeIs, QuerySettings.AdminSettings,
+                        PortalContext.Current.ContextNodeHead.Path,
+                        this.UsedContentTypeName).Nodes.ToList();
 
                     if (queryResult.Count > 0)
                     {
