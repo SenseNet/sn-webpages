@@ -233,7 +233,7 @@ namespace SenseNet.Portal.UI.ContentListViews.FieldControls
             var nodeQueryXml = Query.GetNodeQueryXml(result);
 
             // this is for validation
-            NodeQuery.Parse(nodeQueryXml);
+            NodeQuery.Parse(nodeQueryXml); //UNDONE: review, called from QueryBuilder?
 
             return result;
         }
@@ -245,7 +245,7 @@ namespace SenseNet.Portal.UI.ContentListViews.FieldControls
             if (string.IsNullOrEmpty(queryString))
                 return;
 
-            if (queryString.StartsWith("<"))
+            if (queryString.StartsWith("<")) //UNDONE: ez az ág dobható lesz
             {
                 try
                 {

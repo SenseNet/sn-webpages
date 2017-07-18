@@ -67,7 +67,7 @@ namespace SenseNet.Portal.UI.ContentListViews
                 if (ViewDefinition.FilterIsContentQuery)
                     return null;
                 
-                filter = NodeQuery.Parse(Query.GetNodeQueryXml(ViewDefinition.FilterXml));
+                filter = NodeQuery.Parse(Query.GetNodeQueryXml(ViewDefinition.FilterXml)); //UNDONE: rewiew
             }
 
             return filter;
