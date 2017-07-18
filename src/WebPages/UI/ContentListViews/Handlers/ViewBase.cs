@@ -43,7 +43,12 @@ namespace SenseNet.Portal.UI.ContentListViews.Handlers
         public string FilterXml
         {
             get { return GetProperty<string>("FilterXml"); }
-            set { this["FilterXml"] = value; }
+            set
+            {
+                if (!string.IsNullOrEmpty(value) && value.StartsWith("<"))
+                    throw new ArgumentException("NodeQuery ix invalid filter value. Use content query instead: " + value);
+                this["FilterXml"] = value;
+            }
         }
 
         [RepositoryProperty("EnableAutofilters", RepositoryDataType.String)]
@@ -108,15 +113,7 @@ namespace SenseNet.Portal.UI.ContentListViews.Handlers
             set { this[ICONNAME] = value; }
         }
 
-        public bool FilterIsContentQuery
-        {
-            get
-            {
-                var filter = FilterXml;
-
-                return string.IsNullOrEmpty(filter) || !filter.StartsWith("<");
-            }
-        }
+        public bool FilterIsContentQuery => true;
 
         public override object GetProperty(string name)
         {

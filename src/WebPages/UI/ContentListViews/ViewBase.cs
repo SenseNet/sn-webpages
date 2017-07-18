@@ -10,8 +10,6 @@ namespace SenseNet.Portal.UI.ContentListViews
 {
     public abstract class ViewBase : System.Web.UI.UserControl
     {
-        #region properties
-
         private SenseNetDataSource _viewDataSource;
         protected SenseNetDataSource ViewDataSource
         {
@@ -55,27 +53,11 @@ namespace SenseNet.Portal.UI.ContentListViews
 
         }
 
-        #endregion
-
-        #region view_queries
-
+        [Obsolete("Do not use anymore.", false)] //UNDONE: Delete this method if NodeQuery deleted.
         protected virtual NodeQuery GetFilter()
         {
-            NodeQuery filter = null;
-            if (!string.IsNullOrEmpty(ViewDefinition.FilterXml))
-            {
-                if (ViewDefinition.FilterIsContentQuery)
-                    return null;
-                
-                filter = NodeQuery.Parse(Query.GetNodeQueryXml(ViewDefinition.FilterXml)); //UNDONE: rewiew
-            }
-
-            return filter;
+            throw new SnNotSupportedException();
         }
-
-        #endregion
-
-        #region aspnet_members
 
         protected override void OnLoad(EventArgs e)
         {
@@ -83,18 +65,10 @@ namespace SenseNet.Portal.UI.ContentListViews
 
             if (ViewDefinition != null)
             {
-                if (ViewDefinition.FilterIsContentQuery)
-                {
-                    if (this.OwnerFrame == null || this.OwnerFrame.OwnerPortlet == null)
-                        ViewDataSource.Query = ViewDefinition.FilterXml;
-                    else
-                        ViewDataSource.Query = this.OwnerFrame.OwnerPortlet.ReplaceTemplates(ViewDefinition.FilterXml);
-                    
-                }
+                if (this.OwnerFrame == null || this.OwnerFrame.OwnerPortlet == null)
+                    ViewDataSource.Query = ViewDefinition.FilterXml;
                 else
-                {
-                    ViewDataSource.QueryFilter = GetFilter();
-                }
+                    ViewDataSource.Query = this.OwnerFrame.OwnerPortlet.ReplaceTemplates(ViewDefinition.FilterXml);
             }
 
             if (ViewDataSource.Settings == null)
@@ -118,12 +92,6 @@ namespace SenseNet.Portal.UI.ContentListViews
             base.OnLoad(e);
         }
 
-        #endregion
-
-        #region abstract_members
-
         protected abstract IEnumerable<string> GetFieldList();
-
-        #endregion
     }
 }
