@@ -85,8 +85,8 @@ namespace SenseNet.Portal.UI.PortletFramework
                 var contentTypeNames = GetWebContentTypeList();
                 if (contentTypeNames.Count > 0)
                 {
-                    foreach (var ctContent in contentTypeNames.Nodes)
-                        this.Items.Add(new ListItem(ctContent.DisplayName, ctContent.Name));
+                    foreach (var ctContent in contentTypeNames.Nodes.Select(n => Content.Create(n)))
+                        this.Items.Add(new ListItem((string)ctContent["DisplayName"], ctContent.Name));
                 }
             }
 
