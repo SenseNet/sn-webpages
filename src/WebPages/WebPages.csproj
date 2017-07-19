@@ -130,6 +130,10 @@
       <HintPath>..\packages\SenseNet.Preview.7.0.0-beta1\lib\net451\SenseNet.Preview.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="SenseNet.Search, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\SenseNet.Services.7.0.0-beta3\lib\net451\SenseNet.Search.dll</HintPath>
+    </Reference>
     <Reference Include="SenseNet.Security, Version=2.3.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\SenseNet.Security.2.3.0.0\lib\net45\SenseNet.Security.dll</HintPath>
       <Private>True</Private>
@@ -315,7 +319,6 @@
     <Compile Include="Portlets\HtmlPortlet.cs" />
     <Compile Include="Portlets\IncomingEmailSettingsPortlet.cs" />
     <Compile Include="Portlets\ListImporterPortlet.cs" />
-    <Compile Include="Portlets\NodeQueryXsltProxy.cs" />
     <Compile Include="Portlets\PageAdminPortlet.cs" />
     <Compile Include="Portlets\PortletState.cs" />
     <Compile Include="Portlets\ProxyPurgePortlet.cs" />
