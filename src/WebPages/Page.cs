@@ -50,13 +50,13 @@ namespace SenseNet.Portal
 
             if (this.SmartUrl != String.Empty)
             {
-                NodeQueryResult result;
+                QueryResult result;
                 using (new SystemAccount())
                 {
                     if (StorageContext.Search.ContentQueryIsAllowed)
                     {
                         var queryText = $"+TypeIs:Page +SmartUrl:'{SmartUrl}' -Path:'{Path}'";
-                        result = new NodeQueryResult(ContentQuery.Query(queryText, QuerySettings.AdminSettings).Identifiers);
+                        result = ContentQuery.Query(queryText, QuerySettings.AdminSettings);
                     }
                     else
                     {

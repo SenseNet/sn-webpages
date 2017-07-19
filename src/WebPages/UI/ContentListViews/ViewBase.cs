@@ -53,7 +53,7 @@ namespace SenseNet.Portal.UI.ContentListViews
 
         }
 
-        [Obsolete("Do not use anymore.", false)] //UNDONE: Delete this method if NodeQuery deleted.
+        [Obsolete("Do not use anymore.", true)] //UNDONE: Delete this method if NodeQuery deleted.
         protected virtual NodeQuery GetFilter()
         {
             throw new SnNotSupportedException();
