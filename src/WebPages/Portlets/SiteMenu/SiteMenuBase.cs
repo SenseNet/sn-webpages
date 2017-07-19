@@ -289,7 +289,8 @@ namespace SenseNet.Portal.Portlets
                 }
                 else
                 {
-                    nodes = SiteMenuNodeEnumerator.GetNodes(ContextNode.Path, ExecutionHint.None, GetQuery(), depth,
+                    var query = ShowPagesOnly ? "+TypeIs:Page .SORT:Index" : null;
+                    nodes = SiteMenuNodeEnumerator.GetNodes(ContextNode.Path, ExecutionHint.None, query, depth,
                                                             enumeratorContext, GetContextChildren).ToList();
                 }
 
@@ -351,19 +352,6 @@ namespace SenseNet.Portal.Portlets
             }
 
             return treeNode;
-        }
-
-        protected virtual NodeQuery GetQuery()
-        {
-            if (ShowPagesOnly)
-            {
-                var query = new NodeQuery();
-                query.Add(new TypeExpression(ActiveSchema.NodeTypes["Page"]));
-                query.Orders.Add(new SearchOrder(IntAttribute.Index));
-                return query;
-            }
-
-            return null;
         }
 
         private static string ParentPath(string path)
