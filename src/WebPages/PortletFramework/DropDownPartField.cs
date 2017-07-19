@@ -86,7 +86,7 @@ namespace SenseNet.Portal.UI.PortletFramework
                 if (contentTypeNames.Count > 0)
                 {
                     foreach (var ctContent in contentTypeNames.Nodes.Select(n => Content.Create(n)))
-                        this.Items.Add(new ListItem((string)ctContent["DisplayName"], ctContent.Name));
+                        this.Items.Add(new ListItem(ctContent.DisplayName, ctContent.Name));
                 }
             }
 
