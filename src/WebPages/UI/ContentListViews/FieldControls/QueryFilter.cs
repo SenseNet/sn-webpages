@@ -159,85 +159,9 @@ namespace SenseNet.Portal.UI.ContentListViews.FieldControls
             if (LuceneTextBox != null && !string.IsNullOrEmpty(LuceneTextBox.Text))
                 return LuceneTextBox.Text;
 
-            if (this.ExpInfoList.Count == 0 || (this.ExpInfoList.Count == 1 && this.ExpInfoList[0].IsEmpty))
-                return string.Empty;
-            
-            _query = new Query();
-
-            // EXPLIST: a and b or c and d or e
-            // QUERY  : (a & b) | (c & d) | (d & e) 
-
-            try
-            {
-                ShiftOperatorsDown();
-
-                if (this.ExpInfoList.Count == 1)
-                {
-                    _query.Root = GetExpressionItem(this.ExpInfoList[0]);
-                    _query.Root.LogicalOperator = LogicalOperator.None;
-                }
-                else
-                {
-                    var co = ContainsOr(this.ExpInfoList);
-                    var root = new Group { LogicalOperator = (co ? LogicalOperator.Or : LogicalOperator.None) };
-                    var current = co ? new Group { LogicalOperator = LogicalOperator.And } : root;
-
-                    foreach (var expInfo in this.ExpInfoList)
-                    {
-                        switch (expInfo.LogicalOperator)
-                        {
-                            case LogicalOperator.And:
-                                break;
-                            case LogicalOperator.Or:
-                                // add current and open new block
-                                if (current.Items.Count > 1)
-                                    root.Items.Add(current);
-                                else
-                                    root.Items.Add(current.Items[0]);
-
-                                current = new Group { LogicalOperator = LogicalOperator.And };
-                                
-                                break;
-                        }
-
-                        current.Items.Add(GetExpressionItem(expInfo));
-                    }
-
-                    // the last block
-                    if (root != current)
-                    {
-                        if (current.Items.Count > 1)
-                            root.Items.Add(current);
-                        else
-                            root.Items.Add(current.Items[0]);
-                    }
-
-                    _query.Root = root;
-                }
-            }
-            catch(Exception ex)
-            {
-                throw new FieldControlDataException(this, "InvalidQuery", ex.Message);
-            }
-
-            var xs = new XmlSerializer(typeof(Query));
-            var sw = new StringWriter();
-            var xw = new XmlTextWriter(sw);
-
-            xs.Serialize(xw, _query);
-
-            var result = sw.ToString();
-
-            xw.Close();
-
-            var nodeQueryXml = Query.GetNodeQueryXml(result);
-
-            // this is for validation
-            NodeQuery.Parse(nodeQueryXml); //UNDONE: review, called from QueryBuilder?
-
-            return result;
+            throw new NotSupportedException("NodeQuery is not supported. Use content query instead.");
         }
-        
+
         public override void SetData(object data)
         {
             var queryString = data as string;
@@ -245,31 +169,8 @@ namespace SenseNet.Portal.UI.ContentListViews.FieldControls
             if (string.IsNullOrEmpty(queryString))
                 return;
 
-            if (queryString.StartsWith("<")) //UNDONE: ez az ág dobható lesz
-            {
-                try
-                {
-                    var xs = new XmlSerializer(typeof (Query));
-
-                    var sr = new StringReader(queryString);
-                    var xr = new XmlTextReader(sr);
-
-                    _query = xs.Deserialize(xr) as Query;
-
-                    xr.Close();
-                }
-                catch
-                {
-                    //TODO: handle wrong query here (modified by hand somewhere else)
-                }
-
-                ShowNodeQueryPanel();
-            }
-            else
-            {
-                if (LuceneTextBox != null)
-                    LuceneTextBox.Text = queryString;
-            }
+            if (LuceneTextBox != null)
+                LuceneTextBox.Text = queryString;
         }
 
         // ========================================================================= Control overrides
