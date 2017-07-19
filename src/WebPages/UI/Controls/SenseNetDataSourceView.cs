@@ -39,8 +39,6 @@ namespace SenseNet.Portal.UI.Controls
 
         internal string GroupBy { get; set; }
 
-        internal Expression QueryFilter { get; set; }
-
         internal string QueryText { get; set; }
 
         internal QuerySettings Settings { get; set; }
