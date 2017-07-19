@@ -53,12 +53,6 @@ namespace SenseNet.Portal.UI.ContentListViews
 
         }
 
-        [Obsolete("Do not use anymore.", true)] //UNDONE: Delete this method if NodeQuery deleted.
-        protected virtual NodeQuery GetFilter()
-        {
-            throw new SnNotSupportedException();
-        }
-
         protected override void OnLoad(EventArgs e)
         {
             ViewDataSource.ContentPath = ContextNode.Path;
