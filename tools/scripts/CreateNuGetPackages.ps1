@@ -7,7 +7,7 @@ Remove-Item $PSScriptRoot\*.nupkg
 
 if (!(Test-Path $installPackageFolder))
 {
-	New-Item $installPackageFolder -Force
+	New-Item $installPackageFolder -Force -ItemType Directory
 }
 
 Compress-Archive -Path "$srcPath\nuget\snadmin\install-webpages\*" -Force -CompressionLevel Optimal -DestinationPath $installPackagePath
