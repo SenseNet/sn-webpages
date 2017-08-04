@@ -1,8 +1,14 @@
 ﻿$srcPath = [System.IO.Path]::GetFullPath(($PSScriptRoot + '\..\..\src'))
-$installPackagePath = "$srcPath\nuget\content\Admin\tools\install-webpages.zip"
+$installPackageFolder = "$srcPath\nuget\content\Admin\tools"
+$installPackagePath = "$installPackageFolder\install-webpages.zip"
 
 # delete existing packages
 Remove-Item $PSScriptRoot\*.nupkg
+
+if (!(Test-Path $installPackageFolder))
+{
+	New-Item $installPackageFolder -Force
+}
 
 Compress-Archive -Path "$srcPath\nuget\snadmin\install-webpages\*" -Force -CompressionLevel Optimal -DestinationPath $installPackagePath
 
