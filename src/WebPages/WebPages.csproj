@@ -111,11 +111,11 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="SenseNet.BlobStorage, Version=7.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SenseNet.BlobStorage.7.0.0-beta1\lib\net451\SenseNet.BlobStorage.dll</HintPath>
+      <HintPath>..\packages\SenseNet.BlobStorage.7.0.0-beta2\lib\net451\SenseNet.BlobStorage.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="SenseNet.Common, Version=7.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SenseNet.Common.7.0.0-beta1\lib\net451\SenseNet.Common.dll</HintPath>
+      <HintPath>..\packages\SenseNet.Common.7.0.0-beta2\lib\net451\SenseNet.Common.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="SenseNet.Configuration, Version=7.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -127,7 +127,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="SenseNet.Preview, Version=7.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SenseNet.Preview.7.0.0-beta1\lib\net451\SenseNet.Preview.dll</HintPath>
+      <HintPath>..\packages\SenseNet.Preview.7.0.0-beta2\lib\net451\SenseNet.Preview.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="SenseNet.Security, Version=2.3.0.0, Culture=neutral, processorArchitecture=MSIL">
