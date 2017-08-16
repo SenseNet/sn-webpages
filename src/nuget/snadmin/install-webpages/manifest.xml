@@ -28,6 +28,7 @@
       <Delete>/Root/Trash/(apps)/TrashBag/Restore</Delete>
 
       <EditAllowedChildTypes contentType="PortalRoot" add="DocumentLibrary,Portlets,Skins" />
+      <EditAllowedChildTypes contentType="Site" add="Page" />
 
       <Import target="/Root" LogLevel="Verbose" source="@source" />
     </Phase>
