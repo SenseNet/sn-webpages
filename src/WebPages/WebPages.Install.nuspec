@@ -17,6 +17,11 @@
       <dependency id="SenseNet.Services.Install" version="7.0.0-beta3" />
       <dependency id="SenseNet.WebPages" version="7.0.0-beta21" />
       <dependency id="SenseNet.SnAdmin" version="1.4.3" />
+      <dependency id="Microsoft.AspNet.SignalR.Client" version="2.2.2" />
+      <dependency id="Microsoft.AspNet.SignalR.Core" version="2.2.2" />
+      <dependency id="Microsoft.Owin" version="2.1.0" />
+      <dependency id="Microsoft.Owin.Security" version="2.1.0" />
+      <dependency id="Owin" version="1.0" />
     </dependencies>
   </metadata>
   <files>
