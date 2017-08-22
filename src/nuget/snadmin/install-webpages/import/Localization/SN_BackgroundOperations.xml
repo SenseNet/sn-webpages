@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources>
+  <ResourceClass name="BackgroundOperations">
+    <Languages>
+      <Language cultureName="en">
+        <data name="filterByStatus" xml:space="preserve">
+          <value>Filter By Status:</value>
+        </data>
+        <data name="showAllMachines" xml:space="preserve">
+          <value>Show All Machines</value>
+        </data>
+        <data name="NoData" xml:space="preserve">
+          <value>This list is empty...</value>
+        </data>
+        <data name="Disconnected" xml:space="preserve">
+          <value>Disconnected</value>
+        </data>
+        <data name="Connected" xml:space="preserve">
+          <value>Connected</value>
+        </data>
+        <data name="Idle" xml:space="preserve">
+          <value>Idle</value>
+        </data>
+        <data name="GeneralError" xml:space="preserve">
+          <value>General error</value>
+        </data>
+        <data name="CommunicationError" xml:space="preserve">
+          <value>Communication error</value>
+        </data>
+        <data name="ExecutionError" xml:space="preserve">
+          <value>Execution error</value>
+        </data>
+        <data name="TaskError" xml:space="preserve">
+          <value>Task error</value>
+        </data>
+        <data name="ExecutorTerminated" xml:space="preserve">
+          <value>Executor terminated</value>
+        </data>
+        <data name="ConnectionSlow" xml:space="preserve">
+          <value>Connection slow</value>
+        </data>
+        <data name="AgentDisconnected" xml:space="preserve">
+          <value>Agent disconnected</value>
+        </data>
+        <data name="Agent initialized" xml:space="preserve">
+          <value>AgentInitialized</value>
+        </data>
+        <data name="AgentConnected" xml:space="preserve">
+          <value>Agent connected</value>
+        </data>
+        <data name="AgentReconnected" xml:space="preserve">
+          <value>Agent reconnected</value>
+        </data>
+        <data name="ExecutionStarted" xml:space="preserve">
+          <value>Execution started</value>
+        </data>
+        <data name="ExecutionFinished" xml:space="preserve">
+          <value>Execution started</value>
+        </data>
+        <data name="cpuUsage" xml:space="preserve">
+          <value>CPU Usage</value>
+        </data>
+        <data name="workingProgress" xml:space="preserve">
+          <value>Please wait, working in progress!</value>
+        </data>
+      </Language>
+      <Language cultureName="hu">
+        <data name="filterByStatus" xml:space="preserve">
+          <value>Szűrés státusz szerint:</value>
+        </data>
+        <data name="showAllMachines" xml:space="preserve">
+          <value>Összes gép megjelenítése</value>
+        </data>
+        <data name="NoData" xml:space="preserve">
+          <value>Ez a lista üres...</value>
+        </data>
+        <data name="Disconnected" xml:space="preserve">
+          <value>Disconnected</value>
+        </data>
+        <data name="Connected" xml:space="preserve">
+          <value>Connected</value>
+        </data>
+        <data name="Idle" xml:space="preserve">
+          <value>Idle</value>
+        </data>
+        <data name="GeneralError" xml:space="preserve">
+          <value>General error</value>
+        </data>
+        <data name="CommunicationError" xml:space="preserve">
+          <value>Communication error</value>
+        </data>
+        <data name="ExecutionError" xml:space="preserve">
+          <value>Execution error</value>
+        </data>
+        <data name="TaskError" xml:space="preserve">
+          <value>Task error</value>
+        </data>
+        <data name="ExecutorTerminated" xml:space="preserve">
+          <value>Executor terminated</value>
+        </data>
+        <data name="ConnectionSlow" xml:space="preserve">
+          <value>Connection slow</value>
+        </data>
+        <data name="AgentDisconnected" xml:space="preserve">
+          <value>Agent disconnected</value>
+        </data>
+        <data name="Agent initialized" xml:space="preserve">
+          <value>AgentInitialized</value>
+        </data>
+        <data name="AgentConnected" xml:space="preserve">
+          <value>Agent connected</value>
+        </data>
+        <data name="AgentReconnected" xml:space="preserve">
+          <value>Agent reconnected</value>
+        </data>
+        <data name="ExecutionStarted" xml:space="preserve">
+          <value>Execution started</value>
+        </data>
+        <data name="ExecutionFinished" xml:space="preserve">
+          <value>Execution finished</value>
+        </data>
+        <data name="cpuUsage" xml:space="preserve">
+          <value>CPU Usage</value>
+        </data>
+        <data name="ExecutionFinished" xml:space="preserve">
+          <value>Execution started</value>
+        </data>
+        <data name="workingProgress" xml:space="preserve">
+          <value>Please wait, working in progress!</value>
+        </data>
+      </Language>
+    </Languages>
+  </ResourceClass>
+</Resources>
