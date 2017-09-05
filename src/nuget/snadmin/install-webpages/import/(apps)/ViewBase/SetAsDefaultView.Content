@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentMetaData>
+  <ContentType>Application</ContentType>
+  <ContentName>SetAsDefaultView</ContentName>
+  <Fields>
+    <DisplayName><![CDATA[Set as default view]]></DisplayName>
+    <ActionTypeName><![CDATA[SetAsDefaultViewAction]]></ActionTypeName>
+	<Scenario>ListItem;ManageViewsListItem</Scenario>
+	<Icon><![CDATA[right]]></Icon>
+  </Fields>
+  <Permissions>
+    <Clear />
+  </Permissions>
+</ContentMetaData>

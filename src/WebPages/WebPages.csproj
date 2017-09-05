@@ -215,6 +215,7 @@
     <Compile Include="ApplicationModel\ListItemScenario.cs" />
     <Compile Include="ApplicationModel\ManageViewsAction.cs" />
     <Compile Include="ApplicationModel\NewScenario.cs" />
+    <Compile Include="ApplicationModel\PurgeFromProxyAction.cs" />
     <Compile Include="ApplicationModel\SetAsDefaultViewAction.cs" />
     <Compile Include="ApplicationModel\SettingsScenario.cs" />
     <Compile Include="ApplicationModel\SmartAppHelperApi.cs" />
@@ -235,6 +236,7 @@
     <Compile Include="Hubs\SenseNetAuthorizeHubAttribute.cs" />
     <Compile Include="Hubs\TaskMonitorHub.cs" />
     <Compile Include="MasterPage.cs" />
+    <Compile Include="Packaging\Steps\RenameContentListViewColumn.cs" />
     <Compile Include="Page.cs" />
     <Compile Include="PageBase.cs">
       <SubType>ASPXCodeBehind</SubType>

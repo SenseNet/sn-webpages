@@ -1,0 +1,40 @@
+{
+  "name": "sn-webpages",
+  "version": "7.0.0",
+  "description": "UI layer for the sensenet ECM platform built using ASP.NET pages, webparts and controls.",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SenseNet/sn-webpages"
+  },
+  "keywords": [
+    "sensenet", "ecm"
+  ],
+  "author": "SenseNet",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "your-repos-issues-url"
+  },
+  "homepage": "https://sensenet.com",
+  "config": {
+    "commitizen": {
+      "path": "sensenet-kfi-cz-conventional-changelog"
+    }
+  },
+  "dependencies": {
+    "conventional-commit-types": "^2.0.0",
+    "lodash.map": "^4.5.1",
+    "longest": "^1.0.1",
+    "pad-right": "^0.2.2",
+    "right-pad": "^1.0.1",
+    "word-wrap": "^1.0.3",
+    "sensenet-kfi-cz-conventional-changelog": "^1.0.0"
+  },
+  "devDependencies": {
+    "commitizen": "2.9.6",
+    "semantic-release": "^6.3.2"
+  },
+  "scripts": {
+    "commit": "git-cz"
+  }
+}
