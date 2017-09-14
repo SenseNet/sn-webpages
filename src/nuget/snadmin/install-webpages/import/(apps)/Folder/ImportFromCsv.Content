@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentMetaData>
+  <ContentType>Page</ContentType>
+  <ContentName>ImportFromCsv</ContentName>
+  <Fields>
+    <PageTemplateNode>
+      <Path>/Root/Global/pagetemplates/sn-layout-dialog.html</Path>
+    </PageTemplateNode>
+    <Index>5400</Index>
+    <PersonalizationSettings attachment="ImportFromCsv.PersonalizationSettings" />
+    <DisplayName><![CDATA[$Action,ImportFromCsv]]></DisplayName>
+    <Scenario><![CDATA[ListActions]]></Scenario>
+    <Icon><![CDATA[upload]]></Icon>
+    <RequiredPermissions>See;Open;AddNew</RequiredPermissions>
+  </Fields>
+  <Permissions>
+    <Clear />
+  </Permissions>
+</ContentMetaData>
