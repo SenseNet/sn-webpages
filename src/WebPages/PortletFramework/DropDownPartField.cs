@@ -82,21 +82,16 @@ namespace SenseNet.Portal.UI.PortletFramework
             if (this.DropdownOptions.CommonType == DropDownCommonType.ContentTypeDropdown)
             {
                 // special use-case, content type list is defined in webconfig
-                NodeQueryResult contentTypeNames = GetWebContentTypeList();
-                if (contentTypeNames.Count > 0)
-                {
-                    foreach (var ctContent in contentTypeNames.Nodes.Select(Content.Create))
-                    {
-                        this.Items.Add(new ListItem(ctContent.DisplayName, ctContent.Name));
-                    }
-                }
+                var contentTypeNodes = GetWebContentTypeList();
+                foreach (var ctContent in contentTypeNodes.Select(Content.Create))
+                    this.Items.Add(new ListItem(ctContent.DisplayName, ctContent.Name));
             }
 
             if (!string.IsNullOrEmpty(this.DropdownOptions.Query))
             {
                 // the list is built up from a query
-                var sortinfo = new List<SortInfo>() { new SortInfo() { FieldName = "Name", Reverse = false } };
-                var settings = new QuerySettings() { EnableAutofilters = FilterStatus.Disabled, Sort = sortinfo };
+                var sortinfo = new List<SortInfo> {new SortInfo("Name")};
+                var settings = new QuerySettings { EnableAutofilters = FilterStatus.Disabled, Sort = sortinfo };
                 var query = ContentQuery.CreateQuery(this.DropdownOptions.Query, settings);
                 var result = query.Execute();
                 if (result.Count == 0)
@@ -148,36 +143,19 @@ namespace SenseNet.Portal.UI.PortletFramework
         {
             return ActiveSchema.NodeTypes.ToNameArray().Contains(ctdName);
         }
-        public static NodeQueryResult GetWebContentTypeList()
+        public static IEnumerable<Node> GetWebContentTypeList()
         {
             var contentTypeNames = WebApplication.WebContentNameList;
             if (string.IsNullOrEmpty(contentTypeNames))
                 contentTypeNames = DefaultContentTypeName;
 
-            var list = contentTypeNames.Split(',');
-            var validCtdNames = list.Where(c => IsValidContentType(c.Trim())).Select(c => c.Trim()).ToList();
+            var validCtdNames = contentTypeNames.Split(',').Select(c => c.Trim()).Where(IsValidContentType).ToArray();
+            if (validCtdNames.Length == 0)
+                return new Node[0];
 
-            var expressionList = new ExpressionList(ChainOperator.Or);
-            var query = new NodeQuery();
-            foreach (var ctd in validCtdNames)
-            {
-                var stringExpressionValue = RepositoryPath.Combine(Repository.ContentTypesFolderPath, string.Concat(ActiveSchema.NodeTypes[ctd].NodeTypePath, "/"));
-                expressionList.Add(new StringExpression(StringAttribute.Path, StringOperator.StartsWith, stringExpressionValue));
-            }
-
-            if (validCtdNames.Count == 0 && IsValidContentType(DefaultContentTypeName))
-            {
-                var stringExpressionValue = RepositoryPath.Combine(Repository.ContentTypesFolderPath, string.Concat(ActiveSchema.NodeTypes[DefaultContentTypeName].NodeTypePath, "/"));
-                expressionList.Add(new StringExpression(StringAttribute.Path, StringOperator.StartsWith, stringExpressionValue));
-            }
-
-            // no expressions, nothing to query for
-            if (expressionList.Expressions.Count == 0)
-                return new NodeQueryResult(new int[0]);
-
-            query.Add(expressionList);
-
-            return query.Execute();
+            var namesClause = string.Join(" ", validCtdNames);
+            var cql = $"+TypeIs:ContentType +Name:({namesClause})";
+            return ContentQuery.Query(cql, QuerySettings.AdminSettings).Nodes;
         }
     }
 }

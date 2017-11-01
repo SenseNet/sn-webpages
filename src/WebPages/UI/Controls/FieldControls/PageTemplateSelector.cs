@@ -7,8 +7,10 @@ using System.Web.UI.WebControls;
 using SenseNet.ContentRepository.Storage;
 using SenseNet.ContentRepository.Storage.Search;
 using System.Globalization;
+using System.Linq;
 using SenseNet.Configuration;
 using SenseNet.ContentRepository;
+using SenseNet.Search;
 
 namespace SenseNet.Portal.UI.Controls
 {
@@ -196,14 +198,16 @@ namespace SenseNet.Portal.UI.Controls
         private static void LoadPageTemplates(ListBox listBox)
         {
             if (listBox == null) 
-                throw new ArgumentNullException("listBox");
-            
-            var pageTemplates = GetPageTemplates();
+                throw new ArgumentNullException(nameof(listBox));
 
-            if (pageTemplates.Count == 0)
+            var pageTemplates = ContentQuery.Query(
+                $"+TypeIs:{typeof(PageTemplate).Name} +InTree:{RepositoryStructure.PageTemplateFolderPath} .SORT:Name")
+                .Nodes;
+
+            if (!pageTemplates.Any())
                 throw new ApplicationException(String.Format(CultureInfo.InvariantCulture, "Couldn't find any pagetemplates."));
 
-            AddListToControl(pageTemplates.Nodes, listBox);
+            AddListToControl(pageTemplates, listBox);
         }
         private static void AddListToControl(IEnumerable<Node> pageTemplates, ListBox listBox)
         {
@@ -227,14 +231,6 @@ namespace SenseNet.Portal.UI.Controls
         private static string GetOnChangeScript(string pictureElementId)
         {
             return string.Format("this.options[this.selectedIndex].className=='nopreview'?document.getElementById('{2}').src='{0}':document.getElementById('{2}').src='{1}/'+this.value+'.png'", DefaultPreviewIconPath, RepositoryStructure.PageTemplateFolderPath,pictureElementId);
-        }
-        private static NodeQueryResult GetPageTemplates()
-        {
-            var query = new NodeQuery();
-            query.Add(new TypeExpression(ActiveSchema.NodeTypes[typeof(PageTemplate).Name], true));
-            query.Add(new StringExpression(StringAttribute.Path, StringOperator.StartsWith, RepositoryStructure.PageTemplateFolderPath));
-            query.Orders.Add(new SearchOrder(StringAttribute.Name, OrderDirection.Asc));
-            return query.Execute();
         }
         private static Node GetPageTemplateNode(ListControl listControl)
         {

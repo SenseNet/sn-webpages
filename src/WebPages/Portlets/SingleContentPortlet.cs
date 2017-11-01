@@ -19,6 +19,7 @@ using SNC = SenseNet.ContentRepository;
 using System.Linq;
 using SenseNet.Configuration;
 using SenseNet.Diagnostics;
+using SenseNet.Search;
 using Content = SenseNet.ContentRepository.Content;
 
 namespace SenseNet.Portal.Portlets
@@ -678,18 +679,12 @@ namespace SenseNet.Portal.Portlets
             _contentTypeNames = new DropDownList();
             _contentTypeNames.ID = "ContentTypeNames";
 
-            var result = DropDownPartField.GetWebContentTypeList();
-            if (result.Count > 0)
+            var nodes = DropDownPartField.GetWebContentTypeList();
+            var gc = (GenericContent)PortalContext.Current.ContextNode;
+            foreach (var ctContent in nodes.Select(Content.Create))
             {
-                IEnumerable<Node> nodes = result.Nodes;
-                var gc = PortalContext.Current.ContextNode as GenericContent;
-                foreach (var ctContent in nodes.Select(Content.Create))
-                {
-                    if (!gc.IsAllowedChildType(ctContent.Name))
-                        continue;
-
+                if (gc.IsAllowedChildType(ctContent.Name))
                     _contentTypeNames.Items.Add(new ListItem(ctContent.DisplayName, ctContent.Name));
-                }
             }
 
             if (_contentTypeNames.Items.Count > 0)
@@ -748,26 +743,19 @@ namespace SenseNet.Portal.Portlets
         {
             var result = false;
 
-            if (String.IsNullOrEmpty(this._contentPath) &&
-                !String.IsNullOrEmpty(this.UsedContentTypeName) &&
-                this._displayMode != GetViewModeName(ViewMode.InlineNew))
+            if (string.IsNullOrEmpty(this._contentPath) &&
+                !string.IsNullOrEmpty(this.UsedContentTypeName) &&
+                _displayMode != GetViewModeName(ViewMode.InlineNew))
             {
                 try
                 {
-                    var query = new NodeQuery();
-                    query.Add(new TypeExpression(ActiveSchema.NodeTypes[this.UsedContentTypeName], true));
-                    query.Add(new IntExpression(IntAttribute.ParentId, ValueOperator.Equal, PortalContext.Current.ContextNodeHead.Id));
-
-                    var queryResult = query.Execute().Nodes.ToList();
-
-                    if (queryResult.Count > 0)
+                    var cql = $"+TypeIs:{UsedContentTypeName} +InFolder:{PortalContext.Current.ContextNodeHead.Path} .SORT:Index";
+                    var qresult = ContentQuery.Query(cql, QuerySettings.Default);
+                    var firstNode = qresult.Nodes.FirstOrDefault();
+                    if (firstNode != null)
                     {
-                        var nodeComparer = new NodeComparer<Node>();
-                        queryResult.Sort(nodeComparer);
-
-                        this._contentPath = queryResult[0].Path;
-                        this._displayMode = GetViewModeName(ViewMode.Browse);
-
+                        _contentPath = firstNode.Path;
+                        _displayMode = GetViewModeName(ViewMode.Browse);
                         result = true;
                     }
                 }

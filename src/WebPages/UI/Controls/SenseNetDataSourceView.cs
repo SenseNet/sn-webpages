@@ -542,6 +542,8 @@ namespace SenseNet.Portal.UI.Controls
 
         // ======================================================== Helper classes
 
+        private enum OrderDirection { Asc, Desc }
+
         private struct SortOrderInfo
         {
             public string PropertyName { get; set; }
