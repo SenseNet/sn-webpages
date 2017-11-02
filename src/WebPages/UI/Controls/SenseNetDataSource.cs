@@ -23,8 +23,6 @@ namespace SenseNet.Portal.UI.Controls
 
         public string ContextInfoID { get; set; }
 
-        /**///public Expression QueryFilter { get; set; }
-
         private string _query;
         public string Query
         {
@@ -131,7 +129,6 @@ namespace SenseNet.Portal.UI.Controls
                                 Content = this.Content,
                                 MemberName = this.MemberName,
                                 FieldNames = this.FieldNames,
-                                /**///QueryFilter = this.QueryFilter,
                                 QueryText = this.Query,
                                 ShowHidden = this.ShowHidden,
                                 Settings = this.Settings,

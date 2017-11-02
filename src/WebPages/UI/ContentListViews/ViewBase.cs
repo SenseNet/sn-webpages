@@ -57,24 +57,6 @@ namespace SenseNet.Portal.UI.ContentListViews
 
         #endregion
 
-        /**///#region view_queries
-
-        //protected virtual NodeQuery GetFilter()
-        //{
-        //    NodeQuery filter = null;
-        //    if (!string.IsNullOrEmpty(ViewDefinition.FilterXml))
-        //    {
-        //        if (ViewDefinition.FilterIsContentQuery)
-        //            return null;
-                
-        //        filter = NodeQuery.Parse(Query.GetNodeQueryXml(ViewDefinition.FilterXml));
-        //    }
-
-        //    return filter;
-        //}
-
-        //#endregion
-
         #region aspnet_members
 
         protected override void OnLoad(EventArgs e)

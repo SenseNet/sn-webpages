@@ -33,25 +33,6 @@ namespace SenseNet.Portal.Portlets
             _childrenFilter = filter;
         }
 
-        /**///protected override NodeQueryResult QueryChildrenFromLucene(int thisId)
-        //{
-        //    if (string.IsNullOrEmpty(_childrenFilter))
-        //    {
-        //        return base.QueryChildrenFromLucene(thisId);
-        //    }
-        //    else
-        //    {
-        //        // We need to apply a query filter. Execute a content 
-        //        // query and create a node query result on-the-fly.
-        //        var query = ContentQuery.CreateQuery("+ParentId:@0", null, thisId);
-
-        //        if (!string.IsNullOrEmpty(_childrenFilter))
-        //            query.AddClause(_childrenFilter);
-
-        //        return new NodeQueryResult(query.ExecuteToIds(ExecutionHint.ForceIndexedEngine));
-        //    }
-        //}
-
         protected override bool MoveToFirstChild()
         {
             if (!string.IsNullOrEmpty(_contextPath))
