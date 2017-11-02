@@ -57,23 +57,23 @@ namespace SenseNet.Portal.UI.ContentListViews
 
         #endregion
 
-        #region view_queries
+        /**///#region view_queries
 
-        protected virtual NodeQuery GetFilter()
-        {
-            NodeQuery filter = null;
-            if (!string.IsNullOrEmpty(ViewDefinition.FilterXml))
-            {
-                if (ViewDefinition.FilterIsContentQuery)
-                    return null;
+        //protected virtual NodeQuery GetFilter()
+        //{
+        //    NodeQuery filter = null;
+        //    if (!string.IsNullOrEmpty(ViewDefinition.FilterXml))
+        //    {
+        //        if (ViewDefinition.FilterIsContentQuery)
+        //            return null;
                 
-                filter = NodeQuery.Parse(Query.GetNodeQueryXml(ViewDefinition.FilterXml));
-            }
+        //        filter = NodeQuery.Parse(Query.GetNodeQueryXml(ViewDefinition.FilterXml));
+        //    }
 
-            return filter;
-        }
+        //    return filter;
+        //}
 
-        #endregion
+        //#endregion
 
         #region aspnet_members
 
@@ -83,18 +83,10 @@ namespace SenseNet.Portal.UI.ContentListViews
 
             if (ViewDefinition != null)
             {
-                if (ViewDefinition.FilterIsContentQuery)
-                {
-                    if (this.OwnerFrame == null || this.OwnerFrame.OwnerPortlet == null)
-                        ViewDataSource.Query = ViewDefinition.FilterXml;
-                    else
-                        ViewDataSource.Query = this.OwnerFrame.OwnerPortlet.ReplaceTemplates(ViewDefinition.FilterXml);
-                    
-                }
+                if (this.OwnerFrame == null || this.OwnerFrame.OwnerPortlet == null)
+                    ViewDataSource.Query = ViewDefinition.FilterXml;
                 else
-                {
-                    ViewDataSource.QueryFilter = GetFilter();
-                }
+                    ViewDataSource.Query = this.OwnerFrame.OwnerPortlet.ReplaceTemplates(ViewDefinition.FilterXml);
             }
 
             if (ViewDataSource.Settings == null)

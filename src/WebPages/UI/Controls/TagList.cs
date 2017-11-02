@@ -8,6 +8,7 @@ using SenseNet.ContentRepository;
 using System.Drawing;
 using System.Web;
 using SenseNet.Portal.UI.Controls;
+using SenseNet.Search;
 
 [assembly: WebResource(TagList.ClientResourceName, "application/x-javascript")]
 namespace SenseNet.Portal.UI.Controls
@@ -352,10 +353,8 @@ namespace SenseNet.Portal.UI.Controls
         /// <returns>True if the tag is on blacklist, false if it isn't.</returns>
         private static bool IsBlacklisted(string tag)
         {
-            var query = SenseNet.Search.LucQuery.Parse("+TypePath:genericcontent/tag +IsBlacklisted:true +DisplayName:" + tag.ToLower());
-            var result = query.Execute();
-
-            return (result.Count() > 0);
+            var result = ContentQuery.Query("+TypePath:genericcontent/tag +IsBlacklisted:true +DisplayName:" + tag.ToLower());
+            return result.Count > 0;
         }
         /// <summary>
         /// Initializes the TagElement list from the given string array

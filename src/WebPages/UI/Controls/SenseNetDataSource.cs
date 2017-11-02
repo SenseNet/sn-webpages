@@ -8,6 +8,7 @@ using SenseNet.ContentRepository.Storage.Search;
 using SenseNet.Portal.Virtualization;
 using SenseNet.ContentRepository.Storage;
 using SenseNet.ContentRepository.Schema;
+using SenseNet.ContentRepository.Search;
 using SenseNet.ContentRepository.Storage.Schema;
 using SenseNet.Portal.UI.PortletFramework;
 using SenseNet.Search;
@@ -22,7 +23,7 @@ namespace SenseNet.Portal.UI.Controls
 
         public string ContextInfoID { get; set; }
 
-        public Expression QueryFilter { get; set; }
+        /**///public Expression QueryFilter { get; set; }
 
         private string _query;
         public string Query
@@ -76,7 +77,7 @@ namespace SenseNet.Portal.UI.Controls
         {
             get
             {
-                return LucQuery.IsAutofilterEnabled(Settings.EnableAutofilters);
+                return SearchManager.IsAutofilterEnabled(Settings.EnableAutofilters);
             }
             set
             {
@@ -130,7 +131,7 @@ namespace SenseNet.Portal.UI.Controls
                                 Content = this.Content,
                                 MemberName = this.MemberName,
                                 FieldNames = this.FieldNames,
-                                QueryFilter = this.QueryFilter,
+                                /**///QueryFilter = this.QueryFilter,
                                 QueryText = this.Query,
                                 ShowHidden = this.ShowHidden,
                                 Settings = this.Settings,

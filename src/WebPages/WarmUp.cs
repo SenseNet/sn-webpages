@@ -143,7 +143,7 @@ namespace SenseNet.Portal
             
             // template replacers and resolvers
             ThreadPool.QueueUserWorkItem(delegate { TemplateManager.Init(); });
-            ThreadPool.QueueUserWorkItem(delegate { NodeQuery.InitTemplateResolvers(); });
+            /**///ThreadPool.QueueUserWorkItem(delegate { NodeQuery.InitTemplateResolvers(); });
 
             // jscript evaluator
             ThreadPool.QueueUserWorkItem(delegate { JscriptEvaluator.Init(); });
