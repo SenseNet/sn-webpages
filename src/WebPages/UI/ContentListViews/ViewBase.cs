@@ -65,10 +65,9 @@ namespace SenseNet.Portal.UI.ContentListViews
 
             if (ViewDefinition != null)
             {
-                if (this.OwnerFrame == null || this.OwnerFrame.OwnerPortlet == null)
-                    ViewDataSource.Query = ViewDefinition.FilterXml;
-                else
-                    ViewDataSource.Query = this.OwnerFrame.OwnerPortlet.ReplaceTemplates(ViewDefinition.FilterXml);
+                ViewDataSource.Query = OwnerFrame?.OwnerPortlet == null
+                    ? ViewDefinition.FilterXml
+                    : this.OwnerFrame.OwnerPortlet.ReplaceTemplates(ViewDefinition.FilterXml);
             }
 
             if (ViewDataSource.Settings == null)

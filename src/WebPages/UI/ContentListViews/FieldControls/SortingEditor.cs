@@ -20,7 +20,7 @@ namespace SenseNet.Portal.UI.ContentListViews.FieldControls
                 if (_systemContext == null)
                 {
                     var node = Content.ContentHandler as GenericContent;
-                    _systemContext = (node != null) ? node.MostRelevantSystemContext : null;
+                    _systemContext = node?.MostRelevantSystemContext;
                 }
 
                 return _systemContext;
@@ -131,8 +131,8 @@ namespace SenseNet.Portal.UI.ContentListViews.FieldControls
             foreach (var fs in this.AvailableFields)
             {
                 var title = duplicatedTitles.Contains(fs.DisplayName)
-                                ? string.Format("{0} ({1})", fs.DisplayName, SenseNet.ContentRepository.Content.Create(fs.Owner).DisplayName)
-                                : fs.DisplayName;
+                                ? $"{fs.DisplayName} ({ContentRepository.Content.Create(fs.Owner).DisplayName})"
+                    : fs.DisplayName;
 
                 this.FieldNameDropDown.Items.Add(new ListItem(HttpUtility.HtmlEncode(title), fs.Name));
             }
@@ -180,7 +180,7 @@ namespace SenseNet.Portal.UI.ContentListViews.FieldControls
 
             for (var i = 0; i < dd.Items.Count; i++)
             {
-                if (dd.Items[i].Value.CompareTo(value) != 0)
+                if (string.Compare(dd.Items[i].Value, value, StringComparison.InvariantCulture) != 0)
                     continue;
 
                 dd.SelectedIndex = i;
@@ -192,7 +192,7 @@ namespace SenseNet.Portal.UI.ContentListViews.FieldControls
         {
             var left = x.DisplayName ?? string.Empty;
             var right = y.DisplayName ?? string.Empty;
-            return left.CompareTo(right);
+            return string.Compare(left, right, StringComparison.InvariantCulture);
         }
     }
 }
