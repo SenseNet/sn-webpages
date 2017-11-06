@@ -750,7 +750,7 @@ namespace SenseNet.Portal.Portlets
                 try
                 {
                     var cql = $"+TypeIs:{UsedContentTypeName} +InFolder:{PortalContext.Current.ContextNodeHead.Path} .SORT:Index";
-                    var qresult = ContentQuery.Query(cql, QuerySettings.Default);
+                    var qresult = ContentQuery.Query(cql, QuerySettings.AdminSettings);
                     var firstNode = qresult.Nodes.FirstOrDefault();
                     if (firstNode != null)
                     {

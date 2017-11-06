@@ -80,7 +80,7 @@ namespace SenseNet.Portal.UI.PortletFramework
         public static IEnumerable<Node> GetPortletsFromRepo()
         {
             var cql = $"+TypeIs:{NodeType.GetByName("Portlet").Name} +InTree:{PortletsFolderPath}";
-            return ContentQuery.Query(cql, QuerySettings.Default).Nodes;
+            return ContentQuery.Query(cql, QuerySettings.AdminSettings).Nodes;
         }
         public static IEnumerable<Node> GetCategoriesFromRepo()
         {
