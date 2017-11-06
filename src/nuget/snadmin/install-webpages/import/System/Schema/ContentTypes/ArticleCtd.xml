@@ -17,7 +17,7 @@
       <DisplayName>$Ctd-Article,Lead-DisplayName</DisplayName>
       <Description>$Ctd-Article,Lead-Description</Description>
       <Indexing>
-        <Analyzer>Lucene.Net.Analysis.Standard.StandardAnalyzer</Analyzer>
+        <Analyzer>Standard</Analyzer>
       </Indexing>
       <Configuration>
         <ControlHint>sn:RichText</ControlHint>
@@ -27,7 +27,7 @@
       <DisplayName>$Ctd-Article,Body-DisplayName</DisplayName>
       <Description>$Ctd-Article,Body-Description</Description>
       <Indexing>
-        <Analyzer>Lucene.Net.Analysis.Standard.StandardAnalyzer</Analyzer>
+        <Analyzer>Standard</Analyzer>
       </Indexing>
       <Configuration>
         <ControlHint>sn:RichText</ControlHint>
@@ -41,7 +41,7 @@
       <DisplayName>$Ctd-Article,Keywords-DisplayName</DisplayName>
       <Description>$Ctd-Article,Keywords-DisplayName</Description>
       <Indexing>
-        <Analyzer>Lucene.Net.Analysis.WhitespaceAnalyzer</Analyzer>
+        <Analyzer>Whitespace</Analyzer>
       </Indexing>
     </Field>
     <Field name="Author" type="ShortText">

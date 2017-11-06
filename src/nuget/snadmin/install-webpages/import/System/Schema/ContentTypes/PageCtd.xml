@@ -94,7 +94,7 @@
       <DisplayName>$Ctd-Page,Keywords-DisplayName</DisplayName>
       <Description>$Ctd-Page,Keywords-Description</Description>
       <Indexing>
-        <Analyzer>Lucene.Net.Analysis.WhitespaceAnalyzer</Analyzer>
+        <Analyzer>Whitespace</Analyzer>
       </Indexing>
       <Configuration>
         <VisibleBrowse>Advanced</VisibleBrowse>
@@ -106,7 +106,7 @@
       <DisplayName>$Ctd-Page,MetaDescription-DisplayName</DisplayName>
       <Description>$Ctd-Page,MetaDescription-Description</Description>
       <Indexing>
-        <Analyzer>Lucene.Net.Analysis.Standard.StandardAnalyzer</Analyzer>
+        <Analyzer>Standard</Analyzer>
       </Indexing>
       <Configuration>
         <VisibleBrowse>Advanced</VisibleBrowse>
@@ -127,7 +127,7 @@
       <DisplayName>$Ctd-Page,CustomMeta-DisplayName</DisplayName>
       <Description>$Ctd-Page,CustomMeta-Description</Description>
       <Indexing>
-        <Analyzer>Lucene.Net.Analysis.Standard.StandardAnalyzer</Analyzer>
+        <Analyzer>Standard</Analyzer>
       </Indexing>
       <Configuration>
         <VisibleBrowse>Advanced</VisibleBrowse>
