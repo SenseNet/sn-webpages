@@ -29,14 +29,12 @@ namespace SenseNet.Portal
 "SenseNet.Portal.PortletTemplateReplacer",
 "SenseNet.Portal.UI.Controls.FieldControl",
 "SenseNet.ContentRepository.Storage.ISnService",
-"SenseNet.ContentRepository.Storage.Search.IIndexDocumentProvider",
 "SenseNet.ContentRepository.Storage.Scripting.IEvaluator",
 "SenseNet.ContentRepository.Security.UserAccessProvider",
 "SenseNet.ContentRepository.Schema.ContentType",
 "SenseNet.Search.Indexing.ExclusiveTypeIndexHandler",
 "SenseNet.Search.Indexing.TypeTreeIndexHandler",
 "Lucene.Net.Analysis.KeywordAnalyzer",
-"SenseNet.Search.Indexing.DepthIndexHandler",
 "SenseNet.Search.Indexing.InTreeIndexHandler",
 "SenseNet.Search.Indexing.InFolderIndexHandler",
 "Lucene.Net.Analysis.Standard.StandardAnalyzer",
@@ -116,7 +114,6 @@ namespace SenseNet.Portal
 
         private static readonly string[] _typesToPreloadByInterface = {
 "SenseNet.ContentRepository.Storage.ISnService",
-"SenseNet.ContentRepository.Storage.Search.IIndexDocumentProvider",
 "SenseNet.ContentRepository.Storage.Scripting.IEvaluator"
                                                             };
 
