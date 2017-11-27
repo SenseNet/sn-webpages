@@ -52,6 +52,15 @@
         <data name="ComponentId" xml:space="preserve">
           <value>Component Id</value>
         </data>
+        <data name="Tool" xml:space="preserve">
+          <value>Tool</value>
+        </data>
+        <data name="Patch" xml:space="preserve">
+          <value>Patch</value>
+        </data>
+        <data name="Install" xml:space="preserve">
+          <value>Install</value>
+        </data>
       </Language>
       <Language cultureName="hu">
         <data name="VersionInfo" xml:space="preserve">
@@ -95,6 +104,15 @@
         </data>
         <data name="ComponentId" xml:space="preserve">
           <value>Komponens azonosító</value>
+        </data>
+        <data name="Tool" xml:space="preserve">
+          <value>Tool</value>
+        </data>
+        <data name="Patch" xml:space="preserve">
+          <value>Javítás</value>
+        </data>
+        <data name="Install" xml:space="preserve">
+          <value>Telepítő</value>
         </data>
       </Language>
     </Languages>

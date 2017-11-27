@@ -24,6 +24,19 @@ $(function () {
                             ComponentVersion: { type: "string" },
                             ExecutionError: { type: "string" },
                             Manifest: { type: "string" }
+                        },
+                        PType: function(){
+                            switch (this.PackageType) {
+                                case 0:
+                                    return SN.Resources.VersionInfo["Tool"]
+                                    break;
+                                case 1:
+                                    return SN.Resources.VersionInfo["Patch"]
+                                    break;
+                                default:
+                                    return SN.Resources.VersionInfo["Install"]
+                                    break;
+                            }
                         }
                     }
                 }
@@ -72,13 +85,13 @@ $(function () {
                 { field: "Id", title: "Id" },
                 { field: "ComponentId", title: SN.Resources.VersionInfo["ComponentId"] },
                 { field: "Description", title: SN.Resources.VersionInfo["Description"] },
-                { field: "PackageType", title: SN.Resources.VersionInfo["PackageType"] },
+                { field: "PType()", title: SN.Resources.VersionInfo["PackageType"]},
                 { field: "ReleaseDate", title: SN.Resources.VersionInfo["ReleaseDate"], format: "{0:MM/dd/yyyy}" },
                 { field: "ExecutionDate", title: SN.Resources.VersionInfo["ExecutionDate"], format: "{0:MM/dd/yyyy}" },
                 { field: "ExecutionResult", title: SN.Resources.VersionInfo["ExecutionResult"] },
                 { field: "ComponentVersion", title: SN.Resources.VersionInfo["ComponentVersion"] },
                 { field: "ExecutionError", title: SN.Resources.VersionInfo["ExecutionError"] },
-                {field: "Manifest", title: SN.Resources.VersionInfo["Manifest"]}
+                { field: "Manifest", title: SN.Resources.VersionInfo["Manifest"] }
             ],
             dataBound: gridDataBound
         });
