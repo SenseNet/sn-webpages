@@ -13,9 +13,6 @@
         <data name="Edition" xml:space="preserve">
           <value>Edition</value>
         </data>
-        <data name="AppId" xml:space="preserve">
-          <value>Application Id</value>
-        </data>
         <data name="Version" xml:space="preserve">
           <value>Version</value>
         </data>
@@ -24,9 +21,6 @@
         </data>
         <data name="Description" xml:space="preserve">
           <value>Description</value>
-        </data>
-        <data name="PackageLevel" xml:space="preserve">
-          <value>Package Level</value>
         </data>
         <data name="PackageType" xml:space="preserve">
           <value>Package Type</value>
@@ -40,17 +34,11 @@
         <data name="ExecutionResult" xml:space="preserve">
           <value>Execution Result</value>
         </data>
-        <data name="ApplicationVersion" xml:space="preserve">
-          <value>Application Version</value>
-        </data>
-        <data name="SenseNetVersion" xml:space="preserve">
-          <value>Sense/Net Version</value>
-        </data>
         <data name="ExecutionError" xml:space="preserve">
           <value>Execution Error</value>
         </data>
-        <data name="Applications" xml:space="preserve">
-          <value>Applications</value>
+        <data name="Components" xml:space="preserve">
+          <value>Components</value>
         </data>
         <data name="InstalledPackages" xml:space="preserve">
           <value>Installed Packages</value>
@@ -60,6 +48,9 @@
         </data>
         <data name="NoData" xml:space="preserve">
           <value>The list is empty…</value>
+        </data>
+        <data name="ComponentId" xml:space="preserve">
+          <value>Component Id</value>
         </data>
       </Language>
       <Language cultureName="hu">
@@ -72,20 +63,11 @@
         <data name="Edition" xml:space="preserve">
           <value>Kiadás</value>
         </data>
-        <data name="AppId" xml:space="preserve">
-          <value>Alkalmazás Id</value>
-        </data>
         <data name="Version" xml:space="preserve">
           <value>Verzió</value>
         </data>
-        <data name="AcceptableVersion" xml:space="preserve">
-          <value>Hivatalos verzió</value>
-        </data>
         <data name="Description" xml:space="preserve">
           <value>Leírás</value>
-        </data>
-        <data name="PackageLevel" xml:space="preserve">
-          <value>Csomag fajtája</value>
         </data>
         <data name="PackageType" xml:space="preserve">
           <value>Csomag típusa</value>
@@ -96,20 +78,11 @@
         <data name="ExecutionDate" xml:space="preserve">
           <value>Végrehajtás dátuma</value>
           </data>
-        <data name="ExecutionResult" xml:space="preserve">
-          <value>Végrehajtás eredménye</value>
-        </data>
-        <data name="ApplicationVersion" xml:space="preserve">
-          <value>Alkalmazás verzió</value>
-        </data>
-        <data name="SenseNetVersion" xml:space="preserve">
-          <value>Sense/Net verzió</value>
-        </data>
         <data name="ExecutionError" xml:space="preserve">
           <value>Végrehajtási hiba</value>
         </data>
-        <data name="Applications" xml:space="preserve">
-          <value>Alkalmazások</value>
+        <data name="Components" xml:space="preserve">
+          <value>Komponensek</value>
         </data>
         <data name="InstalledPackages" xml:space="preserve">
           <value>Telepített csomagok</value>
@@ -119,6 +92,9 @@
         </data>
         <data name="NoData" xml:space="preserve">
           <value>A lista üres…</value>
+        </data>
+        <data name="ComponentId" xml:space="preserve">
+          <value>Komponens azonosító</value>
         </data>
       </Language>
     </Languages>
