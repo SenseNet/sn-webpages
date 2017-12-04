@@ -10,9 +10,26 @@ To finalize the installation and get started with sensenet ECM WebPages, please 
 2. Change the Global.asax.cs codebehind: the application class should inherit from SenseNet.Portal.SenseNetGlobal
    Please note that this is a different base class from the one in the Services layer!
 
-3. Build your solution, make sure that there are no build errors.
+3. Configure SignalR
+   In your Startup class, please add the app.MapSignalR() call to the Configuration method so that 
+   SignalR hubs are configured correctly when the application starts.
 
-4. Install the sensenet ECM WebPages component
+   For example:
+
+   public partial class Startup
+   {
+       public void Configuration(IAppBuilder app)
+       {
+           ConfigureAuth(app);
+
+           // this is necessary for sensenet
+           app.MapSignalR();
+       }
+   }
+
+4. Build your solution, make sure that there are no build errors.
+
+5. Install the sensenet ECM WebPages component
     - open a command line and go to the \Admin\bin folder in your web folder
     - execute the install-webpages command with the SnAdmin tool
 

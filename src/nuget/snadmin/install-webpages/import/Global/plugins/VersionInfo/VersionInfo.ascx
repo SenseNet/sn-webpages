@@ -11,9 +11,8 @@
 <sn:cssrequest id="CssRequest0" runat="server" csspath="$skin/styles/SN.VersionInfo.css" />
 
 <div id="versionInfoWrapper">
-    <div id="infoBox"></div>
-    <h2><%= SenseNetResourceManager.Current.GetString("$VersionInfo,Applications") %></h2>
-    <div id="applicationsGrid"></div>
+    <h2><%= SenseNetResourceManager.Current.GetString("$VersionInfo,Components") %></h2>
+    <div id="componentsGrid"></div>
     <h2><%= SenseNetResourceManager.Current.GetString("$VersionInfo,InstalledPackages") %></h2>
     <div id="installedPackagesGrid"></div>
     <h2><%= SenseNetResourceManager.Current.GetString("$VersionInfo,Assemblies") %></h2>

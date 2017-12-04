@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentMetaData>
+  <ContentType>Page</ContentType>
+  <ContentName>PurgeFromProxy</ContentName>
+  <Fields>
+    <PageTemplateNode>
+      <Path>/Root/Global/pagetemplates/sn-layout-dialog.html</Path>
+    </PageTemplateNode>
+    <Index>8000</Index>
+    <PersonalizationSettings attachment="PurgeFromProxy.PersonalizationSettings" />
+    <DisplayName><![CDATA[$Action,PurgeFromProxy]]></DisplayName>
+    <Scenario><![CDATA[ExploreActions;Prc]]></Scenario>
+    <ActionTypeName><![CDATA[PurgeFromProxyAction]]></ActionTypeName>
+    <Icon><![CDATA[purge]]></Icon>
+  </Fields>
+  <Permissions>
+    <Clear />
+  </Permissions>
+</ContentMetaData>
