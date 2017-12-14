@@ -16,7 +16,7 @@ Contains installation artifacts (content files, content types, etc).
 
 [![NuGet](https://img.shields.io/nuget/v/SenseNet.WebPages.Install.svg)](https://www.nuget.org/packages/SenseNet.WebPages.Install)
 
-> `Install-Package SenseNet.WebPages.Install -Pre`
+> `Install-Package SenseNet.WebPages.Install`
 
 (this will install the other, dll-only package too, no need to pull that in manually)
 
@@ -25,7 +25,7 @@ A dll-only package.
 
 [![NuGet](https://img.shields.io/nuget/v/SenseNet.WebPages.svg)](https://www.nuget.org/packages/SenseNet.WebPages)
 
-> `Install-Package SenseNet.WebPages -Pre`
+> `Install-Package SenseNet.WebPages`
 
 ### Web app changes
 1. Change the Global.asax.cs codebehind: the application class should inherit from the following class: 
