@@ -77,4 +77,4 @@ After you installed this component, you will be able to log in on the main page 
 
 About how to log in and enter Content Explorer, follow this URL:
 
-https://github.com/SenseNet/sn-webpages#LogIn
+[github.com/SenseNet/sn-webpages](https://github.com/SenseNet/sn-webpages#LogIn)
