@@ -3,7 +3,7 @@
 <sn:ScriptRequest ID="toolbar" runat="server" Path="/Root/Global/scripts/sn/SN.Toolbar.js" />
 <sn:ScriptRequest ID="grid" runat="server" Path="/Root/Global/scripts/sn/SN.Grid.js" />
 
-<input type="hidden" class="language" value='<%= SenseNet.Portal.Virtualization.PortalContext.Current.Site.Language %>' />
+<input type="hidden" class="language" value='<%= SenseNet.Portal.Virtualization.PortalContext.Current?.Site?.Language ?? "en-us" %>' />
 <div class="fullWidth title">
     <h3><%= HttpUtility.HtmlEncode(GetValue("DisplayName")) %></h3>
 </div>

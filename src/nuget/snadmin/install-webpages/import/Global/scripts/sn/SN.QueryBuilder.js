@@ -1563,6 +1563,7 @@
                     }
 
                     var path = content;
+					query = query.replace(/#/g, '%23');
                     path += "?query=" + query;
                     var results = [];
                     $.ajax({

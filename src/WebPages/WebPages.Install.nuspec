@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>SenseNet.WebPages.Install</id>
-    <version>7.0.0-beta22</version>
+    <version>7.0.0</version>
     <title>sensenet ECM WebPages Install package</title>
     <authors>kavics,aniko,laci,borsi,lajos,tusmester</authors>
     <owners>Sense/Net</owners>
@@ -10,12 +10,12 @@
     <projectUrl>https://github.com/SenseNet/sn-webpages</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/SenseNet/sn-resources/master/images/sn-icon/sensenet-icon-64.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>sensenet ECM WebPages Installer contains the install content for the UI layer built on well-known ASP.NET technologies like pages, webparts and ascx views. This package contains installation items and should be installed only in a single web project. All other projects should reference the SenseNet.WebPages dll-only package.</description>
+    <description>sensenet ECM WebPages Installer contains the install content for the UI layer built on well-known ASP.NET WebForms technologies like pages, webparts and ascx views. This package contains installation items and should be installed only in a single web project. All other projects should reference the SenseNet.WebPages dll-only package.</description>
     <copyright>Copyright © Sense/Net Inc.</copyright>
     <tags>sensenet ecm ecms</tags>
     <dependencies>
-      <dependency id="SenseNet.Services.Install" version="7.0.0-beta3" />
-      <dependency id="SenseNet.WebPages" version="7.0.0-beta22" />
+      <dependency id="SenseNet.Services.Install" version="7.0.0" />
+      <dependency id="SenseNet.WebPages" version="7.0.0" />
       <dependency id="SenseNet.SnAdmin" version="1.4.3" />
       <dependency id="Microsoft.AspNet.SignalR.Client" version="2.2.2" />
       <dependency id="Microsoft.AspNet.SignalR.Core" version="2.2.2" />
