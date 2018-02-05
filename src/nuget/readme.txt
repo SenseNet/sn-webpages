@@ -10,8 +10,9 @@ To finalize the installation and get started with sensenet ECM WebPages, please 
 2. Change the Global.asax.cs codebehind: the application class should inherit from SenseNet.Portal.SenseNetGlobal
    Please note that this is a different base class from the one in the Services layer!
 
-3. Configure SignalR
-   In your Startup class, please add the app.MapSignalR() call to the Configuration method so that 
+3. OPTIONAL: Configure SignalR
+   If you want to use SignalR features in your solution (for example the Task Monitor page in the Task Management 
+   component) then please add the app.MapSignalR() call in your Startup class to the Configuration method so that 
    SignalR hubs are configured correctly when the application starts.
 
    For example:
