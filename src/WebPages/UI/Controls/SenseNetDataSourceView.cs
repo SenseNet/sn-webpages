@@ -141,7 +141,7 @@ namespace SenseNet.Portal.UI.Controls
             {
                 try
                 {
-                    // if lucene query text is given, use that
+                    // if ContentQuery text is given, use that
                     dataList = (from node in contentQuery.Execute().Nodes
                                 select Content.Create(node)).ToList();
                 }

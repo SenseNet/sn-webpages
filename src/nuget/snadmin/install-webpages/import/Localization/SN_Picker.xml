@@ -25,7 +25,7 @@
           <value>Search</value>
         </data>
         <data name="FreeText" xml:space="preserve">
-          <value><small id="sn-contentpicker-islucene" style="display: none;">Freetext and lucene query search (ie. <i>John</i> or <i>_Text:John</i>)</small><small id="sn-contentpicker-isnotlucene" style="display: none;">Simple freetext search</small></value>
+          <value><small id="sn-contentpicker-iscontentquery" style="display: none;">Freetext and content query search (ie. <i>John</i> or <i>_Text:John</i>)</small><small id="sn-contentpicker-isnotcontentquery" style="display: none;">Simple freetext search</small></value>
         </data>
         <data name="SearchRoot" xml:space="preserve">
           <value>Search Root</value>
@@ -234,7 +234,7 @@
           <value>Keresés</value>
         </data>
         <data name="FreeText" xml:space="preserve">
-          <value><small id="sn-contentpicker-islucene" style="display: none;">Szabadszavas és lucene query keresés (pl. <i>János</i> vagy <i>_Text:János</i>)</small><small id="sn-contentpicker-isnotlucene" style="display: none;">Egyszerű, szabadszavas kereső</small></value>
+          <value><small id="sn-contentpicker-iscontentquery" style="display: none;">Szabadszavas és content query keresés (pl. <i>János</i> vagy <i>_Text:János</i>)</small><small id="sn-contentpicker-isnotcontentquery" style="display: none;">Egyszerű, szabadszavas kereső</small></value>
         </data>
         <data name="SearchRoot" xml:space="preserve">
           <value>Ebben keressen</value>

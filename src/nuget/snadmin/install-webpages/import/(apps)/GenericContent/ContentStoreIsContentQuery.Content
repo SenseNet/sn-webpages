@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ContentMetaData>
   <ContentType>GenericODataApplication</ContentType>
-  <ContentName>ContentStoreIsLuceneQuery</ContentName>
+  <ContentName>ContentStoreIsContentQuery</ContentName>
   <Fields>
     <ClassName><![CDATA[SenseNet.Portal.ContentStore.ContentStoreApi]]></ClassName>
-    <MethodName><![CDATA[IsLuceneQuery]]></MethodName>
+    <MethodName><![CDATA[IsContentQuery]]></MethodName>
     <Parameters><![CDATA[string rnd]]></Parameters>
-    <DisplayName><![CDATA[ContentStoreIsLuceneQuery]]></DisplayName>
+    <DisplayName><![CDATA[ContentStoreIsContentQuery]]></DisplayName>
     <Description><![CDATA[]]></Description>
     <Scenario><![CDATA[]]></Scenario>
     <ActionTypeName><![CDATA[GenericODataOperation]]></ActionTypeName>

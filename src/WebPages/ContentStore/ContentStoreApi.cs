@@ -8,8 +8,6 @@ using cs = SenseNet.Services.ContentStore;
 using SenseNet.ContentRepository;
 using SenseNet.ContentRepository.Storage.Security;
 using SenseNet.Search;
-using SenseNet.ContentRepository.Storage.Search;
-using SenseNet.ContentRepository.Storage.Schema;
 using SenseNet.ApplicationModel;
 using SenseNet.Configuration;
 using SenseNet.ContentRepository.Search;
@@ -145,15 +143,16 @@ namespace SenseNet.Portal.ContentStore
         }
 
         [ODataFunction]
-        public static bool IsLuceneQuery(Content content, string rnd) //UNDONE: Do not use "Lucene"
+        [Obsolete("Use IsContentQuery instead.")]
+        public static bool IsLuceneQuery(Content content, string rnd)
+        {
+            return IsContentQuery(content, rnd);
+        }
+        [ODataFunction]
+        public static bool IsContentQuery(Content content, string rnd)
         {
             AssertPermission(PlaceholderPath);
 
-            return IsLuceneQueryInternal();
-        }
-
-        private static bool IsLuceneQueryInternal()
-        {
             return SearchManager.IsOuterEngineEnabled;
         }
 
@@ -162,16 +161,16 @@ namespace SenseNet.Portal.ContentStore
         {
             AssertPermission(PlaceholderPath);
 
-            if (IsLuceneQueryInternal())
+            if (SearchManager.IsOuterEngineEnabled)
             {
-                return SearchLucene(searchStr, searchRoot, contentTypes, simpleContent);
+                return SearchContentQuery(searchStr, searchRoot, contentTypes, simpleContent);
             }
-            throw new SnNotSupportedException("ContemtQuery is disabled.");
+            throw new SnNotSupportedException("ContentQuery is disabled.");
         }
 
-        private static object[] SearchLucene(string searchStr, string searchRoot, string contentTypes, bool simpleContent = false)
+        private static object[] SearchContentQuery(string searchStr, string searchRoot, string contentTypes, bool simpleContent = false)
         {
-            var queryStr = CreateLuceneQueryString(searchStr, searchRoot, contentTypes);
+            var queryStr = CreateContentQueryString(searchStr, searchRoot, contentTypes);
             var query = ContentQuery.CreateQuery(queryStr, new QuerySettings
             {
                 Sort = new List<SortInfo> { new SortInfo("DisplayName") },
@@ -193,18 +192,18 @@ namespace SenseNet.Portal.ContentStore
             }
         }
 
-        private static bool IsLuceneSyntax(string s)
+        private static bool IsContentQuerySyntax(string s)
         {
             return s.Contains(":") || s.Contains("+") || s.Contains("*");
         }
 
-        private static string CreateLuceneQueryString(string searchStr, string searchRoot, string contentTypesStr)
+        private static string CreateContentQueryString(string searchStr, string searchRoot, string contentTypesStr)
         {
             var queryStr = string.Empty;
 
             if (!string.IsNullOrEmpty(searchStr))
             {
-                if (!IsLuceneSyntax(searchStr))
+                if (!IsContentQuerySyntax(searchStr))
                 {
                     // more than one word: _Text:<kifejezés>
                     // one word without quotation marks: _Text:<kifejezés>*
@@ -226,20 +225,20 @@ namespace SenseNet.Portal.ContentStore
                 // -> +(_Text:user1 _Text:user2) +(<ancestor and contentype queries>)
                 // ie.: +_Text:user1 +_Text:user2 
                 // -> +(+_Text:user1 +_Text:user2) +(<ancestor and contentype queries>)
-                searchStr = string.Format("+({0})", searchStr);
+                searchStr = $"+({searchStr})";
 
                 queryStr = searchStr;
             }
 
             if (!string.IsNullOrEmpty(searchRoot))
             {
-                var pathQuery = string.Format("+InTree:\"{0}\"", searchRoot.ToLower());
+                var pathQuery = $"+InTree:\"{searchRoot.ToLower()}\"";
                 queryStr = string.Concat(queryStr, " ", pathQuery);
             }
 
             if (!string.IsNullOrEmpty(contentTypesStr))
             {
-                queryStr = string.Format("{0} +({1})", queryStr, GetContentTypesFilter(contentTypesStr));
+                queryStr = $"{queryStr} +({GetContentTypesFilter(contentTypesStr)})";
             }
 
             return queryStr;

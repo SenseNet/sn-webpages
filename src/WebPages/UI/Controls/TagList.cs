@@ -347,7 +347,7 @@ namespace SenseNet.Portal.UI.Controls
         }
         /// <summary>
         /// Determines if the given tag is blacklisted or not.
-        /// - Uses Lucene query for fast searching
+        /// - Uses ContentQuery for fast searching
         /// </summary>
         /// <param name="tag">Tag to check</param>
         /// <returns>True if the tag is on blacklist, false if it isn't.</returns>
