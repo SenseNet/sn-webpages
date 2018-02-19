@@ -507,6 +507,7 @@
     <Compile Include="UI\XmlFormatTools.cs" />
     <Compile Include="WarmUp.cs" />
     <Compile Include="Webform.cs" />
+    <Compile Include="WebPagesComponent.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config">
