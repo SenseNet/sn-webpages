@@ -346,8 +346,7 @@ namespace SenseNet.Portal.UI.ContentListViews.FieldControls
 
                 if (tb != null)
                 {
-                    var colWidth = 0;
-                    if (int.TryParse(tb.Text, out colWidth))
+                    if (int.TryParse(tb.Text, out var colWidth))
                         newcol.Width = colWidth;
                 }
 
@@ -450,7 +449,7 @@ namespace SenseNet.Portal.UI.ContentListViews.FieldControls
             }
 
             // find the field and display its metadata
-            var afs = AvailableFields.FirstOrDefault(fs => fs.FullName.CompareTo(col.FullName) == 0);
+            var afs = AvailableFields.FirstOrDefault(fs => string.Compare(fs.FullName, col.FullName, StringComparison.InvariantCulture) == 0);
             if (afs != null)
             {
                 if (lblOwner != null)
@@ -471,7 +470,7 @@ namespace SenseNet.Portal.UI.ContentListViews.FieldControls
             var xTitle = x.Title ?? string.Empty;
             var yTitle = y.Title ?? string.Empty;
 
-            return xTitle.CompareTo(yTitle);
+            return string.Compare(xTitle, yTitle, StringComparison.InvariantCulture);
         }
     }
 }

@@ -16,6 +16,7 @@ using SenseNet.Portal.Virtualization;
 using System.Web.UI;
 using SenseNet.Diagnostics;
 using SenseNet.Search;
+using SenseNet.Search.Querying;
 
 namespace SenseNet.Portal.Portlets
 {
@@ -354,17 +355,9 @@ namespace SenseNet.Portal.Portlets
             return treeNode;
         }
 
-        protected virtual NodeQuery GetQuery()
+        protected virtual string GetQuery()
         {
-            if (ShowPagesOnly)
-            {
-                var query = new NodeQuery();
-                query.Add(new TypeExpression(ActiveSchema.NodeTypes["Page"]));
-                query.Orders.Add(new SearchOrder(IntAttribute.Index));
-                return query;
-            }
-
-            return null;
+            return ShowPagesOnly ? $"+TypeIs:{typeof(Page).Name} .SORT:Index" : null;
         }
 
         private static string ParentPath(string path)

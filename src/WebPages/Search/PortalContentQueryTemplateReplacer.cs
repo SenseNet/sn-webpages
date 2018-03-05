@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Web;
 using SenseNet.Portal.Virtualization;
+using SenseNet.Search;
 using SenseNet.Search.Parser;
 
 namespace SenseNet.Portal.Search

@@ -19,6 +19,7 @@ using SenseNet.Portal.Virtualization;
 using SenseNet.Search;
 using System.Text;
 using SenseNet.Configuration;
+using SenseNet.Search.Querying;
 using SenseNet.Services;
 
 namespace SenseNet.Portal.UI.Controls
@@ -549,7 +550,7 @@ namespace SenseNet.Portal.UI.Controls
             var ws = Workspace.GetWorkspaceForNode(ContextNode);
             var permQuery = ContentQuery.CreateQuery("InTree:@0", null, RepositoryStructure.ImsFolderPath);
             if (ws != null)
-                permQuery.AddClause(string.Format("InTree:\"{0}/{1}\"", ws.Path, Repository.LocalGroupsFolderName), ChainOperator.Or);
+                permQuery.AddClause(string.Format("InTree:\"{0}/{1}\"", ws.Path, Repository.LocalGroupsFolderName), LogicalOperator.Or);
 
             switch (this.Isi.IdentityKind)
             {
@@ -574,12 +575,12 @@ namespace SenseNet.Portal.UI.Controls
                 if (!st.EndsWith("*"))
                     st = st + "*";
 
-                permQuery.AddClause(string.Format("Name:{0}", st));
+                permQuery.AddClause($"Name:{st}");
             }
 
             permQuery.Settings.EnableAutofilters = FilterStatus.Disabled;
             permQuery.Settings.Top = 500;
-            permQuery.Settings.Sort = new List<SortInfo>() {new SortInfo {FieldName = "Name"}};
+            permQuery.Settings.Sort = new List<SortInfo> {new SortInfo("Name")};
             
             ListEntries.Items.AddRange((from node in permQuery.Execute().Nodes
                                         select GetListItem(node)).ToArray());
