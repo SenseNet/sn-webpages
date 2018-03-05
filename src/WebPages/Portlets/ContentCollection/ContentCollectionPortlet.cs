@@ -20,6 +20,7 @@ using System.Web;
 using System.Xml.XPath;
 using SenseNet.Portal.Virtualization;
 using SenseNet.ContentRepository.Storage.Search;
+using SenseNet.Search.Querying;
 
 namespace SenseNet.Portal.Portlets
 {
@@ -336,7 +337,7 @@ namespace SenseNet.Portal.Portlets
             if (State.Skip > 0)
                 cdef.Skip = State.Skip;
             if (!string.IsNullOrEmpty(State.SortColumn))
-                cdef.Sort = new[] { new SortInfo { FieldName = State.SortColumn, Reverse = State.SortDescending } };
+                cdef.Sort = new[] { new SortInfo ( State.SortColumn, State.SortDescending ) };
 
             var filter = GetQueryFilter();
 
@@ -344,7 +345,7 @@ namespace SenseNet.Portal.Portlets
             {
                 // combine the two queries (e.g. in case of a Smart Folder or a container with a custom children query)
                 if (!string.IsNullOrEmpty(filter))
-                    content.ChildrenDefinition.ContentQuery = ContentQuery.AddClause(content.ChildrenDefinition.ContentQuery, filter, ChainOperator.And);
+                    content.ChildrenDefinition.ContentQuery = ContentQuery.AddClause(content.ChildrenDefinition.ContentQuery, filter, LogicalOperator.And);
             }
             else
             {

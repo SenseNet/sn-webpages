@@ -50,7 +50,7 @@ namespace SenseNet.Portal.Portlets
             var groups = new List<Node>();
             if (!String.IsNullOrEmpty(GroupQuery))
             {
-                var sort = new[] { new SortInfo { FieldName = "Name" } };
+                var sort = new[] {new SortInfo("Name")};
                 var settings = new QuerySettings { EnableAutofilters = FilterStatus.Disabled, EnableLifespanFilter = FilterStatus.Disabled, Sort = sort };
                 var query = new ContentQuery { Text = GroupQuery, Settings  = settings};
                 query.AddClause(string.Format("-Path:({0})", string.Join(" ", Identifiers.SpecialGroupPaths)));

@@ -20,6 +20,7 @@ using Content = SenseNet.ContentRepository.Content;
 using SenseNet.ApplicationModel;
 using SenseNet.ContentRepository.Workspaces;
 using SenseNet.Search;
+using SenseNet.Search.Querying;
 
 namespace SenseNet.Portal.Portlets
 {
@@ -312,13 +313,13 @@ namespace SenseNet.Portal.Portlets
                         var escapedPath = ctx.Path.Replace("(", "\\(").Replace(")", "\\)");
                         model.ChildrenDefinition.ContentQuery =
                             ContentQuery.AddClause(model.ChildrenDefinition.ContentQuery,
-                            ContentQuery.AddClause(sf.Query, string.Format("InTree:\"{0}\"", escapedPath), ChainOperator.And), ChainOperator.And);
+                            ContentQuery.AddClause(sf.Query, string.Format("InTree:\"{0}\"", escapedPath), LogicalOperator.And), LogicalOperator.And);
                     }
                 }
                 else
                 {
                     if (!string.IsNullOrEmpty(sf.Query))
-                        model.ChildrenDefinition.ContentQuery = ContentQuery.AddClause(model.ChildrenDefinition.ContentQuery,  sf.Query, ChainOperator.And);
+                        model.ChildrenDefinition.ContentQuery = ContentQuery.AddClause(model.ChildrenDefinition.ContentQuery,  sf.Query, LogicalOperator.And);
                 }
             }
 

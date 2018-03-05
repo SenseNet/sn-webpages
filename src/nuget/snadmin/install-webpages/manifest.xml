@@ -1,10 +1,10 @@
 <Package type='Install'>
   <Id>SenseNet.WebPages</Id>
-  <Description>sensenet ECM WebPages 7.0</Description>
+  <Description>sensenet ECM WebPages</Description>
   <ReleaseDate>2017-04-05</ReleaseDate>
-  <Version>7.0.0</Version>
+  <Version>7.1.0</Version>
   <Dependencies>
-    <Dependency id='SenseNet.Services' minVersion='7.0.0' />
+    <Dependency id='SenseNet.Services' minVersion='7.1.0' />
   </Dependencies>
   <Parameters>
     <Parameter name="@source" description="Package-relative path for the import structure. The target is always the Root.">import</Parameter>

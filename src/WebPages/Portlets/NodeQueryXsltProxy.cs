@@ -2,9 +2,8 @@
 using System.Linq;
 using System.Xml.Serialization;
 using System.Xml.XPath;
-using SenseNet.ContentRepository.Storage;
-using SenseNet.ContentRepository.Storage.Search;
 using SenseNet.Diagnostics;
+using SenseNet.Search;
 
 namespace SenseNet.Portal.Portlets
 {
@@ -13,19 +12,13 @@ namespace SenseNet.Portal.Portlets
         [XmlRoot]
         public class Result
         {
-            public SenseNet.Services.ContentStore.Content[] ContentList;
+            public Services.ContentStore.Content[] ContentList;
         }
 
         [XmlRoot("Exception")]
         public class QueryException
         {
-            private string message;
-
-            public string Message
-            {
-                get { return message; }
-                set { message = value; }
-            }
+            public string Message { get; set; }
         }
 
         public XPathNavigator Execute(object param)
@@ -37,14 +30,12 @@ namespace SenseNet.Portal.Portlets
         {
             try
             {
-                NodeQuery queryFromXml = NodeQuery.Parse(((XPathNavigator)param).OuterXml);
-                var result = queryFromXml.Execute();
+                var queryText = ((XPathNavigator) param).Value;
+                var result = ContentQuery.Query(queryText, QuerySettings.Default);
 
-                Result queryResult = new Result()
+                var queryResult = new Result
                 {
-                    ContentList =
-                        result.Nodes.Select(
-                            node => new SenseNet.Services.ContentStore.Content(node)).ToArray()
+                    ContentList = result.Nodes.Select(node => new Services.ContentStore.Content(node)).ToArray()
                 };
 
                 return queryResult.ToXPathNavigator();
@@ -53,8 +44,9 @@ namespace SenseNet.Portal.Portlets
             {
                 if (raiseExceptions)
                     throw;
+
                 SnLog.WriteException(exc);
-                return new QueryException() { Message = exc.Message }.ToXPathNavigator();
+                return new QueryException { Message = exc.Message }.ToXPathNavigator();
             }
         }
     }

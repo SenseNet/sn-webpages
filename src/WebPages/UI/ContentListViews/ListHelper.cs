@@ -12,6 +12,7 @@ using SenseNet.Diagnostics;
 using SenseNet.Search;
 using SenseNet.Configuration;
 using SenseNet.ContentRepository.i18n;
+using SenseNet.ContentRepository.Search;
 using SenseNet.Preview;
 
 namespace SenseNet.Portal.UI.ContentListViews
@@ -67,7 +68,7 @@ namespace SenseNet.Portal.UI.ContentListViews
 
         public static string GetRunningWorkflowsText(Node relatedContent)
         {
-            if (!RepositoryInstance.ContentQueryIsAllowed)
+            if (!SearchManager.ContentQueryIsAllowed)
                 return string.Empty;
 
             var cl = ContentList.GetContentListForNode(relatedContent);

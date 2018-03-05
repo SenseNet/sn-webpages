@@ -185,12 +185,12 @@ SN.PickerApplication = {
         // available tree roots
         SN.PickerApplication.InitTreeRoots();
 
-        // gui hint: are we in lucenequery
+        // gui hint: is content query enabled
 
         $.getJSON(
-            "/OData.svc/('root')/ContentStoreIsLuceneQuery",
+            "/OData.svc/('root')/ContentStoreIsContentQuery",
             { rnd: Math.random()},
-            function (o) { $(o ? "#sn-contentpicker-islucene" : "#sn-contentpicker-isnotlucene").toggle() });
+            function (o) { $(o ? "#sn-contentpicker-iscontentquery" : "#sn-contentpicker-isnotcontentquery").toggle() });
 
         SN.Util.CreateUIButton($('.sn-button', dialog));
         $('#sn-contentpicker-searchheaderdiv_totree').hide();

@@ -39,8 +39,6 @@ namespace SenseNet.Portal.UI.Controls
 
         internal string GroupBy { get; set; }
 
-        internal Expression QueryFilter { get; set; }
-
         internal string QueryText { get; set; }
 
         internal QuerySettings Settings { get; set; }
@@ -53,8 +51,6 @@ namespace SenseNet.Portal.UI.Controls
                     return null;
 
                 var cq = ContentQuery.CreateQuery(QueryText);
-                if (cq.IsNodeQuery)
-                    return null;
 
                 var clauses = string.Empty;
 
@@ -80,7 +76,7 @@ namespace SenseNet.Portal.UI.Controls
                 }
 
                 if (!string.IsNullOrEmpty(clauses))
-                    cq.AddClause(clauses, ChainOperator.And);
+                    cq.AddClause(clauses, SenseNet.Search.Querying.LogicalOperator.And);
 
                 if (this.Settings != null)
                     cq.Settings = this.Settings;
@@ -89,69 +85,7 @@ namespace SenseNet.Portal.UI.Controls
             }
         }
 
-        internal NodeQuery Query
-        {
-            get
-            {
-                NodeQuery query;
-
-                if (!string.IsNullOrEmpty(QueryText))
-                {
-                    try
-                    {
-                        query = NodeQuery.Parse(QueryText);
-                    }
-                    catch
-                    {
-                        //TODO handle wrong query syntax
-                        query = new NodeQuery();
-                    }
-                }
-                else
-                {
-                    query = new NodeQuery();
-                }
-
-                if (!this.ShowHidden)
-                    query.Add(new IntExpression(ActiveSchema.PropertyTypes["Hidden"], ValueOperator.NotEqual, 1));
-
-                if (this.Content != null)
-                {
-                    // constructing query for a reference property is not possible
-                    if (!string.IsNullOrEmpty(this.MemberName) && this.Content.Fields.ContainsKey(this.MemberName))
-                        return null;
-
-                    if (this.FlattenResults)
-                    {
-                        // path query
-                        query.Add(new StringExpression(StringAttribute.Path, StringOperator.StartsWith,
-                            RepositoryPath.Combine(this.Content.Path, RepositoryPath.PathSeparator)));
-
-                    }
-                    else
-                    {
-                        // children query
-                        query.Add(new IntExpression(IntAttribute.ParentId, ValueOperator.Equal, this.Content.Id));
-                    }
-
-                    if (this.QueryFilter != null)
-                    {
-                        query.Add(this.QueryFilter);
-                    }
-                }
-                else if (this.QueryFilter != null)
-                {
-                    query.Add(this.QueryFilter);
-                }
-
-                if (query != null && this.Settings != null && this.Settings.Top > 0)
-                    query.Top = this.Settings.Top;
-
-                return query;
-            }
-        }
-
-        // ======================================================== Execute select
+        /* ======================================================== Execute select */
 
         public IEnumerable<Content> Select(DataSourceSelectArguments selectArgs)
         {
@@ -207,7 +141,7 @@ namespace SenseNet.Portal.UI.Controls
             {
                 try
                 {
-                    // if lucene query text is given, use that
+                    // if ContentQuery text is given, use that
                     dataList = (from node in contentQuery.Execute().Nodes
                                 select Content.Create(node)).ToList();
                 }
@@ -234,42 +168,6 @@ namespace SenseNet.Portal.UI.Controls
                 dataList = GetChildren();
                 if (dataList != null)
                     return dataList;
-            }
-
-            var query = dataList == null ? this.Query : null;
-            if (query != null)
-            {
-                if (sortExp.HasValue)
-                {
-                    var fieldName = string.Empty;
-                    var pt = GetPropertyTypeFromFullName(sortExp.Value.PropertyName, out fieldName);
-
-                    if (pt != null)
-                    {
-                        query.Orders.Add(new SearchOrder(pt, sortExp.Value.Direction));
-                    }
-                    else
-                    {
-                        // no real property, try the Node attributes
-                        if (Enum.GetNames(typeof(StringAttribute)).Contains(fieldName))
-                        {
-                            var sa = (StringAttribute)Enum.Parse(typeof(StringAttribute), fieldName);
-                            query.Orders.Add(new SearchOrder(sa, sortExp.Value.Direction));
-                        }
-                        else if (Enum.GetNames(typeof(IntAttribute)).Contains(fieldName))
-                        {
-                            var sa = (IntAttribute)Enum.Parse(typeof(IntAttribute), fieldName);
-                            query.Orders.Add(new SearchOrder(sa, sortExp.Value.Direction));
-                        }
-                        else if (Enum.GetNames(typeof(DateTimeAttribute)).Contains(fieldName))
-                        {
-                            var sa = (DateTimeAttribute)Enum.Parse(typeof(DateTimeAttribute), fieldName);
-                            query.Orders.Add(new SearchOrder(sa, sortExp.Value.Direction));
-                        }
-                    }
-                }
-
-                dataList = Content.Query(query, GetFieldNames());
             }
 
             //TODO: check Count mechanism
@@ -402,16 +300,13 @@ namespace SenseNet.Portal.UI.Controls
             var sortInfos = new List<SortInfo>();
 
             if (!string.IsNullOrEmpty(this.GroupBy))
-                sortInfos.Add(new SortInfo{ FieldName = this.GroupBy });
+                sortInfos.Add(new SortInfo(this.GroupBy));
 
             if (!sortOrderInfo.HasValue)
                 return sortInfos;
 
-            sortInfos.Add(new SortInfo
-                              {
-                                  FieldName = sortOrderInfo.Value.PropertyName,
-                                  Reverse = sortOrderInfo.Value.Direction == OrderDirection.Desc
-                              });
+            sortInfos.Add(new SortInfo(sortOrderInfo.Value.PropertyName,
+                sortOrderInfo.Value.Direction == OrderDirection.Desc));
 
             return sortInfos;
         }
@@ -473,7 +368,7 @@ namespace SenseNet.Portal.UI.Controls
             this.Content.ChildrenDefinition.AllChildren = this.FlattenResults;
 
             // must exclude the current content from the results (in case of an InTree query)
-            this.Content.ChildrenDefinition.ContentQuery = ContentQuery.AddClause(this.Content.ChildrenDefinition.ContentQuery, string.Format("-Id:{0}", this.Content.Id), ChainOperator.And);
+            this.Content.ChildrenDefinition.ContentQuery = ContentQuery.AddClause(this.Content.ChildrenDefinition.ContentQuery, string.Format("-Id:{0}", this.Content.Id), SenseNet.Search.Querying.LogicalOperator.And);
 
             var children = this.Content.Children.AsEnumerable().Where(c => c != null).ToList();
 
@@ -541,6 +436,8 @@ namespace SenseNet.Portal.UI.Controls
         }
 
         // ======================================================== Helper classes
+
+        private enum OrderDirection { Asc, Desc }
 
         private struct SortOrderInfo
         {

@@ -57,24 +57,6 @@ namespace SenseNet.Portal.UI.ContentListViews
 
         #endregion
 
-        #region view_queries
-
-        protected virtual NodeQuery GetFilter()
-        {
-            NodeQuery filter = null;
-            if (!string.IsNullOrEmpty(ViewDefinition.FilterXml))
-            {
-                if (ViewDefinition.FilterIsContentQuery)
-                    return null;
-                
-                filter = NodeQuery.Parse(Query.GetNodeQueryXml(ViewDefinition.FilterXml));
-            }
-
-            return filter;
-        }
-
-        #endregion
-
         #region aspnet_members
 
         protected override void OnLoad(EventArgs e)
@@ -83,18 +65,9 @@ namespace SenseNet.Portal.UI.ContentListViews
 
             if (ViewDefinition != null)
             {
-                if (ViewDefinition.FilterIsContentQuery)
-                {
-                    if (this.OwnerFrame == null || this.OwnerFrame.OwnerPortlet == null)
-                        ViewDataSource.Query = ViewDefinition.FilterXml;
-                    else
-                        ViewDataSource.Query = this.OwnerFrame.OwnerPortlet.ReplaceTemplates(ViewDefinition.FilterXml);
-                    
-                }
-                else
-                {
-                    ViewDataSource.QueryFilter = GetFilter();
-                }
+                ViewDataSource.Query = OwnerFrame?.OwnerPortlet == null
+                    ? ViewDefinition.FilterXml
+                    : this.OwnerFrame.OwnerPortlet.ReplaceTemplates(ViewDefinition.FilterXml);
             }
 
             if (ViewDataSource.Settings == null)

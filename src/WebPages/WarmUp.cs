@@ -29,17 +29,13 @@ namespace SenseNet.Portal
 "SenseNet.Portal.PortletTemplateReplacer",
 "SenseNet.Portal.UI.Controls.FieldControl",
 "SenseNet.ContentRepository.Storage.ISnService",
-"SenseNet.ContentRepository.Storage.Search.IIndexDocumentProvider",
 "SenseNet.ContentRepository.Storage.Scripting.IEvaluator",
 "SenseNet.ContentRepository.Security.UserAccessProvider",
 "SenseNet.ContentRepository.Schema.ContentType",
 "SenseNet.Search.Indexing.ExclusiveTypeIndexHandler",
 "SenseNet.Search.Indexing.TypeTreeIndexHandler",
-"Lucene.Net.Analysis.KeywordAnalyzer",
-"SenseNet.Search.Indexing.DepthIndexHandler",
 "SenseNet.Search.Indexing.InTreeIndexHandler",
 "SenseNet.Search.Indexing.InFolderIndexHandler",
-"Lucene.Net.Analysis.Standard.StandardAnalyzer",
 "SenseNet.Search.Indexing.SystemContentIndexHandler",
 "SenseNet.Search.Indexing.TagIndexHandler",
 "SenseNet.ContentRepository.GenericContent",
@@ -50,7 +46,6 @@ namespace SenseNet.Portal
 "SenseNet.Portal.AppModel.HttpStatusApplication",
 "SenseNet.Portal.ApplicationModel.ImgResizeApplication",
 "SenseNet.Services.RssApplication",
-"Lucene.Net.Analysis.WhitespaceAnalyzer",
 "SenseNet.Portal.Page",
 "SenseNet.ContentRepository.ContentLink",
 "SenseNet.ContentRepository.Schema.FieldSettingContent",
@@ -116,7 +111,6 @@ namespace SenseNet.Portal
 
         private static readonly string[] _typesToPreloadByInterface = {
 "SenseNet.ContentRepository.Storage.ISnService",
-"SenseNet.ContentRepository.Storage.Search.IIndexDocumentProvider",
 "SenseNet.ContentRepository.Storage.Scripting.IEvaluator"
                                                             };
 
@@ -143,7 +137,6 @@ namespace SenseNet.Portal
             
             // template replacers and resolvers
             ThreadPool.QueueUserWorkItem(delegate { TemplateManager.Init(); });
-            ThreadPool.QueueUserWorkItem(delegate { NodeQuery.InitTemplateResolvers(); });
 
             // jscript evaluator
             ThreadPool.QueueUserWorkItem(delegate { JscriptEvaluator.Init(); });

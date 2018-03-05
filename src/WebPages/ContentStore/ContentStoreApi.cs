@@ -8,10 +8,10 @@ using cs = SenseNet.Services.ContentStore;
 using SenseNet.ContentRepository;
 using SenseNet.ContentRepository.Storage.Security;
 using SenseNet.Search;
-using SenseNet.ContentRepository.Storage.Search;
-using SenseNet.ContentRepository.Storage.Schema;
 using SenseNet.ApplicationModel;
 using SenseNet.Configuration;
+using SenseNet.ContentRepository.Search;
+using SenseNet.Search.Querying;
 
 namespace SenseNet.Portal.ContentStore
 {
@@ -129,7 +129,7 @@ namespace SenseNet.Portal.ContentStore
 
             // add content type filter if needed
             if (!string.IsNullOrEmpty(filter))
-                content.ChildrenDefinition.ContentQuery = ContentQuery.AddClause(content.ChildrenDefinition.ContentQuery, filter, ChainOperator.And);
+                content.ChildrenDefinition.ContentQuery = ContentQuery.AddClause(content.ChildrenDefinition.ContentQuery, filter, LogicalOperator.And);
 
             // in case of SmartFolder: do not override the settings given on the content
             if (!(folderParent is SmartFolder))
@@ -143,16 +143,17 @@ namespace SenseNet.Portal.ContentStore
         }
 
         [ODataFunction]
+        [Obsolete("Use IsContentQuery instead.")]
         public static bool IsLuceneQuery(Content content, string rnd)
+        {
+            return IsContentQuery(content, rnd);
+        }
+        [ODataFunction]
+        public static bool IsContentQuery(Content content, string rnd)
         {
             AssertPermission(PlaceholderPath);
 
-            return IsLuceneQueryInternal();
-        }
-
-        private static bool IsLuceneQueryInternal()
-        {
-            return StorageContext.Search.SearchEngine.GetType() == typeof(LuceneSearchEngine);
+            return SearchManager.IsOuterEngineEnabled;
         }
 
         [ODataFunction]
@@ -160,22 +161,19 @@ namespace SenseNet.Portal.ContentStore
         {
             AssertPermission(PlaceholderPath);
 
-            if (IsLuceneQueryInternal())
+            if (SearchManager.IsOuterEngineEnabled)
             {
-                return SearchLucene(searchStr, searchRoot, contentTypes, simpleContent);
+                return SearchContentQuery(searchStr, searchRoot, contentTypes, simpleContent);
             }
-            else
-            {
-                return SearchNodeQuery(searchStr, searchRoot, contentTypes, simpleContent);
-            }
+            throw new SnNotSupportedException("ContentQuery is disabled.");
         }
 
-        private static object[] SearchLucene(string searchStr, string searchRoot, string contentTypes, bool simpleContent = false)
+        private static object[] SearchContentQuery(string searchStr, string searchRoot, string contentTypes, bool simpleContent = false)
         {
-            var queryStr = CreateLuceneQueryString(searchStr, searchRoot, contentTypes);
+            var queryStr = CreateContentQueryString(searchStr, searchRoot, contentTypes);
             var query = ContentQuery.CreateQuery(queryStr, new QuerySettings
             {
-                Sort = new List<SortInfo> { new SortInfo { FieldName = "DisplayName" } },
+                Sort = new List<SortInfo> { new SortInfo("DisplayName") },
                 EnableAutofilters = FilterStatus.Disabled,
                 EnableLifespanFilter = FilterStatus.Disabled
             });
@@ -194,89 +192,18 @@ namespace SenseNet.Portal.ContentStore
             }
         }
 
-        private static object[] SearchNodeQuery(string searchStr, string searchRoot, string contentTypes, bool simpleContent = false)
-        {
-            if (!string.IsNullOrEmpty(searchStr))
-            {
-                // simple nodequery
-                var query = new NodeQuery();
-                query.Add(new SearchExpression(searchStr));
-                var nodes = query.Execute().Nodes;
-
-                // filter with path
-                if (!string.IsNullOrEmpty(searchRoot))
-                    nodes = nodes.Where(n => n.Path.StartsWith(searchRoot));
-
-                // filter with contenttypes
-                if (!string.IsNullOrEmpty(contentTypes))
-                {
-                    var contentTypesArr = GetContentTypes(contentTypes);
-                    nodes = nodes.Where(n => contentTypesArr.Contains(n.NodeType.Name));
-                }
-
-                if (simpleContent)
-                {
-                    var contents = nodes.Where(n => n != null).Select(n => new cs.SimpleServiceContent(n));
-                    return contents.ToArray();
-                }
-                else
-                {
-                    var contents = nodes.Where(n => n != null).Select(n => new cs.Content(n, true, false, false, false, 0, 0));
-                    return contents.ToArray();
-                }
-            }
-            else
-            {
-                if (string.IsNullOrEmpty(searchRoot) && string.IsNullOrEmpty(contentTypes))
-                    return null;
-
-                var query = new NodeQuery();
-                var andExpression = new ExpressionList(ChainOperator.And);
-                query.Add(andExpression);
-
-                // filter with path
-                if (!string.IsNullOrEmpty(searchRoot))
-                    andExpression.Add(new StringExpression(StringAttribute.Path, StringOperator.StartsWith, searchRoot));
-
-                // filter with contenttypes
-                if (!string.IsNullOrEmpty(contentTypes))
-                {
-                    var contentTypesArr = GetContentTypes(contentTypes);
-                    var orExpression = new ExpressionList(ChainOperator.Or);
-                    foreach (var contentType in contentTypesArr)
-                    {
-                        orExpression.Add(new TypeExpression(NodeType.GetByName(contentType), true));
-                    }
-                    andExpression.Add(orExpression);
-                }
-
-                var nodes = query.Execute().Nodes;
-
-                if (simpleContent)
-                {
-                    var contents = nodes.Select(n => new cs.SimpleServiceContent(n));
-                    return contents.ToArray();
-                }
-                else
-                {
-                    var contents = nodes.Select(n => new cs.Content(n, true, false, false, false, 0, 0));
-                    return contents.ToArray();
-                }
-            }
-        }
-
-        private static bool IsLuceneSyntax(string s)
+        private static bool IsContentQuerySyntax(string s)
         {
             return s.Contains(":") || s.Contains("+") || s.Contains("*");
         }
 
-        private static string CreateLuceneQueryString(string searchStr, string searchRoot, string contentTypesStr)
+        private static string CreateContentQueryString(string searchStr, string searchRoot, string contentTypesStr)
         {
             var queryStr = string.Empty;
 
             if (!string.IsNullOrEmpty(searchStr))
             {
-                if (!IsLuceneSyntax(searchStr))
+                if (!IsContentQuerySyntax(searchStr))
                 {
                     // more than one word: _Text:<kifejezés>
                     // one word without quotation marks: _Text:<kifejezés>*
@@ -298,20 +225,20 @@ namespace SenseNet.Portal.ContentStore
                 // -> +(_Text:user1 _Text:user2) +(<ancestor and contentype queries>)
                 // ie.: +_Text:user1 +_Text:user2 
                 // -> +(+_Text:user1 +_Text:user2) +(<ancestor and contentype queries>)
-                searchStr = string.Format("+({0})", searchStr);
+                searchStr = $"+({searchStr})";
 
                 queryStr = searchStr;
             }
 
             if (!string.IsNullOrEmpty(searchRoot))
             {
-                var pathQuery = string.Format("+InTree:\"{0}\"", searchRoot.ToLower());
+                var pathQuery = $"+InTree:\"{searchRoot.ToLower()}\"";
                 queryStr = string.Concat(queryStr, " ", pathQuery);
             }
 
             if (!string.IsNullOrEmpty(contentTypesStr))
             {
-                queryStr = string.Format("{0} +({1})", queryStr, GetContentTypesFilter(contentTypesStr));
+                queryStr = $"{queryStr} +({GetContentTypesFilter(contentTypesStr)})";
             }
 
             return queryStr;

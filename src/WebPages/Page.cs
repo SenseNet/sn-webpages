@@ -10,11 +10,13 @@ using SenseNet.ContentRepository.Schema;
 using SenseNet.ContentRepository.Storage;
 using SenseNet.ContentRepository.Storage.Data;
 using SenseNet.ContentRepository.Storage.Search;
-using SenseNet.ContentRepository.Storage.Search.Internal;
 using SenseNet.ContentRepository.Storage.Security;
 using SenseNet.Portal.Virtualization;
 using SenseNet.Diagnostics;
 using System.Xml;
+using SenseNet.ContentRepository.Search;
+using SenseNet.Search;
+using SenseNet.ContentRepository.Search.Querying;
 
 namespace SenseNet.Portal
 {
@@ -49,18 +51,14 @@ namespace SenseNet.Portal
 
             if (this.SmartUrl != String.Empty)
             {
-                NodeQueryResult result;
+                QueryResult result;
                 using (new SystemAccount())
                 {
-                    if (RepositoryInstance.ContentQueryIsAllowed)
+                    if (SearchManager.ContentQueryIsAllowed)
                     {
-                        // this NodeQuery will be compiled to LucQuery because the outer engine is enabled
-                        var pageQuery = new NodeQuery();
-                        pageQuery.Add(new TypeExpression(ActiveSchema.NodeTypes[typeof(Page).Name]));
-                        pageQuery.Add(new StringExpression(ActiveSchema.PropertyTypes["SmartUrl"], StringOperator.Equal, this.SmartUrl));
-                        pageQuery.Add(new NotExpression(new StringExpression(StringAttribute.Path, StringOperator.Equal, this.Path)));
-
-                        result = pageQuery.Execute();
+                        result = ContentQuery.Query(SafeQueries.SmartUrlCollision,
+                            QuerySettings.AdminSettings,
+                            typeof(Page).Name, this.SmartUrl, this.Path);
                     }
                     else
                     {
@@ -264,23 +262,14 @@ namespace SenseNet.Portal
 
         #region OfflineExecution
 
-        internal static NodeQueryResult GetAllPage()
-        {
-            NodeQuery query = new NodeQuery();
-            query.Add(new TypeExpression(ActiveSchema.NodeTypes["Page"], true));
-            return query.Execute();
-        }
-
         public static string[] RunPagesBackground(HttpContext context, out Exception[] exceptions)
         {
-            var pages = GetAllPage();
-            string[] result = new string[pages.Count];
             List<string> pageList = new List<string>();
             List<Exception> exceptionList = new List<Exception>();
+            var pagesNodes = ContentQuery.Query(ContentRepository.SafeQueries.TypeIs, QuerySettings.AdminSettings, typeof(Page).Name).Nodes;
 
-            foreach (Node pageItem in pages.Nodes)
+            foreach (var pageItem in pagesNodes)
             {
-                Exception exc = null;
                 Page p = (Page)pageItem;
                 if (p != null && p.HasTemporaryPortletInfo)
                 {
@@ -288,7 +277,7 @@ namespace SenseNet.Portal
 
                     if (site != null)
                     {
-                        Page.RunPage(HttpContext.Current, p.Path, p, out exc);
+                        Page.RunPage(HttpContext.Current, p.Path, p, out var exc);
                         pageList.Add(p.Path);
 
                         if (exc != null)
@@ -297,9 +286,8 @@ namespace SenseNet.Portal
                     }
                 }
             }
-            pageList.CopyTo(result, 0);
             exceptions = exceptionList.ToArray();
-            return result;
+            return pageList.ToArray();
         }
 
         internal static void RunPage(HttpContext context, string path, Page pageNode, out Exception exception)

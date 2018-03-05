@@ -546,7 +546,7 @@ SN.ODataManager = (function ($, undefined) {
         });
 
         //Method:
-        //Rebuilds or just refreshes the Lucene index document of a content and optionally of all documents in the whole subtree.
+        //Rebuilds or just refreshes the index document of a content and optionally of all documents in the whole subtree.
         that.rebuildIndex = createCustomAction({
             action: 'RebuildIndex',
             params: ['recursive', 'rebuildLevel']

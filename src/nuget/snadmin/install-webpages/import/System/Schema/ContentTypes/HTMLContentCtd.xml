@@ -8,7 +8,7 @@
       <DisplayName>$Ctd-HTMLContent,HTMLFragment-DisplayName</DisplayName>
       <Description>$Ctd-HTMLContent,HTMLFragment-Description</Description>
       <Indexing>
-        <Analyzer>Lucene.Net.Analysis.Standard.StandardAnalyzer</Analyzer>
+        <Analyzer>Standard</Analyzer>
       </Indexing>
       <Configuration>
         <OutputMethod>Html</OutputMethod>
