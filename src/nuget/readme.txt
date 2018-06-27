@@ -1,9 +1,9 @@
 ************************************************************************************
-                                sensenet ECM platform
+                                  sensenet platform
                                        WebPages
 ************************************************************************************
 
-To finalize the installation and get started with sensenet ECM WebPages, please follow these steps:
+To finalize the installation and get started with sensenet WebPages, please follow these steps:
 
 1. Please make sure that you have the SenseNet.Services base component installed.
 
@@ -30,14 +30,14 @@ To finalize the installation and get started with sensenet ECM WebPages, please 
 
 4. Build your solution, make sure that there are no build errors.
 
-5. Install the sensenet ECM WebPages component
+5. Install the sensenet WebPages component
     - open a command line and go to the \Admin\bin folder in your web folder
     - execute the install-webpages command with the SnAdmin tool
 
     .\snadmin install-webpages
 
 
-You are good to go! Hit F5 and start experimenting with sensenet ECM WebPages!
+You are good to go! Hit F5 and start experimenting with sensenet WebPages!
 About how to log in and enter Content Explorer, follow this URL:
 
     https://github.com/SenseNet/sn-webpages#LogIn
