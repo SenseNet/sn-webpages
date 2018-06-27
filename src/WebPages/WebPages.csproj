@@ -35,9 +35,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\References\AjaxMin.dll</HintPath>
     </Reference>
-    <Reference Include="Common, Version=7.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SenseNet.Common.7.2.0\lib\netstandard2.0\Common.dll</HintPath>
-    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.dll</HintPath>
       <Private>True</Private>
@@ -118,6 +115,9 @@
     </Reference>
     <Reference Include="SenseNet.BlobStorage, Version=7.2.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\SenseNet.BlobStorage.7.2.0\lib\net461\SenseNet.BlobStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="SenseNet.Common, Version=7.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SenseNet.Common.7.2.0\lib\netstandard2.0\SenseNet.Common.dll</HintPath>
     </Reference>
     <Reference Include="SenseNet.Configuration, Version=7.2.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\SenseNet.Services.7.2.0\lib\net461\SenseNet.Configuration.dll</HintPath>
