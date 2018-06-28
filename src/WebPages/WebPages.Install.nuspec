@@ -2,20 +2,20 @@
 <package >
   <metadata>
     <id>SenseNet.WebPages.Install</id>
-    <version>7.1.0</version>
-    <title>sensenet ECM WebPages Install package</title>
-    <authors>kavics,aniko,laci,borsi,lajos,tusmester</authors>
+    <version>7.2.0</version>
+    <title>sensenet WebPages Install package</title>
+    <authors>kavics,aniko,lajos,tusmester</authors>
     <owners>Sense/Net</owners>
     <licenseUrl>https://github.com/SenseNet/sn-webpages/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/SenseNet/sn-webpages</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/SenseNet/sn-resources/master/images/sn-icon/sensenet-icon-64.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>sensenet ECM WebPages Installer contains the install content for the UI layer built on well-known ASP.NET WebForms technologies like pages, webparts and ascx views. This package contains installation items and should be installed only in a single web project. All other projects should reference the SenseNet.WebPages dll-only package.</description>
+    <description>sensenet WebPages Installer contains the install content for the UI layer built on well-known ASP.NET WebForms technologies like pages, webparts and ascx views. This package contains installation items and should be installed only in a single web project. All other projects should reference the SenseNet.WebPages dll-only package.</description>
     <copyright>Copyright © Sense/Net Inc.</copyright>
-    <tags>sensenet ecm ecms</tags>
+    <tags>sensenet ecm ecms web page</tags>
     <dependencies>
-      <dependency id="SenseNet.Services.Install" version="7.1.0" />
-      <dependency id="SenseNet.WebPages" version="7.1.0" />
+      <dependency id="SenseNet.Services.Install" version="7.2.0" />
+      <dependency id="SenseNet.WebPages" version="7.2.0" />
       <dependency id="SenseNet.SnAdmin" version="1.4.4" />
       <dependency id="Microsoft.AspNet.SignalR.Client" version="2.2.2" />
       <dependency id="Microsoft.AspNet.SignalR.Core" version="2.2.2" />

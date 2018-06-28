@@ -13,7 +13,7 @@ namespace SenseNet.Portal.Portlets
 
         public PortletState()
         {
-            throw new SenseNet.ContentRepository.Storage.SnNotSupportedException();
+            throw new SnNotSupportedException();
         }
 
         public PortletState(PortletBase portlet)
