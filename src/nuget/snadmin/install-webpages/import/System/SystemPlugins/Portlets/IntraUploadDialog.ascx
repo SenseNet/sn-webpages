@@ -77,7 +77,7 @@
 </div>
 <script>
     var uploaddata = [];
-    var maxChunkSize = <%= BlobStorageConfiguration.BinaryChunkSize %>;
+    var maxChunkSize = <%= SenseNet.Configuration.BlobStorage.BinaryChunkSize %>;
     var currentUser = '<%= SenseNet.ContentRepository.User.Current.Name %>';
     // 1 MB: 1048576
     //10 MB: 10485760
