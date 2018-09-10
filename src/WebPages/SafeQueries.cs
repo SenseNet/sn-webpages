@@ -21,5 +21,8 @@ namespace SenseNet.Portal
 
         /// <summary>Returns with the following query: "+TypeIs:@0 +SmartUrl:@1 -Path:@2"</summary>
         public static string SmartUrlCollision { get; } = "+TypeIs:@0 +SmartUrl:@1 -Path:@2";
+
+        /// <summary>Returns the following query: "+TypeIs:Page +PageTemplateNode:@0"</summary>
+        public static string LoadPagesForTemplate { get; } = "+TypeIs:Page +PageTemplateNode:@0";
     }
 }
