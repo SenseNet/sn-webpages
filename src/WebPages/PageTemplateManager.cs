@@ -311,8 +311,7 @@ namespace SenseNet.Portal
         {
             if (SearchManager.ContentQueryIsAllowed)
             {
-                var cql = $"+TypeIs:{typeof(Page).Name} + PageTemplateNode:{_pageTemplate.Id}";
-                return ContentQuery.Query(cql, QuerySettings.AdminSettings).Nodes;
+                return ContentQuery.Query(SafeQueries.LoadPagesForTemplate, QuerySettings.AdminSettings, _pageTemplate.Id).Nodes;
             }
             // we need to execute a direct database query because the outer engine is disabled
             return NodeQuery.QueryNodesByReferenceAndType("PageTemplateNode", this.PageTemplateNode.Id, ActiveSchema.NodeTypes[typeof(Page).Name], false).Nodes;
