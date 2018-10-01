@@ -2,7 +2,6 @@
 using System.IO;
 using System.Text;
 using System.Web;
-using System.Web.Caching;
 using System.Xml;
 using System.Xml.XPath;
 using System.Xml.Xsl;
@@ -10,6 +9,7 @@ using SenseNet.ApplicationModel;
 using SenseNet.ContentRepository;
 using SenseNet.ContentRepository.Schema;
 using SenseNet.ContentRepository.Storage;
+using SenseNet.ContentRepository.Storage.Caching;
 using SenseNet.ContentRepository.Storage.Caching.Dependency;
 using SenseNet.Diagnostics;
 using SenseNet.Portal.UI;

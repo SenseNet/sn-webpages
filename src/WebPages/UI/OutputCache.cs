@@ -7,7 +7,8 @@ using SenseNet.Portal.Virtualization;
 using System.Web;
 using System.Security.Cryptography;
 using SenseNet.ContentRepository;
-using System.Web.Caching;
+using SenseNet.ContentRepository.Storage.Caching;
+using SenseNet.ContentRepository.Storage.Caching.Dependency;
 
 namespace SenseNet.Portal.UI
 {
@@ -133,20 +134,25 @@ namespace SenseNet.Portal.UI
             return DistributedApplication.Cache.Get(cacheKey) as OutputCacheData;
            
         }
-        public static void InsertOutputIntoCache(double absoluteExpiration, double slidingExpiration, string cacheKey, object output, CacheDependency cacheDependency, CacheItemPriority priority)
+        public static void InsertOutputIntoCache(double absoluteExpiration, double slidingExpiration, string cacheKey, object output, CacheDependency cacheDependency)
         {
             // -1 means it comes from web config
             var absBase = absoluteExpiration == -1 ? Configuration.Cache.AbsoluteExpirationSeconds : absoluteExpiration;
             var slidingBase = slidingExpiration == -1 ? Configuration.Cache.SlidingExpirationSeconds : slidingExpiration;
 
             // 0 means no caching
-            var abs = absBase == 0 ? Cache.NoAbsoluteExpiration : DateTime.UtcNow.AddSeconds((double)absBase);
-            var sliding = slidingBase == 0 ? Cache.NoSlidingExpiration : TimeSpan.FromSeconds((double)slidingBase);
+            var abs = absBase == 0 ? DateTime.MaxValue : DateTime.UtcNow.AddSeconds((double)absBase);
+            var sliding = slidingBase == 0 ? TimeSpan.Zero : TimeSpan.FromSeconds((double)slidingBase);
 
-            if (abs != Cache.NoAbsoluteExpiration && sliding != Cache.NoSlidingExpiration)
-                sliding = Cache.NoSlidingExpiration;
+            if (abs != DateTime.MaxValue && sliding != TimeSpan.Zero)
+                sliding = TimeSpan.Zero;
 
-            DistributedApplication.Cache.Insert(cacheKey, output, cacheDependency, abs, sliding, priority, null);
+            DistributedApplication.Cache.Insert(cacheKey, output, cacheDependency, abs, sliding, null);
+        }
+        [Obsolete("Use overload without 'priority' parameter instead.")]
+        public static void InsertOutputIntoCache(double absoluteExpiration, double slidingExpiration, string cacheKey, object output, CacheDependency cacheDependency, CacheItemPriority priority)
+        {
+            InsertOutputIntoCache(absoluteExpiration, slidingExpiration, cacheKey, output, cacheDependency);
         }
     }
 }
