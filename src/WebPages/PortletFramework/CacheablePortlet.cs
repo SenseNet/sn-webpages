@@ -6,11 +6,11 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Web;
-using System.Web.Caching;
 using System.Web.UI;
 using System.Web.UI.WebControls.WebParts;
 using SenseNet.ContentRepository.Storage.Caching.Dependency;
 using SenseNet.ContentRepository;
+using SenseNet.ContentRepository.Storage.Caching;
 using SenseNet.Portal.Virtualization;
 using SenseNet.Diagnostics;
 
@@ -346,7 +346,7 @@ namespace SenseNet.Portal.UI.PortletFramework
 
             var od = new OutputCacheData { Output = output, ScriptReferences = CachedScripts, StyleSheetReferences = CachedStyleSheets };
 
-            OutputCache.InsertOutputIntoCache(AbsoluteExpiration, SlidingExpirationMinutes, this.GetCacheKey(), od, cacheDependency, CacheItemPriority.Normal);
+            OutputCache.InsertOutputIntoCache(AbsoluteExpiration, SlidingExpirationMinutes, GetCacheKey(), od, cacheDependency);
         }
         private bool CheckCachedOutput()
         {

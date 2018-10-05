@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Web.Caching;
 using System.Xml;
 using System.Xml.Xsl;
 using SenseNet.ContentRepository.Storage.Caching.Dependency;
@@ -15,6 +14,7 @@ using System.Xml.XPath;
 using System.Web.UI;
 using System.Diagnostics;
 using SenseNet.Configuration;
+using SenseNet.Diagnostics;
 using SenseNet.Tools;
 
 namespace SenseNet.Portal.UI.PortletFramework
@@ -219,13 +219,14 @@ namespace SenseNet.Portal.UI.PortletFramework
                     //  - by node id
                     //  - by path
                     //  - by nodeType
+
                     string fsFilePath = null;
                     if (HttpContext.Current != null &&
                         WebApplication.DiskFSSupportMode == DiskFSSupportMode.Prefer)
                         fsFilePath = HttpContext.Current.Server.MapPath(dependencyPath);
                     if (!string.IsNullOrEmpty(fsFilePath) && System.IO.File.Exists(fsFilePath))
                     {
-                        aggregatedDependency.Add(new CacheDependency(fsFilePath));
+                        SnTrace.Repository.Write("Cannot create cache dependency for a filesystem entry: {0}", fsFilePath);
                     }
                     else
                     {
