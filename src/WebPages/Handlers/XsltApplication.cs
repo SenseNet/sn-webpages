@@ -325,7 +325,7 @@ namespace SenseNet.Portal.Handlers
                 }
             }
 
-            SenseNet.Portal.UI.OutputCache.InsertOutputIntoCache(AbsoluteExpiration, SlidingExpirationMinutes, this.GetCacheKey(), output, dep, CacheItemPriority.Normal);
+            OutputCache.InsertOutputIntoCache(AbsoluteExpiration, SlidingExpirationMinutes, GetCacheKey(), output, dep);
         }
 
 

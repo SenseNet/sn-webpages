@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
 using System.Linq;
 using System.Text;
@@ -134,6 +135,7 @@ namespace SenseNet.Portal.UI
             return DistributedApplication.Cache.Get(cacheKey) as OutputCacheData;
            
         }
+        [SuppressMessage("ReSharper", "CompareOfFloatsByEqualityOperator")]
         public static void InsertOutputIntoCache(double absoluteExpiration, double slidingExpiration, string cacheKey, object output, CacheDependency cacheDependency)
         {
             // -1 means it comes from web config

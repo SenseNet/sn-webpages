@@ -346,7 +346,7 @@ namespace SenseNet.Portal.UI.PortletFramework
 
             var od = new OutputCacheData { Output = output, ScriptReferences = CachedScripts, StyleSheetReferences = CachedStyleSheets };
 
-            OutputCache.InsertOutputIntoCache(AbsoluteExpiration, SlidingExpirationMinutes, this.GetCacheKey(), od, cacheDependency, CacheItemPriority.Normal);
+            OutputCache.InsertOutputIntoCache(AbsoluteExpiration, SlidingExpirationMinutes, GetCacheKey(), od, cacheDependency);
         }
         private bool CheckCachedOutput()
         {
