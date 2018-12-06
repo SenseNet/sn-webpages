@@ -13,9 +13,6 @@
   </Fields>
   <Permissions>
     <Clear />
-    <Identity path="/Root/IMS/BuiltIn/Portal/IdentifiedUsers">
-      <RunApplication>Allow</RunApplication>
-    </Identity>
     <Identity path="/Root/IMS/BuiltIn/Portal/PageEditors">
       <RunApplication>Allow</RunApplication>
     </Identity>
