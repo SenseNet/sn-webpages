@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>SenseNet.WebPages.Install</id>
-    <version>7.2.2</version>
+    <version>7.2.2.1</version>
     <title>sensenet WebPages Install package</title>
     <authors>kavics,aniko,lajos,tusmester</authors>
     <owners>Sense/Net</owners>
@@ -14,8 +14,8 @@
     <copyright>Copyright © Sense/Net Inc.</copyright>
     <tags>sensenet ecm ecms web page</tags>
     <dependencies>
-      <dependency id="SenseNet.Services.Install" version="7.4.0" />
-      <dependency id="SenseNet.WebPages" version="7.2.2" />
+      <dependency id="SenseNet.Services.Install" version="7.5.0.1" />
+      <dependency id="SenseNet.WebPages" version="7.2.2.1" />
       <dependency id="SenseNet.SnAdmin" version="1.4.4" />
       <dependency id="Microsoft.AspNet.SignalR.Client" version="2.2.2" />
       <dependency id="Microsoft.AspNet.SignalR.Core" version="2.2.2" />
