@@ -78,8 +78,5 @@
       <RunApplication>Allowed</RunApplication>
       <ManageListsAndWorkspaces>Allowed</ManageListsAndWorkspaces>
     </Identity>
-    <Identity path="/Root/IMS/BuiltIn/Portal/IdentifiedUsers">
-      <RunApplication>Allowed</RunApplication>
-    </Identity>
   </Permissions>
 </ContentMetaData>
