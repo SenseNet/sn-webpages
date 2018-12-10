@@ -25,12 +25,8 @@
   </Fields>
   <Permissions>
     <Clear />
-    <Identity path="/Root/IMS/BuiltIn/Portal/IdentifiedUsers">
-      <See>Allow</See>
-      <Preview>Allow</Preview>
-      <PreviewWithoutWatermark>Allow</PreviewWithoutWatermark>
-      <PreviewWithoutRedaction>Allow</PreviewWithoutRedaction>
-      <Open>Allow</Open>
+    <Identity path="/Root/IMS/BuiltIn/Portal/Everyone">
+      <RunApplication>Allow</RunApplication>
     </Identity>
   </Permissions>
 </ContentMetaData>

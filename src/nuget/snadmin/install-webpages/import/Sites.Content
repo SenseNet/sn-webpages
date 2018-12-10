@@ -4,7 +4,7 @@
   <ContentName>Sites</ContentName>
   <Permissions>
     <Clear />
-    <Identity path="/Root/IMS/BuiltIn/Portal/IdentifiedUsers" propagation="LocalOnly">
+    <Identity path="/Root/IMS/BuiltIn/Portal/Everyone" propagation="LocalOnly">
       <Open>Allow</Open>
     </Identity>
   </Permissions>
