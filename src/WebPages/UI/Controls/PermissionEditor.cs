@@ -20,6 +20,7 @@ using SenseNet.Search;
 using System.Text;
 using SenseNet.Configuration;
 using SenseNet.Search.Querying;
+using SenseNet.Security;
 using SenseNet.Services;
 
 namespace SenseNet.Portal.UI.Controls
@@ -710,7 +711,7 @@ namespace SenseNet.Portal.UI.Controls
                 return true;
 
             var currentSec = node.Security;
-            var expEntries = currentSec.GetExplicitEntries();
+            var expEntries = currentSec.GetExplicitEntries(EntryType.Normal);
             if (expEntries.Count == 0)
                 return false;
 
@@ -722,7 +723,7 @@ namespace SenseNet.Portal.UI.Controls
             using (new SystemAccount())
             {
                 var parentSec = node.Parent.Security;
-                var parentEntries = parentSec.GetEffectiveEntries();
+                var parentEntries = parentSec.GetEffectiveEntries(EntryType.Normal);
 
                 if (expEntries.Count != parentEntries.Count)
                     return true;
@@ -741,7 +742,7 @@ namespace SenseNet.Portal.UI.Controls
         private List<int> GetCustomEntryIds()
         {
             var sec = this.ContextNode.Security;
-            var expEntries = sec.GetExplicitEntries();
+            var expEntries = sec.GetExplicitEntries(EntryType.Normal);
 
             // in case of broken inheritance every entry is custom for sure
             if (!this.Acl.Inherits)
@@ -760,7 +761,7 @@ namespace SenseNet.Portal.UI.Controls
                     using (new SystemAccount())
                     {
                         var parentSec = this.ContextNode.Parent.Security;
-                        var parentEntries = parentSec.GetEffectiveEntries();
+                        var parentEntries = parentSec.GetEffectiveEntries(EntryType.Normal);
 
                         foreach (var entry in expEntries)
                         {

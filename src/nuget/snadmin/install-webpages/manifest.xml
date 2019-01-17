@@ -2,7 +2,7 @@
   <Id>SenseNet.WebPages</Id>
   <Description>sensenet WebPages</Description>
   <ReleaseDate>2018-12-10</ReleaseDate>
-  <Version>7.2.2.1</Version>
+  <Version>7.2.2.2</Version>
   <Dependencies>
     <Dependency id='SenseNet.Services' minVersion='7.5.0.1' />
   </Dependencies>

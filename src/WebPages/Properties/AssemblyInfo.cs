@@ -18,9 +18,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTrademark("Sense/Net Inc.")]
 [assembly: AssemblyCulture("")]
 
-[assembly: AssemblyVersion("7.2.2.1")]
-[assembly: AssemblyFileVersion("7.2.2.1")]
-[assembly: AssemblyInformationalVersion("7.2.2.1")]
+[assembly: AssemblyVersion("7.2.2.2")]
+[assembly: AssemblyFileVersion("7.2.2.2")]
+[assembly: AssemblyInformationalVersion("7.2.2.2")]
 
 [assembly: ComVisible(false)]
 [assembly: Guid("7c7cd205-75ad-4c99-b745-9b1a6b724be9")]

@@ -132,10 +132,11 @@ namespace SenseNet.Portal.UI.Controls
                 }
             }
 
-            var contentTypeName = UploadHelper.GetContentType(Upload.PostedFile.FileName, container?.Path) ?? typeof(File).Name;
+            var postedFile = Upload.PostedFile;
+            var contentTypeName = UploadHelper.GetContentType(postedFile.FileName, container?.Path) ?? typeof(File).Name;
             if (container != null && container.GetAllowedChildTypeNames().Any(ctn => ctn == contentTypeName))
             {
-                var binaryData = UploadHelper.CreateBinaryData(Upload.PostedFile);
+                var binaryData = UploadHelper.CreateBinaryData(postedFile.FileName, postedFile.InputStream);
                 var fileName = binaryData.FileName.ToString();
 
                 var content = ContentRepository.Content.CreateNew(contentTypeName, container, fileName);
