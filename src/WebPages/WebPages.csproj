@@ -44,7 +44,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="itextsharp, Version=4.1.6.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca">
-      <HintPath>..\packages\SenseNet.Services.7.5.0.3\lib\net461\itextsharp.dll</HintPath>
+      <HintPath>..\packages\SenseNet.Services.7.5.1\lib\net461\itextsharp.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.AspNet.SignalR.Client, Version=2.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.SignalR.Client.2.2.2\lib\net45\Microsoft.AspNet.SignalR.Client.dll</HintPath>
@@ -55,7 +55,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.Exchange.WebServices, Version=14.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\SenseNet.Services.7.5.0.3\lib\net461\Microsoft.Exchange.WebServices.dll</HintPath>
+      <HintPath>..\packages\SenseNet.Services.7.5.1\lib\net461\Microsoft.Exchange.WebServices.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.IdentityModel.JsonWebTokens, Version=5.2.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.IdentityModel.JsonWebTokens.5.2.4\lib\net451\Microsoft.IdentityModel.JsonWebTokens.dll</HintPath>
@@ -90,8 +90,8 @@
     <Reference Include="SenseNet.Common, Version=7.2.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\SenseNet.Common.7.2.0\lib\netstandard2.0\SenseNet.Common.dll</HintPath>
     </Reference>
-    <Reference Include="SenseNet.ContentRepository, Version=7.5.0.3, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SenseNet.Services.7.5.0.3\lib\net461\SenseNet.ContentRepository.dll</HintPath>
+    <Reference Include="SenseNet.ContentRepository, Version=7.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SenseNet.Services.7.5.1\lib\net461\SenseNet.ContentRepository.dll</HintPath>
     </Reference>
     <Reference Include="SenseNet.Preview, Version=7.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\SenseNet.Preview.7.1.0\lib\netstandard2.0\SenseNet.Preview.dll</HintPath>
@@ -105,11 +105,11 @@
     <Reference Include="SenseNet.Security.EF6SecurityStore, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\SenseNet.Security.EF6SecurityStore.4.0.0\lib\net461\SenseNet.Security.EF6SecurityStore.dll</HintPath>
     </Reference>
-    <Reference Include="SenseNet.Services, Version=7.5.0.3, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SenseNet.Services.7.5.0.3\lib\net461\SenseNet.Services.dll</HintPath>
+    <Reference Include="SenseNet.Services, Version=7.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SenseNet.Services.7.5.1\lib\net461\SenseNet.Services.dll</HintPath>
     </Reference>
-    <Reference Include="SenseNet.Storage, Version=7.5.0.3, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SenseNet.Services.7.5.0.3\lib\net461\SenseNet.Storage.dll</HintPath>
+    <Reference Include="SenseNet.Storage, Version=7.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SenseNet.Services.7.5.1\lib\net461\SenseNet.Storage.dll</HintPath>
     </Reference>
     <Reference Include="SenseNet.TaskManagement.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\SenseNet.TaskManagement.Core.2.0.0\lib\netstandard2.0\SenseNet.TaskManagement.Core.dll</HintPath>
