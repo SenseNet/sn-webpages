@@ -42,7 +42,6 @@ namespace SenseNet.Portal
 "SenseNet.ApplicationModel.IncludeBackUrlMode",
 "SenseNet.ApplicationModel.Application",
 "SenseNet.Services.ExportToCsvApplication",
-"SenseNet.ContentRepository.HttpEndpointDemoContent",
 "SenseNet.Portal.AppModel.HttpStatusApplication",
 "SenseNet.Portal.ApplicationModel.ImgResizeApplication",
 "SenseNet.Services.RssApplication",

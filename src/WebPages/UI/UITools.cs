@@ -116,7 +116,7 @@ namespace SenseNet.Portal.UI
         public static void AddScript(string scriptPath, Control control = null)
         {
             // Take care of folders
-            if (RepositoryTools.RecurseFilesInVirtualPath(SkinManager.Resolve(scriptPath), true, p => AddScript(p, control)))
+            if (ServiceTools.RecurseFilesInVirtualPath(SkinManager.Resolve(scriptPath), true, p => AddScript(p, control)))
                 return;
 
             var currScriptManager = GetScriptManager();
@@ -184,7 +184,7 @@ namespace SenseNet.Portal.UI
                 return;
 
             // Take care of folders
-            if (RepositoryTools.RecurseFilesInVirtualPath(SkinManager.Resolve(cssPath), true, p => AddStyleSheetToHeader(header, p, order, rel, type, media, title, allowBundlingIfEnabled, control)))
+            if (ServiceTools.RecurseFilesInVirtualPath(SkinManager.Resolve(cssPath), true, p => AddStyleSheetToHeader(header, p, order, rel, type, media, title, allowBundlingIfEnabled, control)))
                 return;
 
             var resolvedPath = SkinManager.Resolve(cssPath);
