@@ -13,6 +13,7 @@ using System.Web.Hosting;
 using SenseNet.Configuration;
 using SenseNet.ContentRepository.Storage.Security;
 using SenseNet.ContentRepository.Storage.Schema;
+using SenseNet.Services;
 
 namespace SenseNet.Portal.UI.Bundling
 {
@@ -164,7 +165,7 @@ namespace SenseNet.Portal.UI.Bundling
                 throw new Exception("You can't add more files to the bundle when it's closed.");
 
             // Take care of folders
-            if (RepositoryTools.RecurseFilesInVirtualPath(path, recursive, p => AddPath(p, order, recursive)))
+            if (ServiceTools.RecurseFilesInVirtualPath(path, recursive, p => AddPath(p, order, recursive)))
                 return;
 
             // Take care of files

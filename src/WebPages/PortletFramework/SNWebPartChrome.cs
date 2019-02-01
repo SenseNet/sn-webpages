@@ -11,6 +11,7 @@ using SenseNet.Diagnostics;
 using System.Linq;
 using System.Reflection;
 using System.Collections.Generic;
+using SenseNet.Services;
 
 [assembly: TagPrefix("SenseNet.Portal.UI.PortletFramework", "sn")]
 namespace SenseNet.Portal.UI.PortletFramework
