@@ -137,9 +137,6 @@ namespace SenseNet.Portal
             // template replacers and resolvers
             ThreadPool.QueueUserWorkItem(delegate { TemplateManager.Init(); });
 
-            // jscript evaluator
-            ThreadPool.QueueUserWorkItem(delegate { JscriptEvaluator.Init(); });
-
             // xslt
             ThreadPool.QueueUserWorkItem(delegate { PreloadXslt(); });
 
