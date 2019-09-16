@@ -1,15 +1,22 @@
-# WebPages for sensenet ECM
-UI layer for the [sensenet ECM](https://github.com/SenseNet/sensenet) platform built using ASP.NET WebForms **pages**, **portlets** (webparts) and **controls**.
+# WebPages for sensenet
+
+> Please note that this component builds on the obsolete ASP.NET **WebForms** technology. There are more modern UI frameworks and technologies to use with sensenet, we **recommend** that you check out those instead.
+> 
+> - [Getting started](https://community.sensenet.com/docs/getting-started/)
+> - [Client packages for sensenet](https://github.com/SenseNet/sn-client)
+> - [React and Typescript boilerplate app](https://github.com/SenseNet/sn-react-typescript-boilerplate) 
+
+UI layer for the [sensenet](https://github.com/SenseNet/sensenet) platform built using ASP.NET WebForms **pages**, **portlets** (webparts) and **controls**.
 
 [![Join the chat at https://gitter.im/SenseNet/sn-webpages](https://badges.gitter.im/SenseNet/sn-webpages.svg)](https://gitter.im/SenseNet/sn-webpages?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![NuGet](https://img.shields.io/nuget/v/SenseNet.WebPages.Install.svg)](https://www.nuget.org/packages/SenseNet.WebPages.Install)
 [![NuGet](https://img.shields.io/nuget/v/SenseNet.WebPages.svg)](https://www.nuget.org/packages/SenseNet.WebPages)
 
-Install this component on top of the main **sensenet ECM Services** layer to get an administrative GUI (called the **Content Explorer**) for managing content items stored in the Content Repository.
+Install this component on top of the main **sensenet Services** layer to get an administrative GUI (called the **Content Explorer**) for managing content items stored in the Content Repository.
 
 > Note that this layer does not contain user-facing interfaces like workspace dashboards or intranet library pages. To take a look at a list of core components we offer and see what you should install, please check this article:
 >
-> [sensenet ECM components](https://github.com/SenseNet/sensenet/blob/master/docs/sensenet-components.md)
+> [sensenet components](https://github.com/SenseNet/sensenet/blob/master/docs/sensenet-components.md)
 
 You can also build **custom pages** for your solution using our built-in building blocks called [portlets](http://wiki.sensenet.com/Portlet).
 
@@ -17,10 +24,10 @@ You can also build **custom pages** for your solution using our built-in buildin
 
 ## Getting started
 ### Prerequisites
-This components requires [sensenet ECM Services 7.0](https://github.com/SenseNet/sensenet) to be installed in your dev environment and database. Please follow the steps in the link above to complete that before proceeding.
+This components requires [sensenet Services 7.0](https://github.com/SenseNet/sensenet) to be installed in your dev environment and database. Please follow the steps in the link above to complete that before proceeding.
 
 ### Installation
-You can install the **sensenet ECM WebPages** component in Visual Studio as a *NuGet* package. Please follow the steps in the the following article:
+You can install the **sensenet WebPages** component in Visual Studio as a *NuGet* package. Please follow the steps in the the following article:
 
 - [Install WebPages from NuGet](/docs/install-webpages-from-nuget.md)
 
@@ -43,12 +50,12 @@ After installing this component and entering Content Explorer, you may notice th
 
 - [Set custom url](http://wiki.sensenet.com/How_to_change_url_and_authentication_settings#Steps_for_configuring_URLs_on_the_portal)
 
-After this, you will see the predefined sensenet ECM main page (displaying a simple login portlet) when you visit your custom url; you do not have to use the absolute url mentioned above to access the site main page:
+After this, you will see the predefined sensenet main page (displaying a simple login portlet) when you visit your custom url; you do not have to use the absolute url mentioned above to access the site main page:
 
 > http://localhost:1234
 
 ## MVC views
-Note that if you installed sensenet ECM into an ASP.NET application that may contain MVC views and controllers, you can freely use that technology, you do not have to create sensenset-specific pages. That is only an option, made possible by this WebPages component.
+Note that if you installed sensenet into an ASP.NET application that may contain MVC views and controllers, you can freely use that technology, you do not have to create sensenet-specific pages. That is only an option, made possible by this WebPages component.
 
 ## Custom pages
 If you choose to make use of this technology, please take a look at the following articles about building a site using our pages and **smart app model**:
