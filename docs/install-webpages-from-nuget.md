@@ -1,4 +1,11 @@
 # Install sensenet WebPages from NuGet
+
+> Please note that this component builds on the obsolete ASP.NET **WebForms** technology. There are more modern UI frameworks and technologies to use with sensenet, we **recommend** that you check out those instead.
+> 
+> - [Getting started](https://community.sensenet.com/docs/getting-started/)
+> - [Client packages for sensenet](https://github.com/SenseNet/sn-client)
+> - [React and Typescript boilerplate app](https://github.com/SenseNet/sn-react-typescript-boilerplate)
+
 This article is **for developers** about installing the ASP.NET WebForms-based UI layer of [sensenet ECM](https://github.com/SenseNet) from *NuGet*. Before you can do that, please install the core layer, [sensenet Services](https://github.com/SenseNet/sensenet/tree/master/docs/install-sn-from-nuget.md), which is a prerequisite of this component.
 
 >About choosing the components you need, take look at [this article](https://github.com/SenseNet/sensenet/tree/master/docs/sensenet-components.md) that describes the main components briefly.
