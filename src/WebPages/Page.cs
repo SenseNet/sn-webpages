@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Threading;
 using System.Web;
 using System.Web.Compilation;
 using System.Web.UI.WebControls.WebParts;
@@ -87,7 +88,7 @@ namespace SenseNet.Portal
             if (SmartUrlChanged)
             {
                 var action = new PortalContext.ReloadSmartUrlListDistributedAction();
-                action.Execute();
+                action.ExecuteAsync(CancellationToken.None).GetAwaiter().GetResult();
             }
         }
 

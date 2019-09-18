@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
 using SenseNet.Communication.Messaging;
 using SenseNet.ContentRepository.Storage.Events;
 using SenseNet.Portal.Resources;
@@ -21,10 +23,12 @@ namespace SenseNet.Portal.UI.Bundling
                 Path = path;
             }
 
-            public override void DoAction(bool onRemote, bool isFromMe)
+            public override Task DoActionAsync(bool onRemote, bool isFromMe, CancellationToken cancellationToken)
             {
                 // Cleaning the cache for the given path
                 BundleHandler.InvalidateCacheForPath(Path);
+
+                return Task.CompletedTask;
             }
         }
 
@@ -80,7 +84,7 @@ namespace SenseNet.Portal.UI.Bundling
             {
                 // Sending a message which'll tell everyone to clean their cache
                 var action = new BundleCacheInvalidatorDistributedAction(path);
-                action.Execute();
+                action.ExecuteAsync(CancellationToken.None).GetAwaiter().GetResult();
             }
         }
     }

@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
-using System.Linq;
 using System.Text;
 using SenseNet.Portal.Virtualization;
 using System.Web;
 using System.Security.Cryptography;
+using SenseNet.Configuration;
 using SenseNet.ContentRepository;
 using SenseNet.ContentRepository.Storage.Caching;
 using SenseNet.ContentRepository.Storage.Caching.Dependency;
@@ -116,7 +116,7 @@ namespace SenseNet.Portal.UI
         }
         public static string GetCachedOutput(string cacheKey)
         {
-            var cachedValue = DistributedApplication.Cache.Get(cacheKey);
+            var cachedValue = Cache.Get(cacheKey);
             if (cachedValue == null)
                 return null;
 
@@ -132,15 +132,15 @@ namespace SenseNet.Portal.UI
         }
         internal static OutputCacheData GetCachedData(string cacheKey)
         {
-            return DistributedApplication.Cache.Get(cacheKey) as OutputCacheData;
+            return Cache.Get(cacheKey) as OutputCacheData;
            
         }
         [SuppressMessage("ReSharper", "CompareOfFloatsByEqualityOperator")]
         public static void InsertOutputIntoCache(double absoluteExpiration, double slidingExpiration, string cacheKey, object output, CacheDependency cacheDependency)
         {
             // -1 means it comes from web config
-            var absBase = absoluteExpiration == -1 ? Configuration.Cache.AbsoluteExpirationSeconds : absoluteExpiration;
-            var slidingBase = slidingExpiration == -1 ? Configuration.Cache.SlidingExpirationSeconds : slidingExpiration;
+            var absBase = absoluteExpiration == -1 ? CacheConfiguration.AbsoluteExpirationSeconds : absoluteExpiration;
+            var slidingBase = slidingExpiration == -1 ? CacheConfiguration.SlidingExpirationSeconds : slidingExpiration;
 
             // 0 means no caching
             var abs = absBase == 0 ? DateTime.MaxValue : DateTime.UtcNow.AddSeconds((double)absBase);
@@ -149,7 +149,7 @@ namespace SenseNet.Portal.UI
             if (abs != DateTime.MaxValue && sliding != TimeSpan.Zero)
                 sliding = TimeSpan.Zero;
 
-            DistributedApplication.Cache.Insert(cacheKey, output, cacheDependency, abs, sliding, null);
+            Cache.Insert(cacheKey, output, cacheDependency, abs, sliding, null);
         }
         [Obsolete("Use overload without 'priority' parameter instead.")]
         public static void InsertOutputIntoCache(double absoluteExpiration, double slidingExpiration, string cacheKey, object output, CacheDependency cacheDependency, CacheItemPriority priority)

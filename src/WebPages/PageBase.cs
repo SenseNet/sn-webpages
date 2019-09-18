@@ -25,6 +25,7 @@ using SenseNet.ContentRepository.i18n;
 using System.Reflection;
 using SenseNet.Portal.UI.PortletFramework;
 using System.Reflection.Emit;
+using System.Threading;
 using SenseNet.Portal.Resources;
 
 namespace SenseNet.Portal
@@ -114,7 +115,7 @@ namespace SenseNet.Portal
             {
                 try
                 {
-                    new CacheCleanAction().Execute();
+                    new CacheCleanAction().ExecuteAsync(CancellationToken.None).GetAwaiter().GetResult();
                 }
                 catch (Exception exc) // logged
                 {

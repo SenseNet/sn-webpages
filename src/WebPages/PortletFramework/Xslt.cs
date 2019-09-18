@@ -189,7 +189,7 @@ namespace SenseNet.Portal.UI.PortletFramework
         {
             string nodeKey = "xslt:" + nodePath;
 
-            XslTransformExecutionContext context = (XslTransformExecutionContext)(DistributedApplication.Cache.Get(nodeKey));
+            XslTransformExecutionContext context = (XslTransformExecutionContext)(Cache.Get(nodeKey));
             if (context == null)
             {
                 context = new XslTransformExecutionContext();
@@ -239,7 +239,7 @@ namespace SenseNet.Portal.UI.PortletFramework
                     }
                 }
 
-                DistributedApplication.Cache.Insert(nodeKey, context, aggregatedDependency);
+                Cache.Insert(nodeKey, context, aggregatedDependency);
             }
 
             if (resolveScripts)
