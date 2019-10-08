@@ -99,32 +99,32 @@
       <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="SenseNet.BlobStorage, Version=7.3.5.1, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SenseNet.BlobStorage.7.3.5.1\lib\netstandard2.0\SenseNet.BlobStorage.dll</HintPath>
+    <Reference Include="SenseNet.BlobStorage, Version=7.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SenseNet.BlobStorage.7.4.0\lib\netstandard2.0\SenseNet.BlobStorage.dll</HintPath>
     </Reference>
-    <Reference Include="SenseNet.Common, Version=7.3.1.1, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SenseNet.Common.7.3.1.1\lib\netstandard2.0\SenseNet.Common.dll</HintPath>
+    <Reference Include="SenseNet.Common, Version=7.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SenseNet.Common.7.4.0\lib\netstandard2.0\SenseNet.Common.dll</HintPath>
     </Reference>
-    <Reference Include="SenseNet.ContentRepository, Version=7.6.4.1, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SenseNet.ContentRepository.7.6.4.1\lib\netstandard2.0\SenseNet.ContentRepository.dll</HintPath>
+    <Reference Include="SenseNet.ContentRepository, Version=7.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SenseNet.ContentRepository.7.7.0\lib\netstandard2.0\SenseNet.ContentRepository.dll</HintPath>
     </Reference>
     <Reference Include="SenseNet.Preview, Version=7.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\SenseNet.Preview.7.1.0\lib\netstandard2.0\SenseNet.Preview.dll</HintPath>
     </Reference>
-    <Reference Include="SenseNet.Search, Version=2.1.0.1, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SenseNet.Search.2.1.0.1\lib\netstandard2.0\SenseNet.Search.dll</HintPath>
+    <Reference Include="SenseNet.Search, Version=2.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SenseNet.Search.2.3.0\lib\netstandard2.0\SenseNet.Search.dll</HintPath>
     </Reference>
-    <Reference Include="SenseNet.Security, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SenseNet.Security.4.0.0\lib\netstandard2.0\SenseNet.Security.dll</HintPath>
+    <Reference Include="SenseNet.Security, Version=4.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SenseNet.Security.4.1.0\lib\netstandard2.0\SenseNet.Security.dll</HintPath>
     </Reference>
-    <Reference Include="SenseNet.Security.EF6SecurityStore, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SenseNet.Security.EF6SecurityStore.4.0.0\lib\net461\SenseNet.Security.EF6SecurityStore.dll</HintPath>
+    <Reference Include="SenseNet.Security.EF6SecurityStore, Version=4.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SenseNet.Security.EF6SecurityStore.4.1.0\lib\net461\SenseNet.Security.EF6SecurityStore.dll</HintPath>
     </Reference>
-    <Reference Include="SenseNet.Services, Version=7.6.4.1, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SenseNet.Services.7.6.4.2\lib\net461\SenseNet.Services.dll</HintPath>
+    <Reference Include="SenseNet.Services, Version=7.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SenseNet.Services.7.7.0\lib\net461\SenseNet.Services.dll</HintPath>
     </Reference>
-    <Reference Include="SenseNet.Storage, Version=7.6.4.1, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SenseNet.ContentRepository.7.6.4.1\lib\netstandard2.0\SenseNet.Storage.dll</HintPath>
+    <Reference Include="SenseNet.Storage, Version=7.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SenseNet.ContentRepository.7.7.0\lib\netstandard2.0\SenseNet.Storage.dll</HintPath>
     </Reference>
     <Reference Include="SenseNet.TaskManagement.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\SenseNet.TaskManagement.Core.2.0.0\lib\netstandard2.0\SenseNet.TaskManagement.Core.dll</HintPath>
