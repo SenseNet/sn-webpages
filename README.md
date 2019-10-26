@@ -27,7 +27,7 @@ You can also build **custom pages** for your solution using our built-in buildin
 This components requires [sensenet Services 7.0](https://github.com/SenseNet/sensenet) to be installed in your dev environment and database. Please follow the steps in the link above to complete that before proceeding.
 
 ### Installation
-You can install the **sensenet WebPages** component in Visual Studio as a *NuGet* package. Please follow the steps in the the following article:
+You can install the **sensenet WebPages** component in Visual Studio as a *NuGet* package. Please follow the steps in the following article:
 
 - [Install WebPages from NuGet](/docs/install-webpages-from-nuget.md)
 
