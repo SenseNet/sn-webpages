@@ -9,8 +9,11 @@
 UI layer for the [sensenet](https://github.com/SenseNet/sensenet) platform built using ASP.NET WebForms **pages**, **portlets** (webparts) and **controls**.
 
 [![Join the chat at https://gitter.im/SenseNet/sn-webpages](https://badges.gitter.im/SenseNet/sn-webpages.svg)](https://gitter.im/SenseNet/sn-webpages?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![NuGet](https://img.shields.io/nuget/v/SenseNet.WebPages.Install.svg)](https://www.nuget.org/packages/SenseNet.WebPages.Install)
-[![NuGet](https://img.shields.io/nuget/v/SenseNet.WebPages.svg)](https://www.nuget.org/packages/SenseNet.WebPages)
+
+| Package                   | Version                                                                                                                            |
+| ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| SenseNet.Webpages.Install | [![NuGet](https://img.shields.io/nuget/v/SenseNet.WebPages.Install.svg)](https://www.nuget.org/packages/SenseNet.WebPages.Install) |
+| SenseNet.Webpages         | [![NuGet](https://img.shields.io/nuget/v/SenseNet.WebPages.svg)](https://www.nuget.org/packages/SenseNet.WebPages)    
 
 Install this component on top of the main **sensenet Services** layer to get an administrative GUI (called the **Content Explorer**) for managing content items stored in the Content Repository.
 
