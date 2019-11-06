@@ -226,13 +226,13 @@
           <value>GitHub repository</value>
         </data>
         <data name="GitHubInfo" xml:space="preserve">
-          <value>sensenet ECM source code is available on GitHub.</value>
+          <value>sensenet source code is available on GitHub.</value>
         </data>
         <data name="Wiki" xml:space="preserve">
           <value>Wiki</value>
         </data>
         <data name="WikiPage" xml:space="preserve">
-          <value>The sensenet ECM Wiki page.</value>
+          <value>The sensenet Wiki page.</value>
         </data>
         <data name="Forum" xml:space="preserve">
           <value>Community support</value>
@@ -244,7 +244,7 @@
           <value>Sales information</value>
         </data>
         <data name="Information" xml:space="preserve">
-          <value>How to get sensenet ECM Enterprise Edition with enterprise support.</value>
+          <value>How to get sensenet Enterprise Edition with enterprise support.</value>
         </data>
         <data name="Workflows" xml:space="preserve">
           <value>Workflows</value>
@@ -256,7 +256,7 @@
           <value>Version info</value>
         </data>
         <data name="VersionInfoDesc" xml:space="preserve">
-          <value>Information about the currently installed sensenet ECM and 3rd party components.</value>
+          <value>Information about the currently installed sensenet and 3rd party components.</value>
         </data>
         <data name="Sorting-Asc" xml:space="preserve">
           <value>Ascending</value>
@@ -543,25 +543,25 @@
           <value>GitHub repository</value>
         </data>
         <data name="GitHubInfo" xml:space="preserve">
-          <value>A sensenet ECM forráskód elérhető a GitHubon.</value>
+          <value>A sensenet forráskód elérhető a GitHubon.</value>
         </data>
         <data name="Wiki" xml:space="preserve">
           <value>Wiki</value>
         </data>
         <data name="WikiPage" xml:space="preserve">
-          <value>A sensenet ECM Wiki oldala.</value>
+          <value>A sensenet Wiki oldala.</value>
         </data>
         <data name="Forum" xml:space="preserve">
           <value>Közösségi támogatás</value>
         </data>
         <data name="ForumTopics" xml:space="preserve">
-          <value>Kérdések és válaszok sensenet ECM témákkal kapcsolatban a Stack Overflow-n.</value>
+          <value>Kérdések és válaszok sensenet témákkal kapcsolatban a Stack Overflow-n.</value>
         </data>
         <data name="SalesInformation" xml:space="preserve">
           <value>Sales információk</value>
         </data>
         <data name="Information" xml:space="preserve">
-          <value>Információk arról, hogyan vehet teljes sensenet ECM verziót nagyvállalati támogatással.</value>
+          <value>Információk arról, hogyan vehet teljes sensenet verziót nagyvállalati támogatással.</value>
         </data>
         <data name="Workflows" xml:space="preserve">
           <value>Munkafolyamatok</value>
@@ -573,7 +573,7 @@
           <value>Verzió információk</value>
         </data>
         <data name="VersionInfoDesc" xml:space="preserve">
-          <value>Az aktuális sensenet ECM és a telepített külső komponensek verzió információja.</value>
+          <value>Az aktuális sensenet és a telepített külső komponensek verzió információja.</value>
         </data>
         <data name="Sorting-Asc" xml:space="preserve">
           <value>Növekvő</value>

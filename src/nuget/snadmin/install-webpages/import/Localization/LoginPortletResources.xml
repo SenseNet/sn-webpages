@@ -65,7 +65,7 @@
 				</data>
         <data name="Admin" xml:space="preserve">
 				  <value>
-                <small>She has full control in the ECM system, she can also create sites and users.</small>
+                <small>She has full control in the system, she can also create sites and users.</small>
                 <small class="sn-link">username: <strong>admin</strong> / password: <strong>admin</strong></small>
           </value>
 				</data>

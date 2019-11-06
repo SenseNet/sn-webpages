@@ -571,7 +571,7 @@
           <value>This is a global view.</value>
         </data>
         <data name="WSContentList_Visitor">
-          <value>Please login to collaborate in Sense/Net workspaces!</value>
+          <value>Please login to collaborate in sensenet workspaces!</value>
         </data>
         <data name="QueryBuilder_Visitor">
           <value>Please login to use QueryBuilder!</value>
@@ -613,13 +613,13 @@
           <value>Company Home</value>
         </data>
         <data name="SenseNetDemoSiteTitle">
-          <value>Sense/Net ECM Demo Site</value>
+          <value>sensenet Demo Site</value>
         </data>
         <data name="SenseNetSiteTitle">
-          <value>Sense/Net Site</value>
+          <value>sensenet Site</value>
         </data>
         <data name="SenseNetCurrentVersion">
-          <value>Sense/Net 6.4</value>
+          <value>sensenet 6.4</value>
         </data>
         <data name="Login">
           <value>Login</value>
@@ -1245,7 +1245,7 @@
           <value>Ez egy globális nézet</value>
         </data>
         <data name="WSContentList_Visitor">
-          <value>Kérjük, hogy a Sense/Net munkaterületek teljes körű használatához lépjen be!</value>
+          <value>Kérjük, hogy a sensenet munkaterületek teljes körű használatához lépjen be!</value>
         </data>
         <data name="SecondMessage">
           <value> másodperce</value>
@@ -1270,10 +1270,10 @@
           <value>Vállalati kezdőoldal</value>
         </data>
         <data name="SenseNetDemoSiteTitle">
-          <value>Sense/Net ECM Demo Site</value>
+          <value>sensenet Demo Site</value>
         </data>
         <data name="SenseNetCurrentVersion">
-          <value>Sense/Net 6.4</value>
+          <value>sensenet 6.4</value>
         </data>
         <data name="Login">
           <value>Belépés</value>
