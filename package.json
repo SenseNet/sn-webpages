@@ -1,7 +1,7 @@
 {
   "name": "sn-webpages",
   "version": "7.0.0",
-  "description": "UI layer for the sensenet ECM platform built using ASP.NET pages, webparts and controls.",
+  "description": "UI layer for the sensenet platform built using ASP.NET pages, webparts and controls.",
   "private": false,
   "repository": {
     "type": "git",
