@@ -223,7 +223,7 @@ namespace SenseNet.Portal.UI
                 return string.Empty;
             }
 
-            var act = ActionFramework.GetAction(actionName, content, backUrl, null);
+            var act = ActionFramework.GetAction(actionName, content, backUrl, null,null, null);
             var res = act == null ? string.Empty : act.Forbidden ? string.Empty : act.Uri;
             return res;
         }
