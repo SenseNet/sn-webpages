@@ -1,8 +1,8 @@
 <Package type='Install'>
   <Id>SenseNet.WebPages</Id>
   <Description>sensenet WebPages</Description>
-  <ReleaseDate>2020-01-09</ReleaseDate>
-  <Version>7.3.1</Version>
+  <ReleaseDate>2020-02-04</ReleaseDate>
+  <Version>7.3.2</Version>
   <Dependencies>
     <Dependency id='SenseNet.Services' minVersion='7.7' />
   </Dependencies>
